@@ -1,0 +1,450 @@
+/* Login Modal Overlay */
+.login-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1rem;
+  overflow-y: auto;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Login Modal Container */
+.login-modal-container {
+  background: white;
+  border-radius: 1rem;
+  max-width: 750px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Close Button */
+.login-modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-modal-close:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.login-modal-close svg {
+  width: 24px;
+  height: 24px;
+  color: #333;
+}
+
+/* Modal Content Layout */
+.login-modal-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 380px;
+}
+
+/* Left Section */
+.login-modal-left {
+  padding: 1.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 50%, #fff 100%);
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-context-animation {
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.illustration-wrapper {
+  width: 100%;
+  max-width: 160px;
+  margin: 0 auto;
+}
+
+.context-icon {
+  width: 100%;
+  height: auto;
+  max-width: 160px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.05));
+}
+
+.g2-logo-circle {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(255, 73, 44, 0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.g2-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.login-context-text {
+  max-width: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+.context-title {
+  font-size: 1.375rem;
+  line-height: 1.3;
+  color: #0d1829;
+  margin-bottom: 0.625rem;
+  font-weight: 400;
+}
+
+.context-title b {
+  font-weight: 700;
+  color: #000;
+}
+
+.context-description {
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: #4a5568;
+}
+
+/* Right Section - Form */
+.login-modal-right {
+  padding: 1.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Add partition line with shadow */
+.login-modal-right::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #e5e7eb 20%, #e5e7eb 80%, transparent);
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.05);
+  display: none;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 260px;
+}
+
+/* Login Buttons */
+.login-btn {
+  width: 100%;
+  height: 2.625rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  margin-bottom: 0.625rem;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.login-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.login-btn-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.login-btn-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.login-btn-divider {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  display: none;
+}
+
+.login-btn-text {
+  margin-left: 0;
+  font-size: 0.8125rem;
+}
+
+/* LinkedIn Button - Purple rounded style */
+.login-btn-linkedin {
+  background: linear-gradient(135deg, #6B52D4 0%, #5845B8 100%);
+  color: white;
+  border-radius: 1.5rem;
+}
+
+.login-btn-linkedin:hover {
+  background: linear-gradient(135deg, #5845B8 0%, #4A3A9F 100%);
+}
+
+.login-btn-linkedin .login-btn-divider {
+  display: none;
+}
+
+/* Google Button */
+.login-btn-google {
+  background: white;
+  border: 1.5px solid #dadce0;
+  color: #3c4043;
+}
+
+.login-btn-google:hover {
+  background: #f8f9fa;
+  border-color: #c6c9cc;
+}
+
+.login-btn-google .login-btn-divider {
+  background-color: #dadce0;
+}
+
+/* G2 Button */
+.login-btn-g2 {
+  background: white;
+  border: 1.5px solid #dadce0;
+  color: #3c4043;
+}
+
+.login-btn-g2:hover {
+  background: #f8f9fa;
+  border-color: #c6c9cc;
+}
+
+/* Divider */
+.login-divider {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  color: #718096;
+  font-size: 0.75rem;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #e2e8f0;
+}
+
+.login-divider span {
+  padding: 0 1rem;
+}
+
+/* Footer */
+.login-footer {
+  text-align: center;
+  margin-top: 0.75rem;
+  font-size: 0.8125rem;
+  color: #4a5568;
+}
+
+.login-link {
+  color: #FF492C;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Terms */
+.login-terms {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.6875rem;
+  color: #718096;
+  line-height: 1.4;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-terms .login-link {
+  font-weight: 600;
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  .login-modal-content {
+    flex-direction: row;
+  }
+
+  .login-modal-left {
+    flex: 1;
+    border-radius: 1rem 0 0 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .login-modal-right {
+    flex: 1;
+    padding: 2rem 1.5rem;
+  }
+
+  /* Show partition line on desktop */
+  .login-modal-right::before {
+    display: block;
+  }
+
+  .illustration-wrapper {
+    max-width: 180px;
+  }
+
+  .context-icon {
+    max-width: 180px;
+  }
+
+  .g2-logo-circle {
+    width: 95px;
+    height: 95px;
+  }
+
+  .context-title {
+    font-size: 1.5rem;
+  }
+
+  .context-description {
+    font-size: 0.875rem;
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 767px) {
+  .login-modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .login-modal-container {
+    border-radius: 1.5rem 1.5rem 0 0;
+    max-height: 95vh;
+    overflow-y: auto;
+  }
+
+  .login-modal-close {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .login-modal-left {
+    padding: 2rem 1.5rem;
+  }
+
+  .login-modal-right {
+    padding: 2rem 1.5rem;
+  }
+
+  .context-icon {
+    width: 160px;
+    height: 160px;
+  }
+
+  .context-title {
+    font-size: 1.5rem;
+  }
+
+  .context-description {
+    font-size: 0.875rem;
+  }
+
+  .login-btn {
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .login-form-container {
+    max-width: 100%;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 374px) {
+  .login-btn-text {
+    font-size: 0.938rem;
+  }
+
+  .context-title {
+    font-size: 1.25rem;
+  }
+}

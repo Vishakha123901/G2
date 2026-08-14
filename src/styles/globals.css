@@ -1,0 +1,175 @@
+/* G2 Design System Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --g2-bg-warm: #FAF7F5;
+  --g2-orange: #FF4F00;
+  --g2-orange-hover: #E04500;
+  --g2-purple: #5E42C0;
+  --g2-purple-hover: #4B33A3;
+  --g2-text-main: #1C1D21;
+  --g2-text-muted: #5C5E68;
+  --g2-border: #E5E7EB;
+  --g2-blue: #1877F2;
+  --g2-teal: #00CBA7;
+  --g2-red: #FF3B30;
+  --g2-font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --g2-font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: var(--g2-font-body);
+  background-color: var(--g2-bg-warm);
+  color: var(--g2-text-main);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth Horizontal Snap Slider */
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 1.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.slider-item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* Floating animation up to down / down to up */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.animate-float-up-down {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* Geometric Decorative Background Elements matching reference frame */
+.shape-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Top Left Blue Geometric Chevron/Polygon */
+.shape-blue {
+  position: absolute;
+  top: 18%;
+  left: -2%;
+  width: 175px;
+  height: 230px;
+  background: var(--g2-blue);
+  clip-path: polygon(0 0, 100% 30%, 68% 100%, 0 75%);
+  transform: rotate(-10deg);
+  opacity: 0.95;
+}
+
+/* Bottom Left Red Angled Parallelogram */
+.shape-red {
+  position: absolute;
+  bottom: 8%;
+  left: -4%;
+  width: 220px;
+  height: 130px;
+  background: var(--g2-red);
+  transform: skewX(-26deg) rotate(16deg);
+  opacity: 0.95;
+  border-radius: 4px;
+}
+
+/* Top Right Cyan Diagonal Bar */
+.shape-teal {
+  position: absolute;
+  top: 6%;
+  right: -4%;
+  width: 280px;
+  height: 150px;
+  background: var(--g2-teal);
+  transform: skewY(-36deg) rotate(42deg);
+  opacity: 0.95;
+  border-radius: 6px;
+}
+
+/* Bottom Right Deep Purple Ring Arc */
+.shape-purple-arc {
+  position: absolute;
+  bottom: -220px;
+  right: -130px;
+  width: 540px;
+  height: 540px;
+  border: 90px solid var(--g2-purple);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Bottom Right Interactive Sparkle Scroll Button */
+.sparkle-badge {
+  position: absolute;
+  bottom: 45px;
+  right: 45px;
+  width: 62px;
+  height: 62px;
+  background-color: var(--g2-orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(255, 79, 0, 0.45);
+  color: white;
+  z-index: 20;
+  border: none;
+}
+
+@media (max-width: 1280px) {
+  .shape-blue { width: 130px; height: 170px; left: -3%; }
+  .shape-red { width: 160px; height: 100px; left: -4%; }
+  .shape-teal { width: 200px; height: 110px; right: -5%; }
+  .shape-purple-arc { width: 420px; height: 420px; border-width: 70px; bottom: -160px; right: -90px; }
+  .sparkle-badge { bottom: 35px; right: 35px; width: 54px; height: 54px; }
+}
+
+@media (max-width: 768px) {
+  .shape-blue { width: 90px; height: 120px; left: -5%; }
+  .shape-red { width: 110px; height: 75px; left: -6%; }
+  .shape-teal { width: 140px; height: 80px; right: -8%; }
+  .shape-purple-arc { width: 280px; height: 280px; border-width: 45px; bottom: -100px; right: -60px; }
+  .sparkle-badge { bottom: 20px; right: 20px; width: 48px; height: 48px; }
+}
+
+/* Hide all geometric shapes on mobile (small phones) */
+@media (max-width: 640px) {
+  .shape-blue,
+  .shape-red,
+  .shape-teal,
+  .shape-purple-arc {
+    display: none;
+  }
+}
