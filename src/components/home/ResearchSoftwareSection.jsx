@@ -127,7 +127,7 @@ export default function ResearchSoftwareSection() {
 
           {/* TITLE */}
           <h2 className="research-title">
-            Research popular software & services.
+            Research popular software<br />&amp; services.
           </h2>
 
           {/* DESKTOP GRID */}
@@ -181,9 +181,8 @@ export default function ResearchSoftwareSection() {
 
                 return (
                   <div
-                    className={`mobile-category ${
-                      isOpen ? "mobile-category-open" : ""
-                    }`}
+                    className={`mobile-category ${isOpen ? "mobile-category-open" : ""
+                      }`}
                     key={category}
                   >
 
@@ -199,9 +198,8 @@ export default function ResearchSoftwareSection() {
                       </span>
 
                       <span
-                        className={`mobile-chevron ${
-                          isOpen ? "mobile-chevron-open" : ""
-                        }`}
+                        className={`mobile-chevron ${isOpen ? "mobile-chevron-open" : ""
+                          }`}
                       >
                         <span></span>
                       </span>
@@ -209,9 +207,8 @@ export default function ResearchSoftwareSection() {
 
                     {/* CATEGORY LINKS */}
                     <div
-                      className={`mobile-category-content ${
-                        isOpen ? "mobile-content-open" : ""
-                      }`}
+                      className={`mobile-category-content ${isOpen ? "mobile-content-open" : ""
+                        }`}
                     >
                       <div className="mobile-links">
                         {links.map((item, index) => (
@@ -253,7 +250,7 @@ export default function ResearchSoftwareSection() {
         .research-section {
           width: 100%;
           background: #ffffff;
-          padding: 50px 0 55px;
+          padding: 40px 0 45px;
           box-sizing: border-box;
         }
 
@@ -274,11 +271,10 @@ export default function ResearchSoftwareSection() {
           margin: 0 0 17px 0;
           padding: 0;
 
-          color: #24252d;
+          color: #252530;
 
           font-family:
-            Arial,
-            Helvetica,
+            Figtree,
             sans-serif;
 
           font-size: 28px;
@@ -301,7 +297,7 @@ export default function ResearchSoftwareSection() {
           grid-template-columns:
             repeat(4, minmax(0, 1fr));
 
-          column-gap: 22px;
+          column-gap: 12px;
 
           align-items: start;
         }
@@ -335,11 +331,10 @@ export default function ResearchSoftwareSection() {
           margin: 0 0 3px 0;
           padding: 0;
 
-          color: #5c3bb2;
+          color: #5A39A2;
 
           font-family:
-            Arial,
-            Helvetica,
+            Figtree,
             sans-serif;
 
           font-size: 16px;
@@ -379,8 +374,7 @@ export default function ResearchSoftwareSection() {
           text-decoration: none;
 
           font-family:
-            Arial,
-            Helvetica,
+            Figtree,
             sans-serif;
 
           font-size: 15px;
@@ -439,7 +433,7 @@ export default function ResearchSoftwareSection() {
 
           border-radius: 4px;
 
-          color: #5c3bb2;
+          color: #5A39A2;
 
           text-decoration: none;
 
@@ -452,7 +446,7 @@ export default function ResearchSoftwareSection() {
         }
 
         .research-all-link:hover {
-          background: rgba(92, 59, 178, 0.07);
+          background: rgba(90, 57, 162, 0.07);
         }
 
 
@@ -519,7 +513,7 @@ export default function ResearchSoftwareSection() {
         @media (max-width: 767px) {
 
           .research-section {
-            padding: 40px 24px 50px;
+            padding: 35px 24px 40px;
           }
 
           .research-container {
@@ -535,18 +529,20 @@ export default function ResearchSoftwareSection() {
           ------------------------------------------------ */
 
           .research-title {
-            margin: 0 0 58px 0;
+            margin: 0 0 38px 0;
 
             padding: 0;
 
-            font-size: 30px;
-            line-height: 1.05;
+            font-size: 22px;
+            line-height: 1.2;
 
             font-weight: 700;
 
-            letter-spacing: -0.6px;
+            letter-spacing: -0.4px;
 
-            color: #292a32;
+            color: #252530;
+            
+            text-align: left;
           }
 
 
@@ -595,17 +591,17 @@ export default function ResearchSoftwareSection() {
           .mobile-category-button {
             width: 100%;
 
-            min-height: 57px;
+            min-height: 46px;
 
             display: flex;
 
             align-items: center;
             justify-content: space-between;
 
-            gap: 15px;
+            gap: 12px;
 
             margin: 0;
-            padding: 10px 0;
+            padding: 6px 0;
 
             border: none;
             outline: none;
@@ -629,19 +625,22 @@ export default function ResearchSoftwareSection() {
 
             min-width: 0;
 
-            color: #5c3bb2;
+            color: #5A39A2;
 
             font-family:
-              Arial,
-              Helvetica,
+              Figtree,
               sans-serif;
 
-            font-size: 18px;
-            line-height: 1.45;
+            font-size: 14px;
+            line-height: 1.3;
 
             font-weight: 600;
 
-            letter-spacing: -0.15px;
+            letter-spacing: -0.2px;
+            
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
           }
 
 
@@ -736,7 +735,7 @@ export default function ResearchSoftwareSection() {
             padding:
               2px
               0
-              14px;
+              8px;
           }
 
           .mobile-link {
@@ -750,7 +749,7 @@ export default function ResearchSoftwareSection() {
             gap: 10px;
 
             margin: 0;
-            padding: 7px 5px;
+            padding: 4px 5px;
 
             border-radius: 5px;
 
@@ -761,12 +760,11 @@ export default function ResearchSoftwareSection() {
             text-decoration: none;
 
             font-family:
-              Arial,
-              Helvetica,
+              Figtree,
               sans-serif;
 
-            font-size: 15px;
-            line-height: 1.45;
+            font-size: 14px;
+            line-height: 1.35;
 
             font-weight: 400;
 
@@ -813,26 +811,25 @@ export default function ResearchSoftwareSection() {
           }
 
           .mobile-all-link {
-            min-height: 57px;
+            min-height: 44px;
 
             display: flex;
             align-items: center;
 
-            padding: 10px 0;
+            padding: 6px 0;
 
             box-sizing: border-box;
 
-            color: #5c3bb2;
+            color: #5A39A2;
 
             text-decoration: none;
 
             font-family:
-              Arial,
-              Helvetica,
+              Figtree,
               sans-serif;
 
-            font-size: 18px;
-            line-height: 1.4;
+            font-size: 15px;
+            line-height: 1.3;
 
             font-weight: 600;
 
@@ -841,7 +838,7 @@ export default function ResearchSoftwareSection() {
           }
 
           .mobile-all-link:hover {
-            background: rgba(92, 59, 178, 0.07);
+            background: rgba(90, 57, 162, 0.07);
           }
         }
 
@@ -857,23 +854,30 @@ export default function ResearchSoftwareSection() {
           }
 
           .research-title {
-            font-size: 29px;
-            line-height: 1.06;
+            font-size: 22px;
+            line-height: 1.15;
 
-            margin-bottom: 57px;
+            margin-bottom: 40px;
           }
 
           .mobile-category-button {
-            min-height: 57px;
+            min-height: 48px;
+            padding: 8px 0;
           }
 
           .mobile-category-title {
-            font-size: 18px;
+            font-size: 14px;
+            line-height: 1.3;
+          }
+
+          .mobile-link {
+            font-size: 13px;
+            padding: 4px 5px;
           }
 
           .mobile-chevron {
-            width: 25px;
-            height: 25px;
+            width: 24px;
+            height: 24px;
           }
         }
 
@@ -890,15 +894,21 @@ export default function ResearchSoftwareSection() {
           }
 
           .research-title {
-            font-size: 27px;
+            font-size: 20px;
           }
 
           .mobile-category-title {
-            font-size: 16px;
+            font-size: 13px;
+            line-height: 1.3;
           }
 
           .mobile-link {
-            font-size: 14px;
+            font-size: 13px;
+          }
+
+          .mobile-chevron {
+            width: 22px;
+            height: 22px;
           }
         }
 

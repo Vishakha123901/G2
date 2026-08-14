@@ -55,14 +55,14 @@ export default function PinnedItemsPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-8 sm:mb-10">
-            <button className="bg-[#5E42C0] hover:bg-[#4E35A6] text-white font-bold text-[15px] sm:text-[16px] px-6 sm:px-7 py-3 sm:py-3.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center gap-2 whitespace-nowrap">
+            <button className="bg-[#5A39A2] hover:bg-[#493088] text-white font-bold text-[15px] sm:text-[16px] px-6 sm:px-7 py-3 sm:py-3.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center gap-2 whitespace-nowrap">
               <span>Create your free account</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="fill-current flex-shrink-0">
                 <path d="M13.125 10.75H4V9.25H13.125L8.9375 5.0625L10 4L16 10L10 16L8.9375 14.9375L13.125 10.75Z"></path>
               </svg>
             </button>
 
-            <a href="#how-it-works" className="text-[#5E42C0] font-semibold text-[15px] sm:text-[16px] hover:underline underline-offset-4">
+            <a href="#how-it-works" className="text-[#5A39A2] font-semibold text-[15px] sm:text-[16px] hover:underline underline-offset-4">
               See how it works
             </a>
           </div>
@@ -111,15 +111,15 @@ export default function PinnedItemsPage() {
               </p>
 
               <div className="flex flex-col gap-3">
-                <div className="inline-flex items-center rounded-full px-4 sm:px-5 py-2.5 sm:py-3 self-start border border-[#5E42C0] text-[#5E42C0] hover:bg-purple-50 transition-colors cursor-pointer">
+                <div className="inline-flex items-center rounded-full px-4 sm:px-5 py-2.5 sm:py-3 self-start border border-[#5A39A2] text-[#5A39A2] hover:bg-purple-50 transition-colors cursor-pointer">
                   <span className="text-[14px] sm:text-[16px] font-medium">Help me define my requirements</span>
                 </div>
 
-                <div className="inline-flex items-center rounded-full px-4 sm:px-5 py-2.5 sm:py-3 self-start border border-[#5E42C0] text-[#5E42C0] hover:bg-purple-50 transition-colors cursor-pointer">
+                <div className="inline-flex items-center rounded-full px-4 sm:px-5 py-2.5 sm:py-3 self-start border border-[#5A39A2] text-[#5A39A2] hover:bg-purple-50 transition-colors cursor-pointer">
                   <span className="text-[14px] sm:text-[16px] font-medium">Rank these tools by best fit</span>
                 </div>
 
-                <div className="inline-flex items-center rounded-full px-4 sm:px-5 py-2.5 sm:py-3 self-start border border-[#5E42C0] text-[#5E42C0] hover:bg-purple-50 transition-colors cursor-pointer">
+                <div className="inline-flex items-center rounded-full px-4 sm:px-5 py-2.5 sm:py-3 self-start border border-[#5A39A2] text-[#5A39A2] hover:bg-purple-50 transition-colors cursor-pointer">
                   <span className="text-[14px] sm:text-[16px] font-medium">Summarize strengths and weaknesses</span>
                 </div>
               </div>
@@ -176,7 +176,7 @@ export default function PinnedItemsPage() {
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 bg-purple-50">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="fill-[#5E42C0]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="fill-[#5A39A2]">
                       <path d="M7.5 15C7.08333 15 6.72917 14.8542 6.4375 14.5625C6.14583 14.2708 6 13.9167 6 13.5V12.5H15.5V6H16.5C16.9167 6 17.2708 6.14583 17.5625 6.4375C17.8542 6.72917 18 7.08333 18 7.5V18L15 15H7.5ZM2 14V3.5C2 3.08333 2.14583 2.72917 2.4375 2.4375C2.72917 2.14583 3.08333 2 3.5 2H12.5C12.9167 2 13.2708 2.14583 13.5625 2.4375C13.8542 2.72917 14 3.08333 14 3.5V9.5C14 9.91667 13.8542 10.2708 13.5625 10.5625C13.2708 10.8542 12.9167 11 12.5 11H5L2 14Z"></path>
                     </svg>
                   </div>
@@ -185,7 +185,7 @@ export default function PinnedItemsPage() {
 
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 bg-purple-50">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="fill-[#5E42C0]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="fill-[#5A39A2]">
                       <path d="M6.40039 8.79883C7.13358 8.79886 7.83669 8.89318 8.50879 9.08203C9.18089 9.27092 9.81709 9.54392 10.417 9.89941C10.6611 10.0437 10.8524 10.2351 10.9912 10.4736C11.1301 10.7125 11.2002 10.9768 11.2002 11.2656V12.7988H1.59961V11.2656C1.59962 10.9768 1.66972 10.7125 1.80859 10.4736C1.94746 10.2349 2.13948 10.0438 2.38379 9.89941C2.98374 9.54391 3.61983 9.2709 4.29199 9.08203C4.9641 8.89321 5.6672 8.79883 6.40039 8.79883ZM11.2002 8.98242C11.6334 9.07129 12.0526 9.19089 12.458 9.34082C12.8635 9.4908 13.2496 9.67723 13.6162 9.89941C13.8605 10.0438 14.0525 10.2349 14.1914 10.4736C14.3303 10.7125 14.4004 10.9768 14.4004 11.2656V12.7988H12.4004V11.2656C12.4004 10.7991 12.2918 10.3658 12.0752 9.96582C11.8586 9.56588 11.5668 9.23796 11.2002 8.98242ZM6.40039 3.19922C7.06689 3.19931 7.63303 3.43284 8.09961 3.89941C8.56618 4.36599 8.79971 4.93214 8.7998 5.59863C8.7998 6.2653 8.56628 6.83216 8.09961 7.29883C7.63305 7.76534 7.06684 7.99893 6.40039 7.99902C5.73372 7.99902 5.16686 7.76549 4.7002 7.29883C4.23353 6.83216 4 6.2653 4 5.59863C4.00009 4.93218 4.23368 4.36597 4.7002 3.89941C5.16686 3.43275 5.73372 3.19922 6.40039 3.19922ZM9.59961 3.19922C10.2663 3.19922 10.8331 3.43275 11.2998 3.89941C11.7663 4.36597 11.9999 4.93218 12 5.59863C12 6.2653 11.7665 6.83216 11.2998 7.29883C10.8331 7.76549 10.2663 7.99902 9.59961 7.99902C9.51087 7.99902 9.42727 7.99578 9.34961 7.99023C9.27195 7.98466 9.18834 7.9714 9.09961 7.94922C9.37739 7.627 9.59768 7.26847 9.75879 6.87402C9.91986 6.47962 10 6.05413 10 5.59863C9.99995 5.14335 9.91977 4.71846 9.75879 4.32422C9.59768 3.92977 9.37739 3.57125 9.09961 3.24902C9.18836 3.22684 9.27194 3.2126 9.34961 3.20703C9.42727 3.20148 9.51087 3.19923 9.59961 3.19922Z"></path>
                     </svg>
                   </div>
@@ -227,20 +227,20 @@ export default function PinnedItemsPage() {
 
               <div className="flex flex-col gap-4 mb-6 sm:mb-8">
                 <div className="flex items-center gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="fill-[#5E42C0] flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="fill-[#5A39A2] flex-shrink-0">
                     <path d="M8.10417 14.4375L4.0625 10.4167L5.125 9.33333L8.10417 12.3125L14.875 5.5625L15.9375 6.625L8.10417 14.4375Z"></path>
                   </svg>
                   <span className="text-[15px] sm:text-[16px] text-[#52525B]">Compare tools side-by-side</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="fill-[#5E42C0] flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="fill-[#5A39A2] flex-shrink-0">
                     <path d="M8.10417 14.4375L4.0625 10.4167L5.125 9.33333L8.10417 12.3125L14.875 5.5625L15.9375 6.625L8.10417 14.4375Z"></path>
                   </svg>
                   <span className="text-[15px] sm:text-[16px] text-[#52525B]">Gather stakeholder feedback</span>
                 </div>
               </div>
 
-              <button className="bg-[#5E42C0] hover:bg-[#4E35A6] text-white font-bold text-[15px] sm:text-[16px] px-6 sm:px-7 py-3 sm:py-3.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center gap-2 self-start">
+              <button className="bg-[#5A39A2] hover:bg-[#493088] text-white font-bold text-[15px] sm:text-[16px] px-6 sm:px-7 py-3 sm:py-3.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center gap-2 self-start">
                 <span>Create your free account</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="fill-current flex-shrink-0">
                   <path d="M13.125 10.75H4V9.25H13.125L8.9375 5.0625L10 4L16 10L10 16L8.9375 14.9375L13.125 10.75Z"></path>

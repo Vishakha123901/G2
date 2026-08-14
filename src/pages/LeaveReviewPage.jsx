@@ -78,7 +78,7 @@ export default function LeaveReviewPage() {
 
         .nav-btn {
           background: white;
-          color: #5E42C0;
+          color: #5A39A2;
           font-size: 15px;
           font-weight: 600;
           padding: 10px 24px;
@@ -89,7 +89,7 @@ export default function LeaveReviewPage() {
         }
 
         .nav-btn:hover {
-          border-color: #5E42C0;
+          border-color: #5A39A2;
           background: #F9FAFB;
         }
 
@@ -109,7 +109,7 @@ export default function LeaveReviewPage() {
         .header-title {
           font-size: 42px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin: 0 0 12px 0;
           text-align: center;
         }
@@ -138,7 +138,7 @@ export default function LeaveReviewPage() {
         }
 
         .search-input:focus {
-          border-color: #5E42C0;
+          border-color: #5A39A2;
           box-shadow: 0 0 0 3px rgba(94, 66, 192, 0.1);
         }
 
@@ -149,7 +149,7 @@ export default function LeaveReviewPage() {
           transform: translateY(-50%);
           width: 44px;
           height: 44px;
-          background: #5E42C0;
+          background: #5A39A2;
           border: none;
           border-radius: 50%;
           display: flex;
@@ -160,7 +160,7 @@ export default function LeaveReviewPage() {
         }
 
         .search-btn:hover {
-          background: #4E35A6;
+          background: #493088;
         }
 
         /* CAROUSEL */
@@ -178,7 +178,7 @@ export default function LeaveReviewPage() {
         .carousel-header {
           font-size: 20px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin-bottom: 48px;
         }
 
@@ -204,7 +204,7 @@ export default function LeaveReviewPage() {
         }
 
         .carousel-arrow:hover:not(:disabled) {
-          box-shadow: 0 2px 8px 2px rgba(32,31,35,0.149), 0 0 0 1px #5746B2;
+          box-shadow: 0 2px 8px 2px rgba(32,31,35,0.149), 0 0 0 1px #5A39A2;
           border-color: transparent;
         }
 
@@ -274,7 +274,7 @@ export default function LeaveReviewPage() {
         .card-name {
           font-size: 18px;
           font-weight: 600;
-          color: #1C1D21;
+          color: #201F23;
           margin: 8px 0 0 0;
           text-align: center;
         }
@@ -330,8 +330,8 @@ export default function LeaveReviewPage() {
         .review-btn {
           flex: 1;
           background: white;
-          color: #5E42C0;
-          border: 1px solid #5E42C0;
+          color: #5A39A2;
+          border: 1px solid #5A39A2;
           font-size: 14px;
           font-weight: 600;
           padding: 8px 16px;
@@ -369,7 +369,7 @@ export default function LeaveReviewPage() {
         .why-title {
           font-size: 36px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           text-align: center;
           margin: 0 0 60px 0;
         }
@@ -393,7 +393,7 @@ export default function LeaveReviewPage() {
         .why-card-title {
           font-size: 22px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin: 0 0 12px 0;
         }
 
@@ -604,7 +604,7 @@ export default function LeaveReviewPage() {
               <div className="why-card">
                 <svg className="why-icon" viewBox="0 0 72 72" fill="none">
                   <circle cx="36" cy="36" r="36" fill="#E0E7FF"/>
-                  <path d="M36 18C26 18 18 26 18 36C18 46 26 54 36 54C46 54 54 46 54 36C54 26 46 18 36 18ZM36 30C39.3 30 42 32.7 42 36C42 39.3 39.3 42 36 42C32.7 42 30 39.3 30 36C30 32.7 32.7 30 36 30Z" fill="#5E42C0"/>
+                  <path d="M36 18C26 18 18 26 18 36C18 46 26 54 36 54C46 54 54 46 54 36C54 26 46 18 36 18ZM36 30C39.3 30 42 32.7 42 36C42 39.3 39.3 42 36 42C32.7 42 30 39.3 30 36C30 32.7 32.7 30 36 30Z" fill="#5A39A2"/>
                 </svg>
                 <h3 className="why-card-title">Help your peers</h3>
                 <p className="why-desc">

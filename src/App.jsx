@@ -9,6 +9,7 @@ import ServiceDetailPage from './pages/ServiceDetailPage';
 import PinnedItemsPage from './pages/PinnedItemsPage';
 import DealsPage from './pages/DealsPage';
 import ComparePage from './pages/ComparePage';
+import NotFoundPage from './pages/NotFoundPage';
 import FloatingChat from './components/common/FloatingChat';
 import WelcomeModal from './components/common/WelcomeModal';
 import { AuthModalProvider } from './context/AuthModalContext';
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/assistant/landing" element={<PinnedItemsPage />} />
           <Route path="/deals" element={<DealsPage />} />
           <Route path="/compare" element={<ComparePage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         {/* Global floating chat — visible on every page */}
         <FloatingChat />

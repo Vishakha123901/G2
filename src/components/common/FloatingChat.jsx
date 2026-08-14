@@ -78,10 +78,10 @@ export default function FloatingChat() {
         .g2-chat-fab    { transition: all 0.22s cubic-bezier(0.34,1.56,0.64,1); }
         .g2-chat-fab:hover { transform: scale(1.1) rotate(8deg); box-shadow: 0 10px 32px rgba(255,79,0,0.55),0 3px 10px rgba(0,0,0,0.2) !important; }
         .g2-chat-fab:active { transform: scale(0.93); }
-        .g2-chat-suggestion:hover { background: #F3F0FF !important; border-color: #5E42C0 !important; color: #5E42C0 !important; }
-        .g2-chat-send:hover:not(:disabled) { background: #4E35A6 !important; }
+        .g2-chat-suggestion:hover { background: #F3F0FF !important; border-color: #5A39A2 !important; color: #5A39A2 !important; }
+        .g2-chat-send:hover:not(:disabled) { background: #493088 !important; }
         .g2-chat-icon-btn:hover { color: #1C1D21 !important; }
-        .g2-chat-input:focus { outline: none; border-color: #5E42C0 !important; box-shadow: 0 0 0 3px rgba(94,66,192,0.12); }
+        .g2-chat-input:focus { outline: none; border-color: #5A39A2 !important; box-shadow: 0 0 0 3px rgba(94,66,192,0.12); }
         
         /* Responsive chat panel */
         @media (max-width: 768px) {
@@ -160,7 +160,7 @@ export default function FloatingChat() {
                   maxWidth: '78%',
                   padding: '10px 14px',
                   borderRadius: '8px',
-                  background: msg.from === 'user' ? '#5E42C0' : '#F3F4F6',
+                  background: msg.from === 'user' ? '#5A39A2' : '#F3F4F6',
                   color: msg.from === 'user' ? '#fff' : '#1C1D21',
                   fontSize: 14, lineHeight: 1.5,
                   whiteSpace: 'pre-line',

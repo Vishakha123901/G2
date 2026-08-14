@@ -3,9 +3,9 @@ import { useParams, Link, useSearchParams, useNavigate } from 'react-router-dom'
 import { servicesData, categoryTabs } from '../data/categoriesData';
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
-import { 
-  Star, CheckCircle, ExternalLink, ThumbsUp, MessageSquare, TrendingUp, 
-  Award, Users, Globe, HelpCircle, FileText, Gift, Sparkles, Shield, 
+import {
+  Star, CheckCircle, ExternalLink, ThumbsUp, MessageSquare, TrendingUp,
+  Award, Users, Globe, HelpCircle, FileText, Gift, Sparkles, Shield,
   BookOpen, Check, ArrowRight, Zap, ChevronDown, ChevronUp, Download, Phone, Calendar, Clock
 } from 'lucide-react';
 
@@ -45,9 +45,9 @@ function resolveServiceData(slug = '') {
       { name: 'Jonathan Reed', role: 'Managing Partner • Venture Studio', date: '1 month ago', rating: 4.8, title: 'Invaluable transaction counsel during our M&A cycle', pro: 'Identified hidden liabilities early in the review process.', con: 'Fast-moving timeline required active executive availability.' },
     ];
     providers = [
-      { id: `${slug}-latham`, name: 'Latham & Watkins LLP', vendor: 'Latham & Watkins', rating: 4.9, reviewCount: 430, logo: '', serviceType: `${title} & Corporate Advisory`, segment: 'Enterprise', description: `Top tier legal and corporate counsel specializing in ${title}.`, userSay: `Unmatched precision and fast deal execution in ${title}.`, pros: [{ label: 'Legal Precision', count: 390, color: '#5E42C0' }, { label: 'Deal Speed', count: 340, color: '#E8E3FF' }], badges: ['Leader', 'Legal Tier 1'] },
-      { id: `${slug}-kirkland`, name: 'Kirkland & Ellis LLP', vendor: 'Kirkland & Ellis', rating: 4.8, reviewCount: 510, logo: '', serviceType: `${title} & Transactions`, segment: 'Enterprise', description: `Premier global counsel for high-stakes corporate transactions in ${title}.`, userSay: `Relentless execution speed and comprehensive protection for ${title}.`, pros: [{ label: 'Transaction Speed', count: 470, color: '#5E42C0' }, { label: 'Risk Protection', count: 430, color: '#E8E3FF' }], badges: ['Leader', 'Transaction #1'] },
-      { id: `${slug}-baker`, name: 'Baker McKenzie', vendor: 'Baker McKenzie', rating: 4.7, reviewCount: 620, logo: '', serviceType: `Global ${title} Advisory`, segment: 'Enterprise', description: `Global law firm solving complex regulatory and corporate matters in ${title}.`, userSay: `Invaluable multi-jurisdictional compliance and governance in ${title}.`, pros: [{ label: 'Global Compliance', count: 540, color: '#5E42C0' }, { label: 'Tax & Law', count: 490, color: '#E8E3FF' }], badges: ['Global Leader', 'Multi-Jurisdiction'] },
+      { id: `${slug}-latham`, name: 'Latham & Watkins LLP', vendor: 'Latham & Watkins', rating: 4.9, reviewCount: 430, logo: '', serviceType: `${title} & Corporate Advisory`, segment: 'Enterprise', description: `Top tier legal and corporate counsel specializing in ${title}.`, userSay: `Unmatched precision and fast deal execution in ${title}.`, pros: [{ label: 'Legal Precision', count: 390, color: '#5A39A2' }, { label: 'Deal Speed', count: 340, color: '#E8E3FF' }], badges: ['Leader', 'Legal Tier 1'] },
+      { id: `${slug}-kirkland`, name: 'Kirkland & Ellis LLP', vendor: 'Kirkland & Ellis', rating: 4.8, reviewCount: 510, logo: '', serviceType: `${title} & Transactions`, segment: 'Enterprise', description: `Premier global counsel for high-stakes corporate transactions in ${title}.`, userSay: `Relentless execution speed and comprehensive protection for ${title}.`, pros: [{ label: 'Transaction Speed', count: 470, color: '#5A39A2' }, { label: 'Risk Protection', count: 430, color: '#E8E3FF' }], badges: ['Leader', 'Transaction #1'] },
+      { id: `${slug}-baker`, name: 'Baker McKenzie', vendor: 'Baker McKenzie', rating: 4.7, reviewCount: 620, logo: '', serviceType: `Global ${title} Advisory`, segment: 'Enterprise', description: `Global law firm solving complex regulatory and corporate matters in ${title}.`, userSay: `Invaluable multi-jurisdictional compliance and governance in ${title}.`, pros: [{ label: 'Global Compliance', count: 540, color: '#5A39A2' }, { label: 'Tax & Law', count: 490, color: '#E8E3FF' }], badges: ['Global Leader', 'Multi-Jurisdiction'] },
     ];
   } else if (slug.includes('finance') || slug.includes('accounting') || slug.includes('tax') || slug.includes('sales')) {
     category = 'Business Services';
@@ -65,9 +65,9 @@ function resolveServiceData(slug = '') {
       { name: 'Kavita Patel', role: 'Director of Finance • Healthcare', date: '1 month ago', rating: 4.8, title: 'Flawless financial auditing and corporate tax planning', pro: 'Saved substantial capital through optimized state and local tax structuring.', con: 'Tight deadlines during year-end close.' },
     ];
     providers = [
-      { id: `${slug}-pwc`, name: 'PwC Advisory Services', vendor: 'PwC', rating: 4.8, reviewCount: 1450, logo: '', serviceType: `${title} & Advisory`, segment: 'Enterprise', description: `Industry-focused assurance, tax, and strategy services in ${title}.`, userSay: `PwC combines deep regulatory expertise with actionable financial rigor in ${title}.`, pros: [{ label: 'Strategic Rigor', count: 1120, color: '#5E42C0' }, { label: 'Execution', count: 940, color: '#E8E3FF' }], badges: ['Leader', 'Top Advisory'] },
-      { id: `${slug}-kpmg`, name: 'KPMG Business Advisory', vendor: 'KPMG', rating: 4.7, reviewCount: 1150, logo: '', serviceType: `${title} Strategy`, segment: 'Enterprise', description: `Professional services firm providing audit, advisory and optimization in ${title}.`, userSay: `Structured governance and measurable efficiency gains in ${title}.`, pros: [{ label: 'Governance', count: 880, color: '#5E42C0' }, { label: 'Operational Impact', count: 790, color: '#E8E3FF' }], badges: ['Leader', 'Business Authority'] },
-      { id: `${slug}-bain`, name: 'Bain & Company', vendor: 'Bain', rating: 4.9, reviewCount: 890, logo: '', serviceType: `${title} & Growth Strategy`, segment: 'Enterprise', description: `Results-driven strategy and execution consultancy for ${title}.`, userSay: `Relentless practical ROI and clear leadership roadmaps for ${title}.`, pros: [{ label: 'Practical ROI', count: 740, color: '#5E42C0' }, { label: 'Execution', count: 680, color: '#E8E3FF' }], badges: ['Leader', 'Satisfaction #1'] },
+      { id: `${slug}-pwc`, name: 'PwC Advisory Services', vendor: 'PwC', rating: 4.8, reviewCount: 1450, logo: '', serviceType: `${title} & Advisory`, segment: 'Enterprise', description: `Industry-focused assurance, tax, and strategy services in ${title}.`, userSay: `PwC combines deep regulatory expertise with actionable financial rigor in ${title}.`, pros: [{ label: 'Strategic Rigor', count: 1120, color: '#5A39A2' }, { label: 'Execution', count: 940, color: '#E8E3FF' }], badges: ['Leader', 'Top Advisory'] },
+      { id: `${slug}-kpmg`, name: 'KPMG Business Advisory', vendor: 'KPMG', rating: 4.7, reviewCount: 1150, logo: '', serviceType: `${title} Strategy`, segment: 'Enterprise', description: `Professional services firm providing audit, advisory and optimization in ${title}.`, userSay: `Structured governance and measurable efficiency gains in ${title}.`, pros: [{ label: 'Governance', count: 880, color: '#5A39A2' }, { label: 'Operational Impact', count: 790, color: '#E8E3FF' }], badges: ['Leader', 'Business Authority'] },
+      { id: `${slug}-bain`, name: 'Bain & Company', vendor: 'Bain', rating: 4.9, reviewCount: 890, logo: '', serviceType: `${title} & Growth Strategy`, segment: 'Enterprise', description: `Results-driven strategy and execution consultancy for ${title}.`, userSay: `Relentless practical ROI and clear leadership roadmaps for ${title}.`, pros: [{ label: 'Practical ROI', count: 740, color: '#5A39A2' }, { label: 'Execution', count: 680, color: '#E8E3FF' }], badges: ['Leader', 'Satisfaction #1'] },
     ];
   } else if (slug.includes('outsourcing') || slug.includes('itsm') || slug.includes('b2b') || slug.includes('other')) {
     category = 'Other Services';
@@ -85,9 +85,9 @@ function resolveServiceData(slug = '') {
       { name: 'Michael O\'Brien', role: 'Director of Procurement • Manufacturing', date: '1 month ago', rating: 4.9, title: `Consolidated 15 disconnected vendors into one streamlined service for ${title}`, pro: 'Saved over $1.4M in licensing and maintenance overhead in year one.', con: 'Contract negotiation required detailed custom SLA riders.' },
     ];
     providers = [
-      { id: `${slug}-infosys`, name: 'Infosys Global Services', vendor: 'Infosys', rating: 4.8, reviewCount: 1890, logo: '', serviceType: `Global ${title}`, segment: 'Enterprise', description: `Global digital services and managed solutions specializing in ${title}.`, userSay: `Immense global scale, deep domain knowledge, and dependable execution in ${title}.`, pros: [{ label: 'Global Scale', count: 1450, color: '#5E42C0' }, { label: 'Reliability', count: 1280, color: '#E8E3FF' }], badges: ['Leader', 'Scale #1'] },
-      { id: `${slug}-tcs`, name: 'Tata Consultancy Services (TCS)', vendor: 'TCS', rating: 4.7, reviewCount: 2140, logo: '', serviceType: `Enterprise ${title}`, segment: 'Enterprise', description: `Enterprise technology consulting and managed operations in ${title}.`, userSay: `Rock-solid uptime, structured ITIL governance, and large-scale delivery for ${title}.`, pros: [{ label: 'Governance', count: 1680, color: '#5E42C0' }, { label: 'Stability', count: 1490, color: '#E8E3FF' }], badges: ['Leader', 'Reliability'] },
-      { id: `${slug}-hcl`, name: 'HCLTech Managed Solutions', vendor: 'HCLTech', rating: 4.8, reviewCount: 1210, logo: '', serviceType: `${title} Infrastructure`, segment: 'Enterprise', description: `Supercharged digital and infrastructure capabilities for ${title}.`, userSay: `Flexible contract models and highly responsive technical pods in ${title}.`, pros: [{ label: 'Flexibility', count: 940, color: '#5E42C0' }, { label: 'Technical Depth', count: 890, color: '#E8E3FF' }], badges: ['Leader', 'Flexible Delivery'] },
+      { id: `${slug}-infosys`, name: 'Infosys Global Services', vendor: 'Infosys', rating: 4.8, reviewCount: 1890, logo: '', serviceType: `Global ${title}`, segment: 'Enterprise', description: `Global digital services and managed solutions specializing in ${title}.`, userSay: `Immense global scale, deep domain knowledge, and dependable execution in ${title}.`, pros: [{ label: 'Global Scale', count: 1450, color: '#5A39A2' }, { label: 'Reliability', count: 1280, color: '#E8E3FF' }], badges: ['Leader', 'Scale #1'] },
+      { id: `${slug}-tcs`, name: 'Tata Consultancy Services (TCS)', vendor: 'TCS', rating: 4.7, reviewCount: 2140, logo: '', serviceType: `Enterprise ${title}`, segment: 'Enterprise', description: `Enterprise technology consulting and managed operations in ${title}.`, userSay: `Rock-solid uptime, structured ITIL governance, and large-scale delivery for ${title}.`, pros: [{ label: 'Governance', count: 1680, color: '#5A39A2' }, { label: 'Stability', count: 1490, color: '#E8E3FF' }], badges: ['Leader', 'Reliability'] },
+      { id: `${slug}-hcl`, name: 'HCLTech Managed Solutions', vendor: 'HCLTech', rating: 4.8, reviewCount: 1210, logo: '', serviceType: `${title} Infrastructure`, segment: 'Enterprise', description: `Supercharged digital and infrastructure capabilities for ${title}.`, userSay: `Flexible contract models and highly responsive technical pods in ${title}.`, pros: [{ label: 'Flexibility', count: 940, color: '#5A39A2' }, { label: 'Technical Depth', count: 890, color: '#E8E3FF' }], badges: ['Leader', 'Flexible Delivery'] },
     ];
   } else {
     // Professional Services default
@@ -106,10 +106,10 @@ function resolveServiceData(slug = '') {
       { name: 'Brian O\'Connor', role: 'Head of Digital Products • Retail Giant', date: '1 month ago', rating: 4.8, title: `Transformed our digital systems and boosted throughput by 300%`, pro: 'Replaced a slow legacy stack with modern microservices. Page load times dropped below 0.5s.', con: 'Budget was substantial, but Black Friday traffic handled $80M without a glitch.' },
     ];
     providers = [
-      { id: `${slug}-deloitte`, name: 'Deloitte Digital & Tech Consulting', vendor: 'Deloitte', rating: 4.9, reviewCount: 1980, logo: '', serviceType: `${title} & Digital Transformation`, segment: 'Enterprise', description: `Transforming enterprise systems, cloud architecture, and operations for ${title}.`, userSay: `Deloitte delivers comprehensive engineering muscle and strategic executive depth in ${title}.`, pros: [{ label: 'Architecture Scale', count: 1540, color: '#5E42C0' }, { label: 'Technical Depth', count: 1390, color: '#E8E3FF' }], badges: ['Leader', 'Enterprise #1'] },
-      { id: `${slug}-accenture`, name: 'Accenture Technology Services', vendor: 'Accenture', rating: 4.8, reviewCount: 2450, logo: '', serviceType: `Enterprise ${title}`, segment: 'Enterprise', description: `Powering businesses with innovative solutions across cloud and software in ${title}.`, userSay: `Accenture handles the largest and most complex enterprise transformations in ${title}.`, pros: [{ label: 'Scale Execution', count: 1890, color: '#5E42C0' }, { label: 'Project Governance', count: 1670, color: '#E8E3FF' }], badges: ['Leader', 'Global Scale'] },
-      { id: `${slug}-slalom`, name: 'Slalom Consulting', vendor: 'Slalom', rating: 4.9, reviewCount: 870, logo: '', serviceType: `Agile ${title} & Engineering`, segment: 'Mid-Market', description: `Modern strategy, software engineering, and agile transformation for ${title}.`, userSay: `Slalom is the most collaborative and agile technical partner we have ever hired for ${title}.`, pros: [{ label: 'Agile Velocity', count: 760, color: '#5E42C0' }, { label: 'Modern Stack', count: 710, color: '#E8E3FF' }], badges: ['Top CSAT', 'Agile Leader'] },
-      { id: `${slug}-thoughtworks`, name: 'Thoughtworks', vendor: 'Thoughtworks', rating: 4.8, reviewCount: 760, logo: '', serviceType: `Custom Engineering in ${title}`, segment: 'Enterprise', description: `Leading global technology consultancy integrating strategy and engineering for ${title}.`, userSay: `Immaculate code quality and evolutionary architecture standards in ${title}.`, pros: [{ label: 'Code Quality', count: 680, color: '#5E42C0' }, { label: 'Architecture', count: 620, color: '#E8E3FF' }], badges: ['Engineering Excellence', 'Pioneer'] },
+      { id: `${slug}-deloitte`, name: 'Deloitte Digital & Tech Consulting', vendor: 'Deloitte', rating: 4.9, reviewCount: 1980, logo: '', serviceType: `${title} & Digital Transformation`, segment: 'Enterprise', description: `Transforming enterprise systems, cloud architecture, and operations for ${title}.`, userSay: `Deloitte delivers comprehensive engineering muscle and strategic executive depth in ${title}.`, pros: [{ label: 'Architecture Scale', count: 1540, color: '#5A39A2' }, { label: 'Technical Depth', count: 1390, color: '#E8E3FF' }], badges: ['Leader', 'Enterprise #1'] },
+      { id: `${slug}-accenture`, name: 'Accenture Technology Services', vendor: 'Accenture', rating: 4.8, reviewCount: 2450, logo: '', serviceType: `Enterprise ${title}`, segment: 'Enterprise', description: `Powering businesses with innovative solutions across cloud and software in ${title}.`, userSay: `Accenture handles the largest and most complex enterprise transformations in ${title}.`, pros: [{ label: 'Scale Execution', count: 1890, color: '#5A39A2' }, { label: 'Project Governance', count: 1670, color: '#E8E3FF' }], badges: ['Leader', 'Global Scale'] },
+      { id: `${slug}-slalom`, name: 'Slalom Consulting', vendor: 'Slalom', rating: 4.9, reviewCount: 870, logo: '', serviceType: `Agile ${title} & Engineering`, segment: 'Mid-Market', description: `Modern strategy, software engineering, and agile transformation for ${title}.`, userSay: `Slalom is the most collaborative and agile technical partner we have ever hired for ${title}.`, pros: [{ label: 'Agile Velocity', count: 760, color: '#5A39A2' }, { label: 'Modern Stack', count: 710, color: '#E8E3FF' }], badges: ['Top CSAT', 'Agile Leader'] },
+      { id: `${slug}-thoughtworks`, name: 'Thoughtworks', vendor: 'Thoughtworks', rating: 4.8, reviewCount: 760, logo: '', serviceType: `Custom Engineering in ${title}`, segment: 'Enterprise', description: `Leading global technology consultancy integrating strategy and engineering for ${title}.`, userSay: `Immaculate code quality and evolutionary architecture standards in ${title}.`, pros: [{ label: 'Code Quality', count: 680, color: '#5A39A2' }, { label: 'Architecture', count: 620, color: '#E8E3FF' }], badges: ['Engineering Excellence', 'Pioneer'] },
     ];
   }
 
@@ -284,7 +284,7 @@ export default function ServiceDetailPage() {
                       padding: '14px 20px',
                       fontSize: 14,
                       fontWeight: isActive ? 700 : 500,
-                      color: isActive ? '#1C1D21' : '#6B7280',
+                      color: isActive ? '#201F23' : '#6B7280',
                       background: 'none',
                       border: 'none',
                       borderBottom: isActive ? '2px solid #0066CC' : '2px solid transparent',
@@ -309,17 +309,17 @@ export default function ServiceDetailPage() {
         <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: '#6B7280' }}>
           <Link to="/" style={{ color: '#2563EB', textDecoration: 'none' }}>Home</Link>
           <span>›</span>
-          <span style={{ color: '#374151', fontWeight: 500 }}>Services</span>
+          <span style={{ color: '#201F23', fontWeight: 500 }}>Services</span>
           <span>›</span>
-          <span style={{ color: '#374151', fontWeight: 500 }}>{serviceCategory}</span>
+          <span style={{ color: '#201F23', fontWeight: 500 }}>{serviceCategory}</span>
           <span>›</span>
-          <span style={{ color: '#374151' }}>{serviceName}</span>
+          <span style={{ color: '#201F23' }}>{serviceName}</span>
         </div>
       </div>
 
       {/* ── PAGE TITLE ── */}
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '8px 24px 24px' }}>
-        <h1 style={{ fontSize: 39, fontWeight: 800, color: '#1C1D21', margin: 0 }}>
+        <h1 className="page-title-responsive">
           Best {serviceName}
         </h1>
       </div>
@@ -333,177 +333,177 @@ export default function ServiceDetailPage() {
 
       {/* ── MAIN LAYOUT: sidebar + listing (for Overview and Highest Rated tabs) ── */}
       {(activeTab === 'overview' || activeTab === 'highest_rated') && (
-      <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 24px 60px', display: 'flex', gap: 24, alignItems: 'flex-start' }}>
+        <div style={{ maxWidth: 1280, margin: '0 auto', padding: '0 24px 60px', display: 'flex', gap: 24, alignItems: 'flex-start' }}>
 
-        {/* ── LEFT SIDEBAR (Desktop Only) ── */}
-        <aside
-          className="hidden lg:block"
-          style={{
-            width: 290,
-            flexShrink: 0,
-            position: 'sticky',
-            top: 20,
-            alignSelf: 'flex-start',
-            maxHeight: 'calc(100vh - 36px)',
-            overflowY: 'auto',
-            scrollbarWidth: 'none',
-            zIndex: 20,
-          }}
-        >
-          <SidebarFilters
-            activeTab={activeTab}
-            segment={segment}
-            setSegment={setSegment}
-            ratingFive={ratingFive}
-            setRatingFive={setRatingFive}
-            ratingFour={ratingFour}
-            setRatingFour={setRatingFour}
-            dealsFilter={dealsFilter}
-            setDealsFilter={setDealsFilter}
-            pricingFilter={pricingFilter}
-            setPricingFilter={setPricingFilter}
-            language={language}
-            setLanguage={setLanguage}
-            solutionType={solutionType}
-            setSolutionType={setSolutionType}
-            clearAll={clearAll}
-          />
-        </aside>
+          {/* ── LEFT SIDEBAR (Desktop Only) ── */}
+          <aside
+            className="hidden lg:block"
+            style={{
+              width: 290,
+              flexShrink: 0,
+              position: 'sticky',
+              top: 20,
+              alignSelf: 'flex-start',
+              maxHeight: 'calc(100vh - 36px)',
+              overflowY: 'auto',
+              scrollbarWidth: 'none',
+              zIndex: 20,
+            }}
+          >
+            <SidebarFilters
+              activeTab={activeTab}
+              segment={segment}
+              setSegment={setSegment}
+              ratingFive={ratingFive}
+              setRatingFive={setRatingFive}
+              ratingFour={ratingFour}
+              setRatingFour={setRatingFour}
+              dealsFilter={dealsFilter}
+              setDealsFilter={setDealsFilter}
+              pricingFilter={pricingFilter}
+              setPricingFilter={setPricingFilter}
+              language={language}
+              setLanguage={setLanguage}
+              solutionType={solutionType}
+              setSolutionType={setSolutionType}
+              clearAll={clearAll}
+            />
+          </aside>
 
-        {/* ── RIGHT: listing ── */}
-        <div style={{ flex: 1, minWidth: 0 }}>
+          {/* ── RIGHT: listing ── */}
+          <div style={{ flex: 1, minWidth: 0 }}>
 
-          {/* Listing header */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16, flexWrap: 'wrap', gap: 12 }}>
-            <span style={{ fontSize: 14, color: '#374151' }}>
-              <strong>{listingCount} Listings</strong> in {serviceName} Available
-            </span>
+            {/* Listing header */}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16, flexWrap: 'wrap', gap: 12 }}>
+              <span style={{ fontSize: 14, color: '#201F23' }}>
+                <strong>{listingCount} Listings</strong> in {serviceName} Available
+              </span>
 
-            {/* Sort By Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setSortOpen(prev => !prev)}
-                style={{
-                  display: 'flex', alignItems: 'center', gap: 6,
-                  fontSize: 13, fontWeight: 600, color: '#1C1D21', background: '#fff',
-                  border: '1px solid #D1D5DB', borderRadius: 8,
-                  padding: '8px 14px', cursor: 'pointer',
-                  transition: 'all 0.15s', whiteSpace: 'nowrap',
-                }}
-              >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M7 15l5 5 5-5M7 9l5-5 5 5" />
-                </svg>
-                Sort By: {
-                  sortBy === 'g2_score' ? 'G2 Score' :
-                    sortBy === 'popularity' ? 'Popularity' : 'Satisfaction'
-                }
-              </button>
+              {/* Sort By Dropdown */}
+              <div className="relative">
+                <button
+                  onClick={() => setSortOpen(prev => !prev)}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: 6,
+                    fontSize: 13, fontWeight: 600, color: '#201F23', background: '#fff',
+                    border: '1px solid #D1D5DB', borderRadius: 8,
+                    padding: '8px 14px', cursor: 'pointer',
+                    transition: 'all 0.15s', whiteSpace: 'nowrap',
+                  }}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M7 15l5 5 5-5M7 9l5-5 5 5" />
+                  </svg>
+                  Sort By: {
+                    sortBy === 'g2_score' ? 'G2 Score' :
+                      sortBy === 'popularity' ? 'Popularity' : 'Satisfaction'
+                  }
+                </button>
 
-              {/* Dropdown Menu */}
-              {sortOpen && (
-                <>
-                  <div
-                    onClick={() => setSortOpen(false)}
-                    style={{ position: 'fixed', inset: 0, zIndex: 90 }}
-                  />
-                  <div style={{
-                    position: 'absolute', top: '100%', right: 0, marginTop: 6,
-                    zIndex: 100, background: '#ffffff',
-                    border: '1px solid #E5E7EB', borderRadius: 12,
-                    padding: 6, width: 190,
-                    boxShadow: '0 4px 16px rgba(0,0,0,0.12)',
-                  }}>
-                    {/* Option 1: G2 Score */}
+                {/* Dropdown Menu */}
+                {sortOpen && (
+                  <>
                     <div
-                      onClick={() => { setSortBy('g2_score'); setSortOpen(false); }}
-                      style={{
-                        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                        padding: '8px 12px', borderRadius: 8, cursor: 'pointer',
-                        fontSize: 13, fontWeight: sortBy === 'g2_score' ? 600 : 400,
-                        background: sortBy === 'g2_score' ? '#F0EEFF' : 'transparent',
-                        color: sortBy === 'g2_score' ? '#1C1D21' : '#374151',
-                        marginBottom: 2,
-                        transition: 'background 0.15s',
-                      }}
-                      onMouseEnter={e => { if (sortBy !== 'g2_score') e.currentTarget.style.background = '#F9FAFB'; }}
-                      onMouseLeave={e => { if (sortBy !== 'g2_score') e.currentTarget.style.background = 'transparent'; }}
-                    >
-                      <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                        <span>G2 Score</span>
-                        <span style={{
-                          display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                          width: 15, height: 15, borderRadius: '50%',
-                          background: '#1C1D21', color: '#fff', fontSize: 10, fontWeight: 700
-                        }}>?</span>
+                      onClick={() => setSortOpen(false)}
+                      style={{ position: 'fixed', inset: 0, zIndex: 90 }}
+                    />
+                    <div style={{
+                      position: 'absolute', top: '100%', right: 0, marginTop: 6,
+                      zIndex: 100, background: '#ffffff',
+                      border: '1px solid #E5E7EB', borderRadius: 12,
+                      padding: 6, width: 190,
+                      boxShadow: '0 4px 16px rgba(0,0,0,0.12)',
+                    }}>
+                      {/* Option 1: G2 Score */}
+                      <div
+                        onClick={() => { setSortBy('g2_score'); setSortOpen(false); }}
+                        style={{
+                          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                          padding: '8px 12px', borderRadius: 8, cursor: 'pointer',
+                          fontSize: 13, fontWeight: sortBy === 'g2_score' ? 600 : 400,
+                          background: sortBy === 'g2_score' ? '#F0EEFF' : 'transparent',
+                          color: sortBy === 'g2_score' ? '#201F23' : '#201F23',
+                          marginBottom: 2,
+                          transition: 'background 0.15s',
+                        }}
+                        onMouseEnter={e => { if (sortBy !== 'g2_score') e.currentTarget.style.background = '#F9FAFB'; }}
+                        onMouseLeave={e => { if (sortBy !== 'g2_score') e.currentTarget.style.background = 'transparent'; }}
+                      >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                          <span>G2 Score</span>
+                          <span style={{
+                            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                            width: 15, height: 15, borderRadius: '50%',
+                            background: '#201F23', color: '#fff', fontSize: 10, fontWeight: 700
+                          }}>?</span>
+                        </div>
+                        {sortBy === 'g2_score' && <span style={{ fontSize: 13, fontWeight: 700 }}>✓</span>}
                       </div>
-                      {sortBy === 'g2_score' && <span style={{ fontSize: 13, fontWeight: 700 }}>✓</span>}
-                    </div>
 
-                    {/* Option 2: Popularity */}
-                    <div
-                      onClick={() => { setSortBy('popularity'); setSortOpen(false); }}
-                      style={{
-                        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                        padding: '8px 12px', borderRadius: 8, cursor: 'pointer',
-                        fontSize: 13, fontWeight: sortBy === 'popularity' ? 600 : 400,
-                        background: sortBy === 'popularity' ? '#F0EEFF' : 'transparent',
-                        color: sortBy === 'popularity' ? '#1C1D21' : '#374151',
-                        marginBottom: 2,
-                        transition: 'background 0.15s',
-                      }}
-                      onMouseEnter={e => { if (sortBy !== 'popularity') e.currentTarget.style.background = '#F9FAFB'; }}
-                      onMouseLeave={e => { if (sortBy !== 'popularity') e.currentTarget.style.background = 'transparent'; }}
-                    >
-                      <span>Popularity</span>
-                      {sortBy === 'popularity' && <span style={{ fontSize: 13, fontWeight: 700 }}>✓</span>}
-                    </div>
+                      {/* Option 2: Popularity */}
+                      <div
+                        onClick={() => { setSortBy('popularity'); setSortOpen(false); }}
+                        style={{
+                          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                          padding: '8px 12px', borderRadius: 8, cursor: 'pointer',
+                          fontSize: 13, fontWeight: sortBy === 'popularity' ? 600 : 400,
+                          background: sortBy === 'popularity' ? '#F0EEFF' : 'transparent',
+                          color: sortBy === 'popularity' ? '#201F23' : '#201F23',
+                          marginBottom: 2,
+                          transition: 'background 0.15s',
+                        }}
+                        onMouseEnter={e => { if (sortBy !== 'popularity') e.currentTarget.style.background = '#F9FAFB'; }}
+                        onMouseLeave={e => { if (sortBy !== 'popularity') e.currentTarget.style.background = 'transparent'; }}
+                      >
+                        <span>Popularity</span>
+                        {sortBy === 'popularity' && <span style={{ fontSize: 13, fontWeight: 700 }}>✓</span>}
+                      </div>
 
-                    {/* Option 3: Satisfaction */}
-                    <div
-                      onClick={() => { setSortBy('satisfaction'); setSortOpen(false); }}
-                      style={{
-                        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                        padding: '8px 12px', borderRadius: 8, cursor: 'pointer',
-                        fontSize: 13, fontWeight: sortBy === 'satisfaction' ? 600 : 400,
-                        background: sortBy === 'satisfaction' ? '#F0EEFF' : 'transparent',
-                        color: sortBy === 'satisfaction' ? '#1C1D21' : '#374151',
-                        transition: 'background 0.15s',
-                      }}
-                      onMouseEnter={e => { if (sortBy !== 'satisfaction') e.currentTarget.style.background = '#F9FAFB'; }}
-                      onMouseLeave={e => { if (sortBy !== 'satisfaction') e.currentTarget.style.background = 'transparent'; }}
-                    >
-                      <span>Satisfaction</span>
-                      {sortBy === 'satisfaction' && <span style={{ fontSize: 13, fontWeight: 700 }}>✓</span>}
+                      {/* Option 3: Satisfaction */}
+                      <div
+                        onClick={() => { setSortBy('satisfaction'); setSortOpen(false); }}
+                        style={{
+                          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                          padding: '8px 12px', borderRadius: 8, cursor: 'pointer',
+                          fontSize: 13, fontWeight: sortBy === 'satisfaction' ? 600 : 400,
+                          background: sortBy === 'satisfaction' ? '#F0EEFF' : 'transparent',
+                          color: sortBy === 'satisfaction' ? '#201F23' : '#201F23',
+                          transition: 'background 0.15s',
+                        }}
+                        onMouseEnter={e => { if (sortBy !== 'satisfaction') e.currentTarget.style.background = '#F9FAFB'; }}
+                        onMouseLeave={e => { if (sortBy !== 'satisfaction') e.currentTarget.style.background = 'transparent'; }}
+                      >
+                        <span>Satisfaction</span>
+                        {sortBy === 'satisfaction' && <span style={{ fontSize: 13, fontWeight: 700 }}>✓</span>}
+                      </div>
                     </div>
-                  </div>
-                </>
-              )}
+                  </>
+                )}
+              </div>
             </div>
+
+            {/* Product cards */}
+            {filtered.length === 0 ? (
+              <div style={{ padding: '40px 0', textAlign: 'center', color: '#9CA3AF', fontSize: 14 }}>
+                No service providers match your filters.
+              </div>
+            ) : (
+              filtered.map((provider, idx) => (
+                <ProductCard
+                  key={provider.id || idx}
+                  prod={provider}
+                  idx={idx}
+                  activeTab={activeTab}
+                  renderStars={renderStars}
+                  inCompare={compareList.includes(provider.id)}
+                  onToggleCompare={() => toggleCompare(provider.id)}
+                  isPinned={pinnedList.includes(provider.id)}
+                  onTogglePin={() => togglePin(provider.id)}
+                />
+              ))
+            )}
           </div>
-
-          {/* Product cards */}
-          {filtered.length === 0 ? (
-            <div style={{ padding: '40px 0', textAlign: 'center', color: '#9CA3AF', fontSize: 14 }}>
-              No service providers match your filters.
-            </div>
-          ) : (
-            filtered.map((provider, idx) => (
-              <ProductCard
-                key={provider.id || idx}
-                prod={provider}
-                idx={idx}
-                activeTab={activeTab}
-                renderStars={renderStars}
-                inCompare={compareList.includes(provider.id)}
-                onToggleCompare={() => toggleCompare(provider.id)}
-                isPinned={pinnedList.includes(provider.id)}
-                onTogglePin={() => togglePin(provider.id)}
-              />
-            ))
-          )}
         </div>
-      </div>
       )}
 
       {/* ── MOBILE FILTER MODAL DRAWER ── */}
@@ -530,7 +530,7 @@ export default function ServiceDetailPage() {
               display: 'flex', alignItems: 'center', justifyContent: 'space-between',
               background: '#fff',
             }}>
-              <h3 style={{ fontSize: 18, fontWeight: 700, color: '#1C1D21', margin: 0 }}>Filters</h3>
+              <h3 style={{ fontSize: 18, fontWeight: 700, color: '#201F23', margin: 0 }}>Filters</h3>
               <button
                 onClick={() => setMobileFilterOpen(false)}
                 style={{
@@ -574,7 +574,7 @@ export default function ServiceDetailPage() {
                 style={{
                   flex: 1, padding: '11px 16px', borderRadius: 8,
                   border: '1px solid #D1D5DB', background: '#fff',
-                  color: '#374151', fontSize: 14, fontWeight: 600, cursor: 'pointer',
+                  color: '#201F23', fontSize: 14, fontWeight: 600, cursor: 'pointer',
                 }}
               >
                 Clear All
@@ -583,7 +583,7 @@ export default function ServiceDetailPage() {
                 onClick={() => setMobileFilterOpen(false)}
                 style={{
                   flex: 1, padding: '11px 16px', borderRadius: 8,
-                  border: 'none', background: '#5E42C0',
+                  border: 'none', background: '#5A39A2',
                   color: '#fff', fontSize: 14, fontWeight: 600, cursor: 'pointer',
                 }}
               >
@@ -630,7 +630,7 @@ export default function ServiceDetailPage() {
               return (
                 <div key={slot} style={{
                   width: 44, height: 44, flexShrink: 0,
-                  border: `1px solid ${prov ? '#5E42C0' : '#D1D5DB'}`,
+                  border: `1px solid ${prov ? '#5A39A2' : '#D1D5DB'}`,
                   borderRadius: 6,
                   background: '#fff',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -647,7 +647,7 @@ export default function ServiceDetailPage() {
                           position: 'absolute', top: -6, right: -6,
                           width: 16, height: 16,
                           borderRadius: '50%',
-                          background: '#1C1D21', border: 'none',
+                          background: '#201F23', border: 'none',
                           color: '#fff', fontSize: 9, fontWeight: 700,
                           cursor: 'pointer', lineHeight: 1,
                           display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -673,8 +673,8 @@ export default function ServiceDetailPage() {
               WebkitAppearance: 'none',
               MozAppearance: 'none',
               appearance: 'none',
-              backgroundColor: '#5E42C0',
-              background: '#5E42C0',
+              backgroundColor: '#5A39A2',
+              background: '#5A39A2',
               color: '#fff',
               border: 'none',
               borderRadius: 20,
@@ -687,8 +687,8 @@ export default function ServiceDetailPage() {
               outline: 'none',
               boxShadow: '0 2px 8px rgba(94,66,192,0.3)',
             }}
-            onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#4E35A6'; }}
-            onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#5E42C0'; }}
+            onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#493088'; }}
+            onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#5A39A2'; }}
           >
             Compare Now
           </button>
@@ -934,9 +934,8 @@ function TabContentSection({ tab, serviceName, providers, service }) {
       return (
         <Star
           key={i}
-          className={`w-[18px] h-[18px] ${
-            full ? 'fill-[#FF492C] text-[#FF492C]' : half ? 'fill-[#FF492C] text-[#FF492C] opacity-50' : 'fill-gray-200 text-gray-200'
-          }`}
+          className={`w-[18px] h-[18px] ${full ? 'fill-[#FF492C] text-[#FF492C]' : half ? 'fill-[#FF492C] text-[#FF492C] opacity-50' : 'fill-gray-200 text-gray-200'
+            }`}
         />
       );
     });
@@ -970,18 +969,18 @@ function TabContentSection({ tab, serviceName, providers, service }) {
               <div style={{ width: 40, height: 40, borderRadius: 10, background: '#FFF5F2', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FF492C' }}>
                 <Sparkles className="w-5 h-5" />
               </div>
-              <h2 style={{ fontSize: 22, fontWeight: 700, color: '#1C1D21', margin: 0 }}>
+              <h2 style={{ fontSize: 22, fontWeight: 700, color: '#201F23', margin: 0 }}>
                 What is {serviceName}?
               </h2>
             </div>
-            <p style={{ fontSize: 15, color: '#374151', lineHeight: 1.7, margin: 0 }}>
-              {serviceName} encompasses professional service providers that specialize in delivering 
-              high-quality solutions for businesses. These services help organizations streamline operations, 
+            <p style={{ fontSize: 15, color: '#201F23', lineHeight: 1.7, margin: 0 }}>
+              {serviceName} encompasses professional service providers that specialize in delivering
+              high-quality solutions for businesses. These services help organizations streamline operations,
               enhance productivity, and achieve their strategic goals through expert consultation and implementation.
             </p>
-            <p style={{ fontSize: 15, color: '#374151', lineHeight: 1.7, marginTop: 12, marginBottom: 0 }}>
-              Service providers in this category offer comprehensive support including strategy development, 
-              technical implementation, ongoing maintenance, and optimization to ensure maximum value delivery 
+            <p style={{ fontSize: 15, color: '#201F23', lineHeight: 1.7, marginTop: 12, marginBottom: 0 }}>
+              Service providers in this category offer comprehensive support including strategy development,
+              technical implementation, ongoing maintenance, and optimization to ensure maximum value delivery
               for their clients.
             </p>
           </div>
@@ -995,10 +994,10 @@ function TabContentSection({ tab, serviceName, providers, service }) {
             boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 20 }}>
-              <div style={{ width: 40, height: 40, borderRadius: 10, background: '#EDE9FE', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#5E42C0' }}>
+              <div style={{ width: 40, height: 40, borderRadius: 10, background: '#EDE9FE', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#5A39A2' }}>
                 <Award className="w-5 h-5" />
               </div>
-              <h2 style={{ fontSize: 22, fontWeight: 700, color: '#1C1D21', margin: 0 }}>
+              <h2 style={{ fontSize: 22, fontWeight: 700, color: '#201F23', margin: 0 }}>
                 Key Benefits of {serviceName}
               </h2>
             </div>
@@ -1027,7 +1026,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                     <benefit.icon className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 style={{ fontSize: 16, fontWeight: 600, color: '#1C1D21', margin: '0 0 4px' }}>
+                    <h3 style={{ fontSize: 16, fontWeight: 600, color: '#201F23', margin: '0 0 4px' }}>
                       {benefit.title}
                     </h3>
                     <p style={{ fontSize: 14, color: '#6B7280', margin: 0, lineHeight: 1.5 }}>
@@ -1050,7 +1049,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
             padding: 24,
             boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
           }}>
-            <h3 style={{ fontSize: 18, fontWeight: 700, color: '#1C1D21', marginBottom: 16 }}>
+            <h3 style={{ fontSize: 18, fontWeight: 700, color: '#201F23', marginBottom: 16 }}>
               Quick Stats
             </h3>
             <div className="space-y-4">
@@ -1061,12 +1060,12 @@ function TabContentSection({ tab, serviceName, providers, service }) {
               <div style={{ height: 1, background: '#E5E7EB' }} />
               <div>
                 <div style={{ fontSize: 13, color: '#6B7280', marginBottom: 4 }}>Verified Reviews</div>
-                <div style={{ fontSize: 24, fontWeight: 700, color: '#1C1D21' }}>{providers.length * 60}+</div>
+                <div style={{ fontSize: 24, fontWeight: 700, color: '#201F23' }}>{providers.length * 60}+</div>
               </div>
               <div style={{ height: 1, background: '#E5E7EB' }} />
               <div>
                 <div style={{ fontSize: 13, color: '#6B7280', marginBottom: 4 }}>Top Providers Available</div>
-                <div style={{ fontSize: 24, fontWeight: 700, color: '#1C1D21' }}>{providers.length}</div>
+                <div style={{ fontSize: 24, fontWeight: 700, color: '#201F23' }}>{providers.length}</div>
               </div>
             </div>
           </div>
@@ -1079,7 +1078,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
             padding: 24,
             boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
           }}>
-            <h3 style={{ fontSize: 18, fontWeight: 700, color: '#1C1D21', marginBottom: 16 }}>
+            <h3 style={{ fontSize: 18, fontWeight: 700, color: '#201F23', marginBottom: 16 }}>
               Rating Distribution
             </h3>
             <div className="space-y-3">
@@ -1091,7 +1090,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                 { stars: 1, percent: 0 },
               ].map((item) => (
                 <div key={item.stars} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                  <span style={{ fontSize: 13, color: '#374151', width: 50 }}>{item.stars} star</span>
+                  <span style={{ fontSize: 13, color: '#201F23', width: 50 }}>{item.stars} star</span>
                   <div style={{ flex: 1, height: 8, background: '#F3F4F6', borderRadius: 999, overflow: 'hidden' }}>
                     <div style={{
                       height: '100%',
@@ -1170,7 +1169,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
             <Zap className="w-6 h-6" />
           </div>
           <div>
-            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#1C1D21', margin: 0 }}>
+            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#201F23', margin: 0 }}>
               Key Features & Capabilities of {serviceName}
             </h2>
             <p style={{ fontSize: 14, color: '#6B7280', margin: '4px 0 0' }}>
@@ -1178,7 +1177,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
             </p>
           </div>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {featuresList.map((feature, idx) => (
             <div key={idx} style={{
@@ -1198,7 +1197,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
               }}>
                 {renderFeatureIcon(feature.icon)}
               </div>
-              <h3 style={{ fontSize: 18, fontWeight: 700, color: '#1C1D21', marginBottom: 8 }}>
+              <h3 style={{ fontSize: 18, fontWeight: 700, color: '#201F23', marginBottom: 8 }}>
                 {feature.title}
               </h3>
               <p style={{ fontSize: 14, color: '#4B5563', lineHeight: 1.6, margin: 0 }}>
@@ -1257,7 +1256,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
               <MessageSquare className="w-6 h-6" />
             </div>
             <div>
-              <h2 style={{ fontSize: 26, fontWeight: 800, color: '#1C1D21', margin: 0 }}>
+              <h2 style={{ fontSize: 26, fontWeight: 800, color: '#201F23', margin: 0 }}>
                 Verified {serviceName} Reviews
               </h2>
               <p style={{ fontSize: 14, color: '#6B7280', margin: '4px 0 0' }}>
@@ -1305,7 +1304,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                   </div>
                   <div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                      <span style={{ fontSize: 16, fontWeight: 700, color: '#1C1D21' }}>
+                      <span style={{ fontSize: 16, fontWeight: 700, color: '#201F23' }}>
                         {review.name}
                       </span>
                       <span style={{
@@ -1326,17 +1325,17 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                 {renderStars(review.rating)}
               </div>
 
-              <h3 style={{ fontSize: 17, fontWeight: 700, color: '#1C1D21', margin: '0 0 12px' }}>
+              <h3 style={{ fontSize: 17, fontWeight: 700, color: '#201F23', margin: '0 0 12px' }}>
                 {review.title}
               </h3>
 
               <div style={{ background: '#F0FDF4', padding: 14, borderRadius: 8, border: '1px solid #BBF7D0', marginBottom: 8 }}>
                 <div style={{ fontSize: 13, fontWeight: 700, color: '#166534', marginBottom: 4 }}>What do you like best?</div>
-                <div style={{ fontSize: 14, color: '#374151', lineHeight: 1.6 }}>{review.pro}</div>
+                <div style={{ fontSize: 14, color: '#201F23', lineHeight: 1.6 }}>{review.pro}</div>
               </div>
               <div style={{ background: '#FFF7ED', padding: 14, borderRadius: 8, border: '1px solid #FED7AA' }}>
                 <div style={{ fontSize: 13, fontWeight: 700, color: '#9A3412', marginBottom: 4 }}>What do you dislike?</div>
-                <div style={{ fontSize: 14, color: '#374151', lineHeight: 1.6 }}>{review.con}</div>
+                <div style={{ fontSize: 14, color: '#201F23', lineHeight: 1.6 }}>{review.con}</div>
               </div>
             </div>
           ))}
@@ -1364,7 +1363,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
           }}>
             <Award className="w-6 h-6" />
           </div>
-          <h2 style={{ fontSize: 28, fontWeight: 800, color: '#1C1D21', margin: '0 0 8px' }}>
+          <h2 style={{ fontSize: 28, fontWeight: 800, color: '#201F23', margin: '0 0 8px' }}>
             Flexible Service Packages & Pricing
           </h2>
           <p style={{ fontSize: 15, color: '#6B7280', margin: 0 }}>
@@ -1424,23 +1423,23 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                   MOST POPULAR
                 </div>
               )}
-              
+
               <div style={{
                 width: 44, height: 44, borderRadius: 10,
                 background: plan.featured ? '#FF492C' : '#F3F4F6',
-                color: plan.featured ? '#fff' : '#374151',
+                color: plan.featured ? '#fff' : '#201F23',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 marginBottom: 16,
               }}>
                 <plan.icon className="w-5 h-5" />
               </div>
 
-              <h3 style={{ fontSize: 22, fontWeight: 700, color: '#1C1D21', marginBottom: 6 }}>
+              <h3 style={{ fontSize: 22, fontWeight: 700, color: '#201F23', marginBottom: 6 }}>
                 {plan.name}
               </h3>
               <p style={{ fontSize: 14, color: '#6B7280', minHeight: 40, marginBottom: 20 }}>{plan.desc}</p>
-              
-              <div style={{ fontSize: 26, fontWeight: 800, color: plan.featured ? '#FF492C' : '#1C1D21', marginBottom: 24 }}>
+
+              <div style={{ fontSize: 26, fontWeight: 800, color: plan.featured ? '#FF492C' : '#201F23', marginBottom: 24 }}>
                 {plan.price}
               </div>
 
@@ -1448,7 +1447,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                 width: '100%',
                 padding: '12px 20px',
                 background: plan.featured ? '#FF492C' : '#fff',
-                color: plan.featured ? '#fff' : '#1C1D21',
+                color: plan.featured ? '#fff' : '#201F23',
                 border: plan.featured ? 'none' : '1px solid #D1D5DB',
                 borderRadius: 24,
                 fontSize: 14,
@@ -1461,14 +1460,14 @@ function TabContentSection({ tab, serviceName, providers, service }) {
               </button>
 
               <div style={{ borderTop: '1px solid #E5E7EB', paddingTop: 20, flex: 1 }}>
-                <div style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', marginBottom: 12, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                <div style={{ fontSize: 13, fontWeight: 700, color: '#201F23', marginBottom: 12, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                   What's Included:
                 </div>
                 <div className="space-y-3">
                   {plan.features.map((feature, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
                       <CheckCircle className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
-                      <span style={{ fontSize: 14, color: '#374151', lineHeight: 1.4 }}>{feature}</span>
+                      <span style={{ fontSize: 14, color: '#201F23', lineHeight: 1.4 }}>{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -1491,11 +1490,11 @@ function TabContentSection({ tab, serviceName, providers, service }) {
         boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 8 }}>
-          <div style={{ width: 44, height: 44, borderRadius: 10, background: '#EDE9FE', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#5E42C0' }}>
+          <div style={{ width: 44, height: 44, borderRadius: 10, background: '#EDE9FE', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#5A39A2' }}>
             <Award className="w-6 h-6" />
           </div>
           <div>
-            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#1C1D21', margin: 0 }}>
+            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#201F23', margin: 0 }}>
               Compare {serviceName} Alternatives
             </h2>
             <p style={{ fontSize: 14, color: '#6B7280', margin: '4px 0 0' }}>
@@ -1525,7 +1524,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                 <ProviderLogo name={provider.name || provider.vendor} logo={provider.logo} size={54} rounded={8} />
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
-                <h3 style={{ fontSize: 17, fontWeight: 700, color: '#1C1D21', margin: '0 0 4px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                <h3 style={{ fontSize: 17, fontWeight: 700, color: '#201F23', margin: '0 0 4px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                   {provider.name}
                 </h3>
                 <div style={{ fontSize: 13, color: '#6B7280', marginBottom: 8 }}>
@@ -1535,7 +1534,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                   <div style={{ display: 'flex', gap: 2 }}>
                     {renderStars(provider.rating || 4.7)}
                   </div>
-                  <span style={{ fontSize: 14, fontWeight: 700, color: '#1C1D21' }}>
+                  <span style={{ fontSize: 14, fontWeight: 700, color: '#201F23' }}>
                     {provider.rating || 4.7}/5
                   </span>
                   <span style={{ fontSize: 13, color: '#9CA3AF' }}>
@@ -1547,7 +1546,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                     to={`/services/${serviceName.toLowerCase().replace(/\s+/g, '-')}`}
                     style={{
                       padding: '7px 18px',
-                      background: '#5E42C0',
+                      background: '#5A39A2',
                       color: '#fff',
                       borderRadius: 20,
                       fontSize: 13,
@@ -1607,7 +1606,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
             <HelpCircle className="w-6 h-6" />
           </div>
           <div>
-            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#1C1D21', margin: 0 }}>
+            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#201F23', margin: 0 }}>
               Frequently Asked Questions
             </h2>
             <p style={{ fontSize: 14, color: '#6B7280', margin: '4px 0 0' }}>
@@ -1627,14 +1626,14 @@ function TabContentSection({ tab, serviceName, providers, service }) {
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
                 <div style={{
                   width: 28, height: 28, borderRadius: '50%',
-                  background: '#EDE9FE', color: '#5E42C0',
+                  background: '#EDE9FE', color: '#5A39A2',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   fontWeight: 700, fontSize: 14, flexShrink: 0, marginTop: 2,
                 }}>
                   Q
                 </div>
                 <div>
-                  <h3 style={{ fontSize: 17, fontWeight: 700, color: '#1C1D21', margin: '0 0 8px' }}>
+                  <h3 style={{ fontSize: 17, fontWeight: 700, color: '#201F23', margin: '0 0 8px' }}>
                     {faq.q}
                   </h3>
                   <p style={{ fontSize: 15, color: '#4B5563', lineHeight: 1.7, margin: 0 }}>
@@ -1664,7 +1663,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
             <Gift className="w-6 h-6" />
           </div>
           <div>
-            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#1C1D21', margin: 0 }}>
+            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#201F23', margin: 0 }}>
               Free Consultations & Audits
             </h2>
             <p style={{ fontSize: 14, color: '#6B7280', margin: '4px 0 0' }}>
@@ -1725,7 +1724,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                 </div>
               </div>
 
-              <h3 style={{ fontSize: 18, fontWeight: 700, color: '#1C1D21', margin: '0 0 6px' }}>
+              <h3 style={{ fontSize: 18, fontWeight: 700, color: '#201F23', margin: '0 0 6px' }}>
                 {offer.title}
               </h3>
               <div style={{ fontSize: 13, color: '#2563EB', fontWeight: 600, marginBottom: 10 }}>
@@ -1736,7 +1735,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
               </p>
 
               <div style={{ background: '#F9FAFB', padding: 14, borderRadius: 8, border: '1px solid #E5E7EB', marginBottom: 20, flex: 1 }}>
-                <div style={{ fontSize: 12, fontWeight: 700, color: '#374151', textTransform: 'uppercase', marginBottom: 8 }}>
+                <div style={{ fontSize: 12, fontWeight: 700, color: '#201F23', textTransform: 'uppercase', marginBottom: 8 }}>
                   Included Deliverables:
                 </div>
                 {offer.deliverables.map((item, i) => (
@@ -1783,7 +1782,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
             <BookOpen className="w-6 h-6" />
           </div>
           <div>
-            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#1C1D21', margin: 0 }}>
+            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#201F23', margin: 0 }}>
               Guides, Blueprints & Research
             </h2>
             <p style={{ fontSize: 14, color: '#6B7280', margin: '4px 0 0' }}>
@@ -1856,7 +1855,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                   </span>
                   <span style={{ fontSize: 12, color: '#9CA3AF' }}>{item.readTime}</span>
                 </div>
-                <h3 style={{ fontSize: 17, fontWeight: 700, color: '#1C1D21', margin: '0 0 6px' }}>
+                <h3 style={{ fontSize: 17, fontWeight: 700, color: '#201F23', margin: '0 0 6px' }}>
                   {item.title}
                 </h3>
                 <p style={{ fontSize: 14, color: '#4B5563', lineHeight: 1.5, marginBottom: 16 }}>
@@ -1865,7 +1864,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
                 <button style={{
                   padding: '7px 18px',
                   background: '#F3F4F6',
-                  color: '#1C1D21',
+                  color: '#201F23',
                   border: '1px solid #D1D5DB',
                   borderRadius: 20,
                   fontSize: 13,
@@ -1894,7 +1893,7 @@ function TabContentSection({ tab, serviceName, providers, service }) {
       padding: 48,
       textAlign: 'center',
     }}>
-      <h2 style={{ fontSize: 24, fontWeight: 700, color: '#1C1D21', marginBottom: 12 }}>
+      <h2 style={{ fontSize: 24, fontWeight: 700, color: '#201F23', marginBottom: 12 }}>
         {tab.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} Content
       </h2>
       <p style={{ fontSize: 15, color: '#6B7280' }}>
@@ -1947,10 +1946,10 @@ function TopRatedSubscription({ serviceName }) {
               margin: '0 auto 16px',
             }}>
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                <path d="M5 13l4 4L19 7" stroke="#5E42C0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M5 13l4 4L19 7" stroke="#5A39A2" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
-            <h3 style={{ fontSize: 20, fontWeight: 700, color: '#1C1D21', marginBottom: 8 }}>
+            <h3 style={{ fontSize: 20, fontWeight: 700, color: '#201F23', marginBottom: 8 }}>
               You're on the list!
             </h3>
             <p style={{ fontSize: 14, color: '#6B7280' }}>
@@ -1959,10 +1958,10 @@ function TopRatedSubscription({ serviceName }) {
           </div>
         ) : (
           <>
-            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#1C1D21', margin: '0 0 12px' }}>
+            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#201F23', margin: '0 0 12px' }}>
               Top-rated {serviceName} of 2026
             </h2>
-            <p style={{ fontSize: 15, color: '#374151', lineHeight: 1.6, margin: '0 0 20px' }}>
+            <p style={{ fontSize: 15, color: '#201F23', lineHeight: 1.6, margin: '0 0 20px' }}>
               Fill out the form and we'll send a list of the top-rated service providers based on real user reviews directly to your inbox.
             </p>
 
@@ -1970,7 +1969,7 @@ function TopRatedSubscription({ serviceName }) {
               {/* Email Label */}
               <label
                 htmlFor="top_rated_email"
-                style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', display: 'block', marginBottom: 8 }}
+                style={{ fontSize: 13, fontWeight: 700, color: '#201F23', display: 'block', marginBottom: 8 }}
               >
                 Email Address <span style={{ color: '#EF4444' }}>*</span>
               </label>
@@ -2000,13 +1999,13 @@ function TopRatedSubscription({ serviceName }) {
                       border: '1px solid #D1D5DB',
                       background: '#fff',
                       fontSize: 14,
-                      color: '#1C1D21',
+                      color: '#201F23',
                       outline: 'none',
                       boxSizing: 'border-box',
                       fontFamily: 'inherit',
                       transition: 'border-color 0.15s',
                     }}
-                    onFocus={e => e.target.style.borderColor = '#5E42C0'}
+                    onFocus={e => e.target.style.borderColor = '#5A39A2'}
                     onBlur={e => e.target.style.borderColor = '#D1D5DB'}
                   />
                 </div>
@@ -2019,7 +2018,7 @@ function TopRatedSubscription({ serviceName }) {
                     padding: '0 24px',
                     borderRadius: 999,
                     border: 'none',
-                    background: isValid ? '#5E42C0' : '#D1D5DB',
+                    background: isValid ? '#5A39A2' : '#D1D5DB',
                     color: '#fff',
                     fontSize: 14,
                     fontWeight: 700,
@@ -2028,8 +2027,8 @@ function TopRatedSubscription({ serviceName }) {
                     transition: 'background 0.15s',
                     fontFamily: 'inherit',
                   }}
-                  onMouseEnter={e => { if (isValid) e.currentTarget.style.background = '#4E35A6'; }}
-                  onMouseLeave={e => { if (isValid) e.currentTarget.style.background = '#5E42C0'; }}
+                  onMouseEnter={e => { if (isValid) e.currentTarget.style.background = '#493088'; }}
+                  onMouseLeave={e => { if (isValid) e.currentTarget.style.background = '#5A39A2'; }}
                 >
                   Send me the list
                 </button>
@@ -2052,12 +2051,12 @@ function TopRatedSubscription({ serviceName }) {
                     onChange={e => setConsent(e.target.checked)}
                     style={{
                       marginTop: 2, flexShrink: 0, cursor: 'pointer',
-                      accentColor: '#5E42C0', width: 15, height: 15,
+                      accentColor: '#5A39A2', width: 15, height: 15,
                     }}
                   />
                   <label
                     htmlFor="top_rated_consent"
-                    style={{ fontSize: 13, color: '#374151', lineHeight: 1.5, cursor: 'pointer' }}
+                    style={{ fontSize: 13, color: '#201F23', lineHeight: 1.5, cursor: 'pointer' }}
                   >
                     To continue, please agree to our{' '}
                     <a
@@ -2088,12 +2087,12 @@ function TopRatedSubscription({ serviceName }) {
                     onChange={e => setMarketing(e.target.checked)}
                     style={{
                       marginTop: 2, flexShrink: 0, cursor: 'pointer',
-                      accentColor: '#5E42C0', width: 15, height: 15,
+                      accentColor: '#5A39A2', width: 15, height: 15,
                     }}
                   />
                   <label
                     htmlFor="top_rated_marketing"
-                    style={{ fontSize: 13, color: '#374151', lineHeight: 1.5, cursor: 'pointer' }}
+                    style={{ fontSize: 13, color: '#201F23', lineHeight: 1.5, cursor: 'pointer' }}
                   >
                     I would like to receive updates about products, services, and special offers from G2.
                   </label>
@@ -2153,7 +2152,7 @@ function SidebarFilters({
       padding: '20px',
       boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
     }}>
-      
+
       {/* Rating Section */}
       <div style={{ marginBottom: 24 }}>
         <h3 style={{
@@ -2165,7 +2164,7 @@ function SidebarFilters({
         }}>
           Rating
         </h3>
-        
+
         <label style={{
           display: 'flex',
           alignItems: 'center',
@@ -2396,7 +2395,7 @@ function SidebarFilters({
                     width: 18,
                     height: 18,
                     cursor: 'pointer',
-                    accentColor: '#5E42C0',
+                    accentColor: '#5A39A2',
                     marginTop: 2,
                     flexShrink: 0,
                   }}
@@ -2460,7 +2459,7 @@ function SidebarFilters({
                     width: 18,
                     height: 18,
                     cursor: 'pointer',
-                    accentColor: '#5E42C0',
+                    accentColor: '#5A39A2',
                   }}
                 />
                 <span style={{
@@ -2484,7 +2483,7 @@ function SidebarFilters({
           padding: '10px 0',
           fontSize: 14,
           fontWeight: 700,
-          color: '#5E42C0',
+          color: '#5A39A2',
           background: 'none',
           border: 'none',
           cursor: 'pointer',
@@ -2634,7 +2633,7 @@ function ProductCard({ prod, idx, activeTab, renderStars, inCompare, onToggleCom
           }
         }
       `}</style>
-      
+
       <div style={{
         background: '#fff',
         border: '1px solid #E5E7EB',
@@ -2646,252 +2645,252 @@ function ProductCard({ prod, idx, activeTab, renderStars, inCompare, onToggleCom
         transition: 'box-shadow 0.2s',
       }}>
 
-      {/* ── TOP SECTION: logo + name/rating + CTA ── */}
-      <div style={{
-        padding: '20px',
-        display: 'flex',
-        alignItems: 'flex-start',
-        justifyContent: 'space-between',
-        gap: '16px',
-      }}
-      className="product-card-top">
+        {/* ── TOP SECTION: logo + name/rating + CTA ── */}
+        <div style={{
+          padding: '20px',
+          display: 'flex',
+          alignItems: 'flex-start',
+          justifyContent: 'space-between',
+          gap: '16px',
+        }}
+          className="product-card-top">
 
-        {/* Left: logo + name block */}
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px', flex: 1, minWidth: 0 }}>
-          {/* Logo */}
-          <Link to={`/product/${prod.id}`} style={{ flexShrink: 0 }}>
-            <div style={{
-              width: 76, 
-              height: 76,
-              border: '1px solid #E5E7EB', 
-              borderRadius: 8,
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center',
-              padding: 6, 
-              background: '#fff', 
-              overflow: 'hidden',
-              boxShadow: '0 1px 2px rgba(0,0,0,0.04)',
-            }}
-            className="product-logo-responsive">
-              <ProviderLogo name={prod.name || prod.vendor} logo={prod.logo} size={64} rounded={6} />
-            </div>
-          </Link>
+          {/* Left: logo + name block */}
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px', flex: 1, minWidth: 0 }}>
+            {/* Logo */}
+            <Link to={`/product/${prod.id}`} style={{ flexShrink: 0 }}>
+              <div style={{
+                width: 76,
+                height: 76,
+                border: '1px solid #E5E7EB',
+                borderRadius: 8,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: 6,
+                background: '#fff',
+                overflow: 'hidden',
+                boxShadow: '0 1px 2px rgba(0,0,0,0.04)',
+              }}
+                className="product-logo-responsive">
+                <ProviderLogo name={prod.name || prod.vendor} logo={prod.logo} size={64} rounded={6} />
+              </div>
+            </Link>
 
-          {/* Name + By + Stars */}
-          <div style={{ flex: 1, minWidth: 0 }}>
-            {/* Rank badge - only show for highest rated tab */}
-            {activeTab === 'highest_rated' && (
-              <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 3, flexWrap: 'wrap' }}>
-                <span style={{
-                  fontSize: 11, fontWeight: 800, color: '#92400E',
-                  background: '#FEF3C7', border: '1px solid #FCD34D',
-                  padding: '1px 7px', borderRadius: 4, display: 'inline-flex', alignItems: 'center', gap: 3
-                }}>
-                  ★ #{idx + 1} Highest Rated
+            {/* Name + By + Stars */}
+            <div style={{ flex: 1, minWidth: 0 }}>
+              {/* Rank badge - only show for highest rated tab */}
+              {activeTab === 'highest_rated' && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 3, flexWrap: 'wrap' }}>
+                  <span style={{
+                    fontSize: 11, fontWeight: 800, color: '#92400E',
+                    background: '#FEF3C7', border: '1px solid #FCD34D',
+                    padding: '1px 7px', borderRadius: 4, display: 'inline-flex', alignItems: 'center', gap: 3
+                  }}>
+                    ★ #{idx + 1} Highest Rated
+                  </span>
+
+                  {/* Sponsored tag if any */}
+                  {prod.isSponsored && (
+                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+                      <span style={{ fontSize: 11, fontWeight: 600, color: '#6B7280' }}>Sponsored</span>
+                      <span title="You're seeing this ad based on product relevance." style={{ cursor: 'help', display: 'inline-flex' }}>
+                        <svg width="12" height="12" viewBox="0 0 20 20" fill="none">
+                          <circle cx="10" cy="10" r="6" fill="#6B7280" />
+                          <path d="M9.25 14H10.75V9H9.25V14ZM10 7.5C10.41 7.5 10.75 7.16 10.75 6.75C10.75 6.34 10.41 6 10 6C9.59 6 9.25 6.34 9.25 6.75C9.25 7.16 9.59 7.5 10 7.5Z" fill="#fff" />
+                        </svg>
+                      </span>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '12px', marginBottom: 3 }}>
+                <Link
+                  to={`/product/${prod.id}`}
+                  style={{ fontSize: 18, fontWeight: 700, color: '#201F23', textDecoration: 'none', display: 'block', lineHeight: 1.3, flex: 1 }}
+                  className="product-name-text"
+                >
+                  {prod.name}
+                </Link>
+
+                {/* Read Reviews button on same line as name */}
+                <Link
+                  to={`/product/${prod.id}`}
+                  style={{
+                    textAlign: 'right',
+                    display: 'inline-block',
+                    background: 'none',
+                    color: '#5A39A2',
+                    border: 'none',
+                    fontSize: 14,
+                    fontWeight: 600,
+                    padding: '0',
+                    textDecoration: 'none',
+                    whiteSpace: 'nowrap',
+                    flexShrink: 0,
+                    transition: 'all 0.15s',
+                    lineHeight: 1.3,
+                  }}
+                  onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
+                  onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
+                >
+                  {prod.ctaText ? (prod.ctaText.includes('Read') ? 'Read Reviews' : prod.ctaText) : 'Read Reviews'}
+                </Link>
+              </div>
+              <p style={{ fontSize: 13, color: '#201F23', margin: '0 0 5px' }} className="product-vendor-text">
+                By <a href="#" style={{ color: '#2563EB', textDecoration: 'none' }}>{prod.vendor || prod.name}</a>
+              </p>
+              {/* Stars */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexWrap: 'wrap' }} className="product-rating-text">
+                <div style={{ display: 'flex', gap: 1 }}>{renderStars(prod.rating)}</div>
+                <span style={{ fontSize: 13, fontWeight: 700, color: '#201F23' }}>{prod.rating}/5</span>
+                <span style={{ fontSize: 13, color: '#6B7280' }}>
+                  ({typeof prod.reviewCount === 'number' ? prod.reviewCount.toLocaleString() : prod.reviewCount})
                 </span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                {/* Sponsored tag if any */}
-                {prod.isSponsored && (
-                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
-                    <span style={{ fontSize: 11, fontWeight: 600, color: '#6B7280' }}>Sponsored</span>
-                    <span title="You're seeing this ad based on product relevance." style={{ cursor: 'help', display: 'inline-flex' }}>
-                      <svg width="12" height="12" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="6" fill="#6B7280" />
-                        <path d="M9.25 14H10.75V9H9.25V14ZM10 7.5C10.41 7.5 10.75 7.16 10.75 6.75C10.75 6.34 10.41 6 10 6C9.59 6 9.25 6.34 9.25 6.75C9.25 7.16 9.59 7.5 10 7.5Z" fill="#fff" />
-                      </svg>
-                    </span>
-                  </div>
-                )}
+        {/* ── BODY SECTION: What do users say? + Pros & Cons ── */}
+        <div style={{
+          borderTop: '1px solid #E5E7EB',
+          padding: '20px',
+          display: 'flex', flexWrap: 'wrap', gap: 20, alignItems: 'flex-start',
+        }}
+          className="product-body-section">
+
+          {/* LEFT: What do users say + badges */}
+          <div style={{ flex: 1, minWidth: 200 }}>
+            <p style={{ fontSize: 16, fontWeight: 700, color: '#201F23', margin: '0 0 6px' }} className="product-body-heading">
+              What do users say?
+            </p>
+            <p style={{ fontSize: 14, color: '#201F23', lineHeight: 1.5, margin: '0 0 10px', maxHeight: '80px', overflow: 'hidden' }} className="product-body-text">
+              {displayed}
+              {truncated && (
+                <button
+                  onClick={() => setExpanded(s => !s)}
+                  style={{ background: 'none', border: 'none', color: '#6B7280', fontSize: 14, cursor: 'pointer', padding: '0 0 0 4px' }}
+                >
+                  {expanded ? 'Show Less' : 'Show More'}
+                </button>
+              )}
+            </p>
+
+
+
+            {/* Solution Type badge */}
+            {prod.solutionType && (
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: 5, marginBottom: 8 }}>
+                <span style={{ fontSize: 16, color: '#9CA3AF', fontWeight: 400 }}>{prod.solutionType}</span>
+                <span title={prod.solutionType === 'All-in-One'
+                  ? 'All-in-One products consolidate features across multiple business functions.'
+                  : 'A specialized tool focused on a specific business function or use case.'
+                } style={{ cursor: 'help', display: 'inline-flex' }}>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="6" fill="#201F23" />
+                    <path d="M9.25 14H10.75V9H9.25V14ZM10 7.5C10.4142 7.5 10.75 7.16421 10.75 6.75C10.75 6.33579 10.4142 6 10 6C9.58579 6 9.25 6.33579 9.25 6.75C9.25 7.16421 9.58579 7.5 10 7.5Z" fill="#DFDFE2" />
+                  </svg>
+                </span>
               </div>
             )}
 
-            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '12px', marginBottom: 3 }}>
-              <Link
-                to={`/product/${prod.id}`}
-                style={{ fontSize: 18, fontWeight: 700, color: '#1C1D21', textDecoration: 'none', display: 'block', lineHeight: 1.3, flex: 1 }}
-                className="product-name-text"
-              >
-                {prod.name}
-              </Link>
-              
-              {/* Read Reviews button on same line as name */}
-              <Link
-                to={`/product/${prod.id}`}
-                style={{
-                  textAlign: 'right',
-                  display: 'inline-block',
-                  background: 'none', 
-                  color: '#5E42C0',
-                  border: 'none',
-                  fontSize: 14, 
-                  fontWeight: 600,
-                  padding: '0',
-                  textDecoration: 'none',
-                  whiteSpace: 'nowrap',
-                  flexShrink: 0,
-                  transition: 'all 0.15s',
-                  lineHeight: 1.3,
-                }}
-                onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
-                onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
-              >
-                {prod.ctaText ? (prod.ctaText.includes('Read') ? 'Read Reviews' : prod.ctaText) : 'Read Reviews'}
-              </Link>
-            </div>
-            <p style={{ fontSize: 13, color: '#374151', margin: '0 0 5px' }} className="product-vendor-text">
-              By <a href="#" style={{ color: '#2563EB', textDecoration: 'none' }}>{prod.vendor || prod.name}</a>
-            </p>
-            {/* Stars */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexWrap: 'wrap' }} className="product-rating-text">
-              <div style={{ display: 'flex', gap: 1 }}>{renderStars(prod.rating)}</div>
-              <span style={{ fontSize: 13, fontWeight: 700, color: '#374151' }}>{prod.rating}/5</span>
-              <span style={{ fontSize: 13, color: '#6B7280' }}>
-                ({typeof prod.reviewCount === 'number' ? prod.reviewCount.toLocaleString() : prod.reviewCount})
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ── BODY SECTION: What do users say? + Pros & Cons ── */}
-      <div style={{
-        borderTop: '1px solid #E5E7EB',
-        padding: '20px',
-        display: 'flex', flexWrap: 'wrap', gap: 20, alignItems: 'flex-start',
-      }}
-      className="product-body-section">
-
-        {/* LEFT: What do users say + badges */}
-        <div style={{ flex: 1, minWidth: 200 }}>
-          <p style={{ fontSize: 16, fontWeight: 700, color: '#1C1D21', margin: '0 0 6px' }} className="product-body-heading">
-            What do users say?
-          </p>
-          <p style={{ fontSize: 14, color: '#374151', lineHeight: 1.5, margin: '0 0 10px', maxHeight: '80px', overflow: 'hidden' }} className="product-body-text">
-            {displayed}
-            {truncated && (
-              <button
-                onClick={() => setExpanded(s => !s)}
-                style={{ background: 'none', border: 'none', color: '#6B7280', fontSize: 14, cursor: 'pointer', padding: '0 0 0 4px' }}
-              >
-                {expanded ? 'Show Less' : 'Show More'}
-              </button>
-            )}
-          </p>
-
-
-
-          {/* Solution Type badge */}
-          {prod.solutionType && (
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 5, marginBottom: 8 }}>
-              <span style={{ fontSize: 16, color: '#9CA3AF', fontWeight: 400 }}>{prod.solutionType}</span>
-              <span title={prod.solutionType === 'All-in-One'
-                ? 'All-in-One products consolidate features across multiple business functions.'
-                : 'A specialized tool focused on a specific business function or use case.'
-              } style={{ cursor: 'help', display: 'inline-flex' }}>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <circle cx="10" cy="10" r="6" fill="#201F23" />
-                  <path d="M9.25 14H10.75V9H9.25V14ZM10 7.5C10.4142 7.5 10.75 7.16421 10.75 6.75C10.75 6.33579 10.4142 6 10 6C9.58579 6 9.25 6.33579 9.25 6.75C9.25 7.16421 9.58579 7.5 10 7.5Z" fill="#DFDFE2" />
+            {/* AI badge */}
+            {prod.aiBadge && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0 }}>
+                  <path d="M14.31 2.24C14.46 2.09 14.39 2.26 14.18 2.49L13.63 3.9C13.53 4.17 13.48 4.3 13.4 4.41C13.33 4.51 13.24 4.6 13.14 4.67C13.03 4.75 12.9 4.8 12.63 4.9L11.21 5.45C11.06 5.51 10.99 5.54 10.96 5.58C10.95 5.61 10.95 5.66 10.96 5.69C10.99 5.74 11.06 5.77 11.21 5.82L12.63 6.37C12.9 6.47 13.03 6.52 13.14 6.6C13.24 6.67 13.33 6.76 13.4 6.86C13.48 6.97 13.53 7.1 13.63 7.37L14.18 8.79C14.23 8.94 14.26 9.01 14.31 9.04C14.34 9.05 14.38 9.05 14.42 9.04C14.46 9.01 14.49 8.94 14.55 8.79L15.1 7.37C15.2 7.1 15.25 6.97 15.33 6.86C15.4 6.76 15.49 6.67 15.59 6.6C15.7 6.52 15.83 6.47 16.1 6.37L17.51 5.82C17.67 5.77 17.74 5.74 17.76 5.69C17.78 5.66 17.78 5.61 17.76 5.58C17.74 5.54 17.67 5.51 17.51 5.45L16.1 4.9C15.83 4.8 15.7 4.75 15.59 4.67C15.49 4.6 15.4 4.51 15.33 4.41C15.25 4.3 15.2 4.17 15.1 3.9L14.55 2.49C14.49 2.33 14.46 2.26 14.42 2.24C14.38 2.22 14.34 2.22 14.31 2.24Z" fill="currentColor" />
+                  <path d="M7.73 6.74C7.66 6.78 7.61 6.9 7.52 7.14L6.65 9.41C6.48 9.83 6.4 10.05 6.27 10.23C6.16 10.39 6.02 10.52 5.86 10.64C5.68 10.76 5.47 10.85 5.04 11.01L2.78 11.88C2.54 11.98 2.41 12.02 2.38 12.09C2.35 12.15 2.35 12.22 2.38 12.27C2.41 12.34 2.54 12.39 2.78 12.48L5.04 13.35C5.47 13.52 5.68 13.6 5.86 13.73C6.02 13.84 6.16 13.98 6.27 14.14C6.4 14.32 6.48 14.53 6.65 14.96L7.52 17.22C7.61 17.46 7.66 17.59 7.73 17.62C7.78 17.65 7.85 17.65 7.91 17.62C7.98 17.59 8.02 17.46 8.12 17.22L8.99 14.96C9.15 14.53 9.24 14.32 9.36 14.14C9.48 13.98 9.61 13.84 9.77 13.73C9.95 13.6 10.17 13.52 10.59 13.35L12.86 12.48C13.1 12.39 13.22 12.34 13.26 12.27C13.29 12.22 13.29 12.15 13.26 12.09C13.22 12.02 13.1 11.98 12.86 11.88L10.59 11.01C10.17 10.85 9.95 10.76 9.77 10.64C9.61 10.52 9.48 10.39 9.36 10.23C9.24 10.05 9.15 9.83 8.99 9.41L8.12 7.14C8.02 6.9 7.98 6.78 7.91 6.74C7.85 6.71 7.78 6.71 7.73 6.74Z" fill="currentColor" />
                 </svg>
-              </span>
-            </div>
-          )}
+                <span style={{ fontSize: 16, fontWeight: 600, color: '#201F23' }}>{prod.aiBadge}</span>
+              </div>
+            )}
+          </div>
 
-          {/* AI badge */}
-          {prod.aiBadge && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0 }}>
-                <path d="M14.31 2.24C14.46 2.09 14.39 2.26 14.18 2.49L13.63 3.9C13.53 4.17 13.48 4.3 13.4 4.41C13.33 4.51 13.24 4.6 13.14 4.67C13.03 4.75 12.9 4.8 12.63 4.9L11.21 5.45C11.06 5.51 10.99 5.54 10.96 5.58C10.95 5.61 10.95 5.66 10.96 5.69C10.99 5.74 11.06 5.77 11.21 5.82L12.63 6.37C12.9 6.47 13.03 6.52 13.14 6.6C13.24 6.67 13.33 6.76 13.4 6.86C13.48 6.97 13.53 7.1 13.63 7.37L14.18 8.79C14.23 8.94 14.26 9.01 14.31 9.04C14.34 9.05 14.38 9.05 14.42 9.04C14.46 9.01 14.49 8.94 14.55 8.79L15.1 7.37C15.2 7.1 15.25 6.97 15.33 6.86C15.4 6.76 15.49 6.67 15.59 6.6C15.7 6.52 15.83 6.47 16.1 6.37L17.51 5.82C17.67 5.77 17.74 5.74 17.76 5.69C17.78 5.66 17.78 5.61 17.76 5.58C17.74 5.54 17.67 5.51 17.51 5.45L16.1 4.9C15.83 4.8 15.7 4.75 15.59 4.67C15.49 4.6 15.4 4.51 15.33 4.41C15.25 4.3 15.2 4.17 15.1 3.9L14.55 2.49C14.49 2.33 14.46 2.26 14.42 2.24C14.38 2.22 14.34 2.22 14.31 2.24Z" fill="currentColor" />
-                <path d="M7.73 6.74C7.66 6.78 7.61 6.9 7.52 7.14L6.65 9.41C6.48 9.83 6.4 10.05 6.27 10.23C6.16 10.39 6.02 10.52 5.86 10.64C5.68 10.76 5.47 10.85 5.04 11.01L2.78 11.88C2.54 11.98 2.41 12.02 2.38 12.09C2.35 12.15 2.35 12.22 2.38 12.27C2.41 12.34 2.54 12.39 2.78 12.48L5.04 13.35C5.47 13.52 5.68 13.6 5.86 13.73C6.02 13.84 6.16 13.98 6.27 14.14C6.4 14.32 6.48 14.53 6.65 14.96L7.52 17.22C7.61 17.46 7.66 17.59 7.73 17.62C7.78 17.65 7.85 17.65 7.91 17.62C7.98 17.59 8.02 17.46 8.12 17.22L8.99 14.96C9.15 14.53 9.24 14.32 9.36 14.14C9.48 13.98 9.61 13.84 9.77 13.73C9.95 13.6 10.17 13.52 10.59 13.35L12.86 12.48C13.1 12.39 13.22 12.34 13.26 12.27C13.29 12.22 13.29 12.15 13.26 12.09C13.22 12.02 13.1 11.98 12.86 11.88L10.59 11.01C10.17 10.85 9.95 10.76 9.77 10.64C9.61 10.52 9.48 10.39 9.36 10.23C9.24 10.05 9.15 9.83 8.99 9.41L8.12 7.14C8.02 6.9 7.98 6.78 7.91 6.74C7.85 6.71 7.78 6.71 7.73 6.74Z" fill="currentColor" />
-              </svg>
-              <span style={{ fontSize: 16, fontWeight: 600, color: '#374151' }}>{prod.aiBadge}</span>
+          {/* RIGHT: Pros and Cons */}
+          {prod.pros && prod.pros.length > 0 && (
+            <div style={{ flexShrink: 0, minWidth: 200 }}>
+              <p style={{ fontSize: 16, fontWeight: 700, color: '#201F23', margin: '0 0 10px' }} className="pros-cons-heading">
+                Pros and Cons
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                {prod.pros.map((p, i) => {
+                  const isCon = !!p.isCon;
+                  return (
+                    <div key={i} style={{
+                      display: 'inline-flex', alignItems: 'center',
+                      gap: 6,
+                      borderRadius: 6,
+                      padding: '4px 10px 4px 6px',
+                      background: isCon ? '#FFF1F1' : '#F0FDF4',
+                      width: 'fit-content',
+                    }}
+                      className="pros-cons-badge">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                        {isCon ? (
+                          <path d="M5.56 4H14V12.89L8.67 18.22L8.07 17.81C7.85 17.65 7.69 17.45 7.58 17.2C7.48 16.96 7.46 16.7 7.52 16.44L8.22 12.89H3.33C2.96 12.89 2.65 12.76 2.39 12.5C2.13 12.24 2 11.93 2 11.56V10.5C2 10.4 2.01 10.31 2.03 10.23C2.05 10.15 2.07 10.07 2.11 9.98L4.31 4.81C4.41 4.57 4.58 4.37 4.81 4.22C5.03 4.07 5.28 4 5.56 4ZM15.33 12.89V4H18V12.89H15.33Z" fill="#EF4444" />
+                        ) : (
+                          <path d="M14.44 16.22H6V7.33L11.33 2L11.93 2.41C12.15 2.57 12.31 2.77 12.42 3.02C12.52 3.27 12.54 3.52 12.48 3.78L11.78 7.33H16.67C17.04 7.33 17.35 7.46 17.61 7.72C17.87 7.98 18 8.3 18 8.67V9.72C18 9.82 17.99 9.91 17.97 9.99C17.95 10.07 17.93 10.15 17.89 10.24L15.69 15.41C15.57 15.65 15.41 15.85 15.19 16C14.96 16.15 14.72 16.22 14.44 16.22ZM4.67 7.33V16.22H2V7.33H4.67Z" fill="#22C55E" />
+                        )}
+                      </svg>
+                      <span style={{ fontSize: 14, fontWeight: 600, color: '#201F23' }}>
+                        {p.label}
+                      </span>
+                      <span style={{ fontSize: 13, fontWeight: 400, color: '#6B7280' }} className="pros-cons-count">({p.count})</span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           )}
         </div>
 
-        {/* RIGHT: Pros and Cons */}
-        {prod.pros && prod.pros.length > 0 && (
-          <div style={{ flexShrink: 0, minWidth: 200 }}>
-            <p style={{ fontSize: 16, fontWeight: 700, color: '#1C1D21', margin: '0 0 10px' }} className="pros-cons-heading">
-              Pros and Cons
-            </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-              {prod.pros.map((p, i) => {
-                const isCon = !!p.isCon;
-                return (
-                  <div key={i} style={{
-                    display: 'inline-flex', alignItems: 'center',
-                    gap: 6,
-                    borderRadius: 6,
-                    padding: '4px 10px 4px 6px',
-                    background: isCon ? '#FFF1F1' : '#F0FDF4',
-                    width: 'fit-content',
-                  }}
-                  className="pros-cons-badge">
-                    <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
-                      {isCon ? (
-                        <path d="M5.56 4H14V12.89L8.67 18.22L8.07 17.81C7.85 17.65 7.69 17.45 7.58 17.2C7.48 16.96 7.46 16.7 7.52 16.44L8.22 12.89H3.33C2.96 12.89 2.65 12.76 2.39 12.5C2.13 12.24 2 11.93 2 11.56V10.5C2 10.4 2.01 10.31 2.03 10.23C2.05 10.15 2.07 10.07 2.11 9.98L4.31 4.81C4.41 4.57 4.58 4.37 4.81 4.22C5.03 4.07 5.28 4 5.56 4ZM15.33 12.89V4H18V12.89H15.33Z" fill="#EF4444" />
-                      ) : (
-                        <path d="M14.44 16.22H6V7.33L11.33 2L11.93 2.41C12.15 2.57 12.31 2.77 12.42 3.02C12.52 3.27 12.54 3.52 12.48 3.78L11.78 7.33H16.67C17.04 7.33 17.35 7.46 17.61 7.72C17.87 7.98 18 8.3 18 8.67V9.72C18 9.82 17.99 9.91 17.97 9.99C17.95 10.07 17.93 10.15 17.89 10.24L15.69 15.41C15.57 15.65 15.41 15.85 15.19 16C14.96 16.15 14.72 16.22 14.44 16.22ZM4.67 7.33V16.22H2V7.33H4.67Z" fill="#22C55E" />
-                      )}
-                    </svg>
-                    <span style={{ fontSize: 14, fontWeight: 600, color: '#1C1D21' }}>
-                      {p.label}
-                    </span>
-                    <span style={{ fontSize: 13, fontWeight: 400, color: '#6B7280' }} className="pros-cons-count">({p.count})</span>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        )}
+        {/* ── FOOTER: Add to Compare + Pin ── */}
+        <div style={{
+          borderTop: '1px solid #F3F4F6',
+          padding: '10px 20px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: 8,
+        }}>
+          {/* Add to Compare */}
+          <label style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }}>
+            <input
+              type="checkbox"
+              checked={inCompare}
+              onChange={onToggleCompare}
+              style={{ accentColor: '#5A39A2', width: 16, height: 16, cursor: 'pointer' }}
+            />
+            <span style={{ fontSize: 14, fontWeight: 600, color: '#201F23' }}>Add to Compare</span>
+          </label>
+
+          {/* Pin button */}
+          <button
+            onClick={onTogglePin}
+            title="Save product"
+            style={{
+              width: 36, height: 36,
+              borderRadius: '50%',
+              border: '1px solid #E5E7EB',
+              background: '#fff',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              cursor: 'pointer',
+              color: isPinned ? '#5A39A2' : '#6B7280',
+              transition: 'all 0.15s',
+            }}
+            onMouseEnter={e => e.currentTarget.style.background = '#F3F4F6'}
+            onMouseLeave={e => e.currentTarget.style.background = '#fff'}
+          >
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20">
+              <path d="m13 10 2 2v1.5h-4.25v4.75L10 19l-.75-.75V13.5H5V12l2-2V4.5H6V3h8v1.5h-1V10Zm-5.875 2h5.75L11.5 10.625V4.5h-3v6.125L7.125 12Z" />
+            </svg>
+          </button>
+        </div>
+
       </div>
-
-      {/* ── FOOTER: Add to Compare + Pin ── */}
-      <div style={{
-        borderTop: '1px solid #F3F4F6',
-        padding: '10px 20px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        flexWrap: 'wrap',
-        gap: 8,
-      }}>
-        {/* Add to Compare */}
-        <label style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }}>
-          <input
-            type="checkbox"
-            checked={inCompare}
-            onChange={onToggleCompare}
-            style={{ accentColor: '#5E42C0', width: 16, height: 16, cursor: 'pointer' }}
-          />
-          <span style={{ fontSize: 14, fontWeight: 600, color: '#1C1D21' }}>Add to Compare</span>
-        </label>
-
-        {/* Pin button */}
-        <button
-          onClick={onTogglePin}
-          title="Save product"
-          style={{
-            width: 36, height: 36,
-            borderRadius: '50%',
-            border: '1px solid #E5E7EB',
-            background: '#fff',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            cursor: 'pointer',
-            color: isPinned ? '#5E42C0' : '#6B7280',
-            transition: 'all 0.15s',
-          }}
-          onMouseEnter={e => e.currentTarget.style.background = '#F3F4F6'}
-          onMouseLeave={e => e.currentTarget.style.background = '#fff'}
-        >
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20">
-            <path d="m13 10 2 2v1.5h-4.25v4.75L10 19l-.75-.75V13.5H5V12l2-2V4.5H6V3h8v1.5h-1V10Zm-5.875 2h5.75L11.5 10.625V4.5h-3v6.125L7.125 12Z" />
-          </svg>
-        </button>
-      </div>
-
-    </div>
     </>
   );
 }
@@ -2917,7 +2916,7 @@ function CategoriesSection({ categoryName }) {
 
         {/* ── LEFT: Spotlight Categories (25%) ── */}
         <div style={{ flex: '0 0 220px', minWidth: 180 }}>
-          <div style={{ fontSize: 16, fontWeight: 700, color: '#1C1D21', marginBottom: 14 }}>
+          <div style={{ fontSize: 16, fontWeight: 700, color: '#201F23', marginBottom: 14 }}>
             Spotlight Categories
           </div>
           <div>
@@ -2925,9 +2924,9 @@ function CategoriesSection({ categoryName }) {
               <div key={i} style={{ marginBottom: 10 }}>
                 <Link
                   to={cat.href}
-                  style={{ fontSize: 14, color: '#374151', textDecoration: 'none', lineHeight: 1.5 }}
+                  style={{ fontSize: 14, color: '#201F23', textDecoration: 'none', lineHeight: 1.5 }}
                   onMouseEnter={e => e.currentTarget.style.color = '#2563EB'}
-                  onMouseLeave={e => e.currentTarget.style.color = '#374151'}
+                  onMouseLeave={e => e.currentTarget.style.color = '#201F23'}
                 >
                   {cat.label}
                 </Link>
@@ -2938,7 +2937,7 @@ function CategoriesSection({ categoryName }) {
 
         {/* ── RIGHT: Similar Categories (75%) ── */}
         <div style={{ flex: 1, minWidth: 200 }}>
-          <div style={{ fontSize: 16, fontWeight: 700, color: '#1C1D21', marginBottom: 14 }}>
+          <div style={{ fontSize: 16, fontWeight: 700, color: '#201F23', marginBottom: 14 }}>
             Similar Categories
           </div>
 
@@ -2963,9 +2962,9 @@ function CategoriesSection({ categoryName }) {
                   }}>
                     <Link
                       to={item.href}
-                      style={{ fontSize: 14, color: '#374151', textDecoration: 'none' }}
+                      style={{ fontSize: 14, color: '#201F23', textDecoration: 'none' }}
                       onMouseEnter={e => e.currentTarget.style.color = '#2563EB'}
-                      onMouseLeave={e => e.currentTarget.style.color = '#374151'}
+                      onMouseLeave={e => e.currentTarget.style.color = '#201F23'}
                     >
                       {item.label}
                     </Link>
@@ -2979,9 +2978,9 @@ function CategoriesSection({ categoryName }) {
           <div style={{ marginTop: 16 }}>
             <Link
               to={`/category/artificial-intelligence/themes`}
-              style={{ fontSize: 14, color: '#374151', textDecoration: 'none' }}
+              style={{ fontSize: 14, color: '#201F23', textDecoration: 'none' }}
               onMouseEnter={e => e.currentTarget.style.color = '#2563EB'}
-              onMouseLeave={e => e.currentTarget.style.color = '#374151'}
+              onMouseLeave={e => e.currentTarget.style.color = '#201F23'}
             >
               Browse {categoryName} Themes
             </Link>
@@ -3018,7 +3017,7 @@ function CategoryDescriptionSection({ serviceName, serviceCategory }) {
             G
           </div>
           <div>
-            <h3 style={{ fontSize: 16, fontWeight: 700, color: '#1C1D21', margin: '0 0 4px' }}>
+            <h3 style={{ fontSize: 16, fontWeight: 700, color: '#201F23', margin: '0 0 4px' }}>
               G2 Research Team
             </h3>
             <p style={{ fontSize: 13, color: '#6B7280', margin: '0 0 8px' }}>
@@ -3028,7 +3027,7 @@ function CategoryDescriptionSection({ serviceName, serviceCategory }) {
         </div>
 
         {/* Title */}
-        <h2 style={{ fontSize: 28, fontWeight: 800, color: '#1C1D21', marginBottom: 16 }}>
+        <h2 style={{ fontSize: 28, fontWeight: 800, color: '#201F23', marginBottom: 16 }}>
           Understanding {serviceName}
         </h2>
 
@@ -3039,7 +3038,7 @@ function CategoryDescriptionSection({ serviceName, serviceCategory }) {
           overflow: 'hidden',
           fontSize: 15,
           lineHeight: 1.6,
-          color: '#374151',
+          color: '#201F23',
         }}>
           <p style={{ margin: '0 0 16px' }}>{description}</p>
           <p style={{ margin: 0 }}>{fullContent}</p>
@@ -3066,7 +3065,7 @@ function CategoryDescriptionSection({ serviceName, serviceCategory }) {
             marginTop: 8,
             background: 'none',
             border: 'none',
-            color: '#5E42C0',
+            color: '#5A39A2',
             fontSize: 14,
             fontWeight: 600,
             cursor: 'pointer',
@@ -3117,27 +3116,27 @@ const SOCIAL_SHARE = [
   {
     name: 'LinkedIn', color: '#0A66C2',
     href: 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.g2.com/categories/artificial-intelligence',
-    icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>,
+    icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" /><circle cx="4" cy="4" r="2" /></svg>,
   },
   {
     name: 'Twitter', color: '#1DA1F2',
     href: 'https://twitter.com/intent/tweet?url=https://www.g2.com/categories/artificial-intelligence',
-    icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.43.36a9 9 0 01-2.88 1.1A4.52 4.52 0 0016.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .36.04.71.11 1.04C7.73 5.38 4.1 3.6 1.67.74a4.52 4.52 0 00-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.49 4.49 0 01-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.52 4.52 0 01-2.04.08c.57 1.79 2.24 3.09 4.21 3.12A9.05 9.05 0 010 19.54a12.78 12.78 0 006.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0023 3z"/></svg>,
+    icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.43.36a9 9 0 01-2.88 1.1A4.52 4.52 0 0016.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .36.04.71.11 1.04C7.73 5.38 4.1 3.6 1.67.74a4.52 4.52 0 00-.61 2.27c0 1.57.8 2.95 2.01 3.76a4.49 4.49 0 01-2.05-.57v.06c0 2.19 1.56 4.02 3.63 4.43a4.52 4.52 0 01-2.04.08c.57 1.79 2.24 3.09 4.21 3.12A9.05 9.05 0 010 19.54a12.78 12.78 0 006.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.18 9.18 0 0023 3z" /></svg>,
   },
   {
     name: 'Facebook', color: '#1877F2',
     href: 'https://www.facebook.com/sharer/sharer.php?u=https://www.g2.com/categories/artificial-intelligence',
-    icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>,
+    icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" /></svg>,
   },
   {
     name: 'Gmail', color: '#EA4335',
     href: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&body=https://www.g2.com/categories/artificial-intelligence',
-    icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>,
+    icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg>,
   },
   {
     name: 'Mail', color: '#6B7280',
     href: 'mailto:?body=https://www.g2.com/categories/artificial-intelligence',
-    icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>,
+    icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M2 7l10 7 10-7" /></svg>,
   },
 ];
 
@@ -3179,7 +3178,7 @@ function G2GridSection({ categoryName }) {
       }}>
         {active && <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#2176AE' }} />}
       </div>
-      <span style={{ fontSize: 14, fontWeight: 600, color: '#1C1D21' }}>{opt.label}</span>
+      <span style={{ fontSize: 14, fontWeight: 600, color: '#201F23' }}>{opt.label}</span>
     </button>
   );
 
@@ -3191,7 +3190,7 @@ function G2GridSection({ categoryName }) {
         boxShadow: '0 2px 10px rgba(0,0,0,0.07)',
       }}>
         <div style={{ marginBottom: 20 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', marginBottom: 12, letterSpacing: '0.01em' }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: '#201F23', marginBottom: 12, letterSpacing: '0.01em' }}>
             Select Grid® View
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -3202,7 +3201,7 @@ function G2GridSection({ categoryName }) {
         </div>
         <div style={{ height: 1, background: '#E5E7EB', marginBottom: 20 }} />
         <div>
-          <div style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', marginBottom: 12, letterSpacing: '0.01em' }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: '#201F23', marginBottom: 12, letterSpacing: '0.01em' }}>
             Select Company Size
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -3217,12 +3216,12 @@ function G2GridSection({ categoryName }) {
         style={{
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           padding: '14px 16px', borderRadius: 999, marginTop: 16,
-          background: '#5E42C0', color: '#fff',
+          background: '#5A39A2', color: '#fff',
           fontSize: 14, fontWeight: 700, textDecoration: 'none',
           boxShadow: '0 2px 8px rgba(94,66,192,0.3)', transition: 'background 0.15s',
         }}
-        onMouseEnter={e => e.currentTarget.style.background = '#4E35A6'}
-        onMouseLeave={e => e.currentTarget.style.background = '#5E42C0'}
+        onMouseEnter={e => e.currentTarget.style.background = '#493088'}
+        onMouseLeave={e => e.currentTarget.style.background = '#5A39A2'}
       >
         Back to product list
       </a>
@@ -3235,10 +3234,10 @@ function G2GridSection({ categoryName }) {
 
         {/* Section Header */}
         <div style={{ marginBottom: 28 }}>
-          <h2 style={{ fontSize: 26, fontWeight: 800, color: '#1C1D21', margin: '0 0 10px' }}>
+          <h2 style={{ fontSize: 26, fontWeight: 800, color: '#201F23', margin: '0 0 10px' }}>
             G2 Grid® for <strong>{categoryName}</strong>
           </h2>
-          <p style={{ fontSize: 14, color: '#374151', lineHeight: 1.7, maxWidth: 860, margin: 0 }}>
+          <p style={{ fontSize: 14, color: '#201F23', lineHeight: 1.7, maxWidth: 860, margin: 0 }}>
             Check out the G2 Grid® for the top {categoryName} products. G2 scores products and sellers based on
             reviews gathered from our user community, as well as data aggregated from online sources and social
             networks. Together, these scores are mapped on our proprietary G2 Grid®, which you can use to compare
@@ -3255,14 +3254,14 @@ function G2GridSection({ categoryName }) {
               display: 'flex', alignItems: 'center', gap: 8,
               padding: '9px 16px', borderRadius: 8,
               border: '1px solid #D1D5DB', background: '#fff',
-              fontSize: 13, fontWeight: 600, color: '#1C1D21', cursor: 'pointer',
+              fontSize: 13, fontWeight: 600, color: '#201F23', cursor: 'pointer',
             }}
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M22 3H2l8 9.46V19l4 2v-7.54L22 3z"/>
+              <path d="M22 3H2l8 9.46V19l4 2v-7.54L22 3z" />
             </svg>
             Filter Grid®
-            <span style={{ marginLeft: 4, fontSize: 12, color: '#5E42C0', fontWeight: 700 }}>
+            <span style={{ marginLeft: 4, fontSize: 12, color: '#5A39A2', fontWeight: 700 }}>
               {gridViewOptions.find(o => o.id === selectedView)?.label} · {segmentOptions.find(o => o.id === selectedSegment)?.label}
             </span>
           </button>
@@ -3296,7 +3295,7 @@ function G2GridSection({ categoryName }) {
                 }}>
                   <span>Market Presence</span>
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{ flexShrink: 0 }}>
-                    <circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>
+                    <circle cx="12" cy="12" r="10" /><path d="M12 8v4M12 16h.01" />
                   </svg>
                 </div>
               </div>
@@ -3326,13 +3325,13 @@ function G2GridSection({ categoryName }) {
                     <div style={{ position: 'absolute', top: '50%', left: 0, right: '50%', bottom: 0, background: 'rgba(156,163,175,0.04)' }} />
 
                     {/* ── Minor grid lines (9×9) ── */}
-                    {[10,20,30,40,60,70,80,90].map(p => (
+                    {[10, 20, 30, 40, 60, 70, 80, 90].map(p => (
                       <div key={`gv${p}`} style={{
                         position: 'absolute', top: 0, bottom: 0, left: `${p}%`,
                         width: 1, background: '#E5E7EB',
                       }} />
                     ))}
-                    {[10,20,30,40,60,70,80,90].map(p => (
+                    {[10, 20, 30, 40, 60, 70, 80, 90].map(p => (
                       <div key={`gh${p}`} style={{
                         position: 'absolute', left: 0, right: 0, top: `${p}%`,
                         height: 1, background: '#E5E7EB',
@@ -3365,7 +3364,7 @@ function G2GridSection({ categoryName }) {
                     {/* Leaders — top right */}
                     <div style={{
                       position: 'absolute', top: 10, right: 12,
-                      fontSize: 10, fontWeight: 800, color: '#5E42C0',
+                      fontSize: 10, fontWeight: 800, color: '#5A39A2',
                       textTransform: 'uppercase', letterSpacing: '0.1em',
                     }}>Leaders</div>
                     {/* High Performers — top left */}
@@ -3407,7 +3406,7 @@ function G2GridSection({ categoryName }) {
                         <div style={{
                           width: 34, height: 34,
                           borderRadius: 8,
-                          border: `2px solid ${tooltip?.prod?.id === prod.id ? '#5E42C0' : '#D1D5DB'}`,
+                          border: `2px solid ${tooltip?.prod?.id === prod.id ? '#5A39A2' : '#D1D5DB'}`,
                           background: '#fff',
                           boxShadow: tooltip?.prod?.id === prod.id
                             ? '0 0 0 3px rgba(94,66,192,0.18), 0 4px 12px rgba(0,0,0,0.18)'
@@ -3465,7 +3464,7 @@ function G2GridSection({ categoryName }) {
                               <img src={p.logo} alt={p.name} style={{ width: 26, height: 26, objectFit: 'contain' }} />
                             </div>
                             <div>
-                              <div style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', lineHeight: 1.3 }}>{p.name}</div>
+                              <div style={{ fontSize: 13, fontWeight: 700, color: '#201F23', lineHeight: 1.3 }}>{p.name}</div>
                               <div style={{ display: 'flex', gap: 1, marginTop: 3 }}>
                                 {[...Array(5)].map((_, i) => (
                                   <span key={i} style={{ color: i < Math.floor(p.stars) ? '#FF4F00' : '#D1D5DB', fontSize: 13, lineHeight: 1 }}>★</span>
@@ -3478,7 +3477,7 @@ function G2GridSection({ categoryName }) {
                             borderTop: '1px solid #F3F4F6', paddingTop: 8, marginTop: 2,
                           }}>
                             <span style={{ fontSize: 12, color: '#6B7280' }}>{p.reviews} reviews</span>
-                            <span style={{ fontSize: 12, color: '#5E42C0', fontWeight: 700 }}>See Reviews →</span>
+                            <span style={{ fontSize: 12, color: '#5A39A2', fontWeight: 700 }}>See Reviews →</span>
                           </div>
                         </div>
                       );
@@ -3496,7 +3495,7 @@ function G2GridSection({ categoryName }) {
                 }}>
                   <span>Satisfaction</span>
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/>
+                    <circle cx="12" cy="12" r="10" /><path d="M12 8v4M12 16h.01" />
                   </svg>
                 </div>
 
@@ -3508,7 +3507,7 @@ function G2GridSection({ categoryName }) {
                   <a
                     href="https://research.g2.com/g2-scoring-methodologies"
                     target="_blank" rel="noopener noreferrer"
-                    style={{ fontSize: 12, color: '#5E42C0', fontWeight: 600, textDecoration: 'none' }}
+                    style={{ fontSize: 12, color: '#5A39A2', fontWeight: 600, textDecoration: 'none' }}
                     onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
                     onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
                   >
@@ -3555,12 +3554,12 @@ function G2GridSection({ categoryName }) {
                 padding: '16px 20px', borderBottom: '1px solid #E5E7EB',
                 display: 'flex', alignItems: 'center', justifyContent: 'space-between',
               }}>
-                <h3 style={{ fontSize: 17, fontWeight: 700, color: '#1C1D21', margin: 0 }}>Filter Grid®</h3>
+                <h3 style={{ fontSize: 17, fontWeight: 700, color: '#201F23', margin: 0 }}>Filter Grid®</h3>
                 <button onClick={() => setMobileFilterOpen(false)} style={{ background: 'none', border: 'none', fontSize: 22, cursor: 'pointer', color: '#6B7280', lineHeight: 1 }}>✕</button>
               </div>
               <div style={{ padding: '20px', overflowY: 'auto', flex: 1 }}>
                 <div style={{ marginBottom: 20 }}>
-                  <div style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', marginBottom: 12 }}>Select Grid® View</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: '#201F23', marginBottom: 12 }}>Select Grid® View</div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                     {gridViewOptions.map(opt => (
                       <RadioOption key={opt.id} opt={opt} active={selectedView === opt.id} onClick={() => setSelectedView(opt.id)} />
@@ -3569,7 +3568,7 @@ function G2GridSection({ categoryName }) {
                 </div>
                 <div style={{ height: 1, background: '#E5E7EB', marginBottom: 20 }} />
                 <div>
-                  <div style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', marginBottom: 12 }}>Select Company Size</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: '#201F23', marginBottom: 12 }}>Select Company Size</div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                     {segmentOptions.map(opt => (
                       <RadioOption key={opt.id} opt={opt} active={selectedSegment === opt.id} onClick={() => setSelectedSegment(opt.id)} />
@@ -3580,11 +3579,11 @@ function G2GridSection({ categoryName }) {
               <div style={{ padding: '12px 20px', borderTop: '1px solid #E5E7EB', display: 'flex', gap: 12 }}>
                 <button
                   onClick={() => { setSelectedView('grid'); setSelectedSegment('all'); }}
-                  style={{ flex: 1, padding: '11px 0', borderRadius: 8, border: '1px solid #D1D5DB', background: '#fff', color: '#374151', fontSize: 14, fontWeight: 600, cursor: 'pointer' }}
+                  style={{ flex: 1, padding: '11px 0', borderRadius: 8, border: '1px solid #D1D5DB', background: '#fff', color: '#201F23', fontSize: 14, fontWeight: 600, cursor: 'pointer' }}
                 >Reset</button>
                 <button
                   onClick={() => setMobileFilterOpen(false)}
-                  style={{ flex: 1, padding: '11px 0', borderRadius: 8, border: 'none', background: '#5E42C0', color: '#fff', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}
+                  style={{ flex: 1, padding: '11px 0', borderRadius: 8, border: 'none', background: '#5A39A2', color: '#fff', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}
                 >Apply</button>
               </div>
             </div>
@@ -3641,13 +3640,15 @@ const LEARN_MORE_CONTENT = [
     heading: 'How do active learning tools work in machine learning?',
     body: [
       { type: 'p', text: 'Below is the complete process of how active learning tools use background knowledge to identify unlabeled test data and enhance its accuracy with retraining.' },
-      { type: 'ul', items: [
-        { label: 'Starting small:', text: 'The process begins by training the ML model on the provided labeled dataset, which is essentially 10% of the total training dataset. It also provides a solid foundation for the ML tool\'s initial training.' },
-        { label: 'Model training:', text: 'Using the available data, the active learning system trains one or multiple ML models (committee of models), which will work on the rest of the 90% unlabeled dataset.' },
-        { label: 'Query strategy:', text: 'A query strategy selects the most informative unlabeled data. The points that the algorithm is most uncertain about are mined and kept aside for human intervention.' },
-        { label: 'Human-in-the-loop:', text: 'The accuracy and precision of active learning tools stem from human involvement in data labeling. The ML model identifies data points to query based on their informativeness, and human intervention occurs only when the model is most uncertain about a decision.' },
-        { label: 'Retraining:', text: 'Once the newly trained dataset is added, the model retrains, predicting uncertain data points and integrating these learnings into its main algorithm. This continuous cycle of querying, labeling, and retraining improves the model\'s accuracy, speed, and resource efficiency.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'Starting small:', text: 'The process begins by training the ML model on the provided labeled dataset, which is essentially 10% of the total training dataset. It also provides a solid foundation for the ML tool\'s initial training.' },
+          { label: 'Model training:', text: 'Using the available data, the active learning system trains one or multiple ML models (committee of models), which will work on the rest of the 90% unlabeled dataset.' },
+          { label: 'Query strategy:', text: 'A query strategy selects the most informative unlabeled data. The points that the algorithm is most uncertain about are mined and kept aside for human intervention.' },
+          { label: 'Human-in-the-loop:', text: 'The accuracy and precision of active learning tools stem from human involvement in data labeling. The ML model identifies data points to query based on their informativeness, and human intervention occurs only when the model is most uncertain about a decision.' },
+          { label: 'Retraining:', text: 'Once the newly trained dataset is added, the model retrains, predicting uncertain data points and integrating these learnings into its main algorithm. This continuous cycle of querying, labeling, and retraining improves the model\'s accuracy, speed, and resource efficiency.' },
+        ]
+      },
     ],
   },
   {
@@ -3655,17 +3656,19 @@ const LEARN_MORE_CONTENT = [
     heading: 'What are the common features of active learning tools?',
     body: [
       { type: 'p', text: 'Active learning tools efficiently handle large data volumes, using real-time user feedback to boost performance. Let\'s explore the features offered by some best active learning solutions.' },
-      { type: 'ul', items: [
-        { label: 'Automated query strategies:', text: 'These tools use query strategies like uncertainty sampling, random sampling, and margin sampling to identify the most informative data points for human review.' },
-        { label: 'Integration with existing ML frameworks:', text: 'Active learning tools are compatible with key ML frameworks like PyTorch, Python Keras, TensorFlow, and Scikit-Learn, allowing developers to code efficiently and save time.' },
-        { label: 'Scalability:', text: 'An active learning-powered ML model processes large datasets of various types. These tools adapt to all user inputs, integrating learnings into their core training dataset for retraining and performance enhancement.' },
-        { label: 'Faster model training:', text: 'Retraining on new data points allows the ML model to excel in live testing environments, minimizing error risks and passing quality assurance during production unit testing.' },
-        { label: 'Data labeling:', text: 'Active learning tools manage, track, and label large volumes of unlabeled datasets without requiring separate database management tools.' },
-        { label: 'Performance metrics and analytics:', text: 'Built-in performance metrics and analytics dashboards highlight the impact of labeled data on model efficiency, helping to reduce errors and risks.' },
-        { label: 'Customizable querying:', text: 'Active learning supports flexible, customizable query strategies tailored to various use cases, enhancing accuracy.' },
-        { label: 'Collaboration and interactivity:', text: 'These tools thoroughly review training data and repurpose elements to aid in classifying unlabeled datasets while continuously collaborating with users for process refinement.' },
-        { label: 'Data annotation:', text: 'Active learning tools simplify data annotation through an integrated query system, eliminating the need for API calls to external systems.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'Automated query strategies:', text: 'These tools use query strategies like uncertainty sampling, random sampling, and margin sampling to identify the most informative data points for human review.' },
+          { label: 'Integration with existing ML frameworks:', text: 'Active learning tools are compatible with key ML frameworks like PyTorch, Python Keras, TensorFlow, and Scikit-Learn, allowing developers to code efficiently and save time.' },
+          { label: 'Scalability:', text: 'An active learning-powered ML model processes large datasets of various types. These tools adapt to all user inputs, integrating learnings into their core training dataset for retraining and performance enhancement.' },
+          { label: 'Faster model training:', text: 'Retraining on new data points allows the ML model to excel in live testing environments, minimizing error risks and passing quality assurance during production unit testing.' },
+          { label: 'Data labeling:', text: 'Active learning tools manage, track, and label large volumes of unlabeled datasets without requiring separate database management tools.' },
+          { label: 'Performance metrics and analytics:', text: 'Built-in performance metrics and analytics dashboards highlight the impact of labeled data on model efficiency, helping to reduce errors and risks.' },
+          { label: 'Customizable querying:', text: 'Active learning supports flexible, customizable query strategies tailored to various use cases, enhancing accuracy.' },
+          { label: 'Collaboration and interactivity:', text: 'These tools thoroughly review training data and repurpose elements to aid in classifying unlabeled datasets while continuously collaborating with users for process refinement.' },
+          { label: 'Data annotation:', text: 'Active learning tools simplify data annotation through an integrated query system, eliminating the need for API calls to external systems.' },
+        ]
+      },
     ],
   },
   {
@@ -3675,23 +3678,27 @@ const LEARN_MORE_CONTENT = [
       { type: 'p', text: 'Active learning tools can be classified based on their data labeling approach, as well as the uncertainty measure and confidence score generated by the model. Depending on the dataset\'s difficulty level, businesses can utilize two types of active learning tools.' },
       { type: 'h4', text: 'Query synthesis' },
       { type: 'p', text: 'This approach is ideal for labeling challenging data points that the ML model rates with an unusually high confidence score. Query synthesis identifies data points that misalign with the overall data distribution.' },
-      { type: 'ul', items: [
-        { label: 'Generative AI software:', text: 'These tools train algorithms on unlabeled data pools by creating clusters of informative data points based on real-world distributions.' },
-        { label: 'Simulated environments:', text: 'These tools generate synthetic data points based on their distance from the classification boundary, utilizing active learning in simulated environments.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'Generative AI software:', text: 'These tools train algorithms on unlabeled data pools by creating clusters of informative data points based on real-world distributions.' },
+          { label: 'Simulated environments:', text: 'These tools generate synthetic data points based on their distance from the classification boundary, utilizing active learning in simulated environments.' },
+        ]
+      },
       { type: 'h4', text: 'Sampling methods' },
       { type: 'p', text: 'Sampling methods select the most informative data points from new incoming unlabeled data streams. Key types include:' },
-      { type: 'ul', items: [
-        { label: 'Uncertainty sampling:', text: 'Clusters incoming unlabeled data based on a preset threshold or informative score, indicating the ML model\'s uncertainty in predicting these points\' classes.' },
-        { label: 'Least confidence sampling:', text: 'Targets data points with the lowest confidence scores, indicating high uncertainty.' },
-        { label: 'Policy-based active learning (PAL):', text: 'Enables stream-based selective sampling in a reinforcement context.' },
-        { label: 'Margin sampling:', text: 'Prioritizes data points near the classification boundary.' },
-        { label: 'Entropy-based sampling:', text: 'Only clusters the unlabeled data points that have competing hypotheses and are highly uncertain about labeling.' },
-        { label: 'Random sampling:', text: 'The algorithm randomly samples incoming unlabeled points and clusters them into different groups.' },
-        { label: 'Query by committee (QBC):', text: 'An ensemble of ML models that collectively agree or disagree on label prediction.' },
-        { label: 'Diversity sampling tools:', text: 'Focuses on selecting heterogeneous data variables that are not labeled in the training set.' },
-        { label: 'Expected model change:', text: 'The ML model only queries data points expected to significantly impact accuracy and precision.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'Uncertainty sampling:', text: 'Clusters incoming unlabeled data based on a preset threshold or informative score, indicating the ML model\'s uncertainty in predicting these points\' classes.' },
+          { label: 'Least confidence sampling:', text: 'Targets data points with the lowest confidence scores, indicating high uncertainty.' },
+          { label: 'Policy-based active learning (PAL):', text: 'Enables stream-based selective sampling in a reinforcement context.' },
+          { label: 'Margin sampling:', text: 'Prioritizes data points near the classification boundary.' },
+          { label: 'Entropy-based sampling:', text: 'Only clusters the unlabeled data points that have competing hypotheses and are highly uncertain about labeling.' },
+          { label: 'Random sampling:', text: 'The algorithm randomly samples incoming unlabeled points and clusters them into different groups.' },
+          { label: 'Query by committee (QBC):', text: 'An ensemble of ML models that collectively agree or disagree on label prediction.' },
+          { label: 'Diversity sampling tools:', text: 'Focuses on selecting heterogeneous data variables that are not labeled in the training set.' },
+          { label: 'Expected model change:', text: 'The ML model only queries data points expected to significantly impact accuracy and precision.' },
+        ]
+      },
     ],
   },
   {
@@ -3699,14 +3706,16 @@ const LEARN_MORE_CONTENT = [
     heading: 'What are the benefits of active learning tools?',
     body: [
       { type: 'p', text: 'Active learning solutions are resource-efficient for companies that relied heavily on data labeling software and annotators. Let\'s look at some of the major benefits.' },
-      { type: 'ul', items: [
-        { label: 'Cost-effectiveness:', text: 'Active learning software trains on small labeled datasets, using previous learnings to predict data classes, significantly reducing the need for costly data labeling.' },
-        { label: 'Faster model performance:', text: 'By focusing on the most informative samples, these tools improve prediction accuracy and retrain models on new data, boosting performance on real-world test data.' },
-        { label: 'Faster time to market:', text: 'Active learning accelerates the machine development lifecycle, enabling faster assembly and deployment of models through collaborative data handling.' },
-        { label: 'Optimized resource utilization:', text: 'Increased collaboration and rigorous training make these tools more efficient than unsupervised ML algorithms, saving valuable time for data scientists.' },
-        { label: 'Improved model generalization:', text: 'By using metrics like confidence scores and tensor values, these models rapidly self-learn, enhancing efficiency on unseen data.' },
-        { label: 'Better for self-assist technology:', text: 'These tools excel in tasks such as object detection for autonomous vehicles, robotic vacuums, and voice recognition systems.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'Cost-effectiveness:', text: 'Active learning software trains on small labeled datasets, using previous learnings to predict data classes, significantly reducing the need for costly data labeling.' },
+          { label: 'Faster model performance:', text: 'By focusing on the most informative samples, these tools improve prediction accuracy and retrain models on new data, boosting performance on real-world test data.' },
+          { label: 'Faster time to market:', text: 'Active learning accelerates the machine development lifecycle, enabling faster assembly and deployment of models through collaborative data handling.' },
+          { label: 'Optimized resource utilization:', text: 'Increased collaboration and rigorous training make these tools more efficient than unsupervised ML algorithms, saving valuable time for data scientists.' },
+          { label: 'Improved model generalization:', text: 'By using metrics like confidence scores and tensor values, these models rapidly self-learn, enhancing efficiency on unseen data.' },
+          { label: 'Better for self-assist technology:', text: 'These tools excel in tasks such as object detection for autonomous vehicles, robotic vacuums, and voice recognition systems.' },
+        ]
+      },
     ],
   },
   {
@@ -3714,14 +3723,16 @@ const LEARN_MORE_CONTENT = [
     heading: 'Challenges of active learning tools',
     body: [
       { type: 'p', text: 'Even the best active learning solutions come with their own set of challenges. Some common challenges are mentioned below.' },
-      { type: 'ul', items: [
-        { label: 'Data growth:', text: 'Managing ever-growing datasets requires additional investments in data management solutions or network infrastructure, which can be costly.' },
-        { label: 'Data security and compliance:', text: 'Ensuring compliance with GDPR and other legal standards is crucial when handling data.' },
-        { label: 'Data preservation:', text: 'Maintaining data quality as it evolves can be tough, demanding investments into data archiving and backup software.' },
-        { label: 'Data storage and retrieval cost:', text: 'Storing and retrieving data, especially high-resolution images, videos, and text datasets, can be costly.' },
-        { label: 'Data accessibility:', text: 'Limited access to data, whether on-premises, in the cloud, or in hybrid environments, can hinder processing.' },
-        { label: 'Format compatibility:', text: 'Accommodating all data formats often requires data conversion or parsing to prevent diverse formats from affecting ML model performance.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'Data growth:', text: 'Managing ever-growing datasets requires additional investments in data management solutions or network infrastructure, which can be costly.' },
+          { label: 'Data security and compliance:', text: 'Ensuring compliance with GDPR and other legal standards is crucial when handling data.' },
+          { label: 'Data preservation:', text: 'Maintaining data quality as it evolves can be tough, demanding investments into data archiving and backup software.' },
+          { label: 'Data storage and retrieval cost:', text: 'Storing and retrieving data, especially high-resolution images, videos, and text datasets, can be costly.' },
+          { label: 'Data accessibility:', text: 'Limited access to data, whether on-premises, in the cloud, or in hybrid environments, can hinder processing.' },
+          { label: 'Format compatibility:', text: 'Accommodating all data formats often requires data conversion or parsing to prevent diverse formats from affecting ML model performance.' },
+        ]
+      },
     ],
   },
   {
@@ -3738,14 +3749,16 @@ const LEARN_MORE_CONTENT = [
     heading: 'Active learning tools use cases',
     body: [
       { type: 'p', text: 'Active learning tools have a wide set of practical applications across industries. Let\'s explore some use cases for key AI assistive tasks.' },
-      { type: 'ul', items: [
-        { label: 'Computer vision:', text: 'Companies that work with short datasets and high computational costs use these collaborative tools to detect, localize, and classify external objects with less time, resources, and production effort.' },
-        { label: 'Object detection:', text: 'These tools reduce the manpower needed to feed large image sets for object detection. Especially useful when the model needs to declare the class of every external component and label them without any error.' },
-        { label: 'Image classification:', text: 'These tools are pivotal in static or dynamic image classification by iteratively refining the ML model. Also used for medical imaging and simplifying disease identification.' },
-        { label: 'Image restoration:', text: 'These tools can repair chipped or scrubbed images by analyzing the image style and template and matching it with unlabeled data.' },
-        { label: 'Natural language processing:', text: 'These tools can be used for sentiment analysis and sequential modeling, training on fewer data samples to analyze newer text sequences.' },
-        { label: 'Voice recognition solutions:', text: 'These tools can also be used for voice assistive technology like Amazon Echo, Google Home or Microsoft Cortana.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'Computer vision:', text: 'Companies that work with short datasets and high computational costs use these collaborative tools to detect, localize, and classify external objects with less time, resources, and production effort.' },
+          { label: 'Object detection:', text: 'These tools reduce the manpower needed to feed large image sets for object detection. Especially useful when the model needs to declare the class of every external component and label them without any error.' },
+          { label: 'Image classification:', text: 'These tools are pivotal in static or dynamic image classification by iteratively refining the ML model. Also used for medical imaging and simplifying disease identification.' },
+          { label: 'Image restoration:', text: 'These tools can repair chipped or scrubbed images by analyzing the image style and template and matching it with unlabeled data.' },
+          { label: 'Natural language processing:', text: 'These tools can be used for sentiment analysis and sequential modeling, training on fewer data samples to analyze newer text sequences.' },
+          { label: 'Voice recognition solutions:', text: 'These tools can also be used for voice assistive technology like Amazon Echo, Google Home or Microsoft Cortana.' },
+        ]
+      },
     ],
   },
   {
@@ -3753,11 +3766,13 @@ const LEARN_MORE_CONTENT = [
     heading: 'Software and services related to active learning tools',
     body: [
       { type: 'p', text: 'Active learning tools lack direct alternatives, but the following related software can complement them. These tools help cut data costs, save resources, and accelerate ML model production.' },
-      { type: 'ul', items: [
-        { label: 'MLOps platforms:', text: 'MLOps supports the deployment, validation, testing, and production cycles of ML models. It ensures increased agility, efficiency, and production speed of well-trained active learning systems.' },
-        { label: 'Data labeling software:', text: 'Data labeling software is essential for labeling data fields for model training. It powers active learning software by feeding it with the right and accurately labeled data.' },
-        { label: 'Data science and machine learning platforms:', text: 'This suite offers comprehensive features like data analytics, data preparation, data visualization, model training, statistical interpretation, validation, and testing.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'MLOps platforms:', text: 'MLOps supports the deployment, validation, testing, and production cycles of ML models. It ensures increased agility, efficiency, and production speed of well-trained active learning systems.' },
+          { label: 'Data labeling software:', text: 'Data labeling software is essential for labeling data fields for model training. It powers active learning software by feeding it with the right and accurately labeled data.' },
+          { label: 'Data science and machine learning platforms:', text: 'This suite offers comprehensive features like data analytics, data preparation, data visualization, model training, statistical interpretation, validation, and testing.' },
+        ]
+      },
     ],
   },
   {
@@ -3765,11 +3780,13 @@ const LEARN_MORE_CONTENT = [
     heading: 'Active learning software pricing',
     body: [
       { type: 'p', text: 'Active learning tools offer various pricing models, with costs typically influenced by factors like features, number of users, deployment scale, and the level of support and training needed. Common pricing models include:' },
-      { type: 'ul', items: [
-        { label: 'Subscription-based:', text: 'This is the most common model, where users pay a recurring fee for ongoing access to the tool.' },
-        { label: 'Pay-as-you-go:', text: 'In this model, users are charged based on their actual usage, often measured by the number of data points processed or labels created.' },
-        { label: 'One-time payment:', text: 'This model requires a single upfront payment for a perpetual license, granting indefinite access to the software.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'Subscription-based:', text: 'This is the most common model, where users pay a recurring fee for ongoing access to the tool.' },
+          { label: 'Pay-as-you-go:', text: 'In this model, users are charged based on their actual usage, often measured by the number of data points processed or labels created.' },
+          { label: 'One-time payment:', text: 'This model requires a single upfront payment for a perpetual license, granting indefinite access to the software.' },
+        ]
+      },
       { type: 'p', text: 'On average, prices can range from a few hundred dollars per month for basic licenses to thousands or even tens of thousands for enterprise-level solutions with extensive support and customization.' },
       { type: 'p', text: 'Most tools offer flexible pricing plans to accommodate different budgets and needs, and most vendors provide trial versions or demos for users to test features before making a commitment.' },
     ],
@@ -3779,14 +3796,16 @@ const LEARN_MORE_CONTENT = [
     heading: 'Which companies should buy active learning tools?',
     body: [
       { type: 'p', text: 'Any industry or company with a development team can employ an active learning tool. Below are some major companies that can benefit from purchasing one.' },
-      { type: 'ul', items: [
-        { label: 'Financial institutions', text: 'handle complex data for tasks like credit control, risk analysis, account management, and loan approvals. Active learning tools reduce data complexity, speed up data labeling, and provide timely predictions for these critical tasks.' },
-        { label: 'Healthcare organizations', text: 'manage diverse data, including medical records, patient information, and lab results, for activities like drug research and distribution.' },
-        { label: 'Legal firms', text: 'benefit from active learning by categorizing and labeling legal documents, which optimizes document review, legal research, decision-making, and drafting.' },
-        { label: 'Government agencies', text: 'use active learning tools to design policies, regulatory frameworks, election initiatives, and welfare programs.' },
-        { label: 'Educational institutions', text: 'utilise active learning to create e-learning curriculums, organize webinars, and provide instant feedback, enhancing learning environments.' },
-        { label: 'Retail and manufacturing companies', text: 'apply active learning to label supply chain data, forecast demand, and improve quality control.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'Financial institutions', text: 'handle complex data for tasks like credit control, risk analysis, account management, and loan approvals. Active learning tools reduce data complexity, speed up data labeling, and provide timely predictions for these critical tasks.' },
+          { label: 'Healthcare organizations', text: 'manage diverse data, including medical records, patient information, and lab results, for activities like drug research and distribution.' },
+          { label: 'Legal firms', text: 'benefit from active learning by categorizing and labeling legal documents, which optimizes document review, legal research, decision-making, and drafting.' },
+          { label: 'Government agencies', text: 'use active learning tools to design policies, regulatory frameworks, election initiatives, and welfare programs.' },
+          { label: 'Educational institutions', text: 'utilise active learning to create e-learning curriculums, organize webinars, and provide instant feedback, enhancing learning environments.' },
+          { label: 'Retail and manufacturing companies', text: 'apply active learning to label supply chain data, forecast demand, and improve quality control.' },
+        ]
+      },
     ],
   },
   {
@@ -3794,14 +3813,16 @@ const LEARN_MORE_CONTENT = [
     heading: 'How to choose the best active learning tools',
     body: [
       { type: 'p', text: 'Selecting the right active learning tool for your project requires careful consideration of several factors. Be sure to involve your data and machine learning teams to make an informed, efficient decision.' },
-      { type: 'numbered', items: [
-        { label: 'Define goals and requirements:', text: 'These tools are beneficial only if there\'s a clear understanding of business data and data scientists\' needs. Identify the specific use case and ensure the tool aligns with your data types and task complexity.' },
-        { label: 'Identify key features:', text: 'Look for model compatibility, sampling strategies, scalability, ease of use, and thorough support and documentation.' },
-        { label: 'Consider cost and licensing:', text: 'Review pricing models and trial options. Consider the balance between cost, features, and scalability, while staying within your budget.' },
-        { label: 'Test and compare:', text: 'Use demos to test features, benchmark performance on your datasets, and read user reviews for additional insights.' },
-        { label: 'Run a pilot:', text: 'After selecting a provider, take a customized demo to experience the software hands-on. This helps ensure a smooth decision-making process.' },
-        { label: 'Post-implementation checks:', text: 'Subscribe to the best plan for your company, run quality control tests using your data. Ensure the platform maintains scalability, efficiency, and role-based access.' },
-      ]},
+      {
+        type: 'numbered', items: [
+          { label: 'Define goals and requirements:', text: 'These tools are beneficial only if there\'s a clear understanding of business data and data scientists\' needs. Identify the specific use case and ensure the tool aligns with your data types and task complexity.' },
+          { label: 'Identify key features:', text: 'Look for model compatibility, sampling strategies, scalability, ease of use, and thorough support and documentation.' },
+          { label: 'Consider cost and licensing:', text: 'Review pricing models and trial options. Consider the balance between cost, features, and scalability, while staying within your budget.' },
+          { label: 'Test and compare:', text: 'Use demos to test features, benchmark performance on your datasets, and read user reviews for additional insights.' },
+          { label: 'Run a pilot:', text: 'After selecting a provider, take a customized demo to experience the software hands-on. This helps ensure a smooth decision-making process.' },
+          { label: 'Post-implementation checks:', text: 'Subscribe to the best plan for your company, run quality control tests using your data. Ensure the platform maintains scalability, efficiency, and role-based access.' },
+        ]
+      },
     ],
   },
   {
@@ -3809,16 +3830,20 @@ const LEARN_MORE_CONTENT = [
     heading: 'Who uses active learning tools?',
     body: [
       { type: 'p', text: 'Below are a few types of professionals who may use active learning software.' },
-      { type: 'ul', items: [
-        { label: 'IT administrators', text: 'use active learning tools to optimize data infrastructure for secure and efficient model training and deployment.' },
-        { label: 'Data scientists', text: 'apply active learning to improve model accuracy and development speed by focusing on uncertain data points, reducing labeling costs.' },
-        { label: 'Data analysts', text: 'automate data exploration, focusing on flagged data points that are critical for decision-making.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'IT administrators', text: 'use active learning tools to optimize data infrastructure for secure and efficient model training and deployment.' },
+          { label: 'Data scientists', text: 'apply active learning to improve model accuracy and development speed by focusing on uncertain data points, reducing labeling costs.' },
+          { label: 'Data analysts', text: 'automate data exploration, focusing on flagged data points that are critical for decision-making.' },
+        ]
+      },
       { type: 'p', text: 'Key teams benefiting from active learning:' },
-      { type: 'ul', items: [
-        { label: 'Machine learning teams', text: 'oversee the entire ML model cycle and develop forecasting strategies. Active learning tools enhance data quality and scalability, improving forecasting outcomes.' },
-        { label: 'Data operations teams', text: 'ensure data quality and monitor model performance to prevent degradation. They use active learning to extract insights from customer feedback.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'Machine learning teams', text: 'oversee the entire ML model cycle and develop forecasting strategies. Active learning tools enhance data quality and scalability, improving forecasting outcomes.' },
+          { label: 'Data operations teams', text: 'ensure data quality and monitor model performance to prevent degradation. They use active learning to extract insights from customer feedback.' },
+        ]
+      },
     ],
   },
   {
@@ -3826,10 +3851,12 @@ const LEARN_MORE_CONTENT = [
     heading: 'Active learning tools trends',
     body: [
       { type: 'p', text: 'At present, the need for highly agile ML algorithms that can manage and store large volumes of data is rapidly growing. Here\'s how active learning tools can contribute to this trend.' },
-      { type: 'ul', items: [
-        { label: 'Data storage alternative:', text: 'Active data archiving has emerged as a smarter data management solution. The user can move inactive or less frequently used data to cheaper storage systems. This can help users access quality data with ease and reduce data storage costs.' },
-        { label: 'AI/MLOps for storage system management automation:', text: 'AI and MLOps simplify data storage and retrieval by using software libraries and automating access, allowing models to work more easily with data.' },
-      ]},
+      {
+        type: 'ul', items: [
+          { label: 'Data storage alternative:', text: 'Active data archiving has emerged as a smarter data management solution. The user can move inactive or less frequently used data to cheaper storage systems. This can help users access quality data with ease and reduce data storage costs.' },
+          { label: 'AI/MLOps for storage system management automation:', text: 'AI and MLOps simplify data storage and retrieval by using software libraries and automating access, allowing models to work more easily with data.' },
+        ]
+      },
       { type: 'authors', researched: 'Michael Pigott', reviewed: 'Jigmee Bhutia' },
     ],
   },
@@ -3860,7 +3887,7 @@ function LearnMoreSection({ categoryName }) {
       }
       if (block.type === 'h4') {
         return (
-          <h4 key={i} style={{ fontSize: 17, fontWeight: 800, color: '#1C1D21', margin: '24px 0 12px' }}>
+          <h4 key={i} style={{ fontSize: 17, fontWeight: 800, color: '#201F23', margin: '24px 0 12px' }}>
             {block.text}
           </h4>
         );
@@ -3877,12 +3904,12 @@ function LearnMoreSection({ categoryName }) {
                   justifyContent: 'center',
                   flexShrink: 0,
                   marginTop: 4,
-                  color: '#5E42C0',
+                  color: '#5A39A2',
                 }}>
                   <svg width="10" height="14" viewBox="0 0 10 14" fill="none">
                     <path
                       d="M2 2L7 7L2 12"
-                      stroke="#5E42C0"
+                      stroke="#5A39A2"
                       strokeWidth="3"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -3890,7 +3917,7 @@ function LearnMoreSection({ categoryName }) {
                   </svg>
                 </span>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <strong style={{ color: '#1C1D21', fontWeight: 700 }}>{item.label}</strong>{' '}
+                  <strong style={{ color: '#201F23', fontWeight: 700 }}>{item.label}</strong>{' '}
                   <span style={{ color: '#4B5563' }}>{item.text}</span>
                 </div>
               </li>
@@ -3901,9 +3928,9 @@ function LearnMoreSection({ categoryName }) {
       if (block.type === 'authors') {
         return (
           <p key={i} style={{ fontSize: 14, color: '#6B7280', fontStyle: 'italic', marginTop: 24, lineHeight: 1.7 }}>
-            Researched and written by <strong style={{ color: '#374151' }}>{block.researched}</strong>
+            Researched and written by <strong style={{ color: '#201F23' }}>{block.researched}</strong>
             <br />
-            Reviewed and edited by <strong style={{ color: '#374151' }}>{block.reviewed}</strong>
+            Reviewed and edited by <strong style={{ color: '#201F23' }}>{block.reviewed}</strong>
           </p>
         );
       }
@@ -3916,7 +3943,7 @@ function LearnMoreSection({ categoryName }) {
 
         {/* Section heading */}
         <h2 className="lm-title" style={{
-          fontSize: 28, fontWeight: 800, color: '#5E42C0',
+          fontSize: 28, fontWeight: 800, color: '#5A39A2',
           margin: '0 0 32px',
         }}>
           Learn More About {categoryName}
@@ -3947,7 +3974,7 @@ function LearnMoreSection({ categoryName }) {
               boxShadow: '0 4px 16px rgba(0,0,0,0.06)',
             }}>
               <div style={{
-                fontSize: 13, fontWeight: 800, color: '#1C1D21',
+                fontSize: 13, fontWeight: 800, color: '#201F23',
                 padding: '0 20px 12px',
                 borderBottom: '1px solid #F3F4F6',
                 letterSpacing: '0.03em',
@@ -3960,7 +3987,7 @@ function LearnMoreSection({ categoryName }) {
                 <span style={{
                   fontSize: 11,
                   fontWeight: 700,
-                  color: '#5E42C0',
+                  color: '#5A39A2',
                   background: '#F3F0FF',
                   padding: '2px 8px',
                   borderRadius: 999,
@@ -3981,18 +4008,18 @@ function LearnMoreSection({ categoryName }) {
                         fontSize: 13,
                         fontWeight: 500,
                         lineHeight: 1.5,
-                        color: '#374151',
+                        color: '#201F23',
                         background: 'transparent',
                         border: 'none',
                         cursor: 'pointer',
                         transition: 'all 0.15s ease',
                       }}
                       onMouseEnter={e => {
-                        e.currentTarget.style.color = '#1C1D21';
+                        e.currentTarget.style.color = '#201F23';
                         e.currentTarget.style.background = '#F9FAFB';
                       }}
                       onMouseLeave={e => {
-                        e.currentTarget.style.color = '#374151';
+                        e.currentTarget.style.color = '#201F23';
                         e.currentTarget.style.background = 'transparent';
                       }}
                     >
@@ -4034,14 +4061,14 @@ function LearnMoreSection({ categoryName }) {
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span style={{ fontSize: 15, fontWeight: 700, color: '#5E42C0' }}>
+                  <span style={{ fontSize: 15, fontWeight: 700, color: '#5A39A2' }}>
                     {categoryName} Topics
                   </span>
                   <span style={{
                     fontSize: 11,
                     fontWeight: 700,
                     background: '#EDE9FE',
-                    color: '#5E42C0',
+                    color: '#5A39A2',
                     padding: '2px 8px',
                     borderRadius: 999,
                   }}>
@@ -4049,7 +4076,7 @@ function LearnMoreSection({ categoryName }) {
                   </span>
                 </div>
                 <svg
-                  width="18" height="18" viewBox="0 0 20 20" fill="#5E42C0"
+                  width="18" height="18" viewBox="0 0 20 20" fill="#5A39A2"
                   style={{
                     transition: 'transform 0.2s ease',
                     transform: mobileOpen ? 'rotate(180deg)' : 'none',
@@ -4078,7 +4105,7 @@ function LearnMoreSection({ categoryName }) {
                           textAlign: 'left',
                           padding: '10px 18px',
                           fontSize: 14,
-                          color: '#374151',
+                          color: '#201F23',
                           fontWeight: 500,
                           background: 'none',
                           border: 'none',
@@ -4109,7 +4136,7 @@ function LearnMoreSection({ categoryName }) {
                 }}
               >
                 <h3 style={{
-                  fontSize: 20, fontWeight: 800, color: '#1C1D21',
+                  fontSize: 20, fontWeight: 800, color: '#201F23',
                   margin: '0 0 16px',
                   paddingTop: idx === 0 ? 0 : 8,
                   lineHeight: 1.35,

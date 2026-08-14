@@ -366,7 +366,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Tableau is praised for its powerful data visualization capabilities and intuitive drag-and-drop interface that makes complex data easy to understand. Users love how it connects to multiple data sources and creates interactive dashboards. However, some users mention the steep learning curve for advanced features.',
         pros: [
-          { label: 'Visualization', count: 1832, color: '#5E42C0' },
+          { label: 'Visualization', count: 1832, color: '#5A39A2' },
           { label: 'Ease of Use', count: 1654, color: '#E8E3FF' },
           { label: 'Learning Curve', count: 687, isCon: true }
         ],
@@ -387,7 +387,7 @@ export const categoriesData = [
         segment: 'Mid-Market',
         userSay: 'Power BI is loved for seamless Microsoft ecosystem integration and affordable pricing. Users appreciate the AI-powered insights and natural language queries. The DAX formula language can be challenging for beginners, and performance issues occur with very large datasets.',
         pros: [
-          { label: 'Integration', count: 2089, color: '#5E42C0' },
+          { label: 'Integration', count: 2089, color: '#5A39A2' },
           { label: 'Value for Money', count: 1923, color: '#E8E3FF' },
           { label: 'Performance', count: 734, isCon: true }
         ],
@@ -407,7 +407,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Qlik Sense stands out with its associative data model that allows users to explore data freely without predefined queries. The AI-powered insights and robust governance features are highly valued. Some users find the interface less intuitive compared to competitors.',
         pros: [
-          { label: 'Data Discovery', count: 1456, color: '#5E42C0' },
+          { label: 'Data Discovery', count: 1456, color: '#5A39A2' },
           { label: 'Governance', count: 1189, color: '#E8E3FF' },
           { label: 'UI Complexity', count: 542, isCon: true }
         ],
@@ -428,7 +428,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Looker is praised for its powerful LookML modeling layer that ensures data consistency across the organization. The embedded analytics capabilities are excellent for product teams. However, it requires technical expertise to set up and maintain.',
         pros: [
-          { label: 'Data Modeling', count: 1234, color: '#5E42C0' },
+          { label: 'Data Modeling', count: 1234, color: '#5A39A2' },
           { label: 'Embedded Analytics', count: 987, color: '#E8E3FF' },
           { label: 'Technical Complexity', count: 489, isCon: true }
         ],
@@ -448,7 +448,7 @@ export const categoriesData = [
         segment: 'Mid-Market',
         userSay: 'Domo offers a cloud-native platform with excellent mobile capabilities and real-time data updates. Users love the extensive connector library and collaborative features. The pricing model can be expensive for smaller organizations.',
         pros: [
-          { label: 'Real-time Data', count: 892, color: '#5E42C0' },
+          { label: 'Real-time Data', count: 892, color: '#5A39A2' },
           { label: 'Connectors', count: 756, color: '#E8E3FF' },
           { label: 'Pricing', count: 423, isCon: true }
         ],
@@ -469,7 +469,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Sisense excels at handling complex data from multiple sources with its in-chip technology. The embedded analytics and white-label capabilities are perfect for product teams. Some users report a steeper learning curve.',
         pros: [
-          { label: 'Complex Data', count: 723, color: '#5E42C0' },
+          { label: 'Complex Data', count: 723, color: '#5A39A2' },
           { label: 'Embedding', count: 645, color: '#E8E3FF' },
           { label: 'Learning Curve', count: 378, isCon: true }
         ],
@@ -499,7 +499,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Denodo is praised as the leader in data virtualization with powerful capabilities to integrate disparate data sources without physical data movement. Users love the real-time data access and reduced ETL complexity. The platform requires skilled administrators to maximize its potential.',
         pros: [
-          { label: 'Real-time Access', count: 356, color: '#5E42C0' },
+          { label: 'Real-time Access', count: 356, color: '#5A39A2' },
           { label: 'No ETL Required', count: 298, color: '#E8E3FF' },
           { label: 'Admin Complexity', count: 142, isCon: true }
         ],
@@ -519,7 +519,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'TIBCO DV offers strong data integration capabilities with excellent support for complex enterprise architectures. Users appreciate the comprehensive security features and governance. The interface could be more modern and user-friendly.',
         pros: [
-          { label: 'Integration', count: 234, color: '#5E42C0' },
+          { label: 'Integration', count: 234, color: '#5A39A2' },
           { label: 'Security', count: 198, color: '#E8E3FF' },
           { label: 'UI/UX', count: 89, isCon: true }
         ],
@@ -539,7 +539,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'SAP Data Intelligence provides comprehensive data orchestration and virtualization capabilities especially valuable for SAP ecosystem users. The ML integration is powerful. Performance can be an issue with very large data volumes.',
         pros: [
-          { label: 'SAP Integration', count: 289, color: '#5E42C0' },
+          { label: 'SAP Integration', count: 289, color: '#5A39A2' },
           { label: 'ML Capabilities', count: 223, color: '#E8E3FF' },
           { label: 'Performance', count: 112, isCon: true }
         ],
@@ -559,7 +559,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Cisco DV (formerly Composite Software) offers solid data virtualization with good performance optimization features. Users value the caching capabilities and SQL compatibility. Documentation could be more comprehensive.',
         pros: [
-          { label: 'Performance', count: 156, color: '#5E42C0' },
+          { label: 'Performance', count: 156, color: '#5A39A2' },
           { label: 'SQL Support', count: 134, color: '#E8E3FF' },
           { label: 'Documentation', count: 67, isCon: true }
         ],
@@ -580,7 +580,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Informatica offers enterprise-grade data virtualization with excellent metadata management and data governance features. The integration with other Informatica products is seamless. Pricing is on the higher end.',
         pros: [
-          { label: 'Governance', count: 267, color: '#5E42C0' },
+          { label: 'Governance', count: 267, color: '#5A39A2' },
           { label: 'Metadata Management', count: 234, color: '#E8E3FF' },
           { label: 'Cost', count: 98, isCon: true }
         ],
@@ -601,7 +601,7 @@ export const categoriesData = [
         segment: 'Mid-Market',
         userSay: 'Dremio provides a modern data lakehouse approach with excellent query performance using Apache Arrow. Users love the self-service capabilities and cloud-native architecture. The community edition is feature-rich for smaller teams.',
         pros: [
-          { label: 'Performance', count: 198, color: '#5E42C0' },
+          { label: 'Performance', count: 198, color: '#5A39A2' },
           { label: 'Self-Service', count: 167, color: '#E8E3FF' },
           { label: 'Documentation', count: 56, isCon: true }
         ],
@@ -631,7 +631,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'SAS is recognized as the gold standard for advanced analytics with proven algorithms and reliability for mission-critical applications. Users praise the comprehensive statistical capabilities and industry-specific solutions. The licensing costs and traditional interface are noted concerns.',
         pros: [
-          { label: 'Accuracy', count: 1234, color: '#5E42C0' },
+          { label: 'Accuracy', count: 1234, color: '#5A39A2' },
           { label: 'Statistical Tools', count: 1089, color: '#E8E3FF' },
           { label: 'Cost', count: 567, isCon: true }
         ],
@@ -651,7 +651,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'SPSS is widely used in academic and research settings for its user-friendly interface and comprehensive statistical testing capabilities. Users appreciate the extensive documentation and support resources. The software can feel dated compared to modern alternatives.',
         pros: [
-          { label: 'Ease of Use', count: 1523, color: '#5E42C0' },
+          { label: 'Ease of Use', count: 1523, color: '#5A39A2' },
           { label: 'Documentation', count: 1298, color: '#E8E3FF' },
           { label: 'Modern UI', count: 678, isCon: true }
         ],
@@ -672,7 +672,7 @@ export const categoriesData = [
         segment: 'Mid-Market',
         userSay: 'RapidMiner offers a visual workflow designer that makes complex predictive modeling accessible to business analysts. Users love the extensive operator library and automated machine learning features. Performance with very large datasets can be slower.',
         pros: [
-          { label: 'Visual Interface', count: 567, color: '#5E42C0' },
+          { label: 'Visual Interface', count: 567, color: '#5A39A2' },
           { label: 'AutoML', count: 489, color: '#E8E3FF' },
           { label: 'Large Data Performance', count: 234, isCon: true }
         ],
@@ -693,7 +693,7 @@ export const categoriesData = [
         segment: 'Mid-Market',
         userSay: 'Alteryx combines data preparation with predictive analytics in an intuitive drag-and-drop interface. Users praise the time savings on data prep and the powerful spatial analytics capabilities. The licensing model and cost can be barriers for smaller teams.',
         pros: [
-          { label: 'Data Prep', count: 1045, color: '#5E42C0' },
+          { label: 'Data Prep', count: 1045, color: '#5A39A2' },
           { label: 'Spatial Analytics', count: 892, color: '#E8E3FF' },
           { label: 'Pricing', count: 456, isCon: true }
         ],
@@ -714,7 +714,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'DataRobot leads in automated machine learning with enterprise-grade MLOps capabilities. Users love how it democratizes AI by automating model selection and tuning. The platform is excellent for rapid prototyping but can feel like a black box for some use cases.',
         pros: [
-          { label: 'Automation', count: 445, color: '#5E42C0' },
+          { label: 'Automation', count: 445, color: '#5A39A2' },
           { label: 'MLOps', count: 389, color: '#E8E3FF' },
           { label: 'Transparency', count: 178, isCon: true }
         ],
@@ -735,7 +735,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'H2O.ai provides open-source and enterprise solutions for machine learning with excellent scalability and performance. Users appreciate the support for multiple languages (R, Python, Java) and the active community. The learning curve for advanced features is steep.',
         pros: [
-          { label: 'Performance', count: 356, color: '#5E42C0' },
+          { label: 'Performance', count: 356, color: '#5A39A2' },
           { label: 'Open Source', count: 298, color: '#E8E3FF' },
           { label: 'Learning Curve', count: 145, isCon: true }
         ],
@@ -765,7 +765,7 @@ export const categoriesData = [
         segment: 'All Segments',
         userSay: 'RStudio is the premier IDE for R programming beloved by data scientists and statisticians worldwide. Users praise the intuitive interface, excellent debugging tools, and seamless integration with version control. The free version is feature-rich, making it accessible to everyone.',
         pros: [
-          { label: 'R Integration', count: 756, color: '#5E42C0' },
+          { label: 'R Integration', count: 756, color: '#5A39A2' },
           { label: 'Ease of Use', count: 689, color: '#E8E3FF' },
           { label: 'Resource Usage', count: 234, isCon: true }
         ],
@@ -785,7 +785,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Stata is highly regarded in economics and social sciences for its powerful statistical capabilities and reliability. Users appreciate the consistent syntax, excellent documentation, and reproducible research features. The perpetual license model is valued but can be costly upfront.',
         pros: [
-          { label: 'Statistical Power', count: 1045, color: '#5E42C0' },
+          { label: 'Statistical Power', count: 1045, color: '#5A39A2' },
           { label: 'Documentation', count: 923, color: '#E8E3FF' },
           { label: 'Initial Cost', count: 412, isCon: true }
         ],
@@ -805,7 +805,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Minitab is the go-to tool for Six Sigma professionals and quality improvement initiatives. Users love the guided workflows, comprehensive quality tools, and excellent training resources. The interface could be more modern and the pricing is premium.',
         pros: [
-          { label: 'Six Sigma Tools', count: 612, color: '#5E42C0' },
+          { label: 'Six Sigma Tools', count: 612, color: '#5A39A2' },
           { label: 'Training Resources', count: 534, color: '#E8E3FF' },
           { label: 'Modern UI', count: 289, isCon: true }
         ],
@@ -826,7 +826,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'JMP offers interactive data visualization combined with powerful statistical analysis in a user-friendly package. Users praise the dynamic graphics and design of experiments capabilities. It is particularly strong in manufacturing and R&D environments.',
         pros: [
-          { label: 'Visualization', count: 478, color: '#5E42C0' },
+          { label: 'Visualization', count: 478, color: '#5A39A2' },
           { label: 'DOE Capabilities', count: 423, color: '#E8E3FF' },
           { label: 'Learning Curve', count: 198, isCon: true }
         ],
@@ -846,7 +846,7 @@ export const categoriesData = [
         segment: 'Small Business',
         userSay: 'Statgraphics provides comprehensive statistical analysis at an affordable price point with an intuitive Windows interface. Users value the extensive charting options and statistical procedures. The software is less known but offers great value for smaller organizations.',
         pros: [
-          { label: 'Value for Money', count: 289, color: '#5E42C0' },
+          { label: 'Value for Money', count: 289, color: '#5A39A2' },
           { label: 'Charting', count: 256, color: '#E8E3FF' },
           { label: 'Brand Recognition', count: 134, isCon: true }
         ],
@@ -866,7 +866,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'OriginPro excels in scientific graphing and data analysis especially for laboratory and research environments. Users love the publication-quality graphs and extensive curve fitting capabilities. It is particularly popular in physics and chemistry fields.',
         pros: [
-          { label: 'Scientific Graphing', count: 389, color: '#5E42C0' },
+          { label: 'Scientific Graphing', count: 389, color: '#5A39A2' },
           { label: 'Curve Fitting', count: 345, color: '#E8E3FF' },
           { label: 'Scripting', count: 167, isCon: true }
         ],
@@ -896,7 +896,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Databricks revolutionizes big data with its unified lakehouse architecture combining data warehouse and data lake benefits. Users praise the collaborative notebooks, Delta Lake performance, and seamless ML integration. The platform can be complex for newcomers and requires careful cost management.',
         pros: [
-          { label: 'Unified Platform', count: 1289, color: '#5E42C0' },
+          { label: 'Unified Platform', count: 1289, color: '#5A39A2' },
           { label: 'Performance', count: 1145, color: '#E8E3FF' },
           { label: 'Cost Management', count: 567, isCon: true }
         ],
@@ -917,7 +917,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Snowflake offers a cloud-native data warehouse with virtually unlimited scalability and concurrency. Users love the separation of storage and compute, zero maintenance, and excellent performance. The consumption-based pricing requires monitoring to control costs.',
         pros: [
-          { label: 'Scalability', count: 1567, color: '#5E42C0' },
+          { label: 'Scalability', count: 1567, color: '#5A39A2' },
           { label: 'Zero Maintenance', count: 1423, color: '#E8E3FF' },
           { label: 'Cost Monitoring', count: 678, isCon: true }
         ],
@@ -938,7 +938,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'BigQuery provides serverless, highly scalable data warehousing with impressive query performance and ML integration. Users appreciate the pay-as-you-go pricing and seamless GCP integration. Complex query optimization and cost estimation can be challenging.',
         pros: [
-          { label: 'Query Speed', count: 1134, color: '#5E42C0' },
+          { label: 'Query Speed', count: 1134, color: '#5A39A2' },
           { label: 'Serverless', count: 1023, color: '#E8E3FF' },
           { label: 'Cost Estimation', count: 489, isCon: true }
         ],
@@ -958,7 +958,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Redshift is a mature AWS data warehouse service with strong performance and deep AWS ecosystem integration. Users value the RA3 instances with managed storage and concurrency scaling. Maintenance windows and manual optimizations are noted as areas for improvement.',
         pros: [
-          { label: 'AWS Integration', count: 1423, color: '#5E42C0' },
+          { label: 'AWS Integration', count: 1423, color: '#5A39A2' },
           { label: 'Performance', count: 1234, color: '#E8E3FF' },
           { label: 'Maintenance', count: 623, isCon: true }
         ],
@@ -978,7 +978,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Cloudera provides a comprehensive enterprise data platform with strong Hadoop heritage and hybrid/multi-cloud capabilities. Users appreciate the security features and data governance. The platform complexity and licensing costs are considerations.',
         pros: [
-          { label: 'Enterprise Security', count: 734, color: '#5E42C0' },
+          { label: 'Enterprise Security', count: 734, color: '#5A39A2' },
           { label: 'Hybrid Cloud', count: 667, color: '#E8E3FF' },
           { label: 'Complexity', count: 378, isCon: true }
         ],
@@ -999,7 +999,7 @@ export const categoriesData = [
         segment: 'Enterprise',
         userSay: 'Azure Synapse unifies data integration, enterprise data warehousing, and big data analytics in one service. Users value the Power BI integration and serverless options. The service can be complex to configure optimally and documentation could be clearer.',
         pros: [
-          { label: 'Unified Service', count: 945, color: '#5E42C0' },
+          { label: 'Unified Service', count: 945, color: '#5A39A2' },
           { label: 'Power BI Integration', count: 823, color: '#E8E3FF' },
           { label: 'Configuration', count: 412, isCon: true }
         ],
@@ -1019,7 +1019,7 @@ export const categoriesData = [
         logo: 'https://images.g2crowd.com/uploads/product/hd_favicon/43bf53de40136acd6c0aed67eb459fcd/notion.svg',
         description: 'ChatGPT is an AI language model developed by OpenAI. It engages in natural conversations, writes content, answers questions, and assists with coding, analysis, and creative tasks.',
         userSay: 'Users consistently praise the intuitive interface and ease of use. The ability to handle complex queries and generate high-quality content makes it a daily productivity tool.',
-        pros: [{ label: 'Ease of Use', count: 89, color: '#5E42C0' }, { label: 'Quality of Output', count: 72, color: '#E8E3FF' }],
+        pros: [{ label: 'Ease of Use', count: 89, color: '#5A39A2' }, { label: 'Quality of Output', count: 72, color: '#E8E3FF' }],
         badges: ['AI Verified'],
         segment: 'Small Business',
         aiVerified: true,
@@ -1029,7 +1029,7 @@ export const categoriesData = [
         logo: 'https://images.g2crowd.com/uploads/product/hd_favicon/f43d71a5c7b1abb1b7d3dfc8d3668f9b/miro.svg',
         description: 'Roboflow is an end-to-end computer vision platform that helps teams build, train, and deploy vision AI models with dataset management, labeling, and model training tools.',
         userSay: 'Users consistently praise the intuitive interface and ease of use of Roboflow, which simplifies the process of dataset management and model training. The platform\'s ability to streamline annotation a...',
-        pros: [{ label: 'Ease of Use', count: 69, color: '#5E42C0' }, { label: 'Expensive', count: 24, color: '#FFE8E5', textColor: '#FF4F00' }],
+        pros: [{ label: 'Ease of Use', count: 69, color: '#5A39A2' }, { label: 'Expensive', count: 24, color: '#FFE8E5', textColor: '#FF4F00' }],
         badges: ['All-in-One', 'AI Verified'],
         segment: 'Mid Market',
         aiVerified: true,
@@ -1039,7 +1039,7 @@ export const categoriesData = [
         logo: 'https://images.g2crowd.com/uploads/product/hd_favicon/80ccd59e9b2a19036d9eb91995af1b69/microsoft-teams.svg',
         description: 'GitHub Copilot is an AI-powered code completion tool that helps developers write code faster with real-time suggestions directly in their editor.',
         userSay: 'Developers love how Copilot speeds up coding tasks by suggesting entire functions, handling boilerplate code, and helping with unfamiliar languages and frameworks.',
-        pros: [{ label: 'Code Quality', count: 156, color: '#5E42C0' }, { label: 'Time Saving', count: 134, color: '#E8E3FF' }],
+        pros: [{ label: 'Code Quality', count: 156, color: '#5A39A2' }, { label: 'Time Saving', count: 134, color: '#E8E3FF' }],
         badges: ['AI Verified'],
         segment: 'Enterprise',
         aiVerified: true,
@@ -1049,7 +1049,7 @@ export const categoriesData = [
         logo: 'https://images.g2crowd.com/uploads/product/hd_favicon/be9e1369027bd58113f937595c7fbdf0/activecampaign.svg',
         description: 'Jasper is an AI writing assistant that helps marketing teams create high-quality content at scale — from blog posts and ads to emails and social media.',
         userSay: 'Marketing teams appreciate the quality and consistency of AI-generated content. Jasper significantly reduces the time needed to produce first drafts.',
-        pros: [{ label: 'Content Quality', count: 88, color: '#5E42C0' }, { label: 'Templates', count: 67, color: '#E8E3FF' }],
+        pros: [{ label: 'Content Quality', count: 88, color: '#5A39A2' }, { label: 'Templates', count: 67, color: '#E8E3FF' }],
         badges: ['Leader', 'AI Verified'],
         segment: 'Small Business',
         aiVerified: true,
@@ -1059,7 +1059,7 @@ export const categoriesData = [
         logo: 'https://images.g2crowd.com/uploads/product/hd_favicon/6ef10bb2b86f91c767132efa3390f728/insider-one.svg',
         description: 'Copy.ai is an AI-powered copywriting tool that generates marketing copy, product descriptions, blog content, and more in seconds.',
         userSay: 'Small business owners and marketers value Copy.ai for quick generation of ad copy, emails, and social media content without needing a professional copywriter.',
-        pros: [{ label: 'Speed', count: 55, color: '#5E42C0' }, { label: 'Variety', count: 41, color: '#E8E3FF' }],
+        pros: [{ label: 'Speed', count: 55, color: '#5A39A2' }, { label: 'Variety', count: 41, color: '#E8E3FF' }],
         badges: ['AI Verified'],
         segment: 'Small Business',
         aiVerified: false,
@@ -1069,7 +1069,7 @@ export const categoriesData = [
         logo: 'https://images.g2crowd.com/uploads/product/hd_favicon/b675771627028c890e21cb68228a24e9/clickup.svg',
         description: 'Midjourney is an AI image generation tool that creates stunning, photorealistic and artistic images from text descriptions.',
         userSay: 'Creative professionals are blown away by the quality of images generated. The artistic style and detail level surpasses other AI image tools.',
-        pros: [{ label: 'Image Quality', count: 203, color: '#5E42C0' }, { label: 'Learning Curve', count: 45, color: '#FFE8E5', textColor: '#FF4F00' }],
+        pros: [{ label: 'Image Quality', count: 203, color: '#5A39A2' }, { label: 'Learning Curve', count: 45, color: '#FFE8E5', textColor: '#FF4F00' }],
         badges: ['AI Verified'],
         segment: 'Mid Market',
         aiVerified: true,
@@ -2013,7 +2013,7 @@ export const servicesData = [
         description: 'Deloitte Digital offers end-to-end Adobe Experience Cloud implementation and consulting services with deep industry expertise.',
         userSay: 'Deloitte brings exceptional strategic guidance and technical expertise for Adobe implementations. Their consultants are highly skilled and deliver enterprise-grade solutions. The premium pricing reflects their quality and experience.',
         pros: [
-          { label: 'Expertise', count: 389, color: '#5E42C0' },
+          { label: 'Expertise', count: 389, color: '#5A39A2' },
           { label: 'Strategic Guidance', count: 345, color: '#E8E3FF' },
           { label: 'Cost', count: 178, isCon: true }
         ],
@@ -2032,7 +2032,7 @@ export const servicesData = [
         description: 'Accenture Interactive provides comprehensive Adobe solutions with focus on digital transformation and customer experience.',
         userSay: 'Accenture delivers robust Adobe implementations with strong project management. Their global reach and resources are impressive. Communication across large teams can sometimes be challenging.',
         pros: [
-          { label: 'Global Resources', count: 445, color: '#5E42C0' },
+          { label: 'Global Resources', count: 445, color: '#5A39A2' },
           { label: 'Project Management', count: 398, color: '#E8E3FF' },
           { label: 'Communication', count: 201, isCon: true }
         ],
@@ -2051,7 +2051,7 @@ export const servicesData = [
         description: 'Perficient specializes in Adobe Experience Manager and Adobe Commerce implementations for mid-market and enterprise clients.',
         userSay: 'Perficient offers excellent value with deep Adobe technical expertise. Their consultants are responsive and deliver quality work on time. They provide a good balance of cost and capability.',
         pros: [
-          { label: 'Technical Expertise', count: 298, color: '#5E42C0' },
+          { label: 'Technical Expertise', count: 298, color: '#5A39A2' },
           { label: 'Responsiveness', count: 267, color: '#E8E3FF' },
           { label: 'Availability', count: 123, isCon: true }
         ],
@@ -2070,7 +2070,7 @@ export const servicesData = [
         description: 'Avanade delivers Adobe Experience Cloud solutions integrated with Microsoft technologies for comprehensive digital experiences.',
         userSay: 'Avanade excels at integrating Adobe with Microsoft ecosystem. Their dual expertise is valuable for organizations using both platforms. Strong technical delivery with good support.',
         pros: [
-          { label: 'Integration Expertise', count: 245, color: '#5E42C0' },
+          { label: 'Integration Expertise', count: 245, color: '#5A39A2' },
           { label: 'Technical Delivery', count: 223, color: '#E8E3FF' },
           { label: 'Response Time', count: 98, isCon: true }
         ],
@@ -2089,7 +2089,7 @@ export const servicesData = [
         description: 'Cognizant provides Adobe consulting and implementation services with strong offshore delivery capabilities.',
         userSay: 'Cognizant offers cost-effective Adobe implementations with solid technical skills. Their offshore model provides good value. Timezone differences can impact real-time collaboration.',
         pros: [
-          { label: 'Cost Effectiveness', count: 356, color: '#5E42C0' },
+          { label: 'Cost Effectiveness', count: 356, color: '#5A39A2' },
           { label: 'Technical Skills', count: 312, color: '#E8E3FF' },
           { label: 'Timezone Issues', count: 167, isCon: true }
         ],
@@ -2108,7 +2108,7 @@ export const servicesData = [
         description: 'Merkle specializes in Adobe Marketing Cloud with strong focus on data-driven marketing and customer experience.',
         userSay: 'Merkle brings exceptional marketing expertise to Adobe implementations. Their data analytics capabilities are outstanding. They excel at connecting marketing strategy with technology.',
         pros: [
-          { label: 'Marketing Expertise', count: 234, color: '#5E42C0' },
+          { label: 'Marketing Expertise', count: 234, color: '#5A39A2' },
           { label: 'Data Analytics', count: 212, color: '#E8E3FF' },
           { label: 'Project Duration', count: 89, isCon: true }
         ],
@@ -2138,7 +2138,7 @@ export const servicesData = [
         description: 'Accenture AWS Business Group provides comprehensive cloud transformation services with deep AWS expertise across all industries.',
         userSay: 'Accenture delivers enterprise-scale AWS migrations with strong governance and security practices. Their large teams handle complex projects well. Premium pricing for premium service.',
         pros: [
-          { label: 'Enterprise Scale', count: 756, color: '#5E42C0' },
+          { label: 'Enterprise Scale', count: 756, color: '#5A39A2' },
           { label: 'Security Expertise', count: 689, color: '#E8E3FF' },
           { label: 'Cost', count: 345, isCon: true }
         ],
@@ -2157,7 +2157,7 @@ export const servicesData = [
         description: 'Deloitte AWS practice combines cloud expertise with industry knowledge to deliver strategic cloud transformations.',
         userSay: 'Deloitte provides strategic cloud guidance with strong architectural expertise. Their industry knowledge adds value to technical implementations. Executive-level engagement is excellent.',
         pros: [
-          { label: 'Strategic Guidance', count: 623, color: '#5E42C0' },
+          { label: 'Strategic Guidance', count: 623, color: '#5A39A2' },
           { label: 'Industry Knowledge', count: 578, color: '#E8E3FF' },
           { label: 'Pricing', count: 289, isCon: true }
         ],
@@ -2176,7 +2176,7 @@ export const servicesData = [
         description: 'Capgemini delivers end-to-end AWS solutions with global delivery capabilities and strong automation practices.',
         userSay: 'Capgemini offers solid AWS implementations with good automation tooling. Their global delivery model provides flexibility. Quality can vary across different delivery centers.',
         pros: [
-          { label: 'Automation', count: 534, color: '#5E42C0' },
+          { label: 'Automation', count: 534, color: '#5A39A2' },
           { label: 'Global Delivery', count: 489, color: '#E8E3FF' },
           { label: 'Consistency', count: 267, isCon: true }
         ],
@@ -2195,7 +2195,7 @@ export const servicesData = [
         description: 'Slalom provides agile AWS consulting with strong focus on partnership and client collaboration.',
         userSay: 'Slalom delivers exceptional client experience with highly skilled AWS consultants. Their collaborative approach and agility are standout features. Great balance of expertise and accessibility.',
         pros: [
-          { label: 'Client Experience', count: 445, color: '#5E42C0' },
+          { label: 'Client Experience', count: 445, color: '#5A39A2' },
           { label: 'Agility', count: 398, color: '#E8E3FF' },
           { label: 'Resource Availability', count: 156, isCon: true }
         ],
@@ -2214,7 +2214,7 @@ export const servicesData = [
         description: 'Cloudreach specializes in cloud-native solutions and provides AWS managed services with strong DevOps capabilities.',
         userSay: 'Cloudreach excels at cloud-native architectures and DevOps practices. Their technical depth in AWS is impressive. Well-suited for organizations seeking modern cloud approaches.',
         pros: [
-          { label: 'Cloud-Native Expertise', count: 389, color: '#5E42C0' },
+          { label: 'Cloud-Native Expertise', count: 389, color: '#5A39A2' },
           { label: 'DevOps', count: 356, color: '#E8E3FF' },
           { label: 'Documentation', count: 134, isCon: true }
         ],
@@ -2233,7 +2233,7 @@ export const servicesData = [
         description: 'Cloudticity provides HIPAA-compliant AWS managed services specializing in healthcare and regulated industries.',
         userSay: 'Cloudticity is excellent for healthcare organizations needing HIPAA compliance on AWS. Their compliance expertise and managed services are top-notch. Specialized but highly effective in their niche.',
         pros: [
-          { label: 'HIPAA Compliance', count: 267, color: '#5E42C0' },
+          { label: 'HIPAA Compliance', count: 267, color: '#5A39A2' },
           { label: 'Healthcare Expertise', count: 234, color: '#E8E3FF' },
           { label: 'Niche Focus', count: 89, isCon: true }
         ],
@@ -2263,7 +2263,7 @@ export const servicesData = [
         description: 'String specializes in Braze implementation and optimization with deep expertise in customer engagement strategies.',
         userSay: 'String brings exceptional Braze expertise with strategic guidance on engagement campaigns. Their consultants understand both the platform and marketing strategy. Highly recommended for Braze implementations.',
         pros: [
-          { label: 'Braze Expertise', count: 123, color: '#5E42C0' },
+          { label: 'Braze Expertise', count: 123, color: '#5A39A2' },
           { label: 'Strategic Guidance', count: 98, color: '#E8E3FF' },
           { label: 'Availability', count: 45, isCon: true }
         ],
@@ -2282,7 +2282,7 @@ export const servicesData = [
         description: 'Tinuiti combines Braze technical expertise with performance marketing capabilities for comprehensive engagement solutions.',
         userSay: 'Tinuiti delivers strong Braze implementations with excellent understanding of marketing automation. Their performance marketing background adds unique value. Good communication and project management.',
         pros: [
-          { label: 'Marketing Expertise', count: 95, color: '#5E42C0' },
+          { label: 'Marketing Expertise', count: 95, color: '#5A39A2' },
           { label: 'Implementation', count: 87, color: '#E8E3FF' },
           { label: 'Response Time', count: 34, isCon: true }
         ],
@@ -2301,7 +2301,7 @@ export const servicesData = [
         description: 'Phiture specializes in mobile app marketing with Braze expertise for app growth and engagement.',
         userSay: 'Phiture excels at mobile app engagement strategies using Braze. Their app marketing expertise is world-class. Perfect for mobile-first companies looking to optimize user engagement.',
         pros: [
-          { label: 'Mobile Expertise', count: 82, color: '#5E42C0' },
+          { label: 'Mobile Expertise', count: 82, color: '#5A39A2' },
           { label: 'App Growth', count: 76, color: '#E8E3FF' },
           { label: 'Cost', count: 28, isCon: true }
         ],
@@ -2320,7 +2320,7 @@ export const servicesData = [
         description: 'Network of independent Braze certified consultants providing flexible implementation and optimization services.',
         userSay: 'Braze Experts provide flexible, high-quality Braze consulting at competitive rates. Great for projects of all sizes. Quality varies by individual consultant.',
         pros: [
-          { label: 'Flexibility', count: 56, color: '#5E42C0' },
+          { label: 'Flexibility', count: 56, color: '#5A39A2' },
           { label: 'Value', count: 52, color: '#E8E3FF' },
           { label: 'Consistency', count: 23, isCon: true }
         ],
@@ -2339,7 +2339,7 @@ export const servicesData = [
         description: 'Specialized consultancy focusing on Braze implementations for mobile and web engagement optimization.',
         userSay: 'MGC provides solid Braze implementation services with focus on mobile growth. Good technical skills and understanding of engagement strategies. Responsive team.',
         pros: [
-          { label: 'Technical Skills', count: 45, color: '#5E42C0' },
+          { label: 'Technical Skills', count: 45, color: '#5A39A2' },
           { label: 'Responsiveness', count: 41, color: '#E8E3FF' },
           { label: 'Documentation', count: 18, isCon: true }
         ],
@@ -2369,7 +2369,7 @@ export const servicesData = [
         description: 'Softchoice provides comprehensive Citrix solutions including Virtual Apps and Desktops implementation and managed services.',
         userSay: 'Softchoice delivers reliable Citrix implementations with strong technical expertise. Their support services are responsive and knowledgeable. Good partner for enterprise VDI deployments.',
         pros: [
-          { label: 'Technical Expertise', count: 198, color: '#5E42C0' },
+          { label: 'Technical Expertise', count: 198, color: '#5A39A2' },
           { label: 'Support Quality', count: 176, color: '#E8E3FF' },
           { label: 'Response Time', count: 67, isCon: true }
         ],
@@ -2388,7 +2388,7 @@ export const servicesData = [
         description: 'Presidio offers end-to-end Citrix services with focus on digital workspace transformation and cloud migrations.',
         userSay: 'Presidio provides comprehensive Citrix solutions with strong project management. Their cloud migration expertise is valuable. Solid partner for complex enterprise deployments.',
         pros: [
-          { label: 'Project Management', count: 156, color: '#5E42C0' },
+          { label: 'Project Management', count: 156, color: '#5A39A2' },
           { label: 'Cloud Migration', count: 142, color: '#E8E3FF' },
           { label: 'Communication', count: 54, isCon: true }
         ],
@@ -2407,7 +2407,7 @@ export const servicesData = [
         description: 'Insight delivers Citrix solutions with strong focus on end-user experience and workspace modernization.',
         userSay: 'Insight offers solid Citrix expertise with good focus on user experience. Their consultants are knowledgeable and professional. Pricing is competitive for enterprise services.',
         pros: [
-          { label: 'User Experience', count: 134, color: '#5E42C0' },
+          { label: 'User Experience', count: 134, color: '#5A39A2' },
           { label: 'Knowledge', count: 123, color: '#E8E3FF' },
           { label: 'Availability', count: 48, isCon: true }
         ],
@@ -2426,7 +2426,7 @@ export const servicesData = [
         description: 'Logicalis provides Citrix consulting and managed services with global delivery capabilities.',
         userSay: 'Logicalis delivers consistent Citrix services with strong global support. Their managed services offering is comprehensive. Good choice for multi-national organizations.',
         pros: [
-          { label: 'Global Support', count: 118, color: '#5E42C0' },
+          { label: 'Global Support', count: 118, color: '#5A39A2' },
           { label: 'Managed Services', count: 107, color: '#E8E3FF' },
           { label: 'Coordination', count: 42, isCon: true }
         ],
@@ -2445,7 +2445,7 @@ export const servicesData = [
         description: 'CDW offers Citrix implementation and support services with strong supply chain and procurement capabilities.',
         userSay: 'CDW provides good value for Citrix implementations with streamlined procurement. Their technical team is competent. Better suited for mid-market organizations.',
         pros: [
-          { label: 'Value', count: 167, color: '#5E42C0' },
+          { label: 'Value', count: 167, color: '#5A39A2' },
           { label: 'Procurement', count: 145, color: '#E8E3FF' },
           { label: 'Depth of Expertise', count: 59, isCon: true }
         ],
@@ -2475,7 +2475,7 @@ export const servicesData = [
         description: 'Alight Solutions provides comprehensive Dayforce HCM implementation with deep payroll and HR expertise.',
         userSay: 'Alight brings exceptional payroll expertise to Dayforce implementations. Their knowledge of complex pay rules is invaluable. Strong partner for large, complex organizations.',
         pros: [
-          { label: 'Payroll Expertise', count: 145, color: '#5E42C0' },
+          { label: 'Payroll Expertise', count: 145, color: '#5A39A2' },
           { label: 'Complex Implementation', count: 132, color: '#E8E3FF' },
           { label: 'Project Duration', count: 56, isCon: true }
         ],
@@ -2494,7 +2494,7 @@ export const servicesData = [
         description: 'Accenture delivers Dayforce implementations with strategic HR transformation expertise.',
         userSay: 'Accenture provides strategic guidance for Dayforce deployments. Their HR transformation experience adds significant value. Premium pricing for comprehensive service.',
         pros: [
-          { label: 'Strategic Guidance', count: 128, color: '#5E42C0' },
+          { label: 'Strategic Guidance', count: 128, color: '#5A39A2' },
           { label: 'HR Expertise', count: 117, color: '#E8E3FF' },
           { label: 'Cost', count: 48, isCon: true }
         ],
@@ -2513,7 +2513,7 @@ export const servicesData = [
         description: 'Ceridian own professional services team providing direct implementation and support for Dayforce.',
         userSay: 'Ceridian PS has deepest product knowledge and direct access to engineering. Implementation quality is excellent. Can be resource-constrained during busy periods.',
         pros: [
-          { label: 'Product Knowledge', count: 198, color: '#5E42C0' },
+          { label: 'Product Knowledge', count: 198, color: '#5A39A2' },
           { label: 'Quality', count: 176, color: '#E8E3FF' },
           { label: 'Resource Availability', count: 67, isCon: true }
         ],
@@ -2532,7 +2532,7 @@ export const servicesData = [
         description: 'Wipro delivers cost-effective Dayforce implementations with global delivery capabilities.',
         userSay: 'Wipro offers good value for Dayforce projects with solid technical skills. Their offshore model provides cost savings. Communication and timezone coordination need attention.',
         pros: [
-          { label: 'Cost Effectiveness', count: 98, color: '#5E42C0' },
+          { label: 'Cost Effectiveness', count: 98, color: '#5A39A2' },
           { label: 'Technical Skills', count: 89, color: '#E8E3FF' },
           { label: 'Communication', count: 43, isCon: true }
         ],
@@ -2551,7 +2551,7 @@ export const servicesData = [
         description: 'Infosys provides Dayforce implementation and AMS services with strong process excellence.',
         userSay: 'Infosys delivers structured Dayforce implementations with good documentation. Their process rigor is valuable for large deployments. Flexibility can be limited.',
         pros: [
-          { label: 'Process Excellence', count: 118, color: '#5E42C0' },
+          { label: 'Process Excellence', count: 118, color: '#5A39A2' },
           { label: 'Documentation', count: 107, color: '#E8E3FF' },
           { label: 'Flexibility', count: 51, isCon: true }
         ],
@@ -2586,7 +2586,7 @@ export const servicesData = [
         description: 'Pentagram is the world largest independent design consultancy creating iconic brand identities for global organizations.',
         userSay: 'Pentagram delivers world-class brand design with unmatched creative excellence. Their strategic approach and attention to detail are exceptional. Premium pricing reflects their prestige and quality.',
         pros: [
-          { label: 'Creative Excellence', count: 212, color: '#5E42C0' },
+          { label: 'Creative Excellence', count: 212, color: '#5A39A2' },
           { label: 'Strategic Approach', count: 189, color: '#E8E3FF' },
           { label: 'Cost', count: 78, isCon: true }
         ],
@@ -2605,7 +2605,7 @@ export const servicesData = [
         description: 'Landor & Fitch creates breakthrough brand experiences through strategic insights and transformative design.',
         userSay: 'Landor brings deep strategic thinking to brand development. Their global expertise and research capabilities are outstanding. Excellent for brand transformation projects.',
         pros: [
-          { label: 'Strategic Insights', count: 267, color: '#5E42C0' },
+          { label: 'Strategic Insights', count: 267, color: '#5A39A2' },
           { label: 'Global Expertise', count: 234, color: '#E8E3FF' },
           { label: 'Timeline', count: 89, isCon: true }
         ],
@@ -2624,7 +2624,7 @@ export const servicesData = [
         description: 'Wolff Olins creates bold brands for ambitious organizations ready to change the world.',
         userSay: 'Wolff Olins delivers brave, bold branding with strong strategic foundation. Their creative work pushes boundaries. Best for organizations seeking transformative brand change.',
         pros: [
-          { label: 'Bold Creativity', count: 156, color: '#5E42C0' },
+          { label: 'Bold Creativity', count: 156, color: '#5A39A2' },
           { label: 'Strategic Foundation', count: 142, color: '#E8E3FF' },
           { label: 'Risk Level', count: 67, isCon: true }
         ],
@@ -2643,7 +2643,7 @@ export const servicesData = [
         description: 'Siegel+Gale simplifies brands, products, and services to create powerful connections with customers.',
         userSay: 'Siegel+Gale excels at brand simplification and clarity. Their simple-made approach delivers powerful results. Great for complex organizations needing brand clarity.',
         pros: [
-          { label: 'Simplification', count: 138, color: '#5E42C0' },
+          { label: 'Simplification', count: 138, color: '#5A39A2' },
           { label: 'Clarity', count: 127, color: '#E8E3FF' },
           { label: 'Scope Flexibility', count: 52, isCon: true }
         ],
@@ -2662,7 +2662,7 @@ export const servicesData = [
         description: 'Collins is an independent brand consultancy creating culturally attuned brands that connect with modern audiences.',
         userSay: 'Collins delivers fresh, modern branding with strong cultural insights. Their independent perspective brings unique value. Excellent for brands targeting younger audiences.',
         pros: [
-          { label: 'Cultural Insight', count: 123, color: '#5E42C0' },
+          { label: 'Cultural Insight', count: 123, color: '#5A39A2' },
           { label: 'Modern Approach', count: 112, color: '#E8E3FF' },
           { label: 'Resource Scale', count: 45, isCon: true }
         ],
@@ -2681,7 +2681,7 @@ export const servicesData = [
         description: 'Mucho is a global branding agency creating distinctive brand identities with strategic clarity and visual craft.',
         userSay: 'Mucho creates beautiful, thoughtful brand work with strong strategic thinking. Their global perspective and craft excellence stand out. Great value for mid-market companies.',
         pros: [
-          { label: 'Visual Craft', count: 84, color: '#5E42C0' },
+          { label: 'Visual Craft', count: 84, color: '#5A39A2' },
           { label: 'Strategic Clarity', count: 76, color: '#E8E3FF' },
           { label: 'Availability', count: 32, isCon: true }
         ],
@@ -2711,7 +2711,7 @@ export const servicesData = [
         description: 'Contently combines storytelling with technology to create scalable content marketing programs for leading brands.',
         userSay: 'Contently delivers high-quality content at scale with excellent platform for workflow management. Their writer network is top-notch. Great for enterprise content operations.',
         pros: [
-          { label: 'Content Quality', count: 356, color: '#5E42C0' },
+          { label: 'Content Quality', count: 356, color: '#5A39A2' },
           { label: 'Scalability', count: 312, color: '#E8E3FF' },
           { label: 'Cost', count: 134, isCon: true }
         ],
@@ -2730,7 +2730,7 @@ export const servicesData = [
         description: 'Skyword provides end-to-end content marketing services with proprietary platform and creative talent network.',
         userSay: 'Skyword excels at strategic content programs with strong analytics and insights. Their platform streamlines content operations. Excellent account management and support.',
         pros: [
-          { label: 'Strategic Approach', count: 312, color: '#5E42C0' },
+          { label: 'Strategic Approach', count: 312, color: '#5A39A2' },
           { label: 'Analytics', count: 289, color: '#E8E3FF' },
           { label: 'Platform Learning Curve', count: 112, isCon: true }
         ],
@@ -2749,7 +2749,7 @@ export const servicesData = [
         description: 'Scripted connects businesses with vetted freelance writers for ongoing content creation at scale.',
         userSay: 'Scripted provides flexible content creation with good quality control. Easy to use platform and responsive support. Great value for ongoing content needs.',
         pros: [
-          { label: 'Flexibility', count: 478, color: '#5E42C0' },
+          { label: 'Flexibility', count: 478, color: '#5A39A2' },
           { label: 'Value', count: 423, color: '#E8E3FF' },
           { label: 'Writer Consistency', count: 189, isCon: true }
         ],
@@ -2768,7 +2768,7 @@ export const servicesData = [
         description: 'Brafton creates custom content marketing programs including articles, infographics, videos, and social media.',
         userSay: 'Brafton delivers consistent, quality content with full-service approach. Their team becomes an extension of your marketing. Strong B2B content expertise.',
         pros: [
-          { label: 'Consistency', count: 267, color: '#5E42C0' },
+          { label: 'Consistency', count: 267, color: '#5A39A2' },
           { label: 'Full Service', count: 234, color: '#E8E3FF' },
           { label: 'Turnaround Time', count: 98, isCon: true }
         ],
@@ -2787,7 +2787,7 @@ export const servicesData = [
         description: 'Webbiquity specializes in B2B content marketing with focus on thought leadership and lead generation.',
         userSay: 'Webbiquity brings strong B2B marketing expertise with strategic content planning. Good for technology and professional services companies. Personalized service.',
         pros: [
-          { label: 'B2B Expertise', count: 156, color: '#5E42C0' },
+          { label: 'B2B Expertise', count: 156, color: '#5A39A2' },
           { label: 'Strategic Planning', count: 142, color: '#E8E3FF' },
           { label: 'Capacity', count: 67, isCon: true }
         ],
@@ -2806,7 +2806,7 @@ export const servicesData = [
         description: 'Compose.ly offers on-demand content creation with managed service and self-service options.',
         userSay: 'Compose.ly provides good content at competitive prices with flexible engagement models. Quality can vary by writer. Good option for budget-conscious companies.',
         pros: [
-          { label: 'Affordability', count: 378, color: '#5E42C0' },
+          { label: 'Affordability', count: 378, color: '#5A39A2' },
           { label: 'Flexibility', count: 334, color: '#E8E3FF' },
           { label: 'Quality Variance', count: 167, isCon: true }
         ],
@@ -2836,7 +2836,7 @@ export const servicesData = [
         description: 'Wpromote delivers performance-driven digital marketing across paid search, SEO, social, and programmatic channels.',
         userSay: 'Wpromote combines strategic thinking with strong execution across all digital channels. Their performance focus and transparency are exceptional. Great partner for growth-focused companies.',
         pros: [
-          { label: 'Performance Focus', count: 578, color: '#5E42C0' },
+          { label: 'Performance Focus', count: 578, color: '#5A39A2' },
           { label: 'Transparency', count: 512, color: '#E8E3FF' },
           { label: 'Minimum Spend', count: 234, isCon: true }
         ],
@@ -2855,7 +2855,7 @@ export const servicesData = [
         description: 'Tinuiti is the largest independent performance marketing firm specializing in ecommerce and lead generation.',
         userSay: 'Tinuiti delivers exceptional results for ecommerce with deep platform expertise. Their scale brings advantages in testing and optimization. Strong analytics and reporting.',
         pros: [
-          { label: 'Ecommerce Expertise', count: 756, color: '#5E42C0' },
+          { label: 'Ecommerce Expertise', count: 756, color: '#5A39A2' },
           { label: 'Analytics', count: 689, color: '#E8E3FF' },
           { label: 'Account Team Turnover', count: 298, isCon: true }
         ],
@@ -2874,7 +2874,7 @@ export const servicesData = [
         description: 'Disruptive Advertising combines paid media management with conversion rate optimization for maximum ROI.',
         userSay: 'Disruptive delivers excellent results with strong focus on testing and optimization. Their CRO expertise sets them apart. Responsive team and clear communication.',
         pros: [
-          { label: 'CRO Expertise', count: 445, color: '#5E42C0' },
+          { label: 'CRO Expertise', count: 445, color: '#5A39A2' },
           { label: 'Testing Focus', count: 398, color: '#E8E3FF' },
           { label: 'Capacity Constraints', count: 167, isCon: true }
         ],
@@ -2893,7 +2893,7 @@ export const servicesData = [
         description: 'Moburst specializes in mobile-first digital marketing with expertise in app growth and user acquisition.',
         userSay: 'Moburst excels at mobile app marketing with deep ASO and UA expertise. Their creative approach drives strong results. Perfect for mobile-first companies.',
         pros: [
-          { label: 'Mobile Expertise', count: 356, color: '#5E42C0' },
+          { label: 'Mobile Expertise', count: 356, color: '#5A39A2' },
           { label: 'Creative', count: 312, color: '#E8E3FF' },
           { label: 'Geographic Focus', count: 134, isCon: true }
         ],
@@ -2912,7 +2912,7 @@ export const servicesData = [
         description: 'WebFX provides comprehensive digital marketing services for small to mid-size businesses with proprietary technology.',
         userSay: 'WebFX delivers solid digital marketing services with good value for small businesses. Their reporting platform is helpful. Best for companies new to digital marketing.',
         pros: [
-          { label: 'Value', count: 1045, color: '#5E42C0' },
+          { label: 'Value', count: 1045, color: '#5A39A2' },
           { label: 'Technology', count: 923, color: '#E8E3FF' },
           { label: 'Strategic Depth', count: 412, isCon: true }
         ],
@@ -2931,7 +2931,7 @@ export const servicesData = [
         description: 'Ignite Visibility delivers integrated digital marketing with strong focus on SEO, paid media, and social.',
         userSay: 'Ignite Visibility provides comprehensive digital marketing with strong SEO capabilities. Their team is knowledgeable and responsive. Good fit for mid-market B2B and B2C.',
         pros: [
-          { label: 'SEO Expertise', count: 478, color: '#5E42C0' },
+          { label: 'SEO Expertise', count: 478, color: '#5A39A2' },
           { label: 'Responsiveness', count: 434, color: '#E8E3FF' },
           { label: 'Reporting Depth', count: 189, isCon: true }
         ],
@@ -2961,7 +2961,7 @@ export const servicesData = [
         description: 'Freeman is a global leader in event production and brand experiences with end-to-end capabilities.',
         userSay: 'Freeman delivers world-class event production with exceptional execution capabilities. Their scale and resources are unmatched. Perfect for large trade shows and corporate events.',
         pros: [
-          { label: 'Production Quality', count: 389, color: '#5E42C0' },
+          { label: 'Production Quality', count: 389, color: '#5A39A2' },
           { label: 'Global Reach', count: 356, color: '#E8E3FF' },
           { label: 'Cost', count: 167, isCon: true }
         ],
@@ -2980,7 +2980,7 @@ export const servicesData = [
         description: 'GES creates memorable experiences through innovative event technology and creative design.',
         userSay: 'GES brings strong creative and technical capabilities to large events. Their technology integration is impressive. Good partner for brands seeking innovative event experiences.',
         pros: [
-          { label: 'Innovation', count: 312, color: '#5E42C0' },
+          { label: 'Innovation', count: 312, color: '#5A39A2' },
           { label: 'Technology', count: 289, color: '#E8E3FF' },
           { label: 'Project Management', count: 134, isCon: true }
         ],
@@ -2999,7 +2999,7 @@ export const servicesData = [
         description: 'Opus Agency creates brand experiences that connect with audiences through strategic event marketing.',
         userSay: 'Opus delivers creative, strategic event experiences with strong brand focus. Their team is collaborative and innovative. Excellent for brands seeking memorable activations.',
         pros: [
-          { label: 'Creativity', count: 198, color: '#5E42C0' },
+          { label: 'Creativity', count: 198, color: '#5A39A2' },
           { label: 'Strategic Approach', count: 176, color: '#E8E3FF' },
           { label: 'Turnaround Time', count: 87, isCon: true }
         ],
@@ -3018,7 +3018,7 @@ export const servicesData = [
         description: 'BeCore creates experiential marketing programs that drive brand engagement and measurable results.',
         userSay: 'BeCore delivers innovative experiential programs with strong ROI focus. Their measurement capabilities set them apart. Great for brands seeking data-driven event marketing.',
         pros: [
-          { label: 'ROI Focus', count: 156, color: '#5E42C0' },
+          { label: 'ROI Focus', count: 156, color: '#5A39A2' },
           { label: 'Measurement', count: 142, color: '#E8E3FF' },
           { label: 'Scale', count: 67, isCon: true }
         ],
@@ -3037,7 +3037,7 @@ export const servicesData = [
         description: 'INVNT GROUP delivers integrated brand events combining strategy, creative, and production excellence.',
         userSay: 'INVNT brings exceptional creative thinking to event marketing with strong strategic foundation. Their integrated approach delivers cohesive brand experiences. Premium positioning.',
         pros: [
-          { label: 'Strategic Creative', count: 134, color: '#5E42C0' },
+          { label: 'Strategic Creative', count: 134, color: '#5A39A2' },
           { label: 'Integration', count: 123, color: '#E8E3FF' },
           { label: 'Pricing', count: 56, isCon: true }
         ],
@@ -3056,7 +3056,7 @@ export const servicesData = [
         description: 'The Marketing Arm creates brand experiences through sports, entertainment, and cultural partnerships.',
         userSay: 'TMA excels at leveraging sports and entertainment properties for brand activation. Their partnership network is valuable. Strong for brands with sponsorship focus.',
         pros: [
-          { label: 'Partnership Network', count: 178, color: '#5E42C0' },
+          { label: 'Partnership Network', count: 178, color: '#5A39A2' },
           { label: 'Sports Marketing', count: 167, color: '#E8E3FF' },
           { label: 'Flexibility', count: 76, isCon: true }
         ],
@@ -3086,7 +3086,7 @@ export const servicesData = [
         description: 'Obviously is a full-service influencer marketing agency creating authentic brand partnerships across social platforms.',
         userSay: 'Obviously delivers exceptional influencer campaigns with strong creator relationships. Their strategic approach and authenticity focus drive real results. Excellent account management.',
         pros: [
-          { label: 'Creator Relationships', count: 267, color: '#5E42C0' },
+          { label: 'Creator Relationships', count: 267, color: '#5A39A2' },
           { label: 'Authenticity', count: 234, color: '#E8E3FF' },
           { label: 'Minimum Budget', count: 98, isCon: true }
         ],
@@ -3105,7 +3105,7 @@ export const servicesData = [
         description: 'Viral Nation combines influencer marketing with talent representation and technology platform for scalable campaigns.',
         userSay: 'Viral Nation brings scale and technology to influencer marketing. Their platform enables efficient campaign management. Strong for brands needing high-volume influencer programs.',
         pros: [
-          { label: 'Scale', count: 378, color: '#5E42C0' },
+          { label: 'Scale', count: 378, color: '#5A39A2' },
           { label: 'Technology', count: 345, color: '#E8E3FF' },
           { label: 'Personal Touch', count: 156, isCon: true }
         ],
@@ -3124,7 +3124,7 @@ export const servicesData = [
         description: 'TIMF specializes in TikTok and emerging platform influencer marketing with creative content focus.',
         userSay: 'TIMF excels at TikTok and emerging platforms with deep understanding of Gen Z audiences. Their creative approach drives viral success. Perfect for brands targeting younger demographics.',
         pros: [
-          { label: 'TikTok Expertise', count: 198, color: '#5E42C0' },
+          { label: 'TikTok Expertise', count: 198, color: '#5A39A2' },
           { label: 'Creative', count: 176, color: '#E8E3FF' },
           { label: 'Platform Specialization', count: 78, isCon: true }
         ],
@@ -3143,7 +3143,7 @@ export const servicesData = [
         description: 'Carusele delivers performance-driven influencer marketing with strong focus on ROI and paid amplification.',
         userSay: 'Carusele combines influencer content with paid amplification for maximum reach. Their performance focus and measurement are strong. Good for brands seeking measurable influencer ROI.',
         pros: [
-          { label: 'Performance Focus', count: 156, color: '#5E42C0' },
+          { label: 'Performance Focus', count: 156, color: '#5A39A2' },
           { label: 'Amplification', count: 142, color: '#E8E3FF' },
           { label: 'Creative Direction', count: 67, isCon: true }
         ],
@@ -3162,7 +3162,7 @@ export const servicesData = [
         description: 'Sway Group manages influencer campaigns across all tiers from nano to celebrity influencers.',
         userSay: 'Sway Group offers flexible influencer marketing across all creator tiers. Their network is extensive and campaigns are well-managed. Good option for various budget levels.',
         pros: [
-          { label: 'Flexibility', count: 134, color: '#5E42C0' },
+          { label: 'Flexibility', count: 134, color: '#5A39A2' },
           { label: 'Network Size', count: 123, color: '#E8E3FF' },
           { label: 'Strategic Depth', count: 54, isCon: true }
         ],
@@ -3181,7 +3181,7 @@ export const servicesData = [
         description: 'Aspire provides influencer marketing platform with managed services for enterprise brands.',
         userSay: 'Aspire platform is powerful for managing influencer programs at scale. Managed services option provides additional support. Best for brands building ongoing influencer communities.',
         pros: [
-          { label: 'Platform Power', count: 445, color: '#5E42C0' },
+          { label: 'Platform Power', count: 445, color: '#5A39A2' },
           { label: 'Community Building', count: 398, color: '#E8E3FF' },
           { label: 'Learning Curve', count: 189, isCon: true }
         ],
@@ -3224,7 +3224,7 @@ export const servicesData = [
         description: 'McKinsey & Company is a global management consulting firm that serves leading businesses, governments, non-governmental organizations, and not-for-profits.',
         userSay: 'McKinsey delivers unmatched executive insights, analytical rigor, and global industry benchmarking. Their strategic roadmaps set industry standards and accelerate enterprise growth.',
         pros: [
-          { label: 'Strategic Rigor', count: 980, color: '#5E42C0' },
+          { label: 'Strategic Rigor', count: 980, color: '#5A39A2' },
           { label: 'Executive Insights', count: 865, color: '#E8E3FF' },
           { label: 'Premium Cost', count: 210, isCon: true }
         ],
@@ -3243,7 +3243,7 @@ export const servicesData = [
         description: 'PwC provides industry-focused assurance, tax, and advisory services to build public trust and enhance enterprise value for clients globally.',
         userSay: 'PwC combines deep tax expertise with comprehensive audit rigor. Their advisory teams deliver measurable financial restructuring and compliance confidence.',
         pros: [
-          { label: 'Tax Expertise', count: 1120, color: '#5E42C0' },
+          { label: 'Tax Expertise', count: 1120, color: '#5A39A2' },
           { label: 'Audit Confidence', count: 940, color: '#E8E3FF' },
           { label: 'Scheduling', count: 145, isCon: true }
         ],
@@ -3262,7 +3262,7 @@ export const servicesData = [
         description: 'BCG partners with leaders in business and society to tackle their most important challenges and capture their greatest opportunities.',
         userSay: 'BCG brings tremendous creativity and data-driven transformation models. Their collaborative working style with internal teams drives sustainable change.',
         pros: [
-          { label: 'Transformation Models', count: 780, color: '#5E42C0' },
+          { label: 'Transformation Models', count: 780, color: '#5A39A2' },
           { label: 'Collaborative Style', count: 690, color: '#E8E3FF' },
           { label: 'Engagement Scope', count: 110, isCon: true }
         ],
@@ -3281,7 +3281,7 @@ export const servicesData = [
         description: 'Bain & Company is a management consultancy that advises on strategy, marketing, organization, operations, IT, and M&A across all industries.',
         userSay: 'Bain is exceptional for Results-Delivery and private equity due diligence. They focus relentlessly on practical ROI rather than just theoretical decks.',
         pros: [
-          { label: 'Results-Driven', count: 740, color: '#5E42C0' },
+          { label: 'Results-Driven', count: 740, color: '#5A39A2' },
           { label: 'Practical ROI', count: 680, color: '#E8E3FF' },
           { label: 'Resource Demands', count: 95, isCon: true }
         ],
@@ -3300,7 +3300,7 @@ export const servicesData = [
         description: 'Mercer delivers advice and technology-driven solutions that help organizations meet the health, wealth and career needs of a changing workforce.',
         userSay: 'Mercer is the definitive authority on executive compensation, global benefits benchmarks, and workforce restructuring.',
         pros: [
-          { label: 'Compensation Data', count: 540, color: '#5E42C0' },
+          { label: 'Compensation Data', count: 540, color: '#5A39A2' },
           { label: 'Benefits Structuring', count: 480, color: '#E8E3FF' },
           { label: 'Implementation Pace', count: 85, isCon: true }
         ],
@@ -3319,7 +3319,7 @@ export const servicesData = [
         description: 'Latham & Watkins is a global law firm advising top businesses and institutions on complex transactions, litigation, and regulatory matters.',
         userSay: 'Top tier legal representation with unparalleled deal execution in tech M&A, securities, and high-stakes IP litigation.',
         pros: [
-          { label: 'M&A Execution', count: 390, color: '#5E42C0' },
+          { label: 'M&A Execution', count: 390, color: '#5A39A2' },
           { label: 'IP Defense', count: 340, color: '#E8E3FF' },
           { label: 'Billing Rates', count: 75, isCon: true }
         ],
@@ -3362,7 +3362,7 @@ export const servicesData = [
         description: 'Infosys is a global leader in next-generation digital services and consulting, enabling clients across 56 countries to navigate their digital transformation.',
         userSay: 'Infosys provides outstanding scale, cost efficiency, and technical engineering depth. Their managed IT outsourcing teams deliver consistent enterprise stability.',
         pros: [
-          { label: 'Global Scale', count: 1450, color: '#5E42C0' },
+          { label: 'Global Scale', count: 1450, color: '#5A39A2' },
           { label: 'Engineering Depth', count: 1280, color: '#E8E3FF' },
           { label: 'Timezone Sync', count: 190, isCon: true }
         ],
@@ -3381,7 +3381,7 @@ export const servicesData = [
         description: 'TCS is an IT services, consulting and business solutions organization that has been partnering with many of the world’s largest businesses for over 50 years.',
         userSay: 'TCS delivers immense operational stability and deep domain knowledge. Their large-scale project execution and governance frameworks are best in class.',
         pros: [
-          { label: 'Operational Stability', count: 1680, color: '#5E42C0' },
+          { label: 'Operational Stability', count: 1680, color: '#5A39A2' },
           { label: 'Governance Framework', count: 1490, color: '#E8E3FF' },
           { label: 'Agile Transition', count: 220, isCon: true }
         ],
@@ -3400,7 +3400,7 @@ export const servicesData = [
         description: 'Wipro Limited is a leading technology services and consulting company focused on building innovative solutions that address clients’ most complex digital transformation needs.',
         userSay: 'Wipro offers great automation tooling and proactive infrastructure maintenance. Their ITSM automation has significantly improved ticket resolution speeds.',
         pros: [
-          { label: 'ITSM Automation', count: 1120, color: '#5E42C0' },
+          { label: 'ITSM Automation', count: 1120, color: '#5A39A2' },
           { label: 'Proactive Maintenance', count: 980, color: '#E8E3FF' },
           { label: 'Communication', count: 160, isCon: true }
         ],
@@ -3419,7 +3419,7 @@ export const servicesData = [
         description: 'HCLTech empowers global enterprises with technology for the next decade today, offering supercharged digital, engineering and cloud capabilities.',
         userSay: 'HCLTech excels in modern infrastructure management and flexible contract terms. Their technical staff is highly capable and collaborative.',
         pros: [
-          { label: 'Flexible Terms', count: 940, color: '#5E42C0' },
+          { label: 'Flexible Terms', count: 940, color: '#5A39A2' },
           { label: 'Infrastructure Depth', count: 890, color: '#E8E3FF' },
           { label: 'Resource Turnover', count: 110, isCon: true }
         ],
@@ -3438,7 +3438,7 @@ export const servicesData = [
         description: 'Genpact is a global professional services firm delivering outcomes that transform businesses and shape the future through technology-led innovation.',
         userSay: 'Genpact is fantastic for streamlining back-office operations, supply chain logistics, and automated process management.',
         pros: [
-          { label: 'Process Optimization', count: 720, color: '#5E42C0' },
+          { label: 'Process Optimization', count: 720, color: '#5A39A2' },
           { label: 'Supply Chain Operations', count: 640, color: '#E8E3FF' },
           { label: 'Integration Period', count: 90, isCon: true }
         ],
@@ -3457,7 +3457,7 @@ export const servicesData = [
         description: 'CBRE GWS delivers facilities management, project management, and advisory solutions for enterprise real estate and physical workplace operations.',
         userSay: 'CBRE is the premier partner for enterprise workplace tech rollouts, smart building infrastructure, and global facilities governance.',
         pros: [
-          { label: 'Smart Buildings', count: 490, color: '#5E42C0' },
+          { label: 'Smart Buildings', count: 490, color: '#5A39A2' },
           { label: 'Global Facilities', count: 460, color: '#E8E3FF' },
           { label: 'Contract Scope', count: 60, isCon: true }
         ],
@@ -3500,7 +3500,7 @@ export const servicesData = [
         description: 'Deloitte Digital brings together world-class creative capability with deep technical and industry insight to transform enterprise operations and customer experiences.',
         userSay: 'Deloitte delivers comprehensive engineering muscle and strategic executive depth. Their architects build enterprise systems designed for massive scale and compliance.',
         pros: [
-          { label: 'Architecture Scale', count: 1540, color: '#5E42C0' },
+          { label: 'Architecture Scale', count: 1540, color: '#5A39A2' },
           { label: 'Technical Depth', count: 1390, color: '#E8E3FF' },
           { label: 'Engagement Cost', count: 210, isCon: true }
         ],
@@ -3519,7 +3519,7 @@ export const servicesData = [
         description: 'Accenture Technology powers businesses with innovative solutions across cloud, artificial intelligence, security, and custom software delivery.',
         userSay: 'Accenture handles the largest and most complex enterprise cloud transformations with unmatched project governance and technical resources.',
         pros: [
-          { label: 'Cloud Migration', count: 1890, color: '#5E42C0' },
+          { label: 'Cloud Migration', count: 1890, color: '#5A39A2' },
           { label: 'Project Governance', count: 1670, color: '#E8E3FF' },
           { label: 'Team Size Coordination', count: 240, isCon: true }
         ],
@@ -3538,7 +3538,7 @@ export const servicesData = [
         description: 'Slalom is a global consulting firm that focuses on strategy, technology, and business transformation with an agile, high-touch collaborative model.',
         userSay: 'Slalom is the most collaborative and agile technical partner we have ever hired. Outstanding modern engineering practices with zero bureaucratic drag.',
         pros: [
-          { label: 'Agile Execution', count: 760, color: '#5E42C0' },
+          { label: 'Agile Execution', count: 760, color: '#5A39A2' },
           { label: 'Modern Tech Stack', count: 710, color: '#E8E3FF' },
           { label: 'Availability', count: 90, isCon: true }
         ],
@@ -3557,7 +3557,7 @@ export const servicesData = [
         description: 'Thoughtworks is a leading global technology consultancy that integrates strategy, design and engineering to drive digital innovation.',
         userSay: 'Thoughtworks invented modern agile engineering and evolutionary architecture. Their senior developers write immaculate, bulletproof code.',
         pros: [
-          { label: 'Code Quality', count: 680, color: '#5E42C0' },
+          { label: 'Code Quality', count: 680, color: '#5A39A2' },
           { label: 'Evolutionary Architecture', count: 620, color: '#E8E3FF' },
           { label: 'Premium Rates', count: 110, isCon: true }
         ],
@@ -3576,7 +3576,7 @@ export const servicesData = [
         description: 'EPAM Systems is a leading global provider of digital platform engineering and software development services.',
         userSay: 'EPAM brings elite technical talent for complex product engineering and automated testing pipelines.',
         pros: [
-          { label: 'Product Engineering', count: 920, color: '#5E42C0' },
+          { label: 'Product Engineering', count: 920, color: '#5A39A2' },
           { label: 'QA Automation', count: 850, color: '#E8E3FF' },
           { label: 'Timezone Coordination', count: 130, isCon: true }
         ],
@@ -3595,7 +3595,7 @@ export const servicesData = [
         description: 'Capgemini Engineering combines deep industry knowledge and cutting-edge technologies in digital and software to support organizations on their journey to the cloud.',
         userSay: 'Capgemini delivers robust DevOps automation and industrial cloud architectures with high reliability.',
         pros: [
-          { label: 'DevOps Automation', count: 1040, color: '#5E42C0' },
+          { label: 'DevOps Automation', count: 1040, color: '#5A39A2' },
           { label: 'Industrial Reliability', count: 960, color: '#E8E3FF' },
           { label: 'Documentation', count: 120, isCon: true }
         ],
@@ -3625,10 +3625,10 @@ export const servicesData = [
       { name: 'Derek Vance', role: 'VP of Operations • Industrial Manufacturing', date: '1 month ago', rating: 4.8, title: 'Identified 18% cost reduction without impacting frontline delivery', pro: 'Data-driven recommendations backed by robust financial models and clear implementation steps.', con: 'Premium tier rates, but the ROI justified every penny within the first fiscal quarter.' },
     ],
     providers: [
-      { id: 'mckinsey-mc', name: 'McKinsey & Company', vendor: 'McKinsey', rating: 4.9, reviewCount: 1240, logo: '', url: '/services/mckinsey-mc', serviceType: 'Management Consulting & Strategy', segment: 'Enterprise', description: 'Global strategic management consulting firm serving top enterprise leaders.', userSay: 'Top tier management advisory, analytical rigor, and global executive benchmarking.', pros: [{ label: 'Strategic Rigor', count: 980, color: '#5E42C0' }, { label: 'Executive Insights', count: 865, color: '#E8E3FF' }], badges: ['Leader', 'Strategy Pioneer'] },
-      { id: 'bcg-mc', name: 'Boston Consulting Group (BCG)', vendor: 'BCG', rating: 4.8, reviewCount: 980, logo: '', url: '/services/bcg-mc', serviceType: 'Business Transformation', segment: 'Enterprise', description: 'Strategic transformation, digital innovation, and corporate strategy.', userSay: 'Collaborative transformation models and data-driven change frameworks.', pros: [{ label: 'Innovation', count: 780, color: '#5E42C0' }, { label: 'Transformation', count: 690, color: '#E8E3FF' }], badges: ['Leader', 'Innovation Leader'] },
-      { id: 'bain-mc', name: 'Bain & Company', vendor: 'Bain', rating: 4.9, reviewCount: 890, logo: '', url: '/services/bain-mc', serviceType: 'Strategy Advisory & Private Equity', segment: 'Enterprise', description: 'Results-driven strategy and private equity consulting.', userSay: 'Relentless practical ROI and actionable implementation roadmaps.', pros: [{ label: 'Results-Driven', count: 740, color: '#5E42C0' }, { label: 'Practical ROI', count: 680, color: '#E8E3FF' }], badges: ['Leader', 'Client Satisfaction #1'] },
-      { id: 'oliver-wyman', name: 'Oliver Wyman', vendor: 'Oliver Wyman', rating: 4.7, reviewCount: 560, logo: '', url: '/services/oliver-wyman', serviceType: 'Financial Services & Risk Consulting', segment: 'Enterprise', description: 'Specialized management consulting in financial services and risk.', userSay: 'Unmatched financial modeling and regulatory risk mitigation frameworks.', pros: [{ label: 'Risk Strategy', count: 480, color: '#5E42C0' }, { label: 'Financial Rigor', count: 420, color: '#E8E3FF' }], badges: ['Specialist', 'Risk Authority'] },
+      { id: 'mckinsey-mc', name: 'McKinsey & Company', vendor: 'McKinsey', rating: 4.9, reviewCount: 1240, logo: '', url: '/services/mckinsey-mc', serviceType: 'Management Consulting & Strategy', segment: 'Enterprise', description: 'Global strategic management consulting firm serving top enterprise leaders.', userSay: 'Top tier management advisory, analytical rigor, and global executive benchmarking.', pros: [{ label: 'Strategic Rigor', count: 980, color: '#5A39A2' }, { label: 'Executive Insights', count: 865, color: '#E8E3FF' }], badges: ['Leader', 'Strategy Pioneer'] },
+      { id: 'bcg-mc', name: 'Boston Consulting Group (BCG)', vendor: 'BCG', rating: 4.8, reviewCount: 980, logo: '', url: '/services/bcg-mc', serviceType: 'Business Transformation', segment: 'Enterprise', description: 'Strategic transformation, digital innovation, and corporate strategy.', userSay: 'Collaborative transformation models and data-driven change frameworks.', pros: [{ label: 'Innovation', count: 780, color: '#5A39A2' }, { label: 'Transformation', count: 690, color: '#E8E3FF' }], badges: ['Leader', 'Innovation Leader'] },
+      { id: 'bain-mc', name: 'Bain & Company', vendor: 'Bain', rating: 4.9, reviewCount: 890, logo: '', url: '/services/bain-mc', serviceType: 'Strategy Advisory & Private Equity', segment: 'Enterprise', description: 'Results-driven strategy and private equity consulting.', userSay: 'Relentless practical ROI and actionable implementation roadmaps.', pros: [{ label: 'Results-Driven', count: 740, color: '#5A39A2' }, { label: 'Practical ROI', count: 680, color: '#E8E3FF' }], badges: ['Leader', 'Client Satisfaction #1'] },
+      { id: 'oliver-wyman', name: 'Oliver Wyman', vendor: 'Oliver Wyman', rating: 4.7, reviewCount: 560, logo: '', url: '/services/oliver-wyman', serviceType: 'Financial Services & Risk Consulting', segment: 'Enterprise', description: 'Specialized management consulting in financial services and risk.', userSay: 'Unmatched financial modeling and regulatory risk mitigation frameworks.', pros: [{ label: 'Risk Strategy', count: 480, color: '#5A39A2' }, { label: 'Financial Rigor', count: 420, color: '#E8E3FF' }], badges: ['Specialist', 'Risk Authority'] },
     ]
   },
   {
@@ -3653,10 +3653,10 @@ export const servicesData = [
       { name: 'Natalie Chen', role: 'Head of People • Series B Startup', date: '1 month ago', rating: 4.9, title: 'Set up our complete HRIS and compensation bands from scratch', pro: 'Structured, reliable, and deeply knowledgeable about tech startup compensation standards.', con: 'None. Extremely professional team.' },
     ],
     providers: [
-      { id: 'mercer-hr-sub', name: 'Mercer HR Consulting', vendor: 'Mercer', rating: 4.8, reviewCount: 670, logo: '', url: '/services/mercer-hr', serviceType: 'Global HR & Compensation Advisory', segment: 'Enterprise', description: 'Definitive authority on executive compensation, global benefits, and workforce restructuring.', userSay: 'Exceptional compensation benchmarking data and benefits strategy.', pros: [{ label: 'Compensation Data', count: 540, color: '#5E42C0' }, { label: 'Benefits Structuring', count: 480, color: '#E8E3FF' }], badges: ['Leader', 'Compensation Benchmark #1'] },
-      { id: 'aon-hr', name: 'Aon Human Capital Solutions', vendor: 'Aon', rating: 4.7, reviewCount: 780, logo: '', url: '/services/aon-hr', serviceType: 'Workforce Risk & Rewards Advisory', segment: 'Enterprise', description: 'Global human capital consulting, rewards, and talent assessment.', userSay: 'Invaluable data-driven rewards models and leadership evaluation.', pros: [{ label: 'Workforce Risk', count: 620, color: '#5E42C0' }, { label: 'Talent Assessment', count: 580, color: '#E8E3FF' }], badges: ['Leader', 'Human Capital Leader'] },
-      { id: 'korn-ferry', name: 'Korn Ferry', vendor: 'Korn Ferry', rating: 4.8, reviewCount: 920, logo: '', url: '/services/korn-ferry', serviceType: 'Executive Search & Organizational Strategy', segment: 'Enterprise', description: 'Global organizational consulting firm synchronizing strategy and talent.', userSay: 'Premier executive placement and leadership development pipelines.', pros: [{ label: 'Executive Search', count: 810, color: '#5E42C0' }, { label: 'Leadership Coaching', count: 750, color: '#E8E3FF' }], badges: ['Leader', 'Executive Search #1'] },
-      { id: 'robert-half', name: 'Robert Half Talent Solutions', vendor: 'Robert Half', rating: 4.6, reviewCount: 1150, logo: '', url: '/services/robert-half', serviceType: 'Finance & Tech Specialized Staffing', segment: 'Mid-Market', description: 'Specialized talent solutions and professional staffing.', userSay: 'Fast candidate placements and verified skill matching for specialized roles.', pros: [{ label: 'Fast Placement', count: 960, color: '#5E42C0' }, { label: 'Skill Matching', count: 890, color: '#E8E3FF' }], badges: ['Staffing Leader', 'Fast Delivery'] },
+      { id: 'mercer-hr-sub', name: 'Mercer HR Consulting', vendor: 'Mercer', rating: 4.8, reviewCount: 670, logo: '', url: '/services/mercer-hr', serviceType: 'Global HR & Compensation Advisory', segment: 'Enterprise', description: 'Definitive authority on executive compensation, global benefits, and workforce restructuring.', userSay: 'Exceptional compensation benchmarking data and benefits strategy.', pros: [{ label: 'Compensation Data', count: 540, color: '#5A39A2' }, { label: 'Benefits Structuring', count: 480, color: '#E8E3FF' }], badges: ['Leader', 'Compensation Benchmark #1'] },
+      { id: 'aon-hr', name: 'Aon Human Capital Solutions', vendor: 'Aon', rating: 4.7, reviewCount: 780, logo: '', url: '/services/aon-hr', serviceType: 'Workforce Risk & Rewards Advisory', segment: 'Enterprise', description: 'Global human capital consulting, rewards, and talent assessment.', userSay: 'Invaluable data-driven rewards models and leadership evaluation.', pros: [{ label: 'Workforce Risk', count: 620, color: '#5A39A2' }, { label: 'Talent Assessment', count: 580, color: '#E8E3FF' }], badges: ['Leader', 'Human Capital Leader'] },
+      { id: 'korn-ferry', name: 'Korn Ferry', vendor: 'Korn Ferry', rating: 4.8, reviewCount: 920, logo: '', url: '/services/korn-ferry', serviceType: 'Executive Search & Organizational Strategy', segment: 'Enterprise', description: 'Global organizational consulting firm synchronizing strategy and talent.', userSay: 'Premier executive placement and leadership development pipelines.', pros: [{ label: 'Executive Search', count: 810, color: '#5A39A2' }, { label: 'Leadership Coaching', count: 750, color: '#E8E3FF' }], badges: ['Leader', 'Executive Search #1'] },
+      { id: 'robert-half', name: 'Robert Half Talent Solutions', vendor: 'Robert Half', rating: 4.6, reviewCount: 1150, logo: '', url: '/services/robert-half', serviceType: 'Finance & Tech Specialized Staffing', segment: 'Mid-Market', description: 'Specialized talent solutions and professional staffing.', userSay: 'Fast candidate placements and verified skill matching for specialized roles.', pros: [{ label: 'Fast Placement', count: 960, color: '#5A39A2' }, { label: 'Skill Matching', count: 890, color: '#E8E3FF' }], badges: ['Staffing Leader', 'Fast Delivery'] },
     ]
   },
   {
@@ -3681,10 +3681,10 @@ export const servicesData = [
       { name: 'Lucas Martin', role: 'Founder & CEO • eCommerce Platform', date: '3 weeks ago', rating: 4.8, title: 'Successfully defended our core patent against hostile infringement claim', pro: 'Brilliant trial attorneys with razor-sharp IP litigation strategy.', con: 'Complex depositions schedule, but we emerged with full proprietary patent protection.' },
     ],
     providers: [
-      { id: 'latham-sub', name: 'Latham & Watkins LLP', vendor: 'Latham & Watkins', rating: 4.9, reviewCount: 430, logo: '', url: '/services/latham-watkins', serviceType: 'Corporate Law, Tech M&A & IP Defense', segment: 'Enterprise', description: 'Global law firm advising top businesses and institutions on complex transactions and litigation.', userSay: 'Top tier legal representation with unmatched deal execution in tech M&A.', pros: [{ label: 'M&A Execution', count: 390, color: '#5E42C0' }, { label: 'IP Defense', count: 340, color: '#E8E3FF' }], badges: ['Leader', 'Legal Tier 1'] },
-      { id: 'kirkland-ellis', name: 'Kirkland & Ellis LLP', vendor: 'Kirkland & Ellis', rating: 4.8, reviewCount: 510, logo: '', url: '/services/kirkland-ellis', serviceType: 'Private Equity & Corporate Transactions', segment: 'Enterprise', description: 'Premier law firm recognized for high-stakes corporate transactions and private equity.', userSay: 'Relentless transaction speed and airtight deal structuring.', pros: [{ label: 'Private Equity Deal', count: 470, color: '#5E42C0' }, { label: 'Commercial Strategy', count: 430, color: '#E8E3FF' }], badges: ['Leader', 'Private Equity #1'] },
-      { id: 'skadden-arps', name: 'Skadden, Arps, Slate, Meagher & Flom', vendor: 'Skadden', rating: 4.8, reviewCount: 380, logo: '', url: '/services/skadden', serviceType: 'Corporate Governance & Litigation', segment: 'Enterprise', description: 'Advising corporations, financial institutions and governments worldwide.', userSay: 'Definitive boardroom counsel and securities compliance authority.', pros: [{ label: 'Boardroom Counsel', count: 340, color: '#5E42C0' }, { label: 'Securities Law', count: 310, color: '#E8E3FF' }], badges: ['Leader', 'Corporate Governance'] },
-      { id: 'baker-mckenzie', name: 'Baker McKenzie', vendor: 'Baker McKenzie', rating: 4.7, reviewCount: 620, logo: '', url: '/services/baker-mckenzie', serviceType: 'Global Cross-Border Legal Advisory', segment: 'Enterprise', description: 'Global law firm solving complex legal problems across borders and practice areas.', userSay: 'Invaluable multi-jurisdictional legal coordination in Europe and Asia.', pros: [{ label: 'Cross-Border', count: 540, color: '#5E42C0' }, { label: 'Tax & Compliance', count: 490, color: '#E8E3FF' }], badges: ['Global Law Leader', 'Multi-Jurisdiction'] },
+      { id: 'latham-sub', name: 'Latham & Watkins LLP', vendor: 'Latham & Watkins', rating: 4.9, reviewCount: 430, logo: '', url: '/services/latham-watkins', serviceType: 'Corporate Law, Tech M&A & IP Defense', segment: 'Enterprise', description: 'Global law firm advising top businesses and institutions on complex transactions and litigation.', userSay: 'Top tier legal representation with unmatched deal execution in tech M&A.', pros: [{ label: 'M&A Execution', count: 390, color: '#5A39A2' }, { label: 'IP Defense', count: 340, color: '#E8E3FF' }], badges: ['Leader', 'Legal Tier 1'] },
+      { id: 'kirkland-ellis', name: 'Kirkland & Ellis LLP', vendor: 'Kirkland & Ellis', rating: 4.8, reviewCount: 510, logo: '', url: '/services/kirkland-ellis', serviceType: 'Private Equity & Corporate Transactions', segment: 'Enterprise', description: 'Premier law firm recognized for high-stakes corporate transactions and private equity.', userSay: 'Relentless transaction speed and airtight deal structuring.', pros: [{ label: 'Private Equity Deal', count: 470, color: '#5A39A2' }, { label: 'Commercial Strategy', count: 430, color: '#E8E3FF' }], badges: ['Leader', 'Private Equity #1'] },
+      { id: 'skadden-arps', name: 'Skadden, Arps, Slate, Meagher & Flom', vendor: 'Skadden', rating: 4.8, reviewCount: 380, logo: '', url: '/services/skadden', serviceType: 'Corporate Governance & Litigation', segment: 'Enterprise', description: 'Advising corporations, financial institutions and governments worldwide.', userSay: 'Definitive boardroom counsel and securities compliance authority.', pros: [{ label: 'Boardroom Counsel', count: 340, color: '#5A39A2' }, { label: 'Securities Law', count: 310, color: '#E8E3FF' }], badges: ['Leader', 'Corporate Governance'] },
+      { id: 'baker-mckenzie', name: 'Baker McKenzie', vendor: 'Baker McKenzie', rating: 4.7, reviewCount: 620, logo: '', url: '/services/baker-mckenzie', serviceType: 'Global Cross-Border Legal Advisory', segment: 'Enterprise', description: 'Global law firm solving complex legal problems across borders and practice areas.', userSay: 'Invaluable multi-jurisdictional legal coordination in Europe and Asia.', pros: [{ label: 'Cross-Border', count: 540, color: '#5A39A2' }, { label: 'Tax & Compliance', count: 490, color: '#E8E3FF' }], badges: ['Global Law Leader', 'Multi-Jurisdiction'] },
     ]
   },
   {
@@ -3709,10 +3709,10 @@ export const servicesData = [
       { name: 'Tobias King', role: 'Managing Partner • Venture Studio', date: '1 month ago', rating: 4.8, title: 'Delivered an immaculate QoE report for our $40M portfolio buyout', pro: 'Uncovered $1.2M in hidden liabilities during the due diligence period, saving us deal capital.', con: 'Engagement timeline was compressed due to seller requirements, but they delivered on schedule.' },
     ],
     providers: [
-      { id: 'pwc-acc', name: 'PwC Advisory & Tax Services', vendor: 'PwC', rating: 4.8, reviewCount: 1450, logo: '', url: '/services/pwc-business', serviceType: 'Accounting, Audit & Corporate Tax', segment: 'Enterprise', description: 'Industry-focused assurance, tax, and advisory services enhancing enterprise value globally.', userSay: 'PwC combines deep tax expertise with comprehensive audit rigor.', pros: [{ label: 'Tax Strategy', count: 1120, color: '#5E42C0' }, { label: 'Audit Confidence', count: 940, color: '#E8E3FF' }], badges: ['Big Four Leader', 'Audit Authority #1'] },
-      { id: 'ey-acc', name: 'EY (Ernst & Young)', vendor: 'EY', rating: 4.8, reviewCount: 1320, logo: '', url: '/services/ey', serviceType: 'Financial Assurance & Tax Strategy', segment: 'Enterprise', description: 'Building a better working world through assurance, consulting, and tax services.', userSay: 'Great international tax planning and digital accounting automation tooling.', pros: [{ label: 'Tax Optimization', count: 1040, color: '#5E42C0' }, { label: 'Financial Assurance', count: 910, color: '#E8E3FF' }], badges: ['Big Four Leader', 'Tax Pioneer'] },
-      { id: 'kpmg-acc', name: 'KPMG US', vendor: 'KPMG', rating: 4.7, reviewCount: 1150, logo: '', url: '/services/kpmg', serviceType: 'Audit, Tax & Advisory Services', segment: 'Enterprise', description: 'Professional services firm providing audit, tax and advisory capabilities.', userSay: 'Rigorous SOX compliance and structured financial reporting workflows.', pros: [{ label: 'SOX Compliance', count: 880, color: '#5E42C0' }, { label: 'Accounting Advisory', count: 790, color: '#E8E3FF' }], badges: ['Leader', 'SOX 404 Authority'] },
-      { id: 'bdo-acc', name: 'BDO USA', vendor: 'BDO', rating: 4.7, reviewCount: 680, logo: '', url: '/services/bdo', serviceType: 'Mid-Market Assurance & Tax', segment: 'Mid-Market', description: 'Assurance, accounting, and tax advisory for mid-market growth enterprises.', userSay: 'High-touch partner availability and pragmatic tax advice for mid-market companies.', pros: [{ label: 'Partner Access', count: 560, color: '#5E42C0' }, { label: 'Mid-Market Focus', count: 510, color: '#E8E3FF' }], badges: ['Mid-Market Leader', 'High Touch'] },
+      { id: 'pwc-acc', name: 'PwC Advisory & Tax Services', vendor: 'PwC', rating: 4.8, reviewCount: 1450, logo: '', url: '/services/pwc-business', serviceType: 'Accounting, Audit & Corporate Tax', segment: 'Enterprise', description: 'Industry-focused assurance, tax, and advisory services enhancing enterprise value globally.', userSay: 'PwC combines deep tax expertise with comprehensive audit rigor.', pros: [{ label: 'Tax Strategy', count: 1120, color: '#5A39A2' }, { label: 'Audit Confidence', count: 940, color: '#E8E3FF' }], badges: ['Big Four Leader', 'Audit Authority #1'] },
+      { id: 'ey-acc', name: 'EY (Ernst & Young)', vendor: 'EY', rating: 4.8, reviewCount: 1320, logo: '', url: '/services/ey', serviceType: 'Financial Assurance & Tax Strategy', segment: 'Enterprise', description: 'Building a better working world through assurance, consulting, and tax services.', userSay: 'Great international tax planning and digital accounting automation tooling.', pros: [{ label: 'Tax Optimization', count: 1040, color: '#5A39A2' }, { label: 'Financial Assurance', count: 910, color: '#E8E3FF' }], badges: ['Big Four Leader', 'Tax Pioneer'] },
+      { id: 'kpmg-acc', name: 'KPMG US', vendor: 'KPMG', rating: 4.7, reviewCount: 1150, logo: '', url: '/services/kpmg', serviceType: 'Audit, Tax & Advisory Services', segment: 'Enterprise', description: 'Professional services firm providing audit, tax and advisory capabilities.', userSay: 'Rigorous SOX compliance and structured financial reporting workflows.', pros: [{ label: 'SOX Compliance', count: 880, color: '#5A39A2' }, { label: 'Accounting Advisory', count: 790, color: '#E8E3FF' }], badges: ['Leader', 'SOX 404 Authority'] },
+      { id: 'bdo-acc', name: 'BDO USA', vendor: 'BDO', rating: 4.7, reviewCount: 680, logo: '', url: '/services/bdo', serviceType: 'Mid-Market Assurance & Tax', segment: 'Mid-Market', description: 'Assurance, accounting, and tax advisory for mid-market growth enterprises.', userSay: 'High-touch partner availability and pragmatic tax advice for mid-market companies.', pros: [{ label: 'Partner Access', count: 560, color: '#5A39A2' }, { label: 'Mid-Market Focus', count: 510, color: '#E8E3FF' }], badges: ['Mid-Market Leader', 'High Touch'] },
     ]
   },
   {
@@ -3737,10 +3737,10 @@ export const servicesData = [
       { name: 'Megan Ross', role: 'Director of Infrastructure • Health Systems', date: '1 month ago', rating: 4.9, title: 'Managed our entire AWS cloud infrastructure and reduced spend by 32%', pro: 'Proactive FinOps auditing and automated instance scheduling saved $45,000 monthly.', con: 'None. Extremely reliable team of certified cloud architects.' },
     ],
     providers: [
-      { id: 'infosys-ito', name: 'Infosys IT Outsourcing', vendor: 'Infosys', rating: 4.8, reviewCount: 1890, logo: '', url: '/services/infosys-other', serviceType: 'Global IT Outsourcing & Infrastructure', segment: 'Enterprise', description: 'Next-generation digital outsourcing, managed operations, and enterprise infrastructure.', userSay: 'Immense global engineering scale, high reliability, and cost-efficient staffing models.', pros: [{ label: 'Global Scale', count: 1450, color: '#5E42C0' }, { label: 'Operational Depth', count: 1280, color: '#E8E3FF' }], badges: ['Leader', 'Scale Leader #1'] },
-      { id: 'tcs-ito', name: 'Tata Consultancy Services (TCS)', vendor: 'TCS', rating: 4.7, reviewCount: 2140, logo: '', url: '/services/tcs-other', serviceType: 'Enterprise IT Outsourcing', segment: 'Enterprise', description: 'Large-scale enterprise IT outsourcing, systems management, and digital operations.', userSay: 'Outstanding governance frameworks and rock-solid operational uptime records.', pros: [{ label: 'Governance', count: 1680, color: '#5E42C0' }, { label: 'Stability', count: 1490, color: '#E8E3FF' }], badges: ['Leader', 'Reliability #1'] },
-      { id: 'wipro-ito', name: 'Wipro IT & Managed Services', vendor: 'Wipro', rating: 4.6, reviewCount: 1430, logo: '', url: '/services/wipro-other', serviceType: 'ITSM, Infrastructure & B2B Operations', segment: 'Enterprise', description: 'Leading technology services and consulting company focused on innovative managed IT.', userSay: 'Proactive infrastructure maintenance and automated ticket triage workflows.', pros: [{ label: 'Automation', count: 1120, color: '#5E42C0' }, { label: 'Maintenance', count: 980, color: '#E8E3FF' }], badges: ['Automation Leader', 'ITSM Specialist'] },
-      { id: 'hcltech-ito', name: 'HCLTech IT Outsourcing', vendor: 'HCLTech', rating: 4.8, reviewCount: 1210, logo: '', url: '/services/hcltech-other', serviceType: 'Infrastructure Outsourcing & Pods', segment: 'Enterprise', description: 'Supercharged engineering capabilities and modern infrastructure management.', userSay: 'High flexibility in contract terms and deeply capable technical engineering pods.', pros: [{ label: 'Flexible Terms', count: 940, color: '#5E42C0' }, { label: 'Engineering', count: 890, color: '#E8E3FF' }], badges: ['Engineering Focus', 'High Flexibility'] },
+      { id: 'infosys-ito', name: 'Infosys IT Outsourcing', vendor: 'Infosys', rating: 4.8, reviewCount: 1890, logo: '', url: '/services/infosys-other', serviceType: 'Global IT Outsourcing & Infrastructure', segment: 'Enterprise', description: 'Next-generation digital outsourcing, managed operations, and enterprise infrastructure.', userSay: 'Immense global engineering scale, high reliability, and cost-efficient staffing models.', pros: [{ label: 'Global Scale', count: 1450, color: '#5A39A2' }, { label: 'Operational Depth', count: 1280, color: '#E8E3FF' }], badges: ['Leader', 'Scale Leader #1'] },
+      { id: 'tcs-ito', name: 'Tata Consultancy Services (TCS)', vendor: 'TCS', rating: 4.7, reviewCount: 2140, logo: '', url: '/services/tcs-other', serviceType: 'Enterprise IT Outsourcing', segment: 'Enterprise', description: 'Large-scale enterprise IT outsourcing, systems management, and digital operations.', userSay: 'Outstanding governance frameworks and rock-solid operational uptime records.', pros: [{ label: 'Governance', count: 1680, color: '#5A39A2' }, { label: 'Stability', count: 1490, color: '#E8E3FF' }], badges: ['Leader', 'Reliability #1'] },
+      { id: 'wipro-ito', name: 'Wipro IT & Managed Services', vendor: 'Wipro', rating: 4.6, reviewCount: 1430, logo: '', url: '/services/wipro-other', serviceType: 'ITSM, Infrastructure & B2B Operations', segment: 'Enterprise', description: 'Leading technology services and consulting company focused on innovative managed IT.', userSay: 'Proactive infrastructure maintenance and automated ticket triage workflows.', pros: [{ label: 'Automation', count: 1120, color: '#5A39A2' }, { label: 'Maintenance', count: 980, color: '#E8E3FF' }], badges: ['Automation Leader', 'ITSM Specialist'] },
+      { id: 'hcltech-ito', name: 'HCLTech IT Outsourcing', vendor: 'HCLTech', rating: 4.8, reviewCount: 1210, logo: '', url: '/services/hcltech-other', serviceType: 'Infrastructure Outsourcing & Pods', segment: 'Enterprise', description: 'Supercharged engineering capabilities and modern infrastructure management.', userSay: 'High flexibility in contract terms and deeply capable technical engineering pods.', pros: [{ label: 'Flexible Terms', count: 940, color: '#5A39A2' }, { label: 'Engineering', count: 890, color: '#E8E3FF' }], badges: ['Engineering Focus', 'High Flexibility'] },
     ]
   },
   {
@@ -3765,9 +3765,9 @@ export const servicesData = [
       { name: 'Alistair Ross', role: 'CIO • Financial Services', date: '1 month ago', rating: 4.8, title: 'Built a pristine CMDB that resolved all our compliance audit gaps', pro: 'Automated discovery mapped all our multi-cloud assets and microservices dependencies accurately.', con: 'CMDB discovery took initial tuning to filter test environments.' },
     ],
     providers: [
-      { id: 'cognizant-itsm', name: 'Cognizant ServiceNow Practice', vendor: 'Cognizant', rating: 4.8, reviewCount: 890, logo: '', url: '/services/cognizant-itsm', serviceType: 'ServiceNow Elite Implementation', segment: 'Enterprise', description: 'Elite ServiceNow partner delivering transformative enterprise service management solutions.', userSay: 'Deep enterprise workflow configuration and flawless ITSM migrations.', pros: [{ label: 'ServiceNow Depth', count: 760, color: '#5E42C0' }, { label: 'Workflow Speed', count: 710, color: '#E8E3FF' }], badges: ['ServiceNow Elite', 'Leader'] },
-      { id: 'dxc-itsm', name: 'DXC Technology ITSM', vendor: 'DXC', rating: 4.6, reviewCount: 960, logo: '', url: '/services/dxc', serviceType: 'Global ITSM & ITIL Consulting', segment: 'Enterprise', description: 'End-to-end enterprise service management, automation, and managed support.', userSay: 'Structured ITIL governance and large-scale global service desk consolidation.', pros: [{ label: 'ITIL Governance', count: 820, color: '#5E42C0' }, { label: 'Service Desk', count: 740, color: '#E8E3FF' }], badges: ['ITIL Authority', 'Global Scale'] },
-      { id: 'ntt-itsm', name: 'NTT DATA ITSM Services', vendor: 'NTT DATA', rating: 4.8, reviewCount: 780, logo: '', url: '/services/ntt-data', serviceType: 'ITSM Automation & Managed Platform', segment: 'Enterprise', description: 'Leading technology services provider designing agile service delivery architectures.', userSay: 'High customer satisfaction and robust automation integrations across toolchains.', pros: [{ label: 'Automation', count: 680, color: '#5E42C0' }, { label: 'Toolchain Sync', count: 620, color: '#E8E3FF' }], badges: ['Top CSAT', 'Leader'] },
+      { id: 'cognizant-itsm', name: 'Cognizant ServiceNow Practice', vendor: 'Cognizant', rating: 4.8, reviewCount: 890, logo: '', url: '/services/cognizant-itsm', serviceType: 'ServiceNow Elite Implementation', segment: 'Enterprise', description: 'Elite ServiceNow partner delivering transformative enterprise service management solutions.', userSay: 'Deep enterprise workflow configuration and flawless ITSM migrations.', pros: [{ label: 'ServiceNow Depth', count: 760, color: '#5A39A2' }, { label: 'Workflow Speed', count: 710, color: '#E8E3FF' }], badges: ['ServiceNow Elite', 'Leader'] },
+      { id: 'dxc-itsm', name: 'DXC Technology ITSM', vendor: 'DXC', rating: 4.6, reviewCount: 960, logo: '', url: '/services/dxc', serviceType: 'Global ITSM & ITIL Consulting', segment: 'Enterprise', description: 'End-to-end enterprise service management, automation, and managed support.', userSay: 'Structured ITIL governance and large-scale global service desk consolidation.', pros: [{ label: 'ITIL Governance', count: 820, color: '#5A39A2' }, { label: 'Service Desk', count: 740, color: '#E8E3FF' }], badges: ['ITIL Authority', 'Global Scale'] },
+      { id: 'ntt-itsm', name: 'NTT DATA ITSM Services', vendor: 'NTT DATA', rating: 4.8, reviewCount: 780, logo: '', url: '/services/ntt-data', serviceType: 'ITSM Automation & Managed Platform', segment: 'Enterprise', description: 'Leading technology services provider designing agile service delivery architectures.', userSay: 'High customer satisfaction and robust automation integrations across toolchains.', pros: [{ label: 'Automation', count: 680, color: '#5A39A2' }, { label: 'Toolchain Sync', count: 620, color: '#E8E3FF' }], badges: ['Top CSAT', 'Leader'] },
     ]
   },
   {
@@ -3792,10 +3792,10 @@ export const servicesData = [
       { name: 'Gary Vance', role: 'VP of Infrastructure • Healthcare Enterprise', date: '1 month ago', rating: 4.8, title: 'Delivered HIPAA-compliant multi-region Azure cloud architecture', pro: 'Passed our SOC2 Type II and HIPAA security audits with zero findings.', con: 'Required thorough documentation reviews, but the security posture is immaculate.' },
     ],
     providers: [
-      { id: 'deloitte-cms', name: 'Deloitte Cloud Migration', vendor: 'Deloitte', rating: 4.9, reviewCount: 1980, logo: '', url: '/services/deloitte-prof', serviceType: 'Cloud Architecture & Enterprise Migration', segment: 'Enterprise', description: 'Zero-downtime enterprise cloud migration and modernization for global leaders.', userSay: 'Massive scale cloud architecture, executive governance, and bulletproof security.', pros: [{ label: 'Zero-Downtime', count: 1540, color: '#5E42C0' }, { label: 'Architecture Scale', count: 1390, color: '#E8E3FF' }], badges: ['Leader', 'Cloud Migration #1'] },
-      { id: 'accenture-cms', name: 'Accenture Cloud Transformation', vendor: 'Accenture', rating: 4.8, reviewCount: 2450, logo: '', url: '/services/accenture-prof', serviceType: 'Enterprise Cloud Migration', segment: 'Enterprise', description: 'Global multi-cloud migration and infrastructure modernization across AWS, Azure, and GCP.', userSay: 'Flawless governance across multi-region enterprise migrations.', pros: [{ label: 'Multi-Cloud', count: 1890, color: '#5E42C0' }, { label: 'Governance', count: 1670, color: '#E8E3FF' }], badges: ['Leader', 'Global Scale'] },
-      { id: 'slalom-cms', name: 'Slalom Cloud Engineering', vendor: 'Slalom', rating: 4.9, reviewCount: 870, logo: '', url: '/services/slalom-prof', serviceType: 'Agile Cloud Migration & DevOps', segment: 'Mid-Market', description: 'Agile, high-velocity cloud modernization with zero friction and modern tooling.', userSay: 'Fast, collaborative cloud migrations with zero bureaucratic drag.', pros: [{ label: 'Agile Velocity', count: 760, color: '#5E42C0' }, { label: 'Collaboration', count: 710, color: '#E8E3FF' }], badges: ['Leader', 'Agile Champion'] },
-      { id: 'cloudreach-cms', name: 'Cloudreach (an Atos Company)', vendor: 'Cloudreach', rating: 4.7, reviewCount: 640, logo: '', url: '/services/cloudreach', serviceType: 'Pure-Play Cloud Migration', segment: 'Mid-Market', description: 'Premier multi-cloud transformation specialist delivering rapid migration factory workflows.', userSay: 'Pure-play cloud expertise that automates migration workloads smoothly.', pros: [{ label: 'Migration Factory', count: 540, color: '#5E42C0' }, { label: 'Automation', count: 490, color: '#E8E3FF' }], badges: ['Specialist', 'Cloud Factory'] },
+      { id: 'deloitte-cms', name: 'Deloitte Cloud Migration', vendor: 'Deloitte', rating: 4.9, reviewCount: 1980, logo: '', url: '/services/deloitte-prof', serviceType: 'Cloud Architecture & Enterprise Migration', segment: 'Enterprise', description: 'Zero-downtime enterprise cloud migration and modernization for global leaders.', userSay: 'Massive scale cloud architecture, executive governance, and bulletproof security.', pros: [{ label: 'Zero-Downtime', count: 1540, color: '#5A39A2' }, { label: 'Architecture Scale', count: 1390, color: '#E8E3FF' }], badges: ['Leader', 'Cloud Migration #1'] },
+      { id: 'accenture-cms', name: 'Accenture Cloud Transformation', vendor: 'Accenture', rating: 4.8, reviewCount: 2450, logo: '', url: '/services/accenture-prof', serviceType: 'Enterprise Cloud Migration', segment: 'Enterprise', description: 'Global multi-cloud migration and infrastructure modernization across AWS, Azure, and GCP.', userSay: 'Flawless governance across multi-region enterprise migrations.', pros: [{ label: 'Multi-Cloud', count: 1890, color: '#5A39A2' }, { label: 'Governance', count: 1670, color: '#E8E3FF' }], badges: ['Leader', 'Global Scale'] },
+      { id: 'slalom-cms', name: 'Slalom Cloud Engineering', vendor: 'Slalom', rating: 4.9, reviewCount: 870, logo: '', url: '/services/slalom-prof', serviceType: 'Agile Cloud Migration & DevOps', segment: 'Mid-Market', description: 'Agile, high-velocity cloud modernization with zero friction and modern tooling.', userSay: 'Fast, collaborative cloud migrations with zero bureaucratic drag.', pros: [{ label: 'Agile Velocity', count: 760, color: '#5A39A2' }, { label: 'Collaboration', count: 710, color: '#E8E3FF' }], badges: ['Leader', 'Agile Champion'] },
+      { id: 'cloudreach-cms', name: 'Cloudreach (an Atos Company)', vendor: 'Cloudreach', rating: 4.7, reviewCount: 640, logo: '', url: '/services/cloudreach', serviceType: 'Pure-Play Cloud Migration', segment: 'Mid-Market', description: 'Premier multi-cloud transformation specialist delivering rapid migration factory workflows.', userSay: 'Pure-play cloud expertise that automates migration workloads smoothly.', pros: [{ label: 'Migration Factory', count: 540, color: '#5A39A2' }, { label: 'Automation', count: 490, color: '#E8E3FF' }], badges: ['Specialist', 'Cloud Factory'] },
     ]
   },
   {
@@ -3820,9 +3820,9 @@ export const servicesData = [
       { name: 'Simon Foster', role: 'VP of Customer Experience • FinTech', date: '3 weeks ago', rating: 4.8, title: 'Built a conversational customer support AI that resolved 62% of queries autonomously', pro: 'CSAT ratings actually increased compared to our human tier 1 agents. Remarkable ROI.', con: 'Continuous prompt refinement was needed during the first 14 days of live user traffic.' },
     ],
     providers: [
-      { id: 'mckinsey-qb', name: 'QuantumBlack (McKinsey AI)', vendor: 'QuantumBlack', rating: 4.9, reviewCount: 680, logo: '', url: '/services/quantumblack', serviceType: 'Advanced AI Strategy & Custom ML Engineering', segment: 'Enterprise', description: 'McKinsey’s AI arm combining technical ML depth with senior executive business transformation.', userSay: 'The gold standard for enterprise AI strategy and custom proprietary model deployment.', pros: [{ label: 'ML Depth', count: 590, color: '#5E42C0' }, { label: 'Executive ROI', count: 540, color: '#E8E3FF' }], badges: ['AI Pioneer #1', 'Leader'] },
-      { id: 'deloitte-ai', name: 'Deloitte AI & Data Institute', vendor: 'Deloitte', rating: 4.8, reviewCount: 1240, logo: '', url: '/services/deloitte-prof', serviceType: 'Enterprise Generative AI & MLOps', segment: 'Enterprise', description: 'Helping organizations harness AI to drive growth, efficiency, and responsible innovation.', userSay: 'Unmatched scale, enterprise security guardrails, and rapid prototype-to-production capability.', pros: [{ label: 'Enterprise Guardrails', count: 980, color: '#5E42C0' }, { label: 'Scale Deployment', count: 910, color: '#E8E3FF' }], badges: ['Leader', 'Generative AI Authority'] },
-      { id: 'slalom-ai', name: 'Slalom AI & Modern Analytics', vendor: 'Slalom', rating: 4.9, reviewCount: 520, logo: '', url: '/services/slalom-prof', serviceType: 'Agile AI Engineering & Agentic Solutions', segment: 'Mid-Market', description: 'Building cutting-edge AI products and intelligent agent workflows with modern cloud tooling.', userSay: 'Incredibly agile, practical, and highly collaborative AI development teams.', pros: [{ label: 'Agile AI', count: 460, color: '#5E42C0' }, { label: 'Agentic Workflows', count: 420, color: '#E8E3FF' }], badges: ['Top CSAT', 'Agentic Pioneer'] },
+      { id: 'mckinsey-qb', name: 'QuantumBlack (McKinsey AI)', vendor: 'QuantumBlack', rating: 4.9, reviewCount: 680, logo: '', url: '/services/quantumblack', serviceType: 'Advanced AI Strategy & Custom ML Engineering', segment: 'Enterprise', description: 'McKinsey’s AI arm combining technical ML depth with senior executive business transformation.', userSay: 'The gold standard for enterprise AI strategy and custom proprietary model deployment.', pros: [{ label: 'ML Depth', count: 590, color: '#5A39A2' }, { label: 'Executive ROI', count: 540, color: '#E8E3FF' }], badges: ['AI Pioneer #1', 'Leader'] },
+      { id: 'deloitte-ai', name: 'Deloitte AI & Data Institute', vendor: 'Deloitte', rating: 4.8, reviewCount: 1240, logo: '', url: '/services/deloitte-prof', serviceType: 'Enterprise Generative AI & MLOps', segment: 'Enterprise', description: 'Helping organizations harness AI to drive growth, efficiency, and responsible innovation.', userSay: 'Unmatched scale, enterprise security guardrails, and rapid prototype-to-production capability.', pros: [{ label: 'Enterprise Guardrails', count: 980, color: '#5A39A2' }, { label: 'Scale Deployment', count: 910, color: '#E8E3FF' }], badges: ['Leader', 'Generative AI Authority'] },
+      { id: 'slalom-ai', name: 'Slalom AI & Modern Analytics', vendor: 'Slalom', rating: 4.9, reviewCount: 520, logo: '', url: '/services/slalom-prof', serviceType: 'Agile AI Engineering & Agentic Solutions', segment: 'Mid-Market', description: 'Building cutting-edge AI products and intelligent agent workflows with modern cloud tooling.', userSay: 'Incredibly agile, practical, and highly collaborative AI development teams.', pros: [{ label: 'Agile AI', count: 460, color: '#5A39A2' }, { label: 'Agentic Workflows', count: 420, color: '#E8E3FF' }], badges: ['Top CSAT', 'Agentic Pioneer'] },
     ]
   },
   // ── Professional Services Sub-Categories ──
@@ -3848,10 +3848,10 @@ export const servicesData = [
       { name: 'Andrew Smith', role: 'VP of Product • eCommerce Scale-Up', date: '1 month ago', rating: 4.8, title: '10x improvement in API response times after their backend refactoring', pro: 'Profiled all slow queries and restructured Redis caching strategy. Latency dropped to under 20ms.', con: 'Some legacy endpoints required extended discovery before refactoring could begin.' },
     ],
     providers: [
-      { id: 'epam-dev', name: 'EPAM Systems', vendor: 'EPAM', rating: 4.8, reviewCount: 1120, logo: '', url: '/services/epam-prof', serviceType: 'Custom Product Engineering & Development', segment: 'Enterprise', description: 'Global software engineering firm building complex digital products with elite technical talent.', userSay: 'EPAM engineers write impeccable code with deep focus on automated testing and CI/CD hygiene.', pros: [{ label: 'Code Quality', count: 920, color: '#5E42C0' }, { label: 'QA Automation', count: 850, color: '#E8E3FF' }], badges: ['Product Engineering', 'Elite Talent'] },
-      { id: 'thoughtworks-dev', name: 'Thoughtworks', vendor: 'Thoughtworks', rating: 4.9, reviewCount: 760, logo: '', url: '/services/thoughtworks-prof', serviceType: 'Agile Custom Software Engineering', segment: 'Enterprise', description: 'Technology consultancy combining modern engineering with evolutionary architecture design.', userSay: 'Thoughtworks engineers apply XP practices and TDD religiously, resulting in battle-hardened code.', pros: [{ label: 'Architecture Excellence', count: 680, color: '#5E42C0' }, { label: 'TDD & Testing', count: 620, color: '#E8E3FF' }], badges: ['Agile Pioneer', 'Code Quality #1'] },
-      { id: 'slalom-dev', name: 'Slalom Build', vendor: 'Slalom', rating: 4.9, reviewCount: 540, logo: '', url: '/services/slalom-prof', serviceType: 'Modern Full-Stack Development', segment: 'Mid-Market', description: 'Rapid full-stack development shop with deep React, Node.js, and AWS expertise.', userSay: 'Slalom Build ships fast and communicates clearly. Most collaborative development partner we have had.', pros: [{ label: 'Delivery Velocity', count: 480, color: '#5E42C0' }, { label: 'Stack Depth', count: 440, color: '#E8E3FF' }], badges: ['Full-Stack Leader', 'Top CSAT'] },
-      { id: 'capgemini-dev', name: 'Capgemini Engineering', vendor: 'Capgemini', rating: 4.7, reviewCount: 1350, logo: '', url: '/services/capgemini-prof', serviceType: 'Enterprise Software & IoT Engineering', segment: 'Enterprise', description: 'Large-scale software and embedded systems engineering across industrial and enterprise contexts.', userSay: 'Excellent for complex enterprise software builds requiring deep domain expertise.', pros: [{ label: 'Domain Expertise', count: 1040, color: '#5E42C0' }, { label: 'Industrial Scale', count: 960, color: '#E8E3FF' }], badges: ['Enterprise Engineering', 'Scale Leader'] },
+      { id: 'epam-dev', name: 'EPAM Systems', vendor: 'EPAM', rating: 4.8, reviewCount: 1120, logo: '', url: '/services/epam-prof', serviceType: 'Custom Product Engineering & Development', segment: 'Enterprise', description: 'Global software engineering firm building complex digital products with elite technical talent.', userSay: 'EPAM engineers write impeccable code with deep focus on automated testing and CI/CD hygiene.', pros: [{ label: 'Code Quality', count: 920, color: '#5A39A2' }, { label: 'QA Automation', count: 850, color: '#E8E3FF' }], badges: ['Product Engineering', 'Elite Talent'] },
+      { id: 'thoughtworks-dev', name: 'Thoughtworks', vendor: 'Thoughtworks', rating: 4.9, reviewCount: 760, logo: '', url: '/services/thoughtworks-prof', serviceType: 'Agile Custom Software Engineering', segment: 'Enterprise', description: 'Technology consultancy combining modern engineering with evolutionary architecture design.', userSay: 'Thoughtworks engineers apply XP practices and TDD religiously, resulting in battle-hardened code.', pros: [{ label: 'Architecture Excellence', count: 680, color: '#5A39A2' }, { label: 'TDD & Testing', count: 620, color: '#E8E3FF' }], badges: ['Agile Pioneer', 'Code Quality #1'] },
+      { id: 'slalom-dev', name: 'Slalom Build', vendor: 'Slalom', rating: 4.9, reviewCount: 540, logo: '', url: '/services/slalom-prof', serviceType: 'Modern Full-Stack Development', segment: 'Mid-Market', description: 'Rapid full-stack development shop with deep React, Node.js, and AWS expertise.', userSay: 'Slalom Build ships fast and communicates clearly. Most collaborative development partner we have had.', pros: [{ label: 'Delivery Velocity', count: 480, color: '#5A39A2' }, { label: 'Stack Depth', count: 440, color: '#E8E3FF' }], badges: ['Full-Stack Leader', 'Top CSAT'] },
+      { id: 'capgemini-dev', name: 'Capgemini Engineering', vendor: 'Capgemini', rating: 4.7, reviewCount: 1350, logo: '', url: '/services/capgemini-prof', serviceType: 'Enterprise Software & IoT Engineering', segment: 'Enterprise', description: 'Large-scale software and embedded systems engineering across industrial and enterprise contexts.', userSay: 'Excellent for complex enterprise software builds requiring deep domain expertise.', pros: [{ label: 'Domain Expertise', count: 1040, color: '#5A39A2' }, { label: 'Industrial Scale', count: 960, color: '#E8E3FF' }], badges: ['Enterprise Engineering', 'Scale Leader'] },
     ],
   },
   {
@@ -3876,9 +3876,9 @@ export const servicesData = [
       { name: 'Sarah Blake', role: 'Director of Product • Healthcare App', date: '3 weeks ago', rating: 4.8, title: 'HIPAA-compliant iOS patient app shipped in 3 months — on time and on budget', pro: 'Thorough security architecture including biometric authentication and encrypted local storage.', con: 'App Store review submission needed a second pass for one edge-case privacy disclosure.' },
     ],
     providers: [
-      { id: 'thoughtworks-mob', name: 'Thoughtworks Mobile', vendor: 'Thoughtworks', rating: 4.9, reviewCount: 480, logo: '', url: '/services/thoughtworks-prof', serviceType: 'Native & Cross-Platform Mobile Engineering', segment: 'Enterprise', description: 'Expert mobile development combining evolutionary architecture with modern iOS/Android tooling.', userSay: 'Thoughtworks mobile apps are engineered to last. Outstanding test coverage and clean architecture.', pros: [{ label: 'App Architecture', count: 420, color: '#5E42C0' }, { label: 'Test Coverage', count: 390, color: '#E8E3FF' }], badges: ['Mobile Pioneer', 'Architecture #1'] },
-      { id: 'epam-mob', name: 'EPAM Mobile Studio', vendor: 'EPAM', rating: 4.8, reviewCount: 690, logo: '', url: '/services/epam-prof', serviceType: 'iOS, Android & Flutter Development', segment: 'Enterprise', description: 'End-to-end mobile product engineering with elite talent across iOS, Android, and React Native.', userSay: 'EPAM mobile engineers deliver pixel-perfect UIs with exceptional performance optimization.', pros: [{ label: 'UI Quality', count: 580, color: '#5E42C0' }, { label: 'Performance Tuning', count: 540, color: '#E8E3FF' }], badges: ['Elite Mobile', 'Leader'] },
-      { id: 'slalom-mob', name: 'Slalom Mobile Engineering', vendor: 'Slalom', rating: 4.9, reviewCount: 310, logo: '', url: '/services/slalom-prof', serviceType: 'Agile Mobile App Development', segment: 'Mid-Market', description: 'Modern mobile engineering firm delivering high-quality iOS and Android apps with agile velocity.', userSay: 'Slalom mobile teams ship fast and communicate transparently throughout every sprint.', pros: [{ label: 'Sprint Velocity', count: 280, color: '#5E42C0' }, { label: 'Communication', count: 260, color: '#E8E3FF' }], badges: ['Top CSAT', 'Agile Mobile'] },
+      { id: 'thoughtworks-mob', name: 'Thoughtworks Mobile', vendor: 'Thoughtworks', rating: 4.9, reviewCount: 480, logo: '', url: '/services/thoughtworks-prof', serviceType: 'Native & Cross-Platform Mobile Engineering', segment: 'Enterprise', description: 'Expert mobile development combining evolutionary architecture with modern iOS/Android tooling.', userSay: 'Thoughtworks mobile apps are engineered to last. Outstanding test coverage and clean architecture.', pros: [{ label: 'App Architecture', count: 420, color: '#5A39A2' }, { label: 'Test Coverage', count: 390, color: '#E8E3FF' }], badges: ['Mobile Pioneer', 'Architecture #1'] },
+      { id: 'epam-mob', name: 'EPAM Mobile Studio', vendor: 'EPAM', rating: 4.8, reviewCount: 690, logo: '', url: '/services/epam-prof', serviceType: 'iOS, Android & Flutter Development', segment: 'Enterprise', description: 'End-to-end mobile product engineering with elite talent across iOS, Android, and React Native.', userSay: 'EPAM mobile engineers deliver pixel-perfect UIs with exceptional performance optimization.', pros: [{ label: 'UI Quality', count: 580, color: '#5A39A2' }, { label: 'Performance Tuning', count: 540, color: '#E8E3FF' }], badges: ['Elite Mobile', 'Leader'] },
+      { id: 'slalom-mob', name: 'Slalom Mobile Engineering', vendor: 'Slalom', rating: 4.9, reviewCount: 310, logo: '', url: '/services/slalom-prof', serviceType: 'Agile Mobile App Development', segment: 'Mid-Market', description: 'Modern mobile engineering firm delivering high-quality iOS and Android apps with agile velocity.', userSay: 'Slalom mobile teams ship fast and communicate transparently throughout every sprint.', pros: [{ label: 'Sprint Velocity', count: 280, color: '#5A39A2' }, { label: 'Communication', count: 260, color: '#E8E3FF' }], badges: ['Top CSAT', 'Agile Mobile'] },
     ],
   },
   {
@@ -3903,9 +3903,9 @@ export const servicesData = [
       { name: 'Todd Marshall', role: 'Head of Product • eCommerce Platform', date: '1 month ago', rating: 4.8, title: 'Load testing confirmed our platform could handle 500K concurrent users at peak', pro: 'Comprehensive k6 load testing scripts and detailed capacity bottleneck analysis.', con: 'Cloud test infrastructure provisioning added 3 days to the kick-off timeline.' },
     ],
     providers: [
-      { id: 'epam-qa', name: 'EPAM QA Engineering', vendor: 'EPAM', rating: 4.8, reviewCount: 860, logo: '', url: '/services/epam-prof', serviceType: 'Test Automation & Quality Engineering', segment: 'Enterprise', description: 'End-to-end quality engineering with deep automation, performance testing, and security validation expertise.', userSay: 'EPAM QA engineers build robust automation frameworks that catch critical bugs before production.', pros: [{ label: 'Automation Depth', count: 740, color: '#5E42C0' }, { label: 'Security Testing', count: 680, color: '#E8E3FF' }], badges: ['QA Leader', 'Automation #1'] },
-      { id: 'thoughtworks-qa', name: 'Thoughtworks Quality Engineering', vendor: 'Thoughtworks', rating: 4.9, reviewCount: 420, logo: '', url: '/services/thoughtworks-prof', serviceType: 'Continuous Testing & TDD Advisory', segment: 'Enterprise', description: 'Pioneering shift-left quality engineering with TDD, BDD, and evolutionary testing practices.', userSay: 'Thoughtworks made quality a core engineering discipline, not an afterthought. Exceptional test architecture.', pros: [{ label: 'Shift-Left TDD', count: 380, color: '#5E42C0' }, { label: 'Test Architecture', count: 350, color: '#E8E3FF' }], badges: ['TDD Pioneer', 'Quality Excellence'] },
-      { id: 'capgemini-qa', name: 'Capgemini Quality Services', vendor: 'Capgemini', rating: 4.7, reviewCount: 980, logo: '', url: '/services/capgemini-prof', serviceType: 'Enterprise QA & TMMi Assessment', segment: 'Enterprise', description: 'Global quality assurance services covering functional, performance, security, and process maturity.', userSay: 'Capgemini provides structured QA governance with thorough TMMi assessments and measurable quality KPIs.', pros: [{ label: 'QA Governance', count: 840, color: '#5E42C0' }, { label: 'TMMi Maturity', count: 760, color: '#E8E3FF' }], badges: ['Enterprise QA', 'TMMi Authority'] },
+      { id: 'epam-qa', name: 'EPAM QA Engineering', vendor: 'EPAM', rating: 4.8, reviewCount: 860, logo: '', url: '/services/epam-prof', serviceType: 'Test Automation & Quality Engineering', segment: 'Enterprise', description: 'End-to-end quality engineering with deep automation, performance testing, and security validation expertise.', userSay: 'EPAM QA engineers build robust automation frameworks that catch critical bugs before production.', pros: [{ label: 'Automation Depth', count: 740, color: '#5A39A2' }, { label: 'Security Testing', count: 680, color: '#E8E3FF' }], badges: ['QA Leader', 'Automation #1'] },
+      { id: 'thoughtworks-qa', name: 'Thoughtworks Quality Engineering', vendor: 'Thoughtworks', rating: 4.9, reviewCount: 420, logo: '', url: '/services/thoughtworks-prof', serviceType: 'Continuous Testing & TDD Advisory', segment: 'Enterprise', description: 'Pioneering shift-left quality engineering with TDD, BDD, and evolutionary testing practices.', userSay: 'Thoughtworks made quality a core engineering discipline, not an afterthought. Exceptional test architecture.', pros: [{ label: 'Shift-Left TDD', count: 380, color: '#5A39A2' }, { label: 'Test Architecture', count: 350, color: '#E8E3FF' }], badges: ['TDD Pioneer', 'Quality Excellence'] },
+      { id: 'capgemini-qa', name: 'Capgemini Quality Services', vendor: 'Capgemini', rating: 4.7, reviewCount: 980, logo: '', url: '/services/capgemini-prof', serviceType: 'Enterprise QA & TMMi Assessment', segment: 'Enterprise', description: 'Global quality assurance services covering functional, performance, security, and process maturity.', userSay: 'Capgemini provides structured QA governance with thorough TMMi assessments and measurable quality KPIs.', pros: [{ label: 'QA Governance', count: 840, color: '#5A39A2' }, { label: 'TMMi Maturity', count: 760, color: '#E8E3FF' }], badges: ['Enterprise QA', 'TMMi Authority'] },
     ],
   },
   {
@@ -3930,9 +3930,9 @@ export const servicesData = [
       { name: 'Greg Thompson', role: 'VP of Operations • Global Logistics', date: '1 month ago', rating: 4.8, title: 'Full DR test completed in 8 minutes — our auditors were stunned', pro: 'Their Azure Site Recovery configuration is flawless. Failover testing now runs quarterly without stress.', con: 'Initial BCP documentation required thorough input from business unit leads.' },
     ],
     providers: [
-      { id: 'accenture-msp', name: 'Accenture Managed Services', vendor: 'Accenture', rating: 4.8, reviewCount: 1680, logo: '', url: '/services/accenture-prof', serviceType: 'Enterprise Managed IT & Cloud Operations', segment: 'Enterprise', description: 'Global managed services covering cloud, network, security, and end-user computing at enterprise scale.', userSay: 'Accenture managed services handle our entire global IT footprint with exceptional consistency and governance.', pros: [{ label: 'Global Coverage', count: 1420, color: '#5E42C0' }, { label: 'SLA Adherence', count: 1280, color: '#E8E3FF' }], badges: ['Leader', 'Global MSP #1'] },
-      { id: 'deloitte-msp', name: 'Deloitte Managed Services', vendor: 'Deloitte', rating: 4.9, reviewCount: 1320, logo: '', url: '/services/deloitte-prof', serviceType: 'Intelligent Managed IT & Security Operations', segment: 'Enterprise', description: 'AI-augmented managed IT services integrating NOC, SOC, and cloud operations into unified platforms.', userSay: 'Deloitte\'s AI-driven managed services predict and prevent issues before they reach our users.', pros: [{ label: 'AI-Driven Ops', count: 1180, color: '#5E42C0' }, { label: 'Security Coverage', count: 1050, color: '#E8E3FF' }], badges: ['AI-Ops Leader', 'Enterprise #1'] },
-      { id: 'capgemini-msp', name: 'Capgemini Managed Infrastructure', vendor: 'Capgemini', rating: 4.7, reviewCount: 1140, logo: '', url: '/services/capgemini-prof', serviceType: 'Hybrid Cloud & Endpoint Managed Services', segment: 'Enterprise', description: 'Comprehensive managed infrastructure services across on-premise, cloud, and hybrid environments.', userSay: 'Reliable, well-documented managed services with strong ITIL process compliance and reporting.', pros: [{ label: 'ITIL Processes', count: 920, color: '#5E42C0' }, { label: 'Hybrid Coverage', count: 840, color: '#E8E3FF' }], badges: ['Infrastructure Leader', 'ITIL Gold'] },
+      { id: 'accenture-msp', name: 'Accenture Managed Services', vendor: 'Accenture', rating: 4.8, reviewCount: 1680, logo: '', url: '/services/accenture-prof', serviceType: 'Enterprise Managed IT & Cloud Operations', segment: 'Enterprise', description: 'Global managed services covering cloud, network, security, and end-user computing at enterprise scale.', userSay: 'Accenture managed services handle our entire global IT footprint with exceptional consistency and governance.', pros: [{ label: 'Global Coverage', count: 1420, color: '#5A39A2' }, { label: 'SLA Adherence', count: 1280, color: '#E8E3FF' }], badges: ['Leader', 'Global MSP #1'] },
+      { id: 'deloitte-msp', name: 'Deloitte Managed Services', vendor: 'Deloitte', rating: 4.9, reviewCount: 1320, logo: '', url: '/services/deloitte-prof', serviceType: 'Intelligent Managed IT & Security Operations', segment: 'Enterprise', description: 'AI-augmented managed IT services integrating NOC, SOC, and cloud operations into unified platforms.', userSay: 'Deloitte\'s AI-driven managed services predict and prevent issues before they reach our users.', pros: [{ label: 'AI-Driven Ops', count: 1180, color: '#5A39A2' }, { label: 'Security Coverage', count: 1050, color: '#E8E3FF' }], badges: ['AI-Ops Leader', 'Enterprise #1'] },
+      { id: 'capgemini-msp', name: 'Capgemini Managed Infrastructure', vendor: 'Capgemini', rating: 4.7, reviewCount: 1140, logo: '', url: '/services/capgemini-prof', serviceType: 'Hybrid Cloud & Endpoint Managed Services', segment: 'Enterprise', description: 'Comprehensive managed infrastructure services across on-premise, cloud, and hybrid environments.', userSay: 'Reliable, well-documented managed services with strong ITIL process compliance and reporting.', pros: [{ label: 'ITIL Processes', count: 920, color: '#5A39A2' }, { label: 'Hybrid Coverage', count: 840, color: '#E8E3FF' }], badges: ['Infrastructure Leader', 'ITIL Gold'] },
     ],
   },
   {
@@ -3957,9 +3957,9 @@ export const servicesData = [
       { name: 'Patricia Cohen', role: 'CIO • Financial Services', date: '1 month ago', rating: 4.8, title: 'Seamlessly integrated 5 disparate legacy systems into a unified data platform', pro: 'Brilliant integration architects who resolved complex EAI challenges with elegant API designs.', con: 'Legacy system documentation was sparse, requiring additional reverse engineering.' },
     ],
     providers: [
-      { id: 'deloitte-sc', name: 'Deloitte Solution Architecture', vendor: 'Deloitte', rating: 4.9, reviewCount: 1540, logo: '', url: '/services/deloitte-prof', serviceType: 'Enterprise Solution Design & Advisory', segment: 'Enterprise', description: 'World-class solution architects helping enterprises design and execute transformative technology programs.', userSay: 'Deloitte solution consultants combine strategic thinking with deep technical credibility.', pros: [{ label: 'Strategic Design', count: 1320, color: '#5E42C0' }, { label: 'Technical Authority', count: 1180, color: '#E8E3FF' }], badges: ['Solution Architecture #1', 'Leader'] },
-      { id: 'accenture-sc', name: 'Accenture Technology Consulting', vendor: 'Accenture', rating: 4.8, reviewCount: 2180, logo: '', url: '/services/accenture-prof', serviceType: 'Enterprise Technology Solution & Integration', segment: 'Enterprise', description: 'End-to-end technology consulting from strategy to implementation and value realization.', userSay: 'Accenture brings global reach and deep system integration expertise across all major enterprise platforms.', pros: [{ label: 'Integration Scale', count: 1840, color: '#5E42C0' }, { label: 'Platform Depth', count: 1640, color: '#E8E3FF' }], badges: ['Global Leader', 'Integration #1'] },
-      { id: 'slalom-sc', name: 'Slalom Solution Consulting', vendor: 'Slalom', rating: 4.9, reviewCount: 720, logo: '', url: '/services/slalom-prof', serviceType: 'Agile Solution Design & Implementation', segment: 'Mid-Market', description: 'Collaborative consulting model delivering tailored technology solutions with fast-to-value delivery.', userSay: 'Slalom consultants feel like part of your internal team. No bureaucracy, just great work.', pros: [{ label: 'Collaboration', count: 650, color: '#5E42C0' }, { label: 'Fast to Value', count: 590, color: '#E8E3FF' }], badges: ['Top CSAT', 'Agile Consulting'] },
+      { id: 'deloitte-sc', name: 'Deloitte Solution Architecture', vendor: 'Deloitte', rating: 4.9, reviewCount: 1540, logo: '', url: '/services/deloitte-prof', serviceType: 'Enterprise Solution Design & Advisory', segment: 'Enterprise', description: 'World-class solution architects helping enterprises design and execute transformative technology programs.', userSay: 'Deloitte solution consultants combine strategic thinking with deep technical credibility.', pros: [{ label: 'Strategic Design', count: 1320, color: '#5A39A2' }, { label: 'Technical Authority', count: 1180, color: '#E8E3FF' }], badges: ['Solution Architecture #1', 'Leader'] },
+      { id: 'accenture-sc', name: 'Accenture Technology Consulting', vendor: 'Accenture', rating: 4.8, reviewCount: 2180, logo: '', url: '/services/accenture-prof', serviceType: 'Enterprise Technology Solution & Integration', segment: 'Enterprise', description: 'End-to-end technology consulting from strategy to implementation and value realization.', userSay: 'Accenture brings global reach and deep system integration expertise across all major enterprise platforms.', pros: [{ label: 'Integration Scale', count: 1840, color: '#5A39A2' }, { label: 'Platform Depth', count: 1640, color: '#E8E3FF' }], badges: ['Global Leader', 'Integration #1'] },
+      { id: 'slalom-sc', name: 'Slalom Solution Consulting', vendor: 'Slalom', rating: 4.9, reviewCount: 720, logo: '', url: '/services/slalom-prof', serviceType: 'Agile Solution Design & Implementation', segment: 'Mid-Market', description: 'Collaborative consulting model delivering tailored technology solutions with fast-to-value delivery.', userSay: 'Slalom consultants feel like part of your internal team. No bureaucracy, just great work.', pros: [{ label: 'Collaboration', count: 650, color: '#5A39A2' }, { label: 'Fast to Value', count: 590, color: '#E8E3FF' }], badges: ['Top CSAT', 'Agile Consulting'] },
     ],
   },
   {
@@ -3984,9 +3984,9 @@ export const servicesData = [
       { name: 'William Torres', role: 'CIO • Professional Services Firm', date: '1 month ago', rating: 4.8, title: 'Migrated 8 years of historical data from legacy system with 99.97% accuracy', pro: 'Their ETL specialists built robust data validation checks at every transformation step.', con: 'Data cleansing phase required significant involvement from our finance and operations teams.' },
     ],
     providers: [
-      { id: 'accenture-impl', name: 'Accenture Technology Implementation', vendor: 'Accenture', rating: 4.8, reviewCount: 2340, logo: '', url: '/services/accenture-prof', serviceType: 'SAP, Salesforce & Cloud Implementation', segment: 'Enterprise', description: 'Global system integrator delivering large-scale ERP, CRM, and cloud platform implementations.', userSay: 'Accenture implementation teams bring unparalleled platform depth and structured governance methodologies.', pros: [{ label: 'Platform Depth', count: 1940, color: '#5E42C0' }, { label: 'Governance', count: 1760, color: '#E8E3FF' }], badges: ['SAP Gold', 'Salesforce Platinum'] },
-      { id: 'deloitte-impl', name: 'Deloitte Implementation Services', vendor: 'Deloitte', rating: 4.9, reviewCount: 1860, logo: '', url: '/services/deloitte-prof', serviceType: 'Enterprise Technology Implementation', segment: 'Enterprise', description: 'End-to-end implementation services with deep SAP, Oracle, and cloud expertise.', userSay: 'Deloitte implementation consultants own outcomes, not just deliverables. High accountability culture.', pros: [{ label: 'Outcome Ownership', count: 1580, color: '#5E42C0' }, { label: 'Change Management', count: 1420, color: '#E8E3FF' }], badges: ['SAP Partner', 'Leader'] },
-      { id: 'slalom-impl', name: 'Slalom Implementation', vendor: 'Slalom', rating: 4.9, reviewCount: 610, logo: '', url: '/services/slalom-prof', serviceType: 'Agile CRM & Cloud Implementation', segment: 'Mid-Market', description: 'Agile implementation partner specializing in Salesforce, AWS, and modern cloud platforms.', userSay: 'Slalom implementation squads are laser-focused and communicate with complete transparency.', pros: [{ label: 'Agile Delivery', count: 540, color: '#5E42C0' }, { label: 'Transparency', count: 490, color: '#E8E3FF' }], badges: ['Salesforce Crest', 'Top CSAT'] },
+      { id: 'accenture-impl', name: 'Accenture Technology Implementation', vendor: 'Accenture', rating: 4.8, reviewCount: 2340, logo: '', url: '/services/accenture-prof', serviceType: 'SAP, Salesforce & Cloud Implementation', segment: 'Enterprise', description: 'Global system integrator delivering large-scale ERP, CRM, and cloud platform implementations.', userSay: 'Accenture implementation teams bring unparalleled platform depth and structured governance methodologies.', pros: [{ label: 'Platform Depth', count: 1940, color: '#5A39A2' }, { label: 'Governance', count: 1760, color: '#E8E3FF' }], badges: ['SAP Gold', 'Salesforce Platinum'] },
+      { id: 'deloitte-impl', name: 'Deloitte Implementation Services', vendor: 'Deloitte', rating: 4.9, reviewCount: 1860, logo: '', url: '/services/deloitte-prof', serviceType: 'Enterprise Technology Implementation', segment: 'Enterprise', description: 'End-to-end implementation services with deep SAP, Oracle, and cloud expertise.', userSay: 'Deloitte implementation consultants own outcomes, not just deliverables. High accountability culture.', pros: [{ label: 'Outcome Ownership', count: 1580, color: '#5A39A2' }, { label: 'Change Management', count: 1420, color: '#E8E3FF' }], badges: ['SAP Partner', 'Leader'] },
+      { id: 'slalom-impl', name: 'Slalom Implementation', vendor: 'Slalom', rating: 4.9, reviewCount: 610, logo: '', url: '/services/slalom-prof', serviceType: 'Agile CRM & Cloud Implementation', segment: 'Mid-Market', description: 'Agile implementation partner specializing in Salesforce, AWS, and modern cloud platforms.', userSay: 'Slalom implementation squads are laser-focused and communicate with complete transparency.', pros: [{ label: 'Agile Delivery', count: 540, color: '#5A39A2' }, { label: 'Transparency', count: 490, color: '#E8E3FF' }], badges: ['Salesforce Crest', 'Top CSAT'] },
     ],
   },
   {
@@ -4011,9 +4011,9 @@ export const servicesData = [
       { name: 'Diana Lee', role: 'Head of Analytics • eCommerce Group', date: '1 month ago', rating: 4.8, title: 'Managed BI service delivers flawless weekly executive dashboards with zero manual effort from our team', pro: 'Automated data pipeline management and Tableau maintenance. Our analysts now focus on insights, not plumbing.', con: 'Initial dashboard redesign required 4 rounds of business stakeholder review.' },
     ],
     providers: [
-      { id: 'infosys-ms', name: 'Infosys BPO & Managed Services', vendor: 'Infosys', rating: 4.8, reviewCount: 2140, logo: '', url: '/services/infosys-other', serviceType: 'BPO, Managed IT & Analytics Services', segment: 'Enterprise', description: 'Global managed services and BPO powerhouse delivering cost-efficient, quality-driven operations.', userSay: 'Infosys managed services teams run our ops with disciplined ITIL governance and measurable KPIs.', pros: [{ label: 'Cost Efficiency', count: 1760, color: '#5E42C0' }, { label: 'ITIL Governance', count: 1580, color: '#E8E3FF' }], badges: ['BPO Leader', 'Global Scale #1'] },
-      { id: 'accenture-ms', name: 'Accenture Managed Services', vendor: 'Accenture', rating: 4.8, reviewCount: 1890, logo: '', url: '/services/accenture-prof', serviceType: 'Intelligent Operations & Managed Services', segment: 'Enterprise', description: 'AI-powered managed services platform combining automation, analytics, and expert operations teams.', userSay: 'Accenture Intelligent Operations platform proactively optimizes our processes using AI and ML.', pros: [{ label: 'AI Automation', count: 1620, color: '#5E42C0' }, { label: 'Intelligent Ops', count: 1440, color: '#E8E3FF' }], badges: ['Intelligent Operations', 'Leader'] },
-      { id: 'capgemini-ms', name: 'Capgemini Business Services', vendor: 'Capgemini', rating: 4.7, reviewCount: 1560, logo: '', url: '/services/capgemini-prof', serviceType: 'Finance, HR & IT Managed Services', segment: 'Enterprise', description: 'End-to-end managed services for finance, HR, procurement, and IT operations.', userSay: 'Capgemini managed services deliver consistent quality with strong governance and transparent SLA reporting.', pros: [{ label: 'Process Consistency', count: 1280, color: '#5E42C0' }, { label: 'Reporting Clarity', count: 1140, color: '#E8E3FF' }], badges: ['BPO Excellence', 'Governance Leader'] },
+      { id: 'infosys-ms', name: 'Infosys BPO & Managed Services', vendor: 'Infosys', rating: 4.8, reviewCount: 2140, logo: '', url: '/services/infosys-other', serviceType: 'BPO, Managed IT & Analytics Services', segment: 'Enterprise', description: 'Global managed services and BPO powerhouse delivering cost-efficient, quality-driven operations.', userSay: 'Infosys managed services teams run our ops with disciplined ITIL governance and measurable KPIs.', pros: [{ label: 'Cost Efficiency', count: 1760, color: '#5A39A2' }, { label: 'ITIL Governance', count: 1580, color: '#E8E3FF' }], badges: ['BPO Leader', 'Global Scale #1'] },
+      { id: 'accenture-ms', name: 'Accenture Managed Services', vendor: 'Accenture', rating: 4.8, reviewCount: 1890, logo: '', url: '/services/accenture-prof', serviceType: 'Intelligent Operations & Managed Services', segment: 'Enterprise', description: 'AI-powered managed services platform combining automation, analytics, and expert operations teams.', userSay: 'Accenture Intelligent Operations platform proactively optimizes our processes using AI and ML.', pros: [{ label: 'AI Automation', count: 1620, color: '#5A39A2' }, { label: 'Intelligent Ops', count: 1440, color: '#E8E3FF' }], badges: ['Intelligent Operations', 'Leader'] },
+      { id: 'capgemini-ms', name: 'Capgemini Business Services', vendor: 'Capgemini', rating: 4.7, reviewCount: 1560, logo: '', url: '/services/capgemini-prof', serviceType: 'Finance, HR & IT Managed Services', segment: 'Enterprise', description: 'End-to-end managed services for finance, HR, procurement, and IT operations.', userSay: 'Capgemini managed services deliver consistent quality with strong governance and transparent SLA reporting.', pros: [{ label: 'Process Consistency', count: 1280, color: '#5A39A2' }, { label: 'Reporting Clarity', count: 1140, color: '#E8E3FF' }], badges: ['BPO Excellence', 'Governance Leader'] },
     ],
   },
 ];

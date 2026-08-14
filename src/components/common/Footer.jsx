@@ -214,7 +214,7 @@ export default function Footer() {
               <ChevronDown className={`w-4 h-4 text-white transition-transform ${openSections.g2 ? 'rotate-180' : ''}`} />
             </button>
             {openSections.g2 && (
-              <div className="pb-4 pl-5 flex flex-col gap-3">
+              <div className="pb-4 pl-10 flex flex-col gap-3">
                 {footerData.g2.links.map((link, index) => (
                   <a key={index} href={link.url} className="text-[13px] text-[#C8CCD4]">{link.text}</a>
                 ))}
@@ -237,7 +237,7 @@ export default function Footer() {
               <ChevronDown className={`w-4 h-4 text-white transition-transform ${openSections.topCategories ? 'rotate-180' : ''}`} />
             </button>
             {openSections.topCategories && (
-              <div className="pb-4 pl-5 flex flex-col gap-3">
+              <div className="pb-4 pl-10 flex flex-col gap-3">
                 {footerData.topCategories.links.map((link, index) => (
                   <a key={index} href={link.url} className="text-[13px] text-[#C8CCD4]">{link.text}</a>
                 ))}
@@ -260,7 +260,7 @@ export default function Footer() {
               <ChevronDown className={`w-4 h-4 text-white transition-transform ${openSections.company ? 'rotate-180' : ''}`} />
             </button>
             {openSections.company && (
-              <div className="pb-4 pl-5 flex flex-col gap-3">
+              <div className="pb-4 pl-10 flex flex-col gap-3">
                 {footerData.company.links.map((link, index) => (
                   <a key={index} href={link.url} className="text-[13px] text-[#C8CCD4]">{link.text}</a>
                 ))}
@@ -306,7 +306,7 @@ export default function Footer() {
               <ChevronDown className={`w-4 h-4 text-white transition-transform ${openSections.policies ? 'rotate-180' : ''}`} />
             </button>
             {openSections.policies && (
-              <div className="pb-4 pl-5 flex flex-col gap-3">
+              <div className="pb-4 pl-10 flex flex-col gap-3">
                 {footerData.policies.links.map((link, index) => (
                   <a key={index} href={link.url} className="text-[13px] text-[#C8CCD4]">{link.text}</a>
                 ))}

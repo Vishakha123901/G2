@@ -1,13 +1,13 @@
 // Hero section dummy data for G2 homepage
 export const heroContent = {
-  title: "Where you go for software.",
+  title: "Where you go\nfor software.",
   subtitlePrefix: "Find the right software and services based on ",
   reviewCount: "3,598,000+",
   subtitleSuffix: " real reviews.",
   searchPlaceholder: "Ask a question...",
   chips: [
-    { id: 'best-products', icon: 'Trophy', label: 'Best Products 2026', link: '/best-products' },
-    { id: 'trending-products', icon: 'TrendingUp', label: 'Trending Products', link: '/trending' }
+    { id: 'best-products', icon: 'Trophy', label: 'Top Software', link: '/best-products' },
+    { id: 'trending-products', icon: 'TrendingUp', label: 'Trending', link: '/trending' }
   ]
 };
 

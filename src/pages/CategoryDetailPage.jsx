@@ -167,7 +167,7 @@ export default function CategoryDetailPage() {
                       padding: '14px 20px',
                       fontSize: 14,
                       fontWeight: isActive ? 700 : 500,
-                      color: isActive ? '#1C1D21' : '#6B7280',
+                      color: isActive ? '#201F23' : '#6B7280',
                       background: 'none',
                       border: 'none',
                       borderBottom: isActive ? '2px solid #0066CC' : '2px solid transparent',
@@ -201,9 +201,9 @@ export default function CategoryDetailPage() {
         className="breadcrumb-responsive">
           <Link to="/" style={{ color: '#2563EB', textDecoration: 'none', fontSize: 'inherit' }}>Home</Link>
           <span style={{ flexShrink: 0 }}>›</span>
-          <span style={{ color: '#374151', fontWeight: 500, fontSize: 'inherit' }}>Artificial Intelligence Software</span>
+          <span style={{ color: '#201F23', fontWeight: 500, fontSize: 'inherit' }}>Artificial Intelligence Software</span>
           <span style={{ flexShrink: 0 }}>›</span>
-          <span style={{ color: '#374151', fontSize: 'inherit' }}>{categoryName}</span>
+          <span style={{ color: '#201F23', fontSize: 'inherit' }}>{categoryName}</span>
         </div>
       </div>
 
@@ -233,7 +233,7 @@ export default function CategoryDetailPage() {
 
       {/* ── PAGE TITLE ── */}
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '8px 24px 24px' }}>
-        <h1 style={{ fontSize: 39, fontWeight: 800, color: '#1C1D21', margin: 0 }}
+        <h1
         className="page-title-responsive">
           Best {categoryName} Software
         </h1>
@@ -295,7 +295,7 @@ export default function CategoryDetailPage() {
 
           {/* Listing header */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16, flexWrap: 'wrap', gap: 12 }}>
-            <span style={{ fontSize: 14, color: '#374151' }} className="hidden sm:block">
+            <span style={{ fontSize: 14, color: '#201F23' }} className="hidden sm:block">
               <strong>{listingCount} Listings</strong> in {categoryName} Available
             </span>
 
@@ -307,7 +307,7 @@ export default function CategoryDetailPage() {
                 style={{
                   flex: 1,
                   display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-                  fontSize: 15, fontWeight: 600, color: '#1C1D21', background: '#fff',
+                  fontSize: 15, fontWeight: 600, color: '#201F23', background: '#fff',
                   border: '1px solid #D1D5DB', borderRadius: 12,
                   padding: '12px 16px', cursor: 'pointer',
                   transition: 'all 0.15s',
@@ -325,7 +325,7 @@ export default function CategoryDetailPage() {
                 style={{
                   flex: 1,
                   display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-                  fontSize: 15, fontWeight: 600, color: '#1C1D21', background: '#fff',
+                  fontSize: 15, fontWeight: 600, color: '#201F23', background: '#fff',
                   border: '1px solid #D1D5DB', borderRadius: 12,
                   padding: '12px 16px', cursor: 'pointer',
                   transition: 'all 0.15s',
@@ -352,7 +352,7 @@ export default function CategoryDetailPage() {
                 onClick={() => setSortOpen(prev => !prev)}
                 style={{
                   display: 'flex', alignItems: 'center', gap: 6,
-                  fontSize: 13, fontWeight: 600, color: '#1C1D21', background: '#fff',
+                  fontSize: 13, fontWeight: 600, color: '#201F23', background: '#fff',
                   border: '1px solid #D1D5DB', borderRadius: 8,
                   padding: '8px 14px', cursor: 'pointer',
                   transition: 'all 0.15s', whiteSpace: 'nowrap',
@@ -389,7 +389,7 @@ export default function CategoryDetailPage() {
                         padding: '8px 12px', borderRadius: 8, cursor: 'pointer',
                         fontSize: 13, fontWeight: sortBy === 'g2_score' ? 600 : 400,
                         background: sortBy === 'g2_score' ? '#F0EEFF' : 'transparent',
-                        color: sortBy === 'g2_score' ? '#1C1D21' : '#374151',
+                        color: sortBy === 'g2_score' ? '#201F23' : '#201F23',
                         marginBottom: 2,
                         transition: 'background 0.15s',
                       }}
@@ -401,7 +401,7 @@ export default function CategoryDetailPage() {
                         <span style={{
                           display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
                           width: 15, height: 15, borderRadius: '50%',
-                          background: '#1C1D21', color: '#fff', fontSize: 10, fontWeight: 700
+                          background: '#201F23', color: '#fff', fontSize: 10, fontWeight: 700
                         }}>?</span>
                       </div>
                       {sortBy === 'g2_score' && <span style={{ fontSize: 13, fontWeight: 700 }}>✓</span>}
@@ -415,7 +415,7 @@ export default function CategoryDetailPage() {
                         padding: '8px 12px', borderRadius: 8, cursor: 'pointer',
                         fontSize: 13, fontWeight: sortBy === 'popularity' ? 600 : 400,
                         background: sortBy === 'popularity' ? '#F0EEFF' : 'transparent',
-                        color: sortBy === 'popularity' ? '#1C1D21' : '#374151',
+                        color: sortBy === 'popularity' ? '#201F23' : '#201F23',
                         marginBottom: 2,
                         transition: 'background 0.15s',
                       }}
@@ -434,7 +434,7 @@ export default function CategoryDetailPage() {
                         padding: '8px 12px', borderRadius: 8, cursor: 'pointer',
                         fontSize: 13, fontWeight: sortBy === 'satisfaction' ? 600 : 400,
                         background: sortBy === 'satisfaction' ? '#F0EEFF' : 'transparent',
-                        color: sortBy === 'satisfaction' ? '#1C1D21' : '#374151',
+                        color: sortBy === 'satisfaction' ? '#201F23' : '#201F23',
                         transition: 'background 0.15s',
                       }}
                       onMouseEnter={e => { if (sortBy !== 'satisfaction') e.currentTarget.style.background = '#F9FAFB'; }}
@@ -495,7 +495,7 @@ export default function CategoryDetailPage() {
               display: 'flex', alignItems: 'center', justifyContent: 'space-between',
               background: '#fff',
             }}>
-              <h3 style={{ fontSize: 18, fontWeight: 700, color: '#1C1D21', margin: 0 }}>Filters</h3>
+              <h3 style={{ fontSize: 18, fontWeight: 700, color: '#201F23', margin: 0 }}>Filters</h3>
               <button
                 onClick={() => setMobileFilterOpen(false)}
                 style={{
@@ -538,7 +538,7 @@ export default function CategoryDetailPage() {
                 style={{
                   flex: 1, padding: '11px 16px', borderRadius: 8,
                   border: '1px solid #D1D5DB', background: '#fff',
-                  color: '#374151', fontSize: 14, fontWeight: 600, cursor: 'pointer',
+                  color: '#201F23', fontSize: 14, fontWeight: 600, cursor: 'pointer',
                 }}
               >
                 Clear All
@@ -547,7 +547,7 @@ export default function CategoryDetailPage() {
                 onClick={() => setMobileFilterOpen(false)}
                 style={{
                   flex: 1, padding: '11px 16px', borderRadius: 8,
-                  border: 'none', background: '#5E42C0',
+                  border: 'none', background: '#5A39A2',
                   color: '#fff', fontSize: 14, fontWeight: 600, cursor: 'pointer',
                 }}
               >
@@ -594,7 +594,7 @@ export default function CategoryDetailPage() {
               return (
                 <div key={slot} style={{
                   width: 44, height: 44, flexShrink: 0,
-                  border: `1px solid ${prod ? '#5E42C0' : '#D1D5DB'}`,
+                  border: `1px solid ${prod ? '#5A39A2' : '#D1D5DB'}`,
                   borderRadius: 6,
                   background: '#fff',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -616,7 +616,7 @@ export default function CategoryDetailPage() {
                           position: 'absolute', top: -6, right: -6,
                           width: 16, height: 16,
                           borderRadius: '50%',
-                          background: '#1C1D21', border: 'none',
+                          background: '#201F23', border: 'none',
                           color: '#fff', fontSize: 9, fontWeight: 700,
                           cursor: 'pointer', lineHeight: 1,
                           display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -642,8 +642,8 @@ export default function CategoryDetailPage() {
               WebkitAppearance: 'none',
               MozAppearance: 'none',
               appearance: 'none',
-              backgroundColor: '#5E42C0',
-              background: '#5E42C0',
+              backgroundColor: '#5A39A2',
+              background: '#5A39A2',
               color: '#fff',
               border: 'none',
               borderRadius: 20,
@@ -656,8 +656,8 @@ export default function CategoryDetailPage() {
               outline: 'none',
               boxShadow: '0 2px 8px rgba(94,66,192,0.3)',
             }}
-            onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#4E35A6'; }}
-            onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#5E42C0'; }}
+            onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#493088'; }}
+            onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#5A39A2'; }}
           >
             Compare Now
           </button>
@@ -727,10 +727,10 @@ function TopRatedSubscription() {
               margin: '0 auto 16px',
             }}>
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                <path d="M5 13l4 4L19 7" stroke="#5E42C0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M5 13l4 4L19 7" stroke="#5A39A2" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
-            <h3 style={{ fontSize: 20, fontWeight: 700, color: '#1C1D21', marginBottom: 8 }}>
+            <h3 style={{ fontSize: 20, fontWeight: 700, color: '#201F23', marginBottom: 8 }}>
               You're on the list!
             </h3>
             <p style={{ fontSize: 14, color: '#6B7280' }}>
@@ -739,10 +739,10 @@ function TopRatedSubscription() {
           </div>
         ) : (
           <>
-            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#1C1D21', margin: '0 0 12px' }}>
+            <h2 style={{ fontSize: 26, fontWeight: 800, color: '#201F23', margin: '0 0 12px' }}>
               Top-rated software of 2026
             </h2>
-            <p style={{ fontSize: 15, color: '#374151', lineHeight: 1.6, margin: '0 0 20px' }}>
+            <p style={{ fontSize: 15, color: '#201F23', lineHeight: 1.6, margin: '0 0 20px' }}>
               Fill out the form and we'll send a list of the top-rated software based on real user reviews directly to your inbox.
             </p>
 
@@ -750,7 +750,7 @@ function TopRatedSubscription() {
               {/* Email Label */}
               <label
                 htmlFor="top_rated_email"
-                style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', display: 'block', marginBottom: 8 }}
+                style={{ fontSize: 13, fontWeight: 700, color: '#201F23', display: 'block', marginBottom: 8 }}
               >
                 Email Address <span style={{ color: '#EF4444' }}>*</span>
               </label>
@@ -780,13 +780,13 @@ function TopRatedSubscription() {
                       border: '1px solid #D1D5DB',
                       background: '#fff',
                       fontSize: 14,
-                      color: '#1C1D21',
+                      color: '#201F23',
                       outline: 'none',
                       boxSizing: 'border-box',
                       fontFamily: 'inherit',
                       transition: 'border-color 0.15s',
                     }}
-                    onFocus={e => e.target.style.borderColor = '#5E42C0'}
+                    onFocus={e => e.target.style.borderColor = '#5A39A2'}
                     onBlur={e => e.target.style.borderColor = '#D1D5DB'}
                   />
                 </div>
@@ -799,7 +799,7 @@ function TopRatedSubscription() {
                     padding: '0 24px',
                     borderRadius: 999,
                     border: 'none',
-                    background: isValid ? '#5E42C0' : '#D1D5DB',
+                    background: isValid ? '#5A39A2' : '#D1D5DB',
                     color: '#fff',
                     fontSize: 14,
                     fontWeight: 700,
@@ -808,8 +808,8 @@ function TopRatedSubscription() {
                     transition: 'background 0.15s',
                     fontFamily: 'inherit',
                   }}
-                  onMouseEnter={e => { if (isValid) e.currentTarget.style.background = '#4E35A6'; }}
-                  onMouseLeave={e => { if (isValid) e.currentTarget.style.background = '#5E42C0'; }}
+                  onMouseEnter={e => { if (isValid) e.currentTarget.style.background = '#493088'; }}
+                  onMouseLeave={e => { if (isValid) e.currentTarget.style.background = '#5A39A2'; }}
                 >
                   Send me the list
                 </button>
@@ -832,12 +832,12 @@ function TopRatedSubscription() {
                     onChange={e => setConsent(e.target.checked)}
                     style={{
                       marginTop: 2, flexShrink: 0, cursor: 'pointer',
-                      accentColor: '#5E42C0', width: 15, height: 15,
+                      accentColor: '#5A39A2', width: 15, height: 15,
                     }}
                   />
                   <label
                     htmlFor="top_rated_consent"
-                    style={{ fontSize: 13, color: '#374151', lineHeight: 1.5, cursor: 'pointer' }}
+                    style={{ fontSize: 13, color: '#201F23', lineHeight: 1.5, cursor: 'pointer' }}
                   >
                     To continue, please agree to our{' '}
                     <a
@@ -868,12 +868,12 @@ function TopRatedSubscription() {
                     onChange={e => setMarketing(e.target.checked)}
                     style={{
                       marginTop: 2, flexShrink: 0, cursor: 'pointer',
-                      accentColor: '#5E42C0', width: 15, height: 15,
+                      accentColor: '#5A39A2', width: 15, height: 15,
                     }}
                   />
                   <label
                     htmlFor="top_rated_marketing"
-                    style={{ fontSize: 13, color: '#374151', lineHeight: 1.5, cursor: 'pointer' }}
+                    style={{ fontSize: 13, color: '#201F23', lineHeight: 1.5, cursor: 'pointer' }}
                   >
                     I would like to receive updates about products, services, and special offers from G2.
                   </label>
@@ -928,9 +928,9 @@ function SidebarFilters({
   // checkbox style helper
   const cbStyle = (checked) => ({
     width: 18, height: 18, flexShrink: 0,
-    border: `2px solid ${checked ? '#5E42C0' : '#D1D5DB'}`,
+    border: `2px solid ${checked ? '#5A39A2' : '#D1D5DB'}`,
     borderRadius: 4,
-    background: checked ? '#5E42C0' : '#fff',
+    background: checked ? '#5A39A2' : '#fff',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
     cursor: 'pointer', transition: 'all 0.15s',
   });
@@ -948,7 +948,7 @@ function SidebarFilters({
 
         {/* Segment */}
         <div style={{ marginBottom: 14 }}>
-          <div style={{ fontSize: 14, fontWeight: 700, color: '#1C1D21', marginBottom: 6 }}>
+          <div style={{ fontSize: 14, fontWeight: 700, color: '#201F23', marginBottom: 6 }}>
             Segment
           </div>
           <div style={{ display: 'flex', flexWrap: 'nowrap', gap: 6, overflowX: 'auto' }}>
@@ -962,9 +962,9 @@ function SidebarFilters({
                   fontSize: 12,
                   fontWeight: 500,
                   border: '1px solid',
-                  borderColor: segment === s.id ? '#5E42C0' : '#E5E7EB',
+                  borderColor: segment === s.id ? '#5A39A2' : '#E5E7EB',
                   background: segment === s.id ? '#EDE9FE' : '#F9FAFB',
-                  color: segment === s.id ? '#5E42C0' : '#374151',
+                  color: segment === s.id ? '#5A39A2' : '#201F23',
                   cursor: 'pointer',
                   whiteSpace: 'nowrap',
                   flexShrink: 0,
@@ -981,7 +981,7 @@ function SidebarFilters({
 
         {/* Rating */}
         <div style={{ marginBottom: 14 }}>
-          <div style={{ fontSize: 14, fontWeight: 700, color: '#1C1D21', marginBottom: 6 }}>
+          <div style={{ fontSize: 14, fontWeight: 700, color: '#201F23', marginBottom: 6 }}>
             Rating
           </div>
           {/* 5 stars */}
@@ -1001,7 +1001,7 @@ function SidebarFilters({
                 <Star key={i} className="w-[18px] h-[18px] text-[#FF4F00]" />
               ))}
             </div>
-            <span style={{ fontSize: 13, color: '#374151' }}>5+</span>
+            <span style={{ fontSize: 13, color: '#201F23' }}>5+</span>
           </label>
           {/* 4 stars */}
           <label style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer' }}>
@@ -1021,7 +1021,7 @@ function SidebarFilters({
               ))}
               <Star className="w-[18px] h-[18px] text-[#D1D5DB]" />
             </div>
-            <span style={{ fontSize: 13, color: '#374151' }}>4+</span>
+            <span style={{ fontSize: 13, color: '#201F23' }}>4+</span>
           </label>
         </div>
 
@@ -1029,7 +1029,7 @@ function SidebarFilters({
 
         {/* Pricing */}
         <div style={{ marginBottom: 14 }}>
-          <div style={{ fontSize: 14, fontWeight: 700, color: '#1C1D21', marginBottom: 6 }}>
+          <div style={{ fontSize: 14, fontWeight: 700, color: '#201F23', marginBottom: 6 }}>
             Pricing
           </div>
           {/* Deals | Available */}
@@ -1041,7 +1041,7 @@ function SidebarFilters({
                 </svg>
               )}
             </div>
-            <span style={{ fontSize: 14, fontWeight: 600, color: '#1C1D21' }}>Deals | Available</span>
+            <span style={{ fontSize: 14, fontWeight: 600, color: '#201F23' }}>Deals | Available</span>
           </label>
           {/* Pricing Available */}
           <label style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer' }}>
@@ -1052,7 +1052,7 @@ function SidebarFilters({
                 </svg>
               )}
             </div>
-            <span style={{ fontSize: 14, fontWeight: 600, color: '#1C1D21' }}>Pricing Available</span>
+            <span style={{ fontSize: 14, fontWeight: 600, color: '#201F23' }}>Pricing Available</span>
           </label>
         </div>
 
@@ -1060,7 +1060,7 @@ function SidebarFilters({
 
         {/* Language */}
         <div style={{ marginBottom: 14, position: 'relative' }}>
-          <div style={{ fontSize: 14, fontWeight: 700, color: '#1C1D21', marginBottom: 6 }}>
+          <div style={{ fontSize: 14, fontWeight: 700, color: '#201F23', marginBottom: 6 }}>
             Language
           </div>
           {/* Dropdown trigger */}
@@ -1069,7 +1069,7 @@ function SidebarFilters({
             style={{
               width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
               padding: '9px 12px', border: '1px solid #D1D5DB', borderRadius: 8,
-              background: '#fff', fontSize: 13, color: language ? '#1C1D21' : '#9CA3AF',
+              background: '#fff', fontSize: 13, color: language ? '#201F23' : '#9CA3AF',
               cursor: 'pointer', fontWeight: language ? 600 : 400,
             }}
           >
@@ -1107,7 +1107,7 @@ function SidebarFilters({
                     style={{
                       width: '100%', textAlign: 'left', padding: '8px 12px',
                       background: !language ? '#EDE9FE' : 'none',
-                      color: !language ? '#5E42C0' : '#374151',
+                      color: !language ? '#5A39A2' : '#201F23',
                       border: 'none', cursor: 'pointer', fontSize: 13,
                     }}
                   >
@@ -1121,7 +1121,7 @@ function SidebarFilters({
                       style={{
                         width: '100%', textAlign: 'left', padding: '8px 12px',
                         background: language === l ? '#EDE9FE' : 'none',
-                        color: language === l ? '#5E42C0' : '#374151',
+                        color: language === l ? '#5A39A2' : '#201F23',
                         border: 'none', cursor: 'pointer', fontSize: 13,
                       }}
                       onMouseEnter={e => { if (language !== l) e.currentTarget.style.background = '#F9FAFB'; }}
@@ -1143,7 +1143,7 @@ function SidebarFilters({
 
         {/* Solution Type */}
         <div style={{ marginBottom: 14 }}>
-          <div style={{ fontSize: 14, fontWeight: 700, color: '#1C1D21', marginBottom: 6 }}>
+          <div style={{ fontSize: 14, fontWeight: 700, color: '#201F23', marginBottom: 6 }}>
             Solution Type
           </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
@@ -1154,9 +1154,9 @@ function SidebarFilters({
                 style={{
                   padding: '5px 14px', borderRadius: 20, fontSize: 13,
                   border: '1px solid',
-                  borderColor: solutionType === s ? '#5E42C0' : '#E5E7EB',
+                  borderColor: solutionType === s ? '#5A39A2' : '#E5E7EB',
                   background: solutionType === s ? '#EDE9FE' : '#F9FAFB',
-                  color: solutionType === s ? '#5E42C0' : '#374151',
+                  color: solutionType === s ? '#5A39A2' : '#201F23',
                   cursor: 'pointer', transition: 'all 0.15s',
                 }}
               >
@@ -1172,7 +1172,7 @@ function SidebarFilters({
             onClick={clearAll}
             style={{
               background: 'none', border: 'none',
-              color: '#5E42C0', fontSize: 14, fontWeight: 700,
+              color: '#5A39A2', fontSize: 14, fontWeight: 700,
               cursor: 'pointer', padding: 0,
               textDecoration: 'none',
             }}
@@ -1303,12 +1303,12 @@ function ProductCard({ prod, idx, renderStars, inCompare, onToggleCompare, isPin
             )}
             <Link
               to={`/product/${prod.id}`}
-              style={{ fontSize: 20, fontWeight: 700, color: '#1C1D21', textDecoration: 'none', display: 'block', lineHeight: 1.3, marginBottom: 3 }}
+              style={{ fontSize: 20, fontWeight: 700, color: '#201F23', textDecoration: 'none', display: 'block', lineHeight: 1.3, marginBottom: 3 }}
               className="product-name"
             >
               {prod.name}
             </Link>
-            <p style={{ fontSize: 13, color: '#374151', margin: '0 0 5px' }}
+            <p style={{ fontSize: 13, color: '#201F23', margin: '0 0 5px' }}
             className="product-vendor">
               By <a href="#" style={{ color: '#2563EB', textDecoration: 'none' }}>{prod.vendor || prod.name}</a>
             </p>
@@ -1316,7 +1316,7 @@ function ProductCard({ prod, idx, renderStars, inCompare, onToggleCompare, isPin
             <div style={{ display: 'flex', alignItems: 'center', gap: 5, flexWrap: 'wrap' }}
             className="product-rating">
               <div style={{ display: 'flex', gap: 1 }}>{renderStars(prod.rating)}</div>
-              <span style={{ fontSize: 13, fontWeight: 700, color: '#374151' }}>{prod.rating}/5</span>
+              <span style={{ fontSize: 13, fontWeight: 700, color: '#201F23' }}>{prod.rating}/5</span>
               <span style={{ fontSize: 13, color: '#6B7280' }}>
                 ({typeof prod.reviewCount === 'number' ? prod.reviewCount.toLocaleString() : prod.reviewCount})
               </span>
@@ -1330,7 +1330,7 @@ function ProductCard({ prod, idx, renderStars, inCompare, onToggleCompare, isPin
           <Link
             to={`/product/${prod.id}`}
             style={{
-              color: '#5E42C0',
+              color: '#5A39A2',
               fontSize: 14,
               fontWeight: 600,
               textDecoration: 'none',
@@ -1353,7 +1353,7 @@ function ProductCard({ prod, idx, renderStars, inCompare, onToggleCompare, isPin
             display: 'block',
             width: '100%',
             padding: '12px 24px',
-            background: '#5E42C0',
+            background: '#5A39A2',
             color: '#fff',
             fontSize: 15,
             fontWeight: 700,
@@ -1362,8 +1362,8 @@ function ProductCard({ prod, idx, renderStars, inCompare, onToggleCompare, isPin
             textDecoration: 'none',
             transition: 'background 0.15s',
           }}
-          onMouseEnter={e => e.currentTarget.style.background = '#4E35A6'}
-          onMouseLeave={e => e.currentTarget.style.background = '#5E42C0'}
+          onMouseEnter={e => e.currentTarget.style.background = '#493088'}
+          onMouseLeave={e => e.currentTarget.style.background = '#5A39A2'}
         >
           {ctaLabel}
         </Link>
@@ -1378,10 +1378,10 @@ function ProductCard({ prod, idx, renderStars, inCompare, onToggleCompare, isPin
 
         {/* LEFT: What do users say + badges */}
         <div style={{ flex: 1, minWidth: 200 }}>
-          <p style={{ fontSize: 14, fontWeight: 700, color: '#1C1D21', margin: '0 0 6px' }}>
+          <p style={{ fontSize: 14, fontWeight: 700, color: '#201F23', margin: '0 0 6px' }}>
             What do users say?
           </p>
-          <p style={{ fontSize: 13, color: '#374151', lineHeight: 1.65, margin: '0 0 10px' }}>
+          <p style={{ fontSize: 13, color: '#201F23', lineHeight: 1.65, margin: '0 0 10px' }}>
             {displayed}
             {truncated && (
               <button
@@ -1418,7 +1418,7 @@ function ProductCard({ prod, idx, renderStars, inCompare, onToggleCompare, isPin
                 <path d="M14.31 2.24C14.46 2.09 14.39 2.26 14.18 2.49L13.63 3.9C13.53 4.17 13.48 4.3 13.4 4.41C13.33 4.51 13.24 4.6 13.14 4.67C13.03 4.75 12.9 4.8 12.63 4.9L11.21 5.45C11.06 5.51 10.99 5.54 10.96 5.58C10.95 5.61 10.95 5.66 10.96 5.69C10.99 5.74 11.06 5.77 11.21 5.82L12.63 6.37C12.9 6.47 13.03 6.52 13.14 6.6C13.24 6.67 13.33 6.76 13.4 6.86C13.48 6.97 13.53 7.1 13.63 7.37L14.18 8.79C14.23 8.94 14.26 9.01 14.31 9.04C14.34 9.05 14.38 9.05 14.42 9.04C14.46 9.01 14.49 8.94 14.55 8.79L15.1 7.37C15.2 7.1 15.25 6.97 15.33 6.86C15.4 6.76 15.49 6.67 15.59 6.6C15.7 6.52 15.83 6.47 16.1 6.37L17.51 5.82C17.67 5.77 17.74 5.74 17.76 5.69C17.78 5.66 17.78 5.61 17.76 5.58C17.74 5.54 17.67 5.51 17.51 5.45L16.1 4.9C15.83 4.8 15.7 4.75 15.59 4.67C15.49 4.6 15.4 4.51 15.33 4.41C15.25 4.3 15.2 4.17 15.1 3.9L14.55 2.49C14.49 2.33 14.46 2.26 14.42 2.24C14.38 2.22 14.34 2.22 14.31 2.24Z" fill="currentColor" />
                 <path d="M7.73 6.74C7.66 6.78 7.61 6.9 7.52 7.14L6.65 9.41C6.48 9.83 6.4 10.05 6.27 10.23C6.16 10.39 6.02 10.52 5.86 10.64C5.68 10.76 5.47 10.85 5.04 11.01L2.78 11.88C2.54 11.98 2.41 12.02 2.38 12.09C2.35 12.15 2.35 12.22 2.38 12.27C2.41 12.34 2.54 12.39 2.78 12.48L5.04 13.35C5.47 13.52 5.68 13.6 5.86 13.73C6.02 13.84 6.16 13.98 6.27 14.14C6.4 14.32 6.48 14.53 6.65 14.96L7.52 17.22C7.61 17.46 7.66 17.59 7.73 17.62C7.78 17.65 7.85 17.65 7.91 17.62C7.98 17.59 8.02 17.46 8.12 17.22L8.99 14.96C9.15 14.53 9.24 14.32 9.36 14.14C9.48 13.98 9.61 13.84 9.77 13.73C9.95 13.6 10.17 13.52 10.59 13.35L12.86 12.48C13.1 12.39 13.22 12.34 13.26 12.27C13.29 12.22 13.29 12.15 13.26 12.09C13.22 12.02 13.1 11.98 12.86 11.88L10.59 11.01C10.17 10.85 9.95 10.76 9.77 10.64C9.61 10.52 9.48 10.39 9.36 10.23C9.24 10.05 9.15 9.83 8.99 9.41L8.12 7.14C8.02 6.9 7.98 6.78 7.91 6.74C7.85 6.71 7.78 6.71 7.73 6.74Z" fill="currentColor" />
               </svg>
-              <span style={{ fontSize: 12, fontWeight: 600, color: '#374151' }}>{prod.aiBadge}</span>
+              <span style={{ fontSize: 12, fontWeight: 600, color: '#201F23' }}>{prod.aiBadge}</span>
             </div>
           )}
         </div>
@@ -1426,7 +1426,7 @@ function ProductCard({ prod, idx, renderStars, inCompare, onToggleCompare, isPin
         {/* RIGHT: Pros and Cons */}
         {prod.pros && prod.pros.length > 0 && (
           <div style={{ flexShrink: 0, minWidth: 180 }}>
-            <p style={{ fontSize: 14, fontWeight: 700, color: '#1C1D21', margin: '0 0 10px' }}>
+            <p style={{ fontSize: 14, fontWeight: 700, color: '#201F23', margin: '0 0 10px' }}>
               Pros and Cons
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -1449,7 +1449,7 @@ function ProductCard({ prod, idx, renderStars, inCompare, onToggleCompare, isPin
                         <path d="M14.44 16.22H6V7.33L11.33 2L11.93 2.41C12.15 2.57 12.31 2.77 12.42 3.02C12.52 3.27 12.54 3.52 12.48 3.78L11.78 7.33H16.67C17.04 7.33 17.35 7.46 17.61 7.72C17.87 7.98 18 8.3 18 8.67V9.72C18 9.82 17.99 9.91 17.97 9.99C17.95 10.07 17.93 10.15 17.89 10.24L15.69 15.41C15.57 15.65 15.41 15.85 15.19 16C14.96 16.15 14.72 16.22 14.44 16.22ZM4.67 7.33V16.22H2V7.33H4.67Z" fill="#22C55E" />
                       )}
                     </svg>
-                    <span style={{ fontSize: 13, fontWeight: 600, color: '#1C1D21' }}>
+                    <span style={{ fontSize: 13, fontWeight: 600, color: '#201F23' }}>
                       {p.label}
                     </span>
                     <span style={{ fontSize: 12, fontWeight: 300, color: '#6B7280' }}>({p.count})</span>
@@ -1477,9 +1477,9 @@ function ProductCard({ prod, idx, renderStars, inCompare, onToggleCompare, isPin
             type="checkbox"
             checked={inCompare}
             onChange={onToggleCompare}
-            style={{ accentColor: '#5E42C0', width: 16, height: 16, cursor: 'pointer' }}
+            style={{ accentColor: '#5A39A2', width: 16, height: 16, cursor: 'pointer' }}
           />
-          <span style={{ fontSize: 14, fontWeight: 600, color: '#1C1D21' }}>Add to Compare</span>
+          <span style={{ fontSize: 14, fontWeight: 600, color: '#201F23' }}>Add to Compare</span>
         </label>
 
         {/* Pin button */}
@@ -1493,7 +1493,7 @@ function ProductCard({ prod, idx, renderStars, inCompare, onToggleCompare, isPin
             background: '#fff',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             cursor: 'pointer',
-            color: isPinned ? '#5E42C0' : '#6B7280',
+            color: isPinned ? '#5A39A2' : '#6B7280',
             transition: 'all 0.15s',
           }}
           onMouseEnter={e => e.currentTarget.style.background = '#F3F4F6'}
@@ -1600,7 +1600,7 @@ function CategoriesSection({ categoryName }) {
 
         {/* ── LEFT: Spotlight Categories (25%) ── */}
         <div style={{ flex: '0 0 220px', minWidth: 180 }}>
-          <div style={{ fontSize: 16, fontWeight: 700, color: '#1C1D21', marginBottom: 14 }}>
+          <div style={{ fontSize: 16, fontWeight: 700, color: '#201F23', marginBottom: 14 }}>
             Spotlight Categories
           </div>
           <div>
@@ -1608,9 +1608,9 @@ function CategoriesSection({ categoryName }) {
               <div key={i} style={{ marginBottom: 10 }}>
                 <Link
                   to={cat.href}
-                  style={{ fontSize: 14, color: '#374151', textDecoration: 'none', lineHeight: 1.5 }}
+                  style={{ fontSize: 14, color: '#201F23', textDecoration: 'none', lineHeight: 1.5 }}
                   onMouseEnter={e => e.currentTarget.style.color = '#2563EB'}
-                  onMouseLeave={e => e.currentTarget.style.color = '#374151'}
+                  onMouseLeave={e => e.currentTarget.style.color = '#201F23'}
                 >
                   {cat.label}
                 </Link>
@@ -1621,7 +1621,7 @@ function CategoriesSection({ categoryName }) {
 
         {/* ── RIGHT: Similar Categories (75%) ── */}
         <div style={{ flex: 1, minWidth: 200 }}>
-          <div style={{ fontSize: 16, fontWeight: 700, color: '#1C1D21', marginBottom: 14 }}>
+          <div style={{ fontSize: 16, fontWeight: 700, color: '#201F23', marginBottom: 14 }}>
             Similar Categories
           </div>
 
@@ -1646,9 +1646,9 @@ function CategoriesSection({ categoryName }) {
                   }}>
                     <Link
                       to={item.href}
-                      style={{ fontSize: 14, color: '#374151', textDecoration: 'none' }}
+                      style={{ fontSize: 14, color: '#201F23', textDecoration: 'none' }}
                       onMouseEnter={e => e.currentTarget.style.color = '#2563EB'}
-                      onMouseLeave={e => e.currentTarget.style.color = '#374151'}
+                      onMouseLeave={e => e.currentTarget.style.color = '#201F23'}
                     >
                       {item.label}
                     </Link>
@@ -1662,9 +1662,9 @@ function CategoriesSection({ categoryName }) {
           <div style={{ marginTop: 16 }}>
             <Link
               to={`/category/artificial-intelligence/themes`}
-              style={{ fontSize: 14, color: '#374151', textDecoration: 'none' }}
+              style={{ fontSize: 14, color: '#201F23', textDecoration: 'none' }}
               onMouseEnter={e => e.currentTarget.style.color = '#2563EB'}
-              onMouseLeave={e => e.currentTarget.style.color = '#374151'}
+              onMouseLeave={e => e.currentTarget.style.color = '#201F23'}
             >
               Browse {categoryName} Themes
             </Link>
@@ -1720,7 +1720,7 @@ function CategoryDescriptionSection({ data }) {
             Researched and written by{' '}
             <Link
               to={data.author.href}
-              style={{ color: '#1C1D21', fontWeight: 600, textDecoration: 'none' }}
+              style={{ color: '#201F23', fontWeight: 600, textDecoration: 'none' }}
               onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
               onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
             >
@@ -1742,25 +1742,25 @@ function CategoryDescriptionSection({ data }) {
           transition: 'max-height 0.3s ease',
         }}>
           {/* Intro paragraph */}
-          <p style={{ fontSize: 15, color: '#374151', lineHeight: 1.7, margin: '0 0 16px' }}>
+          <p style={{ fontSize: 15, color: '#201F23', lineHeight: 1.7, margin: '0 0 16px' }}>
             {data.content.intro}
           </p>
 
           {/* Sections */}
           {data.content.sections.map((section, i) => (
             <div key={i} style={{ marginBottom: 16 }}>
-              <h3 style={{ fontSize: 16, fontWeight: 700, color: '#1C1D21', margin: '0 0 8px' }}>
+              <h3 style={{ fontSize: 16, fontWeight: 700, color: '#201F23', margin: '0 0 8px' }}>
                 {section.heading}
               </h3>
               {section.text && (
-                <p style={{ fontSize: 15, color: '#374151', lineHeight: 1.7, margin: '0 0 8px' }}>
+                <p style={{ fontSize: 15, color: '#201F23', lineHeight: 1.7, margin: '0 0 8px' }}>
                   {section.text}
                 </p>
               )}
               {section.bullets.length > 0 && (
                 <ul style={{ margin: '0 0 8px', paddingLeft: 24 }}>
                   {section.bullets.map((bullet, j) => (
-                    <li key={j} style={{ fontSize: 15, color: '#374151', lineHeight: 1.7, marginBottom: 4 }}>
+                    <li key={j} style={{ fontSize: 15, color: '#201F23', lineHeight: 1.7, marginBottom: 4 }}>
                       {bullet}
                     </li>
                   ))}
@@ -1791,7 +1791,7 @@ function CategoryDescriptionSection({ data }) {
             marginTop: 8,
             background: 'none',
             border: 'none',
-            color: '#5E42C0',
+            color: '#5A39A2',
             fontSize: 14,
             fontWeight: 600,
             cursor: 'pointer',
@@ -1904,7 +1904,7 @@ function G2GridSection({ categoryName }) {
       }}>
         {active && <div style={{ width: 10, height: 10, borderRadius: '50%', background: '#2176AE' }} />}
       </div>
-      <span style={{ fontSize: 14, fontWeight: 600, color: '#1C1D21' }}>{opt.label}</span>
+      <span style={{ fontSize: 14, fontWeight: 600, color: '#201F23' }}>{opt.label}</span>
     </button>
   );
 
@@ -1916,7 +1916,7 @@ function G2GridSection({ categoryName }) {
         boxShadow: '0 2px 10px rgba(0,0,0,0.07)',
       }}>
         <div style={{ marginBottom: 20 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', marginBottom: 12, letterSpacing: '0.01em' }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: '#201F23', marginBottom: 12, letterSpacing: '0.01em' }}>
             Select Grid® View
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -1927,7 +1927,7 @@ function G2GridSection({ categoryName }) {
         </div>
         <div style={{ height: 1, background: '#E5E7EB', marginBottom: 20 }} />
         <div>
-          <div style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', marginBottom: 12, letterSpacing: '0.01em' }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: '#201F23', marginBottom: 12, letterSpacing: '0.01em' }}>
             Select Company Size
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -1942,12 +1942,12 @@ function G2GridSection({ categoryName }) {
         style={{
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           padding: '14px 16px', borderRadius: 999, marginTop: 16,
-          background: '#5E42C0', color: '#fff',
+          background: '#5A39A2', color: '#fff',
           fontSize: 14, fontWeight: 700, textDecoration: 'none',
           boxShadow: '0 2px 8px rgba(94,66,192,0.3)', transition: 'background 0.15s',
         }}
-        onMouseEnter={e => e.currentTarget.style.background = '#4E35A6'}
-        onMouseLeave={e => e.currentTarget.style.background = '#5E42C0'}
+        onMouseEnter={e => e.currentTarget.style.background = '#493088'}
+        onMouseLeave={e => e.currentTarget.style.background = '#5A39A2'}
       >
         Back to product list
       </a>
@@ -1960,10 +1960,10 @@ function G2GridSection({ categoryName }) {
 
         {/* Section Header */}
         <div style={{ marginBottom: 28 }}>
-          <h2 style={{ fontSize: 26, fontWeight: 800, color: '#1C1D21', margin: '0 0 10px' }}>
+          <h2 style={{ fontSize: 26, fontWeight: 800, color: '#201F23', margin: '0 0 10px' }}>
             G2 Grid® for <strong>{categoryName}</strong>
           </h2>
-          <p style={{ fontSize: 14, color: '#374151', lineHeight: 1.7, maxWidth: 860, margin: 0 }}>
+          <p style={{ fontSize: 14, color: '#201F23', lineHeight: 1.7, maxWidth: 860, margin: 0 }}>
             Check out the G2 Grid® for the top {categoryName} products. G2 scores products and sellers based on
             reviews gathered from our user community, as well as data aggregated from online sources and social
             networks. Together, these scores are mapped on our proprietary G2 Grid®, which you can use to compare
@@ -1980,14 +1980,14 @@ function G2GridSection({ categoryName }) {
               display: 'flex', alignItems: 'center', gap: 8,
               padding: '9px 16px', borderRadius: 8,
               border: '1px solid #D1D5DB', background: '#fff',
-              fontSize: 13, fontWeight: 600, color: '#1C1D21', cursor: 'pointer',
+              fontSize: 13, fontWeight: 600, color: '#201F23', cursor: 'pointer',
             }}
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="M22 3H2l8 9.46V19l4 2v-7.54L22 3z"/>
             </svg>
             Filter Grid®
-            <span style={{ marginLeft: 4, fontSize: 12, color: '#5E42C0', fontWeight: 700 }}>
+            <span style={{ marginLeft: 4, fontSize: 12, color: '#5A39A2', fontWeight: 700 }}>
               {gridViewOptions.find(o => o.id === selectedView)?.label} · {segmentOptions.find(o => o.id === selectedSegment)?.label}
             </span>
           </button>
@@ -2090,7 +2090,7 @@ function G2GridSection({ categoryName }) {
                     {/* Leaders — top right */}
                     <div style={{
                       position: 'absolute', top: 10, right: 12,
-                      fontSize: 10, fontWeight: 800, color: '#5E42C0',
+                      fontSize: 10, fontWeight: 800, color: '#5A39A2',
                       textTransform: 'uppercase', letterSpacing: '0.1em',
                     }}>Leaders</div>
                     {/* High Performers — top left */}
@@ -2132,7 +2132,7 @@ function G2GridSection({ categoryName }) {
                         <div style={{
                           width: 34, height: 34,
                           borderRadius: 8,
-                          border: `2px solid ${tooltip?.prod?.id === prod.id ? '#5E42C0' : '#D1D5DB'}`,
+                          border: `2px solid ${tooltip?.prod?.id === prod.id ? '#5A39A2' : '#D1D5DB'}`,
                           background: '#fff',
                           boxShadow: tooltip?.prod?.id === prod.id
                             ? '0 0 0 3px rgba(94,66,192,0.18), 0 4px 12px rgba(0,0,0,0.18)'
@@ -2190,7 +2190,7 @@ function G2GridSection({ categoryName }) {
                               <img src={p.logo} alt={p.name} style={{ width: 26, height: 26, objectFit: 'contain' }} />
                             </div>
                             <div>
-                              <div style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', lineHeight: 1.3 }}>{p.name}</div>
+                              <div style={{ fontSize: 13, fontWeight: 700, color: '#201F23', lineHeight: 1.3 }}>{p.name}</div>
                               <div style={{ display: 'flex', gap: 1, marginTop: 3 }}>
                                 {[...Array(5)].map((_, i) => (
                                   <span key={i} style={{ color: i < Math.floor(p.stars) ? '#FF4F00' : '#D1D5DB', fontSize: 13, lineHeight: 1 }}>★</span>
@@ -2203,7 +2203,7 @@ function G2GridSection({ categoryName }) {
                             borderTop: '1px solid #F3F4F6', paddingTop: 8, marginTop: 2,
                           }}>
                             <span style={{ fontSize: 12, color: '#6B7280' }}>{p.reviews} reviews</span>
-                            <span style={{ fontSize: 12, color: '#5E42C0', fontWeight: 700 }}>See Reviews →</span>
+                            <span style={{ fontSize: 12, color: '#5A39A2', fontWeight: 700 }}>See Reviews →</span>
                           </div>
                         </div>
                       );
@@ -2233,7 +2233,7 @@ function G2GridSection({ categoryName }) {
                   <a
                     href="https://research.g2.com/g2-scoring-methodologies"
                     target="_blank" rel="noopener noreferrer"
-                    style={{ fontSize: 12, color: '#5E42C0', fontWeight: 600, textDecoration: 'none' }}
+                    style={{ fontSize: 12, color: '#5A39A2', fontWeight: 600, textDecoration: 'none' }}
                     onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
                     onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
                   >
@@ -2280,12 +2280,12 @@ function G2GridSection({ categoryName }) {
                 padding: '16px 20px', borderBottom: '1px solid #E5E7EB',
                 display: 'flex', alignItems: 'center', justifyContent: 'space-between',
               }}>
-                <h3 style={{ fontSize: 17, fontWeight: 700, color: '#1C1D21', margin: 0 }}>Filter Grid®</h3>
+                <h3 style={{ fontSize: 17, fontWeight: 700, color: '#201F23', margin: 0 }}>Filter Grid®</h3>
                 <button onClick={() => setMobileFilterOpen(false)} style={{ background: 'none', border: 'none', fontSize: 22, cursor: 'pointer', color: '#6B7280', lineHeight: 1 }}>✕</button>
               </div>
               <div style={{ padding: '20px', overflowY: 'auto', flex: 1 }}>
                 <div style={{ marginBottom: 20 }}>
-                  <div style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', marginBottom: 12 }}>Select Grid® View</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: '#201F23', marginBottom: 12 }}>Select Grid® View</div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                     {gridViewOptions.map(opt => (
                       <RadioOption key={opt.id} opt={opt} active={selectedView === opt.id} onClick={() => setSelectedView(opt.id)} />
@@ -2294,7 +2294,7 @@ function G2GridSection({ categoryName }) {
                 </div>
                 <div style={{ height: 1, background: '#E5E7EB', marginBottom: 20 }} />
                 <div>
-                  <div style={{ fontSize: 13, fontWeight: 700, color: '#1C1D21', marginBottom: 12 }}>Select Company Size</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: '#201F23', marginBottom: 12 }}>Select Company Size</div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                     {segmentOptions.map(opt => (
                       <RadioOption key={opt.id} opt={opt} active={selectedSegment === opt.id} onClick={() => setSelectedSegment(opt.id)} />
@@ -2305,11 +2305,11 @@ function G2GridSection({ categoryName }) {
               <div style={{ padding: '12px 20px', borderTop: '1px solid #E5E7EB', display: 'flex', gap: 12 }}>
                 <button
                   onClick={() => { setSelectedView('grid'); setSelectedSegment('all'); }}
-                  style={{ flex: 1, padding: '11px 0', borderRadius: 8, border: '1px solid #D1D5DB', background: '#fff', color: '#374151', fontSize: 14, fontWeight: 600, cursor: 'pointer' }}
+                  style={{ flex: 1, padding: '11px 0', borderRadius: 8, border: '1px solid #D1D5DB', background: '#fff', color: '#201F23', fontSize: 14, fontWeight: 600, cursor: 'pointer' }}
                 >Reset</button>
                 <button
                   onClick={() => setMobileFilterOpen(false)}
-                  style={{ flex: 1, padding: '11px 0', borderRadius: 8, border: 'none', background: '#5E42C0', color: '#fff', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}
+                  style={{ flex: 1, padding: '11px 0', borderRadius: 8, border: 'none', background: '#5A39A2', color: '#fff', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}
                 >Apply</button>
               </div>
             </div>
@@ -2585,7 +2585,7 @@ function LearnMoreSection({ categoryName }) {
       }
       if (block.type === 'h4') {
         return (
-          <h4 key={i} style={{ fontSize: 17, fontWeight: 800, color: '#1C1D21', margin: '24px 0 12px' }}>
+          <h4 key={i} style={{ fontSize: 17, fontWeight: 800, color: '#201F23', margin: '24px 0 12px' }}>
             {block.text}
           </h4>
         );
@@ -2602,12 +2602,12 @@ function LearnMoreSection({ categoryName }) {
                   justifyContent: 'center',
                   flexShrink: 0,
                   marginTop: 4,
-                  color: '#5E42C0',
+                  color: '#5A39A2',
                 }}>
                   <svg width="10" height="14" viewBox="0 0 10 14" fill="none">
                     <path
                       d="M2 2L7 7L2 12"
-                      stroke="#5E42C0"
+                      stroke="#5A39A2"
                       strokeWidth="3"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -2615,7 +2615,7 @@ function LearnMoreSection({ categoryName }) {
                   </svg>
                 </span>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <strong style={{ color: '#1C1D21', fontWeight: 700 }}>{item.label}</strong>{' '}
+                  <strong style={{ color: '#201F23', fontWeight: 700 }}>{item.label}</strong>{' '}
                   <span style={{ color: '#4B5563' }}>{item.text}</span>
                 </div>
               </li>
@@ -2626,9 +2626,9 @@ function LearnMoreSection({ categoryName }) {
       if (block.type === 'authors') {
         return (
           <p key={i} style={{ fontSize: 14, color: '#6B7280', fontStyle: 'italic', marginTop: 24, lineHeight: 1.7 }}>
-            Researched and written by <strong style={{ color: '#374151' }}>{block.researched}</strong>
+            Researched and written by <strong style={{ color: '#201F23' }}>{block.researched}</strong>
             <br />
-            Reviewed and edited by <strong style={{ color: '#374151' }}>{block.reviewed}</strong>
+            Reviewed and edited by <strong style={{ color: '#201F23' }}>{block.reviewed}</strong>
           </p>
         );
       }
@@ -2641,7 +2641,7 @@ function LearnMoreSection({ categoryName }) {
 
         {/* Section heading */}
         <h2 className="lm-title" style={{
-          fontSize: 28, fontWeight: 800, color: '#5E42C0',
+          fontSize: 28, fontWeight: 800, color: '#5A39A2',
           margin: '0 0 32px',
         }}>
           Learn More About {categoryName}
@@ -2672,7 +2672,7 @@ function LearnMoreSection({ categoryName }) {
               boxShadow: '0 4px 16px rgba(0,0,0,0.06)',
             }}>
               <div style={{
-                fontSize: 13, fontWeight: 800, color: '#1C1D21',
+                fontSize: 13, fontWeight: 800, color: '#201F23',
                 padding: '0 20px 12px',
                 borderBottom: '1px solid #F3F4F6',
                 letterSpacing: '0.03em',
@@ -2696,18 +2696,18 @@ function LearnMoreSection({ categoryName }) {
                         fontSize: 13,
                         fontWeight: 500,
                         lineHeight: 1.5,
-                        color: '#374151',
+                        color: '#201F23',
                         background: 'transparent',
                         border: 'none',
                         cursor: 'pointer',
                         transition: 'all 0.15s ease',
                       }}
                       onMouseEnter={e => {
-                        e.currentTarget.style.color = '#1C1D21';
+                        e.currentTarget.style.color = '#201F23';
                         e.currentTarget.style.background = '#F9FAFB';
                       }}
                       onMouseLeave={e => {
-                        e.currentTarget.style.color = '#374151';
+                        e.currentTarget.style.color = '#201F23';
                         e.currentTarget.style.background = 'transparent';
                       }}
                     >
@@ -2749,12 +2749,12 @@ function LearnMoreSection({ categoryName }) {
                 }}
               >
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <span style={{ fontSize: 15, fontWeight: 700, color: '#5E42C0' }}>
+                  <span style={{ fontSize: 15, fontWeight: 700, color: '#5A39A2' }}>
                     {categoryName} Topics
                   </span>
                 </div>
                 <svg
-                  width="18" height="18" viewBox="0 0 20 20" fill="#5E42C0"
+                  width="18" height="18" viewBox="0 0 20 20" fill="#5A39A2"
                   style={{
                     transition: 'transform 0.2s ease',
                     transform: mobileOpen ? 'rotate(180deg)' : 'none',
@@ -2783,7 +2783,7 @@ function LearnMoreSection({ categoryName }) {
                           textAlign: 'left',
                           padding: '10px 18px',
                           fontSize: 14,
-                          color: '#374151',
+                          color: '#201F23',
                           fontWeight: 500,
                           background: 'none',
                           border: 'none',
@@ -2814,7 +2814,7 @@ function LearnMoreSection({ categoryName }) {
                 }}
               >
                 <h3 style={{
-                  fontSize: 20, fontWeight: 800, color: '#1C1D21',
+                  fontSize: 20, fontWeight: 800, color: '#201F23',
                   margin: '0 0 16px',
                   paddingTop: idx === 0 ? 0 : 8,
                   lineHeight: 1.35,

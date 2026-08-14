@@ -26,7 +26,7 @@ export default function ProductDetailPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF7F5] flex flex-col text-[#1C1D21] font-sans">
+    <div className="min-h-screen bg-[#FAF7F5] flex flex-col text-[#201F23] font-sans">
       <Header />
 
       {/* Top Breadcrumbs Banner */}

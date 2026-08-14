@@ -56,7 +56,7 @@ export default function WelcomeModal() {
         <div className="flex flex-col items-center gap-3 w-full max-w-[340px] sm:max-w-none mx-auto">
           <button
             onClick={handleLoginClick}
-            className="w-full sm:w-auto min-w-0 sm:min-w-[280px] bg-[#5E42C0] hover:bg-[#4E35A6] text-white font-semibold text-[14px] sm:text-[15.5px] py-3 sm:py-3.5 px-6 sm:px-8 rounded-full shadow-[0_4px_14px_rgba(94,66,192,0.35)] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] text-center"
+            className="w-full sm:w-auto min-w-0 sm:min-w-[280px] bg-[#5A39A2] hover:bg-[#493088] text-white font-semibold text-[14px] sm:text-[15.5px] py-3 sm:py-3.5 px-6 sm:px-8 rounded-full shadow-[0_4px_14px_rgba(94,66,192,0.35)] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] text-center"
           >
             Log in or create a free account
           </button>

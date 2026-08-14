@@ -134,7 +134,7 @@ export default function Header() {
                   <input
                     type="text"
                     placeholder="Ask a question..."
-                    className="w-full h-[44px] pl-10 pr-4 text-[14px] text-gray-800 placeholder-gray-500 border border-gray-300 rounded-full bg-white focus:outline-none focus:border-[#5E42C0] transition-all font-normal"
+                    className="w-full h-[44px] pl-10 pr-4 text-[14px] text-gray-800 placeholder-gray-500 border border-gray-300 rounded-full bg-white focus:outline-none focus:border-[#5A39A2] transition-all font-normal"
                   />
                 </div>
               )}
@@ -143,7 +143,7 @@ export default function Header() {
             {/* Right Group: Nav Links + Action Buttons */}
             <div className="flex items-center gap-2 xl:gap-3">
               {/* Navigation Links */}
-              <nav className="flex items-center gap-3 xl:gap-4 relative">
+              <nav className="flex items-center gap-3.5 xl:gap-5 relative">
                 {navMenuItems.map((item) => {
                   const isOpen = activeDropdown === item.id;
 
@@ -167,17 +167,17 @@ export default function Header() {
                             navigate('/deals');
                           }
                         }}
-                        className={`flex items-center gap-1 text-[13.5px] font-medium transition-colors whitespace-nowrap py-1 ${
+                        className={`flex items-center gap-1.5 text-[15px] xl:text-[16px] font-medium transition-colors whitespace-nowrap py-1 ${
                           isOpen
-                            ? 'text-[#5E42C0]'
-                            : 'text-[#374151] hover:text-[#1C1D21]'
+                            ? 'text-[#5A39A2]'
+                            : 'text-[#505059] hover:text-[#5A39A2]'
                         }`}
                       >
                         <span>{item.label}</span>
                         {item.hasDropdown && (
                           <ChevronDown
-                            className={`w-3.5 h-3.5 text-gray-500 transition-transform duration-200 ${
-                              isOpen ? 'rotate-180 text-[#5E42C0]' : ''
+                            className={`w-4 h-4 text-[#505059] transition-transform duration-200 ${
+                              isOpen ? 'rotate-180 text-[#5A39A2]' : ''
                             }`}
                           />
                         )}
@@ -203,8 +203,8 @@ export default function Header() {
                                       onMouseEnter={() => setActiveTabIds(prev => ({...prev, [item.id]: tab.id}))}
                                       className={`w-full text-left px-4 py-2.5 rounded-md text-[14px] transition-all block truncate ${
                                         isSelected
-                                          ? 'bg-[#5E42C0] text-white font-semibold'
-                                          : 'text-[#24344D] font-normal hover:bg-[#5E42C0] hover:text-white'
+                                          ? 'bg-[#5A39A2] text-white font-semibold'
+                                          : 'text-[#505059] font-normal hover:bg-[#5A39A2] hover:text-white'
                                       }`}
                                     >
                                       {tab.label}
@@ -240,7 +240,7 @@ export default function Header() {
                                               key={itemIdx}
                                               to={linkPath}
                                               onClick={() => setActiveDropdown(null)}
-                                              className="block text-[14px] text-[#24344D] hover:text-[#5E42C0] hover:translate-x-0.5 transition-all py-0.5 font-medium leading-relaxed"
+                                              className="block text-[14px] text-[#505059] hover:text-[#5A39A2] hover:translate-x-0.5 transition-all py-0.5 font-medium leading-relaxed"
                                             >
                                               {label}
                                             </Link>
@@ -258,7 +258,7 @@ export default function Header() {
                                 <Link
                                   to="/category/all"
                                   onClick={() => setActiveDropdown(null)}
-                                  className="text-[#5E42C0] font-bold hover:underline"
+                                  className="text-[#5A39A2] font-bold hover:underline"
                                 >
                                   View all categories →
                                 </Link>
@@ -291,7 +291,7 @@ export default function Header() {
                                     >
                                       {typeof sub === 'object' ? (
                                         <>
-                                          <div className="text-[14px] font-semibold text-[#6B7280] mb-1 group-hover:text-[#5E42C0] transition-colors">
+                                          <div className="text-[14px] font-semibold text-[#6B7280] mb-1 group-hover:text-[#5A39A2] transition-colors">
                                             {sub.heading}
                                           </div>
                                           <div className="text-[12px] text-[#6B7280] leading-relaxed">
@@ -299,7 +299,7 @@ export default function Header() {
                                           </div>
                                         </>
                                       ) : (
-                                        <span className="text-sm font-medium text-gray-700 group-hover:text-[#5E42C0]">
+                                        <span className="text-sm font-medium text-gray-700 group-hover:text-[#5A39A2]">
                                           {sub}
                                         </span>
                                       )}
@@ -321,16 +321,16 @@ export default function Header() {
                 {/* Pin Icon Button */}
                 <Link
                   to="/assistant/landing"
-                  className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center bg-white hover:border-[#5E42C0] transition-all"
+                  className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center bg-white hover:border-[#5A39A2] transition-all"
                   title="Pinned items"
                 >
-                  <Pin className="w-3.5 h-3.5 text-[#5E42C0] fill-[#5E42C0]" />
+                  <Pin className="w-3.5 h-3.5 text-[#5A39A2] fill-[#5A39A2]" />
                 </Link>
 
                 {/* Leave a Review Pill */}
                 <Link
                   to={userActionLinks.leaveReview.url}
-                  className="bg-[#5E42C0] hover:bg-[#4E35A6] text-white font-semibold text-[13.5px] px-4 py-1.5 rounded-full shadow-sm transition-all whitespace-nowrap"
+                  className="bg-[#5A39A2] hover:bg-[#493088] text-white font-semibold text-[13.5px] px-4 py-1.5 rounded-full shadow-sm transition-all whitespace-nowrap"
                 >
                   {userActionLinks.leaveReview.label}
                 </Link>
@@ -338,7 +338,7 @@ export default function Header() {
                 {/* Join or Log In Pill */}
                 <button
                   onClick={() => openLoginModal()}
-                  className="border border-gray-300 hover:border-gray-400 bg-white text-[#5E42C0] font-semibold text-[13.5px] px-3.5 py-1.5 rounded-full transition-all whitespace-nowrap"
+                  className="border border-gray-300 hover:border-gray-400 bg-white text-[#5A39A2] font-semibold text-[13.5px] px-3.5 py-1.5 rounded-full transition-all whitespace-nowrap"
                 >
                   {userActionLinks.joinOrLogin.label}
                 </button>
@@ -371,7 +371,7 @@ export default function Header() {
                 <input
                   type="text"
                   placeholder="Ask a question..."
-                  className="w-full h-[38px] pl-9 pr-3 text-[13.5px] text-gray-800 placeholder-gray-500 border border-gray-300 rounded-full bg-white focus:outline-none focus:border-[#5E42C0] transition-all font-normal shadow-sm"
+                  className="w-full h-[38px] pl-9 pr-3 text-[13.5px] text-gray-800 placeholder-gray-500 border border-gray-300 rounded-full bg-white focus:outline-none focus:border-[#5A39A2] transition-all font-normal shadow-sm"
                 />
               </div>
             )}
@@ -385,10 +385,10 @@ export default function Header() {
                   href="/assistant/landing"
                   role="menuitem"
                   aria-label="Research Boards"
-                  className="flex justify-center items-center w-8 h-8 rounded-full border border-gray-300 bg-white hover:border-[#5746B2] hover:shadow-[0_2px_8px_2px_rgba(32,31,35,0.149),_0_0_0_1px_#5746B2] transition-all duration-150"
+                  className="flex justify-center items-center w-8 h-8 rounded-full border border-gray-300 bg-white hover:border-[#5A39A2] hover:shadow-[0_2px_8px_2px_rgba(32,31,35,0.149),_0_0_0_1px_#5A39A2] transition-all duration-150"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="w-4 h-4">
-                    <path d="M15 12L17 14V15.5H12.75V20.25L12 21L11.25 20.25V15.5H7V14L9 12V6.5H8V5H16V6.5H15V12Z" fill="#5746B2"/>
+                    <path d="M15 12L17 14V15.5H12.75V20.25L12 21L11.25 20.25V15.5H7V14L9 12V6.5H8V5H16V6.5H15V12Z" fill="#5A39A2"/>
                   </svg>
                 </a>
               </div>
@@ -554,7 +554,7 @@ export default function Header() {
                           openLoginModal();
                           setMobileMenuOpen(false);
                         }}
-                        className="w-full bg-white border border-[#5E42C0] text-[#5E42C0] text-center font-bold text-sm py-2.5 px-4 rounded-full block transition shadow-sm hover:bg-purple-50"
+                        className="w-full bg-white border border-[#5A39A2] text-[#5A39A2] text-center font-bold text-sm py-2.5 px-4 rounded-full block transition shadow-sm hover:bg-purple-50"
                       >
                         Join or Log In
                       </button>
@@ -579,7 +579,7 @@ export default function Header() {
                       <div className="flex items-center justify-between pb-3 border-b border-gray-100 mb-3">
                         <button
                           onClick={() => setMobileSubmenu('main')}
-                          className="bg-gray-100 hover:bg-gray-200 text-[#5E42C0] px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 font-bold text-xs transition"
+                          className="bg-gray-100 hover:bg-gray-200 text-[#5A39A2] px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 font-bold text-xs transition"
                         >
                           <ArrowLeft className="w-3.5 h-3.5" /> Back
                         </button>
@@ -601,7 +601,7 @@ export default function Header() {
                             key={idx}
                             to={item.link}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5E42C0] transition border-b border-gray-50 last:border-0"
+                            className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5A39A2] transition border-b border-gray-50 last:border-0"
                           >
                             {item.label}
                           </Link>
@@ -627,7 +627,7 @@ export default function Header() {
                       <div className="flex items-center justify-between pb-3 border-b border-gray-100 mb-3">
                         <button
                           onClick={() => setMobileSubmenu('main')}
-                          className="bg-gray-100 hover:bg-gray-200 text-[#5E42C0] px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 font-bold text-xs transition"
+                          className="bg-gray-100 hover:bg-gray-200 text-[#5A39A2] px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 font-bold text-xs transition"
                         >
                           <ArrowLeft className="w-3.5 h-3.5" /> Back
                         </button>
@@ -649,7 +649,7 @@ export default function Header() {
                             key={t.id}
                             to={`/category/${t.id}`}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5E42C0] transition border-b border-gray-50 last:border-0"
+                            className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5A39A2] transition border-b border-gray-50 last:border-0"
                           >
                             {t.label}
                           </Link>
@@ -675,7 +675,7 @@ export default function Header() {
                       <div className="flex items-center justify-between pb-3 border-b border-gray-100 mb-3">
                         <button
                           onClick={() => setMobileSubmenu('main')}
-                          className="bg-gray-100 hover:bg-gray-200 text-[#5E42C0] px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 font-bold text-xs transition"
+                          className="bg-gray-100 hover:bg-gray-200 text-[#5A39A2] px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 font-bold text-xs transition"
                         >
                           <ArrowLeft className="w-3.5 h-3.5" /> Back
                         </button>
@@ -692,10 +692,10 @@ export default function Header() {
                       </div>
 
                       <div className="space-y-1 text-sm">
-                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5E42C0] transition border-b border-gray-50">IT Services</Link>
-                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5E42C0] transition border-b border-gray-50">Implementation Services</Link>
-                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5E42C0] transition border-b border-gray-50">Consulting Services</Link>
-                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5E42C0] transition">Design Agencies</Link>
+                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5A39A2] transition border-b border-gray-50">IT Services</Link>
+                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5A39A2] transition border-b border-gray-50">Implementation Services</Link>
+                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5A39A2] transition border-b border-gray-50">Consulting Services</Link>
+                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5A39A2] transition">Design Agencies</Link>
                       </div>
                     </div>
 

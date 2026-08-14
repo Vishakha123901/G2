@@ -5,14 +5,14 @@
   --g2-bg-warm: #FAF7F5;
   --g2-orange: #FF4F00;
   --g2-orange-hover: #E04500;
-  --g2-purple: #5E42C0;
-  --g2-purple-hover: #4B33A3;
-  --g2-text-main: #1C1D21;
+  --g2-purple: #5A39A2;
+  --g2-purple-hover: #493088;
+  --g2-text-main: #252530;
   --g2-text-muted: #5C5E68;
   --g2-border: #E5E7EB;
-  --g2-blue: #1877F2;
-  --g2-teal: #00CBA7;
-  --g2-red: #FF3B30;
+  --g2-blue: #3B82F6;
+  --g2-teal: #14B8A6;
+  --g2-red: #FF4F00;
   --g2-font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --g2-font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -23,7 +23,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   font-family: var(--g2-font-body);
   background-color: var(--g2-bg-warm);
   color: var(--g2-text-main);
@@ -35,6 +36,7 @@ html, body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -58,9 +60,12 @@ html, body {
 
 /* Floating animation up to down / down to up */
 @keyframes floatUpDown {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-14px);
   }
@@ -149,23 +154,108 @@ html, body {
 }
 
 @media (max-width: 1280px) {
-  .shape-blue { width: 130px; height: 170px; left: -3%; }
-  .shape-red { width: 160px; height: 100px; left: -4%; }
-  .shape-teal { width: 200px; height: 110px; right: -5%; }
-  .shape-purple-arc { width: 420px; height: 420px; border-width: 70px; bottom: -160px; right: -90px; }
-  .sparkle-badge { bottom: 35px; right: 35px; width: 54px; height: 54px; }
+  .shape-blue {
+    width: 130px;
+    height: 170px;
+    left: -3%;
+  }
+
+  .shape-red {
+    width: 160px;
+    height: 100px;
+    left: -4%;
+  }
+
+  .shape-teal {
+    width: 200px;
+    height: 110px;
+    right: -5%;
+  }
+
+  .shape-purple-arc {
+    width: 420px;
+    height: 420px;
+    border-width: 70px;
+    bottom: -160px;
+    right: -90px;
+  }
+
+  .sparkle-badge {
+    bottom: 35px;
+    right: 35px;
+    width: 54px;
+    height: 54px;
+  }
 }
 
 @media (max-width: 768px) {
-  .shape-blue { width: 90px; height: 120px; left: -5%; }
-  .shape-red { width: 110px; height: 75px; left: -6%; }
-  .shape-teal { width: 140px; height: 80px; right: -8%; }
-  .shape-purple-arc { width: 280px; height: 280px; border-width: 45px; bottom: -100px; right: -60px; }
-  .sparkle-badge { bottom: 20px; right: 20px; width: 48px; height: 48px; }
+  .shape-blue {
+    width: 90px;
+    height: 120px;
+    left: -5%;
+  }
+
+  .shape-red {
+    width: 110px;
+    height: 75px;
+    left: -6%;
+  }
+
+  .shape-teal {
+    width: 140px;
+    height: 80px;
+    right: -8%;
+  }
+
+  .shape-purple-arc {
+    width: 280px;
+    height: 280px;
+    border-width: 45px;
+    bottom: -100px;
+    right: -60px;
+  }
+
+  .sparkle-badge {
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* ── Elevation Heading Design System ── */
+.elv-heading--lg {
+  font-size: 2.375rem;
+  /* 38px */
+  line-height: 3rem;
+  font-weight: 800;
+  color: #201F23;
+  margin: 0;
+}
+
+.elv-heading {
+  font-size: 1.75rem;
+  /* 28px */
+  font-weight: 700;
+  line-height: 2.25rem;
+  /* 36px */
+  color: #201F23;
+  margin: 0;
+}
+
+/* ── Page Title (matches elv-heading--lg reference) ── */
+.page-title-responsive {
+  font-size: 2.275rem;
+  /* 38px — matches elv-heading--lg */
+  line-height: 3rem;
+  font-weight: 600;
+  color: #201F23;
+  margin: 0;
 }
 
 /* Hide all geometric shapes on mobile (small phones) */
 @media (max-width: 640px) {
+
   .shape-blue,
   .shape-red,
   .shape-teal,

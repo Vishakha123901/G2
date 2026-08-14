@@ -50,7 +50,7 @@ export default function DealsPage() {
         .deals-hero__title {
           font-size: 36px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin: 0 0 6px 0;
           line-height: 1.2;
         }
@@ -58,7 +58,7 @@ export default function DealsPage() {
         .deals-hero__subtitle {
           font-size: 15px;
           font-weight: 600;
-          color: #1C1D21;
+          color: #201F23;
           margin: 0 0 20px 0;
         }
 
@@ -125,7 +125,7 @@ export default function DealsPage() {
         .deal-card__name {
           font-size: 14px;
           font-weight: 600;
-          color: #1C1D21;
+          color: #201F23;
           margin: 0 0 4px 0;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -137,7 +137,7 @@ export default function DealsPage() {
         .deal-card__value {
           font-size: 13px;
           font-weight: 600;
-          color: #1C1D21;
+          color: #201F23;
           line-height: 1.4;
           word-break: break-word;
         }
@@ -168,7 +168,7 @@ export default function DealsPage() {
           flex-shrink: 0;
           box-shadow: 0 2px 8px 2px rgba(32,31,35,0.10);
           transition: box-shadow 0.2s ease, border-color 0.2s ease;
-          color: #374151;
+          color: #201F23;
         }
         .carousel-arrow:hover:not(:disabled) {
           box-shadow: 0 2px 8px 2px rgba(32,31,35,0.20);
@@ -273,17 +273,17 @@ export default function DealsPage() {
           width: 36px;
           height: 36px;
           flex-shrink: 0;
-          fill: #1C1D21;
+          fill: #201F23;
         }
         .deals-subscribe__text {
           font-size: 15px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           line-height: 1.4;
         }
         .deals-subscribe__btn {
           flex-shrink: 0;
-          background: #5E42C0;
+          background: #5A39A2;
           color: #ffffff;
           font-size: 14px;
           font-weight: 700;
@@ -294,7 +294,7 @@ export default function DealsPage() {
           white-space: nowrap;
         }
         .deals-subscribe__btn:hover {
-          background: #4E35A6;
+          background: #493088;
           box-shadow: 0 4px 12px rgba(94,66,192,0.35);
         }
 
@@ -365,7 +365,7 @@ export default function DealsPage() {
           cursor: pointer;
           font-size: 14px;
           font-weight: 600;
-          color: #1C1D21;
+          color: #201F23;
         }
         .dl-sidebar__mobile-list {
           display: none;
@@ -396,7 +396,7 @@ export default function DealsPage() {
           border-radius: 20px;
           font-size: 14px;
           font-weight: 500;
-          color: #374151;
+          color: #201F23;
           text-decoration: none;
           cursor: pointer;
           transition: background 0.15s ease, color 0.15s ease;
@@ -410,11 +410,11 @@ export default function DealsPage() {
         }
         .dl-sidebar__link:hover {
           background: #F3F0FF;
-          color: #5E42C0;
+          color: #5A39A2;
         }
         .dl-sidebar__link.active {
           background: #EDE9FE;
-          color: #5E42C0;
+          color: #5A39A2;
           font-weight: 700;
         }
 
@@ -450,11 +450,11 @@ export default function DealsPage() {
           border: 1px solid #D1D5DB;
           border-radius: 6px;
           font-size: 14px;
-          color: #1C1D21;
+          color: #201F23;
           outline: none;
           transition: border-color 0.15s ease;
         }
-        .dl-search__input:focus { border-color: #5E42C0; box-shadow: 0 0 0 2px rgba(94,66,192,0.12); }
+        .dl-search__input:focus { border-color: #5A39A2; box-shadow: 0 0 0 2px rgba(94,66,192,0.12); }
         .dl-sort {
           position: relative;
           flex-shrink: 0;
@@ -472,7 +472,7 @@ export default function DealsPage() {
           background: none;
           font-size: 13px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           cursor: pointer;
           outline: none;
           padding: 0;
@@ -520,7 +520,7 @@ export default function DealsPage() {
         .dl-card__name {
           font-size: 22px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin: 0 0 8px 0;
           line-height: 1.3;
         }
@@ -559,7 +559,7 @@ export default function DealsPage() {
           text-align: left;
         }
         .dl-card__desktop-tab.active {
-          color: #1C1D21;
+          color: #201F23;
           font-weight: 700;
           border-bottom-color: #2563EB;
         }
@@ -582,7 +582,7 @@ export default function DealsPage() {
         .dl-card__offer-heading {
           font-size: 16px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin: 0 0 10px 0;
           line-height: 1.4;
         }
@@ -595,7 +595,7 @@ export default function DealsPage() {
         .dl-card__how-label {
           font-size: 14px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin-bottom: 6px;
         }
         .dl-card__how-text {
@@ -621,7 +621,7 @@ export default function DealsPage() {
           gap: 6px;
           font-size: 15px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin-bottom: 8px;
         }
         .dl-card__coupon-g2logo {
@@ -632,7 +632,7 @@ export default function DealsPage() {
         .dl-card__coupon-value {
           font-size: 14px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           line-height: 1.4;
           word-break: break-word;
           margin-bottom: 2px;
@@ -652,7 +652,7 @@ export default function DealsPage() {
         }
         .dl-card__coupon-btn {
           display: inline-block;
-          background: #5E42C0;
+          background: #5A39A2;
           color: #ffffff;
           font-size: 14px;
           font-weight: 700;
@@ -665,7 +665,7 @@ export default function DealsPage() {
           border: none;
         }
         .dl-card__coupon-btn:hover {
-          background: #4E35A6;
+          background: #493088;
           box-shadow: 0 4px 12px rgba(94,66,192,0.35);
         }
 
@@ -673,12 +673,12 @@ export default function DealsPage() {
         .dl-card__overview-title {
           font-size: 15px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin: 0 0 8px 0;
         }
         .dl-card__overview-text {
           font-size: 14px;
-          color: #374151;
+          color: #201F23;
           line-height: 1.6;
           margin: 0 0 12px 0;
         }
@@ -743,7 +743,7 @@ export default function DealsPage() {
           }
 
           .dl-card__acc-badge {
-            background: #5E42C0;
+            background: #5A39A2;
             color: #ffffff;
             font-size: 12px;
             font-weight: 700;
@@ -755,7 +755,7 @@ export default function DealsPage() {
           .dl-card__acc-title {
             font-size: 16px;
             font-weight: 700;
-            color: #1C1D21;
+            color: #201F23;
           }
 
           .dl-card__acc-chevron {
@@ -865,7 +865,7 @@ export default function DealsPage() {
         .g2-modal-header-title {
           font-size: 15px;
           font-weight: 600;
-          color: #1C1D21;
+          color: #201F23;
         }
 
         .g2-modal-close-btn {
@@ -879,7 +879,7 @@ export default function DealsPage() {
           transition: color 0.15s ease;
         }
         .g2-modal-close-btn:hover {
-          color: #1C1D21;
+          color: #201F23;
         }
 
         .g2-modal-body {
@@ -937,7 +937,7 @@ export default function DealsPage() {
         .g2-modal-product-name {
           font-size: 20px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin: 0 0 4px 0;
           line-height: 1.2;
         }
@@ -950,7 +950,7 @@ export default function DealsPage() {
         }
 
         .g2-modal-reviews {
-          color: #374151;
+          color: #201F23;
           font-weight: 400;
         }
 
@@ -962,7 +962,7 @@ export default function DealsPage() {
 
         .g2-modal-desc {
           font-size: 14px;
-          color: #374151;
+          color: #201F23;
           line-height: 1.6;
           margin: 0 0 8px 0;
         }
@@ -991,14 +991,14 @@ export default function DealsPage() {
         .g2-modal-offer-title {
           font-size: 15px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin: 0 0 10px 0;
           line-height: 1.4;
         }
 
         .g2-modal-offer-text {
           font-size: 14px;
-          color: #374151;
+          color: #201F23;
           line-height: 1.6;
           margin: 0 0 14px 0;
         }
@@ -1006,7 +1006,7 @@ export default function DealsPage() {
         .g2-modal-how-label {
           font-size: 14px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin: 0 0 6px 0;
         }
 
@@ -1014,7 +1014,7 @@ export default function DealsPage() {
 
         .g2-modal-how-text {
           font-size: 14px;
-          color: #374151;
+          color: #201F23;
           line-height: 1.6;
           margin: 0;
           white-space: pre-wrap;
@@ -1049,7 +1049,7 @@ export default function DealsPage() {
           gap: 6px;
           font-size: 15px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           margin-bottom: 6px;
         }
 
@@ -1058,7 +1058,7 @@ export default function DealsPage() {
         .g2-modal-coupon-val {
           font-size: 15px;
           font-weight: 700;
-          color: #1C1D21;
+          color: #201F23;
           line-height: 1.4;
         }
 
@@ -1072,13 +1072,13 @@ export default function DealsPage() {
         .g2-modal-coupon-disc {
           font-size: 15px;
           font-weight: 700;
-          color: #374151;
+          color: #201F23;
           margin: 2px 0 14px 0;
         }
 
         .g2-modal-claim-btn {
           width: 100%;
-          background: #5E42C0;
+          background: #5A39A2;
           color: #ffffff;
           font-size: 15px;
           font-weight: 700;
@@ -1088,7 +1088,7 @@ export default function DealsPage() {
           cursor: pointer;
           transition: background 0.2s ease;
         }
-        .g2-modal-claim-btn:hover { background: #4E35A6; }
+        .g2-modal-claim-btn:hover { background: #493088; }
       `}</style>
 
       <div className="deals-page">

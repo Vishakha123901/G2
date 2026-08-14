@@ -53,6 +53,10 @@ export default function TestimonialSection() {
           color: rgba(255, 255, 255, 0.8);
           margin: 0;
         }
+        
+        .testimonial-author-wrapper {
+          display: none;
+        }
 
         .testimonial-image-wrapper {
           position: relative;
@@ -147,22 +151,41 @@ export default function TestimonialSection() {
           .testimonial-section { padding: 28px 16px; }
           .testimonial-container { 
             padding: 0 18px;
-            gap: 26px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+          }
+          .testimonial-quote-wrapper {
+            order: 1;
           }
           .testimonial-quote { 
             font-size: 18px;
             line-height: 1.5;
-            margin-bottom: 18px;
+            margin-bottom: 0;
           }
-          .testimonial-author { font-size: 14px; }
-          .testimonial-role { font-size: 12px; }
+          .testimonial-image-wrapper {
+            order: 2;
+          }
+          .testimonial-author-wrapper {
+            display: block;
+            order: 3;
+            text-align: center;
+          }
+          .testimonial-author { 
+            font-size: 14px;
+            margin-bottom: 4px;
+          }
+          .testimonial-role { 
+            font-size: 12px;
+            margin-bottom: 2px;
+          }
           .testimonial-image-circle { 
-            width: 260px; 
-            height: 260px; 
+            width: 140px; 
+            height: 140px; 
           }
           .testimonial-accent-shape { 
-            width: 38px; 
-            height: 38px;
+            width: 27px; 
+            height: 27px;
             top: 8%;
             right: 4%;
           }
@@ -179,8 +202,8 @@ export default function TestimonialSection() {
           .testimonial-author { font-size: 13px; }
           .testimonial-role { font-size: 11px; }
           .testimonial-image-circle { 
-            width: 220px; 
-            height: 220px; 
+            width: 140px; 
+            height: 140px; 
           }
           .testimonial-accent-shape { 
             width: 32px; 
@@ -198,11 +221,6 @@ export default function TestimonialSection() {
               <span className="testimonial-highlight-orange">review</span>{' '}
               software... it's actually been fun to see my reviews go up, get marked helpful..."
             </blockquote>
-            <div>
-              <p className="testimonial-author">Matthew Gardner</p>
-              <p className="testimonial-role">Co-founder, RouteThis</p>
-              <p className="testimonial-role">G2 Reviewer</p>
-            </div>
           </div>
 
           <div className="testimonial-image-wrapper">
@@ -213,6 +231,12 @@ export default function TestimonialSection() {
                 className="testimonial-profile-img"
               />
             </div>
+          </div>
+          
+          <div className="testimonial-author-wrapper">
+            <p className="testimonial-author">Matthew Gardner</p>
+            <p className="testimonial-role">Co-founder, RouteThis</p>
+            <p className="testimonial-role">G2 Reviewer</p>
           </div>
         </div>
       </section>
