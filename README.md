@@ -10,7 +10,8 @@ This project is a modern recreation of G2.com featuring a complete user interfac
 
 - **Frontend Framework:** React 18
 - **Routing:** React Router DOM v6
-- **Styling:** Tailwind CSS + Custom CSS
+- **Animation:** Lottie React (`lottie-react`)
+- **Styling:** Tailwind CSS + Custom CSS Design System
 - **Icons:** Lucide React
 - **Build Tool:** Vite
 - **Language:** JavaScript (ES6+)
@@ -26,7 +27,7 @@ The main landing page with multiple sections:
 - Leave a Review Section
 - G2 Profile Section with interactive dots
 - Testimonial Section
-- Claim Profile Section
+- Claim Profile Section ("Selling software? Reach more buyers.")
 - Research Software Section
 
 **Features:**
@@ -126,12 +127,23 @@ User's saved products.
 - Quick access to saved items
 - Remove from pins functionality
 
+### 9. 404 Not Found Page (*)
+Custom error page visually identical to the official G2.com 404 page.
+
+**Features:**
+- Official G2 **Monty Dog** vector animation using `lottie-react` and `src/assets/svg/not-found.json`
+- Minimalist G2 404 header with search bar and fast navigation
+- Dynamic client-side ISO timestamp metadata
+- Responsive layout adapting seamlessly across mobile, tablet, laptop, and desktop
+- Integrated into React Router as a catch-all wildcard (`*`) route
+
 ## Components Structure
 
 ### Common Components (/src/components/common)
-- **Header.jsx** - Main navigation bar with dropdown menus
-- **Footer.jsx** - Site footer with links
+- **Header.jsx** - Main navigation bar with mega dropdown menus and search
+- **Footer.jsx** - Site footer with navigation links
 - **LoginModal.jsx** - User authentication modal
+- **WelcomeModal.jsx** - Timed interactive onboarding modal
 - **FloatingChat.jsx** - AI chat widget
 - **CardSlider.jsx** - Product carousel component
 - **GeometricShapes.jsx** - Decorative background shapes
@@ -142,7 +154,7 @@ User's saved products.
 - **LeaveReviewSection.jsx** - Review CTA section
 - **G2ProfileSection.jsx** - Profile highlights
 - **TestimonialSection.jsx** - User testimonials
-- **ClaimProfileSection.jsx** - Vendor CTA
+- **ClaimProfileSection.jsx** - Vendor CTA ("Selling software? Reach more buyers.")
 - **ResearchSoftwareSection.jsx** - Software categories accordion
 
 ## Navigation System
@@ -228,6 +240,7 @@ Breakpoints:
 /deals - Software deals
 /leave-review - Submit review
 /assistant/landing - Pinned items
+/* - 404 Not Found Page (Catch-all)
 ```
 
 ## Styling Approach
