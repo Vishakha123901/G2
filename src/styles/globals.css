@@ -3,7 +3,7 @@
 
 :root {
   --g2-bg-warm: #FAF7F5;
-  --g2-orange: #FF4F00;
+  --g2-orange: #FF492C;
   --g2-orange-hover: #E04500;
   --g2-purple: #5A39A2;
   --g2-purple-hover: #493088;
@@ -12,7 +12,7 @@
   --g2-border: #E5E7EB;
   --g2-blue: #3B82F6;
   --g2-teal: #14B8A6;
-  --g2-red: #FF4F00;
+  --g2-red: #FF492C;
   --g2-font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --g2-font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Star } from 'lucide-react';
 import { categoriesData, categoryListNames } from '../../data/categoriesData';
@@ -64,13 +64,13 @@ export default function PopularCategoriesSection() {
         <div className="grid grid-cols-1 md:grid-cols-[360px_1fr] lg:grid-cols-[390px_1fr] xl:grid-cols-[410px_1fr] gap-8 md:gap-10 lg:gap-14 xl:gap-16 items-start">
           
           {/* Left Column: Heading + Category Navigation Tabs */}
-          <div className="w-full pt-3 md:pt-7 lg:pt-9">
-            <h2 className="text-[22px] sm:text-[25px] md:text-[28px] lg:text-[31px] font-bold text-[#252530] leading-[1.2] mb-6 tracking-tight">
+          <div className="w-full pt-3 md:pt-7 lg:pt-9 flex flex-col items-center md:items-start">
+            <h2 className="text-[22px] sm:text-[25px] md:text-[28px] lg:text-[31px] font-bold text-[#252530] leading-[1.2] mb-6 tracking-tight text-center md:text-left">
               <span className="block whitespace-nowrap">Most Popular Software</span>
               <span className="block">Categories</span>
             </h2>
 
-            <nav className="flex flex-col gap-1 w-full max-w-[290px]" aria-label="Software Categories">
+            <nav className="flex flex-col gap-1 w-full max-w-[290px] mx-auto md:mx-0" aria-label="Software Categories">
               {categoriesToShow.map((category) => {
                 const isActive = activeCategoryId === category.id;
                 return (
@@ -78,9 +78,9 @@ export default function PopularCategoriesSection() {
                     key={category.id}
                     type="button"
                     onClick={() => setActiveCategoryId(category.id)}
-                    className={`w-full min-h-[38px] px-3.5 py-2 text-[14px] sm:text-[15px] text-left rounded-md transition-colors duration-150 ${
+                    className={`w-full min-h-[38px] px-3.5 py-2 text-[14px] sm:text-[15px] text-center md:text-left rounded-md transition-colors duration-150 ${
                       isActive
-                        ? 'text-[#FF4F00] font-semibold bg-white border-[1.5px] border-[#FF4F00]'
+                        ? 'text-[#FF492C] font-semibold bg-white border-[1.5px] border-[#FF492C]'
                         : 'text-[#24344D] font-normal bg-transparent border-[1.5px] border-transparent hover:text-[#252530] hover:bg-gray-50'
                     }`}
                   >
@@ -97,7 +97,7 @@ export default function PopularCategoriesSection() {
             <div className="hidden md:flex justify-end mb-3 md:mb-4 min-h-[26px]">
               <Link
                 to={activeCategory?.seeAllLink || `/category/${activeCategory?.id}`}
-                className="text-[13px] sm:text-sm font-semibold text-[#FF4F00] hover:underline transition-opacity"
+                className="text-[13px] sm:text-sm font-semibold text-[#FF492C] hover:underline transition-opacity"
               >
                 {activeCategory?.seeAllText || `See all ${activeCategory?.name} Software`}
               </Link>
@@ -122,7 +122,7 @@ export default function PopularCategoriesSection() {
                         {[...Array(5)].map((_, i) => (
                           <Star
                             key={i}
-                            className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 fill-[#FF4F00] text-[#FF4F00]"
+                            className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 fill-[#FF492C] text-[#FF492C]"
                           />
                         ))}
                       </div>
@@ -151,7 +151,7 @@ export default function PopularCategoriesSection() {
             <div className="block md:hidden text-center mt-5">
               <Link
                 to={activeCategory?.seeAllLink || `/category/${activeCategory?.id}`}
-                className="text-sm font-semibold text-[#FF4F00] hover:underline"
+                className="text-sm font-semibold text-[#FF492C] hover:underline"
               >
                 {activeCategory?.seeAllText || `See all ${activeCategory?.name} Software`}
               </Link>

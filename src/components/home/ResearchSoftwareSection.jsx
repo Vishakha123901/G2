@@ -120,8 +120,8 @@ export default function ResearchSoftwareSection() {
   };
 
   return (
-    <section className="w-full bg-white py-[35px] sm:py-10 md:py-[45px] px-6 md:px-[50px]">
-      <div className="w-full max-w-[1340px] mx-auto">
+    <section className="w-full bg-white py-[35px] sm:py-10 md:py-[45px] px-0 sm:px-6 md:px-[50px]">
+      <div className="w-full max-w-[1340px] mx-auto px-6 sm:px-0">
 
         {/* TITLE */}
         <h2

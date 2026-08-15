@@ -2403,6 +2403,86 @@ function SidebarFilters({
         </div>
       </div>
 
+      {/* Industry Expertise */}
+      <div style={{ marginBottom: 24 }}>
+        <h3 style={{
+          fontSize: 13,
+          fontWeight: 600,
+          color: '#6B7280',
+          marginBottom: 12,
+          textTransform: 'none',
+          letterSpacing: '0.01em',
+        }}>
+          Industry Expertise
+        </h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          {[
+            'Retail',
+            'Non-Profit',
+            'Travel & Hospitality',
+            'Healthcare & Life Sciences',
+            'Government / Public Sector',
+            'Financial Services / Insurance',
+            'Other (HR / IT / Legal / etc.)',
+            'Media, Entertainment & Telecom',
+            'Education',
+            'Manufacturing & Distribution',
+            'Consumer Packaged Goods',
+            'B2B High Tech',
+            'Automotive',
+          ].map((industry, idx) => (
+            <label
+              key={idx}
+              style={{ display: 'flex', alignItems: 'flex-start', gap: 10, cursor: 'pointer' }}
+            >
+              <input
+                type="checkbox"
+                style={{
+                  width: 16, height: 16, cursor: 'pointer',
+                  accentColor: '#5A39A2', marginTop: 2, flexShrink: 0,
+                }}
+              />
+              <span style={{ fontSize: 13, color: '#374151', lineHeight: 1.4 }}>
+                {industry}
+              </span>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      {/* Partner Level */}
+      <div style={{ marginBottom: 24 }}>
+        <h3 style={{
+          fontSize: 13,
+          fontWeight: 600,
+          color: '#6B7280',
+          marginBottom: 12,
+          textTransform: 'none',
+          letterSpacing: '0.01em',
+        }}>
+          Partner Level
+        </h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          {['Platinum', 'Gold', 'Silver', 'Bronze'].map((level, idx) => (
+            <label
+              key={idx}
+              style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer' }}
+            >
+              <input
+                type="checkbox"
+                style={{
+                  width: 16, height: 16, cursor: 'pointer',
+                  accentColor: '#5A39A2',
+                }}
+              />
+              <span style={{ fontSize: 13, color: '#374151' }}>
+                {level}
+              </span>
+            </label>
+          ))}
+        </div>
+      </div>
+
       {/* Clear All */}
       <button
         onClick={clearAll}
@@ -2420,6 +2500,20 @@ function SidebarFilters({
       >
         Clear All
       </button>
+
+      {/* G2 Disclaimer */}
+      <p style={{
+        marginTop: 16,
+        fontSize: 12,
+        color: '#6B7280',
+        lineHeight: 1.5,
+      }}>
+        G2 takes pride in showing unbiased reviews on client satisfaction in our ratings and reports. We do not allow paid placements in any of our ratings, rankings, or reports. Learn about our{' '}
+        <a href="#" style={{ color: '#3B82F6', textDecoration: 'underline' }}>
+          scoring methodologies
+        </a>
+        .
+      </p>
     </div>
   );
 }
