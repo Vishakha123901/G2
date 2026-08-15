@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import Lottie from 'lottie-react';
 import { Link } from 'react-router-dom';
 import notFoundAnimation from '../assets/svg/not-found.json';

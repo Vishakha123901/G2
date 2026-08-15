@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import Header from '../components/common/Header';
 import HeroSection from '../components/home/HeroSection';
 import PopularCategoriesSection from '../components/home/PopularCategoriesSection';

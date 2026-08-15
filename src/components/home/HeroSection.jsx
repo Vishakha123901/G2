@@ -54,7 +54,7 @@ export default function HeroSection({ onScrollDown }) {
             lineHeight: '1.05',
             padding: '0',
             margin: '0 0 1rem 0',
-            letterSpacing: '0.005em'
+            letterSpacing: '-0.02em'
           }}
         >
           <style>{`
@@ -72,14 +72,14 @@ export default function HeroSection({ onScrollDown }) {
         </h1>
 
         <p 
-          className="text-[#505059] font-medium mb-6 sm:mb-7 md:mb-9 sm:max-w-full mx-auto"
+          className="text-[#505059] font-medium mb-4 sm:mb-5 md:mb-6 sm:max-w-full mx-auto"
           style={{
             fontSize: '19px',
             lineHeight: '1.4',
             padding: '0 1rem'
           }}
         >
-          Find the right software and services based<br />on <span className="text-[#FF4F00] font-bold mx-1">{heroContent.reviewCount}</span> real reviews.
+          Find the right software and services based on <span className="text-[#FF4F00] font-bold mx-1">{heroContent.reviewCount}</span> real reviews.
         </p>
 
         <form onSubmit={handleSearchSubmit} className="w-full max-w-3xl mx-auto mb-5 sm:mb-7 md:mb-9">

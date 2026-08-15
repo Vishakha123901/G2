@@ -8,6 +8,7 @@ import {
   Award, Users, Globe, HelpCircle, FileText, Gift, Sparkles, Shield,
   BookOpen, Check, ArrowRight, Zap, ChevronDown, ChevronUp, Download, Phone, Calendar, Clock
 } from 'lucide-react';
+import g2Stars from '../assets/svg/g2-stars.svg';
 
 function resolveServiceData(slug = '') {
   // 1. Direct match in servicesData
@@ -2119,30 +2120,16 @@ function SidebarFilters({
   solutionType, setSolutionType,
   clearAll
 }) {
-  const [locationsExpanded, setLocationsExpanded] = useState(false);
-  const [productExpanded, setProductExpanded] = useState(false);
-  const [industryExpanded, setIndustryExpanded] = useState(true);
-  const [partnerLevelExpanded, setPartnerLevelExpanded] = useState(true);
+  const [locationsDropdownOpen, setLocationsDropdownOpen] = useState(false);
+  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
 
-  // Industry options
-  const industries = [
-    'Retail',
-    'Non-Profit',
-    'Travel & Hospitality',
-    'Healthcare & Life Sciences',
-    'Government / Public Sector',
-    'Financial Services / Insurance',
-    'Other (HR / IT / Legal / etc.)',
-    'Media, Entertainment & Telecom',
-    'Education',
-    'Manufacturing & Distribution',
-    'Consumer Packaged Goods',
-    'B2B High Tech',
-    'Automotive'
+  const locationsList = [
+    'United States', 'United Kingdom', 'Canada', 'India', 'Australia', 'Germany', 'France'
   ];
 
-  // Partner levels
-  const partnerLevels = ['Platinum', 'Gold', 'Silver', 'Bronze'];
+  const languageList = [
+    'English', 'French', 'Spanish', 'German', 'Chinese', 'Japanese'
+  ];
 
   return (
     <div style={{
@@ -2187,9 +2174,7 @@ function SidebarFilters({
             }}
           />
           <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} size={18} fill="#FF492C" color="#FF492C" />
-            ))}
+            <img src={g2Stars} alt="5 Stars" style={{ height: 22 }} />
             <span style={{ fontSize: 14, fontWeight: 600, color: '#1F2937', marginLeft: 4 }}>
               5+
             </span>
@@ -2217,10 +2202,7 @@ function SidebarFilters({
             }}
           />
           <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-            {[...Array(4)].map((_, i) => (
-              <Star key={i} size={18} fill="#FF492C" color="#FF492C" />
-            ))}
-            <Star size={18} fill="#D1D5DB" color="#D1D5DB" />
+            <img src={g2Stars} alt="4 Stars" style={{ height: 22, filter: 'grayscale(100%) brightness(1.5)', opacity: 0.8 }} />
             <span style={{ fontSize: 14, fontWeight: 600, color: '#1F2937', marginLeft: 4 }}>
               4+
             </span>
@@ -2228,251 +2210,197 @@ function SidebarFilters({
         </label>
       </div>
 
-      {/* Locations Served */}
+      {/* Pricing Section */}
       <div style={{ marginBottom: 24 }}>
-        <button
-          onClick={() => setLocationsExpanded(!locationsExpanded)}
-          style={{
-            width: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            background: 'none',
-            border: 'none',
-            padding: 0,
-            marginBottom: 12,
-            cursor: 'pointer',
-          }}
-        >
-          <h3 style={{
-            fontSize: 16,
-            fontWeight: 700,
-            color: '#6B7280',
-            margin: 0,
-          }}>
-            Locations Served
-          </h3>
-          {locationsExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-        </button>
+        <h3 style={{
+          fontSize: 16,
+          fontWeight: 700,
+          color: '#6B7280',
+          marginBottom: 12,
+          textTransform: 'none',
+        }}>
+          Pricing
+        </h3>
 
-        {locationsExpanded && (
-          <div style={{
-            position: 'relative',
-          }}>
-            <input
-              type="text"
-              placeholder="Search for Language..."
-              value={language}
-              onChange={e => setLanguage(e.target.value)}
-              style={{
-                width: '100%',
-                padding: '10px 36px 10px 12px',
-                fontSize: 14,
-                border: '1px solid #D1D5DB',
-                borderRadius: 8,
-                outline: 'none',
-                color: '#9CA3AF',
-              }}
-            />
-            <ChevronDown
-              size={18}
-              style={{
-                position: 'absolute',
-                right: 12,
-                top: '50%',
-                transform: 'translateY(-50%)',
-                color: '#9CA3AF',
-                pointerEvents: 'none',
-              }}
-            />
-          </div>
-        )}
+        <label style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 10,
+          cursor: 'pointer',
+        }}>
+          <input
+            type="checkbox"
+            checked={pricingFilter}
+            onChange={e => setPricingFilter(e.target.checked)}
+            style={{
+              width: 18,
+              height: 18,
+              cursor: 'pointer',
+              accentColor: '#5A39A2',
+            }}
+          />
+          <span style={{ fontSize: 14, fontWeight: 600, color: '#1F2937' }}>
+            Pricing Available
+          </span>
+        </label>
       </div>
 
-      {/* Product Expertise */}
+      {/* Language */}
       <div style={{ marginBottom: 24 }}>
-        <button
-          onClick={() => setProductExpanded(!productExpanded)}
-          style={{
-            width: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            background: 'none',
-            border: 'none',
-            padding: 0,
-            marginBottom: 12,
-            cursor: 'pointer',
-          }}
-        >
-          <h3 style={{
-            fontSize: 16,
-            fontWeight: 700,
-            color: '#6B7280',
-            margin: 0,
-          }}>
-            Product Expertise
-          </h3>
-          {productExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-        </button>
+        <h3 style={{
+          fontSize: 16,
+          fontWeight: 700,
+          color: '#6B7280',
+          margin: 0,
+        }}>
+          Language
+        </h3>
 
-        {productExpanded && (
-          <div style={{
-            position: 'relative',
-          }}>
-            <input
-              type="text"
-              placeholder="Search for Language..."
-              value={solutionType}
-              onChange={e => setSolutionType(e.target.value)}
-              style={{
-                width: '100%',
-                padding: '10px 36px 10px 12px',
-                fontSize: 14,
-                border: '1px solid #D1D5DB',
-                borderRadius: 8,
-                outline: 'none',
-                color: '#9CA3AF',
-              }}
-            />
-            <ChevronDown
-              size={18}
-              style={{
-                position: 'absolute',
-                right: 12,
-                top: '50%',
-                transform: 'translateY(-50%)',
-                color: '#9CA3AF',
-                pointerEvents: 'none',
-              }}
-            />
+        <div style={{ position: 'relative', marginTop: 12 }}>
+          <div
+            onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+            style={{
+              width: '100%',
+              padding: '10px 36px 10px 12px',
+              fontSize: 14,
+              border: languageDropdownOpen ? '1px solid #A78BFA' : '1px solid #D1D5DB',
+              borderRadius: 8,
+              color: '#4B5563',
+              cursor: 'pointer',
+              boxShadow: languageDropdownOpen ? '0 0 0 2px rgba(167, 139, 250, 0.2)' : 'none',
+              background: '#fff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between'
+            }}
+          >
+            <span>Search for Language...</span>
+            <ChevronDown size={16} color="#6B7280" />
           </div>
-        )}
+
+          {languageDropdownOpen && (
+            <div style={{
+              position: 'absolute',
+              top: '100%',
+              left: 0,
+              width: '100%',
+              marginTop: 4,
+              background: '#fff',
+              border: '1px solid #E5E7EB',
+              borderRadius: 8,
+              boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+              zIndex: 10,
+              overflow: 'hidden'
+            }}>
+              <div style={{ maxHeight: '200px', overflowY: 'auto' }}>
+                {languageList.map((lang, idx) => (
+                  <div
+                    key={idx}
+                    style={{
+                      padding: '10px 12px',
+                      fontSize: 14,
+                      color: '#374151',
+                      cursor: 'pointer',
+                      background: '#F3F4F6',
+                      borderBottom: '1px solid #E5E7EB'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = '#E5E7EB'}
+                    onMouseLeave={(e) => e.currentTarget.style.background = '#F3F4F6'}
+                  >
+                    {lang}
+                  </div>
+                ))}
+              </div>
+              <div style={{ padding: '8px 12px', background: '#fff' }}>
+                <button
+                  onClick={() => setLanguageDropdownOpen(false)}
+                  style={{ color: '#5A39A2', fontSize: 13, fontWeight: 600, background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
+                >
+                  Clear All
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
 
-      {/* Industry Expertise */}
+      {/* Locations Serviced */}
       <div style={{ marginBottom: 24 }}>
-        <button
-          onClick={() => setIndustryExpanded(!industryExpanded)}
-          style={{
-            width: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            background: 'none',
-            border: 'none',
-            padding: 0,
-            marginBottom: 12,
-            cursor: 'pointer',
-          }}
-        >
-          <h3 style={{
-            fontSize: 16,
-            fontWeight: 700,
-            color: '#6B7280',
-            margin: 0,
-          }}>
-            Industry Expertise
-          </h3>
-          {industryExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-        </button>
+        <h3 style={{
+          fontSize: 16,
+          fontWeight: 700,
+          color: '#6B7280',
+          margin: 0,
+        }}>
+          Locations Serviced
+        </h3>
 
-        {industryExpanded && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-            {industries.map((industry, idx) => (
-              <label
-                key={idx}
-                style={{
-                  display: 'flex',
-                  alignItems: 'flex-start',
-                  gap: 10,
-                  cursor: 'pointer',
-                }}
-              >
-                <input
-                  type="checkbox"
-                  style={{
-                    width: 18,
-                    height: 18,
-                    cursor: 'pointer',
-                    accentColor: '#5A39A2',
-                    marginTop: 2,
-                    flexShrink: 0,
-                  }}
-                />
-                <span style={{
-                  fontSize: 14,
-                  fontWeight: 600,
-                  color: '#1F2937',
-                  lineHeight: 1.4,
-                }}>
-                  {industry}
-                </span>
-              </label>
-            ))}
+        <div style={{ position: 'relative', marginTop: 12 }}>
+          <div
+            onClick={() => setLocationsDropdownOpen(!locationsDropdownOpen)}
+            style={{
+              width: '100%',
+              padding: '10px 36px 10px 12px',
+              fontSize: 14,
+              border: locationsDropdownOpen ? '1px solid #A78BFA' : '1px solid #D1D5DB',
+              borderRadius: 8,
+              color: '#4B5563',
+              cursor: 'pointer',
+              boxShadow: locationsDropdownOpen ? '0 0 0 2px rgba(167, 139, 250, 0.2)' : 'none',
+              background: '#fff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between'
+            }}
+          >
+            <span>Search for Language...</span>
+            <ChevronDown size={16} color="#6B7280" />
           </div>
-        )}
-      </div>
 
-      {/* Partner Level */}
-      <div style={{ marginBottom: 24 }}>
-        <button
-          onClick={() => setPartnerLevelExpanded(!partnerLevelExpanded)}
-          style={{
-            width: '100%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            background: 'none',
-            border: 'none',
-            padding: 0,
-            marginBottom: 12,
-            cursor: 'pointer',
-          }}
-        >
-          <h3 style={{
-            fontSize: 16,
-            fontWeight: 700,
-            color: '#6B7280',
-            margin: 0,
-          }}>
-            Partner Level
-          </h3>
-          {partnerLevelExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-        </button>
-
-        {partnerLevelExpanded && (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-            {partnerLevels.map((level, idx) => (
-              <label
-                key={idx}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 10,
-                  cursor: 'pointer',
-                }}
-              >
-                <input
-                  type="checkbox"
-                  style={{
-                    width: 18,
-                    height: 18,
-                    cursor: 'pointer',
-                    accentColor: '#5A39A2',
-                  }}
-                />
-                <span style={{
-                  fontSize: 14,
-                  fontWeight: 600,
-                  color: '#1F2937',
-                }}>
-                  {level}
-                </span>
-              </label>
-            ))}
-          </div>
-        )}
+          {locationsDropdownOpen && (
+            <div style={{
+              position: 'absolute',
+              top: '100%',
+              left: 0,
+              width: '100%',
+              marginTop: 4,
+              background: '#fff',
+              border: '1px solid #E5E7EB',
+              borderRadius: 8,
+              boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+              zIndex: 10,
+              overflow: 'hidden'
+            }}>
+              <div style={{ maxHeight: '200px', overflowY: 'auto' }}>
+                {locationsList.map((loc, idx) => (
+                  <div
+                    key={idx}
+                    style={{
+                      padding: '10px 12px',
+                      fontSize: 14,
+                      color: '#374151',
+                      cursor: 'pointer',
+                      background: '#F3F4F6',
+                      borderBottom: '1px solid #E5E7EB'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.background = '#E5E7EB'}
+                    onMouseLeave={(e) => e.currentTarget.style.background = '#F3F4F6'}
+                  >
+                    {loc}
+                  </div>
+                ))}
+              </div>
+              <div style={{ padding: '8px 12px', background: '#fff' }}>
+                <button
+                  onClick={() => setLocationsDropdownOpen(false)}
+                  style={{ color: '#5A39A2', fontSize: 13, fontWeight: 600, background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
+                >
+                  Clear All
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Clear All */}

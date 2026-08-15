@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronDown, ChevronRight, Pin, Menu, X, Trophy, TrendingUp, ArrowLeft, Search } from 'lucide-react';
+import { ChevronDown, ChevronRight, ChevronUp, Pin, Menu, X, Trophy, TrendingUp, ArrowLeft, Search } from 'lucide-react';
 import { navMenuItems, userActionLinks } from '../../data/navigationData';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuthModal } from '../../context/AuthModalContext';
@@ -11,6 +11,8 @@ export default function Header() {
     software: 'artificial-intelligence',
     services: 'ecosystem-service-providers'
   });
+  const [expandedMobileSoftwareTab, setExpandedMobileSoftwareTab] = useState('artificial-intelligence');
+  const [expandedMobileServiceTab, setExpandedMobileServiceTab] = useState('ecosystem-service-providers');
   const { openLoginModal } = useAuthModal();
 
 
@@ -639,21 +641,94 @@ export default function Header() {
                         </button>
                       </div>
 
-                      <div className="text-xs font-extrabold text-gray-900 uppercase tracking-wider mb-3">
-                        Software Categories
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="text-xs font-extrabold text-gray-900 uppercase tracking-wider">
+                          Software Categories
+                        </div>
+                        <span className="text-[11px] font-semibold text-[#5A39A2] bg-purple-50 px-2 py-0.5 rounded-full border border-purple-100">
+                          {softwareItem?.tabs?.length || 0} Categories
+                        </span>
                       </div>
 
-                      <div className="space-y-1 text-sm overflow-y-auto max-h-[calc(100vh-200px)]">
-                        {softwareItem?.tabs?.map((t) => (
-                          <Link
-                            key={t.id}
-                            to={`/category/${t.id}`}
-                            onClick={() => setMobileMenuOpen(false)}
-                            className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5A39A2] transition border-b border-gray-50 last:border-0"
-                          >
-                            {t.label}
-                          </Link>
-                        ))}
+                      <div className="space-y-2 text-sm overflow-y-auto max-h-[calc(100vh-210px)] pr-1 g2-mobile-drawer">
+                        {softwareItem?.tabs?.map((tab) => {
+                          const isExpanded = expandedMobileSoftwareTab === tab.id;
+                          const allItems = tab.columns ? tab.columns.flatMap((col) => col.items || []) : [];
+                          return (
+                            <div
+                              key={tab.id}
+                              className={`border rounded-xl overflow-hidden transition-all duration-200 ${
+                                isExpanded
+                                  ? 'border-[#5A39A2]/40 bg-white shadow-md'
+                                  : 'border-gray-200 bg-white hover:border-gray-300'
+                              }`}
+                            >
+                              <button
+                                type="button"
+                                onClick={() => setExpandedMobileSoftwareTab(isExpanded ? null : tab.id)}
+                                className={`w-full flex items-center justify-between p-3 text-left transition-colors ${
+                                  isExpanded
+                                    ? 'bg-[#5A39A2] text-white font-bold'
+                                    : 'text-[#1A4B75] font-semibold hover:bg-purple-50/50'
+                                }`}
+                              >
+                                <span className="text-[14px] leading-snug">{tab.label}</span>
+                                <div className="flex items-center gap-2 flex-shrink-0 ml-2">
+                                  <span
+                                    className={`text-[11px] px-2 py-0.5 rounded-full font-medium ${
+                                      isExpanded
+                                        ? 'bg-white/20 text-white'
+                                        : 'bg-gray-100 text-gray-600'
+                                    }`}
+                                  >
+                                    {allItems.length}
+                                  </span>
+                                  {isExpanded ? (
+                                    <ChevronUp className="w-4 h-4 text-white" />
+                                  ) : (
+                                    <ChevronDown className="w-4 h-4 text-gray-400" />
+                                  )}
+                                </div>
+                              </button>
+
+                              {isExpanded && (
+                                <div className="p-3 bg-[#FAF5FF]/40 border-t border-purple-100/70 space-y-1 animate-fadeIn">
+                                  <div className="space-y-0.5">
+                                    {allItems.map((item, idx) => {
+                                      const label = typeof item === 'object' ? item.label : item;
+                                      const slug = typeof item === 'object' ? item.slug : tab.id;
+                                      return (
+                                        <Link
+                                          key={idx}
+                                          to={`/category/${slug}`}
+                                          onClick={() => setMobileMenuOpen(false)}
+                                          className="flex items-center justify-between py-1.5 px-2.5 rounded-lg text-[13px] text-gray-700 hover:text-[#5A39A2] hover:bg-purple-50 font-medium transition group"
+                                        >
+                                          <span className="truncate pr-2 group-hover:translate-x-0.5 transition-transform">
+                                            {label}
+                                          </span>
+                                          <span className="text-gray-300 text-xs font-bold group-hover:text-[#5A39A2]">
+                                            ›
+                                          </span>
+                                        </Link>
+                                      );
+                                    })}
+                                  </div>
+
+                                  <div className="pt-2 mt-2 border-t border-purple-100">
+                                    <Link
+                                      to={`/category/${tab.id}`}
+                                      onClick={() => setMobileMenuOpen(false)}
+                                      className="block text-center text-xs font-bold text-[#5A39A2] py-1 hover:underline"
+                                    >
+                                      Explore all in {tab.label} →
+                                    </Link>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
 
@@ -687,15 +762,94 @@ export default function Header() {
                         </button>
                       </div>
 
-                      <div className="text-xs font-extrabold text-gray-900 uppercase tracking-wider mb-3">
-                        Service Categories
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="text-xs font-extrabold text-gray-900 uppercase tracking-wider">
+                          Service Categories
+                        </div>
+                        <span className="text-[11px] font-semibold text-[#5A39A2] bg-purple-50 px-2 py-0.5 rounded-full border border-purple-100">
+                          {servicesItem?.tabs?.length || 0} Categories
+                        </span>
                       </div>
 
-                      <div className="space-y-1 text-sm">
-                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5A39A2] transition border-b border-gray-50">IT Services</Link>
-                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5A39A2] transition border-b border-gray-50">Implementation Services</Link>
-                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5A39A2] transition border-b border-gray-50">Consulting Services</Link>
-                        <Link to="/category/services" onClick={() => setMobileMenuOpen(false)} className="block py-2.5 px-3 rounded-lg text-[#1A4B75] font-semibold hover:bg-purple-50 hover:text-[#5A39A2] transition">Design Agencies</Link>
+                      <div className="space-y-2 text-sm overflow-y-auto max-h-[calc(100vh-210px)] pr-1 g2-mobile-drawer">
+                        {servicesItem?.tabs?.map((tab) => {
+                          const isExpanded = expandedMobileServiceTab === tab.id;
+                          const allItems = tab.columns ? tab.columns.flatMap((col) => col.items || []) : [];
+                          return (
+                            <div
+                              key={tab.id}
+                              className={`border rounded-xl overflow-hidden transition-all duration-200 ${
+                                isExpanded
+                                  ? 'border-[#5A39A2]/40 bg-white shadow-md'
+                                  : 'border-gray-200 bg-white hover:border-gray-300'
+                              }`}
+                            >
+                              <button
+                                type="button"
+                                onClick={() => setExpandedMobileServiceTab(isExpanded ? null : tab.id)}
+                                className={`w-full flex items-center justify-between p-3 text-left transition-colors ${
+                                  isExpanded
+                                    ? 'bg-[#5A39A2] text-white font-bold'
+                                    : 'text-[#1A4B75] font-semibold hover:bg-purple-50/50'
+                                }`}
+                              >
+                                <span className="text-[14px] leading-snug">{tab.label}</span>
+                                <div className="flex items-center gap-2 flex-shrink-0 ml-2">
+                                  <span
+                                    className={`text-[11px] px-2 py-0.5 rounded-full font-medium ${
+                                      isExpanded
+                                        ? 'bg-white/20 text-white'
+                                        : 'bg-gray-100 text-gray-600'
+                                    }`}
+                                  >
+                                    {allItems.length}
+                                  </span>
+                                  {isExpanded ? (
+                                    <ChevronUp className="w-4 h-4 text-white" />
+                                  ) : (
+                                    <ChevronDown className="w-4 h-4 text-gray-400" />
+                                  )}
+                                </div>
+                              </button>
+
+                              {isExpanded && (
+                                <div className="p-3 bg-[#FAF5FF]/40 border-t border-purple-100/70 space-y-1 animate-fadeIn">
+                                  <div className="space-y-0.5">
+                                    {allItems.map((item, idx) => {
+                                      const label = typeof item === 'object' ? item.label : item;
+                                      const slug = typeof item === 'object' ? item.slug : tab.id;
+                                      return (
+                                        <Link
+                                          key={idx}
+                                          to={`/services/${slug}`}
+                                          onClick={() => setMobileMenuOpen(false)}
+                                          className="flex items-center justify-between py-1.5 px-2.5 rounded-lg text-[13px] text-gray-700 hover:text-[#5A39A2] hover:bg-purple-50 font-medium transition group"
+                                        >
+                                          <span className="truncate pr-2 group-hover:translate-x-0.5 transition-transform">
+                                            {label}
+                                          </span>
+                                          <span className="text-gray-300 text-xs font-bold group-hover:text-[#5A39A2]">
+                                            ›
+                                          </span>
+                                        </Link>
+                                      );
+                                    })}
+                                  </div>
+
+                                  <div className="pt-2 mt-2 border-t border-purple-100">
+                                    <Link
+                                      to={`/services/${tab.id}`}
+                                      onClick={() => setMobileMenuOpen(false)}
+                                      className="block text-center text-xs font-bold text-[#5A39A2] py-1 hover:underline"
+                                    >
+                                      Explore all in {tab.label} →
+                                    </Link>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
 

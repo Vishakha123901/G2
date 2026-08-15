@@ -4,6 +4,7 @@ import { categoriesData, categoryTabs, aiSpotlightCategories, aiSimilarCategorie
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
 import { Star } from 'lucide-react';
+import g2Stars from '../assets/svg/g2-stars.svg';
 
 export default function CategoryDetailPage() {
   const { slug } = useParams();
@@ -997,9 +998,7 @@ function SidebarFilters({
               )}
             </div>
             <div style={{ display: 'flex', gap: 2 }}>
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-[18px] h-[18px] text-[#FF4F00]" />
-              ))}
+              <img src={g2Stars} alt="5 Stars" style={{ height: 22 }} />
             </div>
             <span style={{ fontSize: 13, color: '#201F23' }}>5+</span>
           </label>
@@ -1016,10 +1015,7 @@ function SidebarFilters({
               )}
             </div>
             <div style={{ display: 'flex', gap: 2 }}>
-              {[...Array(4)].map((_, i) => (
-                <Star key={i} className="w-[18px] h-[18px] text-[#FF4F00]" />
-              ))}
-              <Star className="w-[18px] h-[18px] text-[#D1D5DB]" />
+              <img src={g2Stars} alt="4 Stars" style={{ height: 22, filter: 'grayscale(100%) brightness(1.5)', opacity: 0.8 }} />
             </div>
             <span style={{ fontSize: 13, color: '#201F23' }}>4+</span>
           </label>
